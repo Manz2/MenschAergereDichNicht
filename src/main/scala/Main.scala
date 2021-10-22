@@ -1,11 +1,11 @@
 object Madn {
   @main def hello: Unit =
     println("")
-  print(feld());
+  print(field());
 
 //Anzahl Spielfelder
-  val eol = sys.props("line.seperator")
-  def feld(length: Int = 20) =
+  val eol = sys.props("line.separator")
+  def field(length: Int = 20) =
     ("+") + ("----+" * length) + eol + ("|") + ("    |" * length) + eol + ("+") + ("----+" * length) + eol
 
   //Anzahl Spieler
