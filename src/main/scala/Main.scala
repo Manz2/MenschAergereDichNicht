@@ -1,19 +1,20 @@
 object Madn {
   @main def hello: Unit =
     println("")
-  print(field());
+  print(field())
+  print(players())
+  print(home())
 
 //Anzahl Spielfelder
-  val eol = sys.props("line.separator")
   def field(length: Int = 20) =
-    ("+") + ("----+" * length) + eol + ("|") + ("    |" * length) + eol + ("+") + ("----+" * length) + eol
+    ("+") + ("----+" * length) + "\n" + ("|") + ("    |" * length) + "\n" + ("+") + ("----+" * length) + "\n"
 
   //Anzahl Spieler
-  def players(player: Int = 20, figures: Int = 2) =
-    ("+") + ("----+" * player * figures) + eol + ("|") + ("    |" * player * figures) + eol + ("+") + ("----+" * player * figures) + eol
+  def players(player: Int = 1, figures: Int = 4) =
+    ("+") + ("----+" * player * figures) + "\n" + ("|") + ("    |" * player * figures) + "\n" + ("+") + ("----+" * player * figures) + "\n"
 
   //Ziel
-  def home(player: Int = 20, figures: Int = 2) =
-    ("+") + ("----+" * player * figures) + eol + ("|") + ("    |" * player * figures) + eol + ("+") + ("----+" * player * figures) + eol
+  def home(player: Int = 1, figures: Int = 4) =
+    ("+") + ("----+" * player * figures) + "\n" + ("|") + ("    |" * player * figures) + "\n" + ("+") + ("----+" * player * figures) + "\n"
 
 }

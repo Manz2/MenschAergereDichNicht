@@ -1,28 +1,26 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:8:23 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m8 |[0m    ([31m"+"[0m) + ([31m"----+"[0m * länge) + eol + ([31m"|"[0m) + ([31m"    |"[0m * länge) + eol + ([31m"+"[0m) + ([31m"----+"[0m * länge) + eol[0m
-[0m[[0m[31merror[0m] [0m[0m  |                       [31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  |                       Not found: länge[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:8:57 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m8 |[0m    ([31m"+"[0m) + ([31m"----+"[0m * länge) + eol + ([31m"|"[0m) + ([31m"    |"[0m * länge) + eol + ([31m"+"[0m) + ([31m"----+"[0m * länge) + eol[0m
-[0m[[0m[31merror[0m] [0m[0m  |                                                         [31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  |                                                         Not found: länge[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:8:91 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m8 |[0m    ([31m"+"[0m) + ([31m"----+"[0m * länge) + eol + ([31m"|"[0m) + ([31m"    |"[0m * länge) + eol + ([31m"+"[0m) + ([31m"----+"[0m * länge) + eol[0m
-[0m[[0m[31merror[0m] [0m[0m  |                                                                                           [31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  |                                                          Not found: länge[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:11:6 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m  [33mdef[0m [36mfeld[0m([36mplayer[0m: [35mInt[0m = [31m20[0m, [36mfigures[0m: [35mInt[0m = [31m2[0m) =[0m
-[0m[[0m[31merror[0m] [0m[0m   |      [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |   two or more overloaded variants of [33mmethod[0m [35mfeld[0m have default arguments[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E120] Naming Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:15:6 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m15 |[0m  [33mdef[0m [36mfeld[0m([36mplayer[0m: [35mInt[0m = [31m20[0m, [36mfigures[0m: [35mInt[0m = [31m2[0m) =[0m
-[0m[[0m[31merror[0m] [0m[0m   |      [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |Double definition:[0m
-[0m[[0m[31merror[0m] [0m[0m   |def feld(player: Int, figures: Int): String in [33mobject[0m [35mMadn[0m at line 11 and[0m
-[0m[[0m[31merror[0m] [0m[0m   |def feld(player: Int, figures: Int): String in [33mobject[0m [35mMadn[0m at line 15[0m
-[0m[[0m[31merror[0m] [0m[0m   |have the same type after erasure.[0m
-[0m[[0m[31merror[0m] [0m[0m   |[0m
-[0m[[0m[31merror[0m] [0m[0m   |Consider adding a @targetName annotation to one of the conflicting definitions[0m
-[0m[[0m[31merror[0m] [0m[0m   |for disambiguation.[0m
-[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
-[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:13:43 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m    ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol + ([31m"|"[0m) + ([31m"    |"[0m * player * figures) + eol + ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                           [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                           Not found: eol[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:13:88 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m    ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol + ([31m"|"[0m) + ([31m"    |"[0m * player * figures) + eol + ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                                        [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                          Not found: eol[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:13:133 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m    ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol + ([31m"|"[0m) + ([31m"    |"[0m * player * figures) + eol + ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                                                                                     [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                          Not found: eol[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:17:43 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m17 |[0m    ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol + ([31m"|"[0m) + ([31m"    |"[0m * player * figures) + eol + ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                           [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                           Not found: eol[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:17:88 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m17 |[0m    ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol + ([31m"|"[0m) + ([31m"    |"[0m * player * figures) + eol + ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                                        [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                          Not found: eol[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:17:133 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m17 |[0m    ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol + ([31m"|"[0m) + ([31m"    |"[0m * player * figures) + eol + ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                                                                                     [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                          Not found: eol[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
