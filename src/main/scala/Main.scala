@@ -5,7 +5,7 @@ object Madn {
   print(players())
   print(home())
 
-//Anzahl Spielfelder
+  //Anzahl Spielfelder
   def field(length: Int = 20) =
     ("+") + ("----+" * length) + "\n" + ("|") + ("    |" * length) + "\n" + ("+") + ("----+" * length) + "\n"
 
