@@ -3,30 +3,18 @@ object Madn {
     println("")
 
 //Anzahl Spielfelder
-
-  var länge = 20
-  print("+")
-  println("----+" * länge)
-  print("|")
-  println("    |" * länge)
-  print("+")
-  println("----+" * länge)
+  val eol = sys.props("line.seperator")
+  def feld(length: Int = 20) =
+    "+" + "----+" * length + eol + "|" + "    |" * length + eol + "+" + "----+" * length + eol
 
   //Anzahl Spieler
-  var spieler = 1
-  var figuren = 4
-  print("+")
-  println("----+" * spieler * figuren)
-  print("|")
-  println("    |" * spieler * figuren)
-  print("+")
-  println("----+" * spieler * figuren)
+  def players(player: Int = 20, figures: Int = 2) =
+    ("+") + ("----+" * player * figures) + eol + ("|") + ("    |" * player * figures) + eol + ("+") + ("----+" * player * figures) + eol
 
   //Ziel
-  print("+")
-  println("----+" * spieler * figuren)
-  print("|")
-  println("    |" * spieler * figuren)
-  print("+")
-  println("----+" * spieler * figuren)
+  def home(player: Int = 20, figures: Int = 2) =
+    ("+") + ("----+" * player * figures) + eol + ("|") + ("    |" * player * figures) + eol + ("+") + ("----+" * player * figures) + eol
+
+  print(feld);
+
 }
