@@ -4,7 +4,7 @@ object Madn {
   print(feld());
 
 //Anzahl Spielfelder
-  val eol = sys.props("line.seperator")
+  val eol = sys.props("line.separator")
   def feld(length: Int = 20) =
     ("+") + ("----+" * length) + eol + ("|") + ("    |" * length) + eol + ("+") + ("----+" * length) + eol
 
