@@ -7,15 +7,22 @@ object Madn {
 
   var x = 0
   var länge = 20
+  print("""
+  +
+  |
+  +
+  
+  """)
 
   while (x < länge) {
     print("""
-    +----+
-         |
-    +----+
+    ----+
+        |
+    ----+
     """)
     x = x + 1;
   }
+  println();
 
 //Anzahl Spieler
   var spieler = 1
@@ -24,6 +31,11 @@ object Madn {
   var y = 0;
 
   while (x < spieler * 4) {
+    print("""
+    +
+    |
+    +
+    """)
     while (y < figuren) {
       print("""
     +----+
