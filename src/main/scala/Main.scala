@@ -3,5 +3,15 @@ object Madn {
     println("Hello world!")
   println(msg)
 
-  def msg = "I was compiled by Scala 3. :)"
+  var x = 0;
+  var länge = 20
+
+  while (x < länge) {
+    print("""
+    +----+
+         |
+    +----+
+    """)
+    x = x + 1;
+  }
 }
