@@ -1,48 +1,32 @@
 object Madn {
   @main def hello: Unit =
-    println("Hello world!")
-  println(msg)
+    println("")
 
 //Anzahl Spielfelder
 
-  var x = 0
   var länge = 20
-  print("""
-  +
-  |
-  +
-  
-  """)
+  print("+")
+  println("----+" * länge)
+  print("|")
+  println("    |" * länge)
+  print("+")
+  println("----+" * länge)
 
-  while (x < länge) {
-    print("""
-    ----+
-        |
-    ----+
-    """)
-    x = x + 1;
-  }
-  println();
-
-//Anzahl Spieler
+  //Anzahl Spieler
   var spieler = 1
-  var figuren = 1
-  x = 0;
-  var y = 0;
+  var figuren = 4
+  print("+")
+  println("----+" * spieler * figuren)
+  print("|")
+  println("    |" * spieler * figuren)
+  print("+")
+  println("----+" * spieler * figuren)
 
-  while (x < spieler * 4) {
-    print("""
-    +
-    |
-    +
-    """)
-    while (y < figuren) {
-      print("""
-    +----+
-         |
-    +----+
-    """)
-    }
-    println()
-  }
+  //Ziel
+  print("+")
+  println("----+" * spieler * figuren)
+  print("|")
+  println("    |" * spieler * figuren)
+  print("+")
+  println("----+" * spieler * figuren)
 }

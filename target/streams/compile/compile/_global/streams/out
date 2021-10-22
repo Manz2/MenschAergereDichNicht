@@ -1,0 +1,14 @@
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E120] Naming Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:26:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m  [33mvar[0m [36mspieler[0m = [31m1[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      Double definition:[0m
+[0m[[0m[31merror[0m] [0m[0m   |      var spieler: Int in [33mobject[0m [35mMadn[0m at line 16 and[0m
+[0m[[0m[31merror[0m] [0m[0m   |      var spieler: Int in [33mobject[0m [35mMadn[0m at line 26[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E120] Naming Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:27:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m27 |[0m  [33mvar[0m [36mfiguren[0m = [31m4[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      Double definition:[0m
+[0m[[0m[31merror[0m] [0m[0m   |      var figuren: Int in [33mobject[0m [35mMadn[0m at line 17 and[0m
+[0m[[0m[31merror[0m] [0m[0m   |      var figuren: Int in [33mobject[0m [35mMadn[0m at line 27[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
