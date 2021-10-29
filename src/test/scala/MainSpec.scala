@@ -1,7 +1,5 @@
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatest.matchers.should.Matchers._
-import org.junit.Test
-import org.junit.Assert.*
 
 class MainSpec extends AnyWordSpec:
   "Main" should {

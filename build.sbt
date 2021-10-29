@@ -6,5 +6,6 @@ lazy val root = project
     name := "MenschAergereDichNicht",
     version := "0.1.0-SNAPSHOT",
     scalaVersion := scala3Version,
-    libraryDependencies += "org.scalatest" % "junit-interface" % "0.11" % "test"
+    libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.10",
+    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.10" % "test"
   )
