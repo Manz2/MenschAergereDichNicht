@@ -6,6 +6,7 @@ object Madn {
   print(field())
   print(players())
   print(home())
+  print("\n")
 
   //Anzahl Spielfelder
   def field(length: Int = 1) =
