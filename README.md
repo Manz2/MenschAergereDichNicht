@@ -6,6 +6,6 @@ MainSpec.scala tests TUI
 * `run` : runs the progrramm
 * `test` : tests the programm
 
-##authors
+## authors
 Erik Manz
 Muhammed Egül
