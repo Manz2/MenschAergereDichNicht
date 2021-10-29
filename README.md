@@ -8,4 +8,4 @@ MainSpec.scala tests TUI
 
 ## authors
 Erik Manz,
-Muhammed Egül
+Muhammed Ergül
