@@ -199,7 +199,7 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "C:\\Informatik\\jdk-17",
+                "home": "C:\\Informatik\\jdk-15",
                 "options": [
                     "-Duser.dir=C:\\Users\\User\\Documents\\Htwg\\se\\MADN\\MenschAergereDichNicht\\project"
                 ]
