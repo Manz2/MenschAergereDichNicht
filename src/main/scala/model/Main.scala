@@ -3,9 +3,9 @@ package Documents.Htwg.se.MADN.MenschAergereDichNicht
 object Madn {
   @main def hello: Unit =
     println("")
-  print(field())
-  print(players())
-  print(home())
+  print(field(25))
+  print(players(4, 2))
+  print(home(4, 2))
   print("\n")
 
   //Anzahl Spielfelder
