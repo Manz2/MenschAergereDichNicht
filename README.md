@@ -7,5 +7,5 @@ MainSpec.scala tests TUI
 * `test` : tests the programm
 
 ## authors
-Erik Manz
+Erik Manz,
 Muhammed Egül
