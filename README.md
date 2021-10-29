@@ -2,7 +2,7 @@
 Spiel Gruppe3
 MainSpec.scala tests TUI
 
-## Commands:
+## commands:
 * `run` : runs the progrramm
 * `test` : tests the programm
 
