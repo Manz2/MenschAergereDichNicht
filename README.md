@@ -1,7 +1,11 @@
 # MenschAergereDichNicht
 Spiel Gruppe3
-Mensch ärgere dich nicht
-Test klasse testet Text UI
-Commands:
-* run : runs the progrramm
-* test : tests the programm
+MainSpec.scala tests TUI
+
+## Commands:
+* `run` : runs the progrramm
+* `test` : tests the programm
+
+##authors
+Erik Manz
+Muhammed Egül
