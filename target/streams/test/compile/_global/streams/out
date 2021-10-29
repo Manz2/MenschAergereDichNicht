@@ -1,26 +1,6 @@
-[error] -- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\MainSpec.scala:10:6 
-[error] 10 |      field() should be ("+----+" + "\n")
-[error]    |      ^^^^^
-[error]    |      Not found: field
-[error] -- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\MainSpec.scala:13:6 
-[error] 13 |      bar(1) should be ("+----+" + "\n")
-[error]    |      ^^^
-[error]    |      Not found: bar
-[error] -- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\MainSpec.scala:14:6 
-[error] 14 |      bar(2) should be ("+----+----+" + "\n")
-[error]    |      ^^^
-[error]    |      Not found: bar
-[error] -- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\MainSpec.scala:18:4 
-[error] 18 |    cells() should be("|    |" + "\n")
-[error]    |    ^^^^^
-[error]    |    Not found: cells
-[error] -- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\MainSpec.scala:21:4 
-[error] 21 |    cells(1) should be("|    |" + "\n")
-[error]    |    ^^^^^
-[error]    |    Not found: cells
-[error] -- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\MainSpec.scala:22:4 
-[error] 22 |    cells(2) should be("|    |    |" + "\n")
-[error]    |    ^^^^^
-[error]    |    Not found: cells
-[error] 6 errors found
-[error] 6 errors found
+[error] -- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\MainSpec.scala:11:19 
+[error] 11 |      Madn.field() have length (21)
+[error]    |      ^^^^^^^^^^^^^^^^^
+[error]    |      value have is not a member of String - did you mean String.chars?
+[error] one error found
+[error] one error found

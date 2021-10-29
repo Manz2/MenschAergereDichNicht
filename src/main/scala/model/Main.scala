@@ -1,4 +1,4 @@
-package Htwg.se.MADN.MenschAergereDichNicht.model
+package Documents.Htwg.se.MADN.MenschAergereDichNicht
 
 object Madn {
   @main def hello: Unit =

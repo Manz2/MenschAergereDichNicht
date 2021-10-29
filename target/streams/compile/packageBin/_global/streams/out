@@ -1,1 +1,23 @@
-[debug] Jar uptodate: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\menschaergeredichnicht_3-0.1.0-SNAPSHOT.jar
+[0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\menschaergeredichnicht_3-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Documents[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\Documents[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Documents\Htwg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\Documents\Htwg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Documents\Htwg\se[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\Documents\Htwg\se[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Documents\Htwg\se\MADN[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\Documents\Htwg\se\MADN[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Documents\Htwg\se\MADN\MenschAergereDichNicht[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\Documents\Htwg\se\MADN\MenschAergereDichNicht[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Documents\Htwg\se\MADN\MenschAergereDichNicht\hello.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\Documents\Htwg\se\MADN\MenschAergereDichNicht\hello.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Documents\Htwg\se\MADN\MenschAergereDichNicht\hello.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\Documents\Htwg\se\MADN\MenschAergereDichNicht\hello.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Documents\Htwg\se\MADN\MenschAergereDichNicht\Madn$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\Documents\Htwg\se\MADN\MenschAergereDichNicht\Madn$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Documents\Htwg\se\MADN\MenschAergereDichNicht\Madn.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\Documents\Htwg\se\MADN\MenschAergereDichNicht\Madn.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Documents\Htwg\se\MADN\MenschAergereDichNicht\Madn.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\Documents\Htwg\se\MADN\MenschAergereDichNicht\Madn.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
