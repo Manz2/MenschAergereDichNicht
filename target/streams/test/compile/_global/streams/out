@@ -1,10 +1,26 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\MainSpec.scala:1:11 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m1 |[0m[33mimport[0m org.scalatest.wordspec.AnyWordSpec[0m
-[0m[[0m[31merror[0m] [0m[0m  |       [31m^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  |       value scalatest is not a member of org[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\MainSpec.scala:2:11 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m2 |[0m[33mimport[0m org.scalatest.matchers.should.Matchers._[0m
-[0m[[0m[31merror[0m] [0m[0m  |       [31m^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  |       value scalatest is not a member of org[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[error] -- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\MainSpec.scala:10:6 
+[error] 10 |      field() should be ("+----+" + "\n")
+[error]    |      ^^^^^
+[error]    |      Not found: field
+[error] -- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\MainSpec.scala:13:6 
+[error] 13 |      bar(1) should be ("+----+" + "\n")
+[error]    |      ^^^
+[error]    |      Not found: bar
+[error] -- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\MainSpec.scala:14:6 
+[error] 14 |      bar(2) should be ("+----+----+" + "\n")
+[error]    |      ^^^
+[error]    |      Not found: bar
+[error] -- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\MainSpec.scala:18:4 
+[error] 18 |    cells() should be("|    |" + "\n")
+[error]    |    ^^^^^
+[error]    |    Not found: cells
+[error] -- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\MainSpec.scala:21:4 
+[error] 21 |    cells(1) should be("|    |" + "\n")
+[error]    |    ^^^^^
+[error]    |    Not found: cells
+[error] -- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\MainSpec.scala:22:4 
+[error] 22 |    cells(2) should be("|    |    |" + "\n")
+[error]    |    ^^^^^
+[error]    |    Not found: cells
+[error] 6 errors found
+[error] 6 errors found
