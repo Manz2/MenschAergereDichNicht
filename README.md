@@ -1,11 +1,13 @@
 # MenschAergereDichNicht
 Spiel Gruppe3
-MainSpec.scala tests TUI
+
+`Main.scala` is the TUI <br>
+`MainSpec.scala` tests TUI
 
 ## commands:
 * `run` : runs the progrramm
 * `test` : tests the programm
 
 ## authors
-Erik Manz,
+Erik Manz <br>
 Muhammed Ergül
