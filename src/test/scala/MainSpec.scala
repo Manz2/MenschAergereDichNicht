@@ -5,17 +5,17 @@ class MainSpec extends AnyWordSpec:
   "Main" should {
     "have a bar as String of form '+----+'"  +
     "|    |" + "+----+" in {
-      field() should be ("+----+" + "\n")
+      Madn.field() should include ("+----+" + "\n")
     }
     "have a scalable bar" in {
-      bar(1) should be ("+----+" + "\n")
-      bar(2) should be ("+----+----+" + "\n")
+      Madn.players(1) should be ("+----+" + "\n")
+      Madn.players(2) should be ("+----+----+" + "\n")
     }
   }
   "have cells as String of form '|    |'" in {
-    cells() should be("|    |" + "\n")
+    Madn.home() should be("|    |" + "\n")
   }
   "have scalable cells" in {
-    cells(1) should be("|    |" + "\n")
-    cells(2) should be("|    |    |" + "\n")
+    Madn.home(1) should be("|    |" + "\n")
+    Madn.home(2) should be("|    |    |" + "\n")
   }
