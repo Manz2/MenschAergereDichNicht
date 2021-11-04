@@ -1,5 +1,5 @@
 package Documents.Htwg.se.MADN.MenschAergereDichNicht
-import de.htwg.se.sudoku.model.{Player}
+import Documents.Htwg.se.MADN.MenschAergereDichNicht.{Player}
 
 object Madn {
   @main def hello: Unit =
@@ -7,7 +7,7 @@ object Madn {
 
   print(field(20))
   var numPlay = 8
-  val inserts = Array("A1", "A2", "A3", "A4", "B1", "B2", "B3", "B4")
+  val inserts = Vector("A1", null, "A3", "A4", "B1", "B2", "B3", "B4")
   var player = new Player(numPlay, inserts)
   print(player)
   print(home(4, 2))
