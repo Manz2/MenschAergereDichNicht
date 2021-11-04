@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ["sbt.Task[scala.collection.Seq[java.nio.file.Path]]",["C:\\Users\\User\\Documents\\MenschAergereDichNicht\\MenschAergereDichNicht\\target\\scala-3.1.0\\test-classes\\MainSpec.class","C:\\Users\\User\\Documents\\MenschAergereDichNicht\\MenschAergereDichNicht\\target\\scala-3.1.0\\test-zinc\\inc_compile_3.zip"]]
+=======
+["sbt.Task[scala.collection.Seq[java.nio.file.Path]]",["C:\\Users\\User\\Documents\\Htwg\\se\\MADN\\MenschAergereDichNicht\\target\\scala-3.1.0\\test-classes\\Documents\\Htwg\\se\\MADN\\MenschAergereDichNicht\\MainSpec.class","C:\\Users\\User\\Documents\\Htwg\\se\\MADN\\MenschAergereDichNicht\\target\\scala-3.1.0\\test-zinc\\inc_compile_3.zip"]]
+>>>>>>> 80ad196a9142d222dc23e03ae59299abcff83869

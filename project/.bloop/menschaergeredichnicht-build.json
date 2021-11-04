@@ -224,11 +224,15 @@
             "name": "jvm",
             "config": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "home": "C:\\Program Files\\Java\\jdk-16",
                 "options": [
                     "-Duser.dir=C:\\Users\\User\\Documents\\MenschAergereDichNicht\\MenschAergereDichNicht\\project"
 =======
                 "home": "C:\\Informatik\\jdk-15",
+=======
+                "home": "C:\\Informatik\\jdk-17",
+>>>>>>> 80ad196a9142d222dc23e03ae59299abcff83869
                 "options": [
                     "-Duser.dir=C:\\Users\\User\\Documents\\Htwg\\se\\MADN\\MenschAergereDichNicht\\project"
 >>>>>>> e1c9200d6691e2dff299982f3f3d50942ed3b23a
