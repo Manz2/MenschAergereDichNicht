@@ -1,4 +1,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m[menschaergeredichnicht-build] Classpath dependencies List()[0m
 [0m[[0m[0mdebug[0m] [0m[0m[menschaergeredichnicht-build] Dependencies from configurations List()[0m
+<<<<<<< HEAD
 [0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'menschaergeredichnicht-build' to 'C:\Users\User\Documents\MenschAergereDichNicht\MenschAergereDichNicht\project\.bloop\menschaergeredichnicht-build.json'[0m
+=======
+[0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'menschaergeredichnicht-build' to 'C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\project\.bloop\menschaergeredichnicht-build.json'[0m
+>>>>>>> e1c9200d6691e2dff299982f3f3d50942ed3b23a
 [0m[[0m[32msuccess[0m] [0m[0mGenerated .bloop\menschaergeredichnicht-build.json[0m
