@@ -1,4 +1,4 @@
-package Documents.Htwg.se.MADN.MenschAergereDichNicht
+/*package Documents.Htwg.se.MADN.MenschAergereDichNicht
 
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatest.matchers.should.Matchers._
@@ -35,4 +35,4 @@ class MainSpec extends AnyWordSpec:
       Madn.field(10).count(_ == '-') should equal (80)
       Madn.field(10).count(_ == '|') should equal (11)
     }
-  }
+  }*/

@@ -2,12 +2,14 @@
 *.log
 .metals/
 .vscode/
+out
 # Intellij
 .idea/
 target/
 # sbt
 .cache
 .history
+.history3
 .lib/
 dist/*
 target/
