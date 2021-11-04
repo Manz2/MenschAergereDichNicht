@@ -1,10 +1,15 @@
 package Documents.Htwg.se.MADN.MenschAergereDichNicht
+import de.htwg.se.sudoku.model.{Player}
 
 object Madn {
   @main def hello: Unit =
     println("")
-  print(field(25))
-  print(players(4, 2))
+
+  print(field(20))
+  var numPlay = 8
+  val inserts = Array("A1", "A2", "A3", "A4", "B1", "B2", "B3", "B4")
+  var player = new Player(numPlay, inserts)
+  print(player)
   print(home(4, 2))
   print("\n")
 
