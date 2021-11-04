@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\menschaergeredichnicht_3-0.1.0-SNAPSHOT.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Documents[0m
@@ -21,11 +20,10 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\Documents\Htwg\se\MADN\MenschAergereDichNicht\Madn.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Documents\Htwg\se\MADN\MenschAergereDichNicht\Madn.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\Documents\Htwg\se\MADN\MenschAergereDichNicht\Madn.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Documents\Htwg\se\MADN\MenschAergereDichNicht\Player$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\Documents\Htwg\se\MADN\MenschAergereDichNicht\Player$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Documents\Htwg\se\MADN\MenschAergereDichNicht\Player.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\Documents\Htwg\se\MADN\MenschAergereDichNicht\Player.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Documents\Htwg\se\MADN\MenschAergereDichNicht\Player.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\Documents\Htwg\se\MADN\MenschAergereDichNicht\Player.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
-=======
-<<<<<<< HEAD
-[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: C:\Users\User\Documents\MenschAergereDichNicht\MenschAergereDichNicht\target\scala-3.1.0\menschaergeredichnicht_3-0.1.0-SNAPSHOT.jar[0m
-=======
-[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\menschaergeredichnicht_3-0.1.0-SNAPSHOT.jar[0m
->>>>>>> 80ad196a9142d222dc23e03ae59299abcff83869
->>>>>>> 344892251d6bb72e9adf1486a81a71558bd20030

@@ -1,26 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:13:43 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m    ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol + ([31m"|"[0m) + ([31m"    |"[0m * player * figures) + eol + ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                           [31m^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                           Not found: eol[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:13:88 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m    ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol + ([31m"|"[0m) + ([31m"    |"[0m * player * figures) + eol + ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                                                        [31m^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                          Not found: eol[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:13:133 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m    ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol + ([31m"|"[0m) + ([31m"    |"[0m * player * figures) + eol + ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                                                                                                     [31m^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                          Not found: eol[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:17:43 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m17 |[0m    ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol + ([31m"|"[0m) + ([31m"    |"[0m * player * figures) + eol + ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                           [31m^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                           Not found: eol[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:17:88 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m17 |[0m    ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol + ([31m"|"[0m) + ([31m"    |"[0m * player * figures) + eol + ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                                                        [31m^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                          Not found: eol[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:17:133 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m17 |[0m    ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol + ([31m"|"[0m) + ([31m"    |"[0m * player * figures) + eol + ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + eol[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                                                                                                     [31m^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                          Not found: eol[0m
-[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
-[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E052] Type Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\model\Player.scala:10:10 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m        s = s + [31m"    "[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |        [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |        Reassignment to val s[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E052] Type Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\model\Player.scala:12:10 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m        s = s + [31m" "[0m + ins + [31m" |"[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |        [31m^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |        Reassignment to val s[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
