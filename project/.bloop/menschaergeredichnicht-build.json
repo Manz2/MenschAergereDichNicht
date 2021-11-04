@@ -2,6 +2,17 @@
     "version": "1.4.0",
     "project": {
         "name": "menschaergeredichnicht-build",
+<<<<<<< HEAD
+        "directory": "C:\\Users\\User\\Documents\\MenschAergereDichNicht\\MenschAergereDichNicht\\project",
+        "workspaceDir": "C:\\Users\\User\\Documents\\MenschAergereDichNicht\\MenschAergereDichNicht\\project",
+        "sources": [
+            "C:\\Users\\User\\Documents\\MenschAergereDichNicht\\MenschAergereDichNicht\\project\\src\\main\\scala",
+            "C:\\Users\\User\\Documents\\MenschAergereDichNicht\\MenschAergereDichNicht\\project\\src\\main\\scala-2.12",
+            "C:\\Users\\User\\Documents\\MenschAergereDichNicht\\MenschAergereDichNicht\\project\\src\\main\\scala-2",
+            "C:\\Users\\User\\Documents\\MenschAergereDichNicht\\MenschAergereDichNicht\\project\\src\\main\\java",
+            "C:\\Users\\User\\Documents\\MenschAergereDichNicht\\MenschAergereDichNicht\\project\\src\\main\\scala-sbt-1.0",
+            "C:\\Users\\User\\Documents\\MenschAergereDichNicht\\MenschAergereDichNicht\\project\\target\\scala-2.12\\sbt-1.0\\src_managed\\main"
+=======
         "directory": "C:\\Users\\User\\Documents\\Htwg\\se\\MADN\\MenschAergereDichNicht\\project",
         "workspaceDir": "C:\\Users\\User\\Documents\\Htwg\\se\\MADN\\MenschAergereDichNicht\\project",
         "sources": [
@@ -11,6 +22,7 @@
             "C:\\Users\\User\\Documents\\Htwg\\se\\MADN\\MenschAergereDichNicht\\project\\src\\main\\java",
             "C:\\Users\\User\\Documents\\Htwg\\se\\MADN\\MenschAergereDichNicht\\project\\src\\main\\scala-sbt-1.0",
             "C:\\Users\\User\\Documents\\Htwg\\se\\MADN\\MenschAergereDichNicht\\project\\target\\scala-2.12\\sbt-1.0\\src_managed\\main"
+>>>>>>> e1c9200d6691e2dff299982f3f3d50942ed3b23a
         ],
         "dependencies": [
             
@@ -105,11 +117,19 @@
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\squareup\\okio\\okio\\1.17.2\\okio-1.17.2.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\config\\1.3.3\\config-1.3.3.jar"
         ],
+<<<<<<< HEAD
+        "out": "C:\\Users\\User\\Documents\\MenschAergereDichNicht\\MenschAergereDichNicht\\project\\.bloop\\menschaergeredichnicht-build",
+        "classesDir": "C:\\Users\\User\\Documents\\MenschAergereDichNicht\\MenschAergereDichNicht\\project\\.bloop\\menschaergeredichnicht-build\\scala-2.12\\sbt-1.0\\classes",
+        "resources": [
+            "C:\\Users\\User\\Documents\\MenschAergereDichNicht\\MenschAergereDichNicht\\project\\src\\main\\resources",
+            "C:\\Users\\User\\Documents\\MenschAergereDichNicht\\MenschAergereDichNicht\\project\\target\\scala-2.12\\sbt-1.0\\resource_managed\\main"
+=======
         "out": "C:\\Users\\User\\Documents\\Htwg\\se\\MADN\\MenschAergereDichNicht\\project\\.bloop\\menschaergeredichnicht-build",
         "classesDir": "C:\\Users\\User\\Documents\\Htwg\\se\\MADN\\MenschAergereDichNicht\\project\\.bloop\\menschaergeredichnicht-build\\scala-2.12\\sbt-1.0\\classes",
         "resources": [
             "C:\\Users\\User\\Documents\\Htwg\\se\\MADN\\MenschAergereDichNicht\\project\\src\\main\\resources",
             "C:\\Users\\User\\Documents\\Htwg\\se\\MADN\\MenschAergereDichNicht\\project\\target\\scala-2.12\\sbt-1.0\\resource_managed\\main"
+>>>>>>> e1c9200d6691e2dff299982f3f3d50942ed3b23a
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -126,7 +146,11 @@
                 "C:\\Users\\User\\.sbt\\boot\\scala-2.12.14\\lib\\scala-reflect.jar",
                 "C:\\Users\\User\\.sbt\\boot\\scala-2.12.14\\lib\\scala-xml_2.12-1.0.6.jar"
             ],
+<<<<<<< HEAD
+            "analysis": "C:\\Users\\User\\Documents\\MenschAergereDichNicht\\MenschAergereDichNicht\\project\\target\\streams\\compile\\bloopAnalysisOut\\_global\\streams\\inc_compile_2.12.zip",
+=======
             "analysis": "C:\\Users\\User\\Documents\\Htwg\\se\\MADN\\MenschAergereDichNicht\\project\\target\\streams\\compile\\bloopAnalysisOut\\_global\\streams\\inc_compile_2.12.zip",
+>>>>>>> e1c9200d6691e2dff299982f3f3d50942ed3b23a
             "setup": {
                 "order": "mixed",
                 "addLibraryToBootClasspath": true,
@@ -199,9 +223,23 @@
         "platform": {
             "name": "jvm",
             "config": {
+<<<<<<< HEAD
                 "home": "C:\\Informatik\\jdk-15",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                "home": "C:\\Program Files\\Java\\jdk-16",
+                "options": [
+                    "-Duser.dir=C:\\Users\\User\\Documents\\MenschAergereDichNicht\\MenschAergereDichNicht\\project"
+=======
+                "home": "C:\\Informatik\\jdk-15",
+=======
+                "home": "C:\\Informatik\\jdk-17",
+>>>>>>> 80ad196a9142d222dc23e03ae59299abcff83869
+>>>>>>> 344892251d6bb72e9adf1486a81a71558bd20030
                 "options": [
                     "-Duser.dir=C:\\Users\\User\\Documents\\Htwg\\se\\MADN\\MenschAergereDichNicht\\project"
+>>>>>>> e1c9200d6691e2dff299982f3f3d50942ed3b23a
                 ]
             },
             "mainClass": [

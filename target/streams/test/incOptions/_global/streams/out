@@ -1,2 +1,16 @@
+<<<<<<< HEAD
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = C:\Users\User\Documents\MenschAergereDichNicht\MenschAergereDichNicht\target\scala-3.1.0\test-classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainSpec.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainSpec.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainSpec.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainSpec.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainSpec.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainSpec.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: C:\Users\User\Documents\MenschAergereDichNicht\MenschAergereDichNicht\target\scala-3.1.0\test-classes.bak[0m
+=======
 [0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\test-classes.bak[0m
 [0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\test-classes.bak[0m
+>>>>>>> 80ad196a9142d222dc23e03ae59299abcff83869

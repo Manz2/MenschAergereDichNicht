@@ -1,4 +1,22 @@
+<<<<<<< HEAD
 [0m[[0m[0mdebug[0m] [0m[0m[menschaergeredichnicht-build] Classpath dependencies List()[0m
 [0m[[0m[0mdebug[0m] [0m[0m[menschaergeredichnicht-build] Dependencies from configurations List()[0m
 [0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'menschaergeredichnicht-build' to 'C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\project\.bloop\menschaergeredichnicht-build.json'[0m
 [0m[[0m[32msuccess[0m] [0m[0mGenerated .bloop\menschaergeredichnicht-build.json[0m
+=======
+<<<<<<< HEAD
+[0m[[0m[0mdebug[0m] [0m[0m[menschaergeredichnicht-build] Classpath dependencies List()[0m
+[0m[[0m[0mdebug[0m] [0m[0m[menschaergeredichnicht-build] Dependencies from configurations List()[0m
+<<<<<<< HEAD
+[0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'menschaergeredichnicht-build' to 'C:\Users\User\Documents\MenschAergereDichNicht\MenschAergereDichNicht\project\.bloop\menschaergeredichnicht-build.json'[0m
+=======
+[0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'menschaergeredichnicht-build' to 'C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\project\.bloop\menschaergeredichnicht-build.json'[0m
+>>>>>>> e1c9200d6691e2dff299982f3f3d50942ed3b23a
+[0m[[0m[32msuccess[0m] [0m[0mGenerated .bloop\menschaergeredichnicht-build.json[0m
+=======
+[debug] [menschaergeredichnicht-build] Classpath dependencies List()
+[debug] [menschaergeredichnicht-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'menschaergeredichnicht-build' to 'C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\project\.bloop\menschaergeredichnicht-build.json'
+[success] Generated .bloop\menschaergeredichnicht-build.json
+>>>>>>> 80ad196a9142d222dc23e03ae59299abcff83869
+>>>>>>> 344892251d6bb72e9adf1486a81a71558bd20030

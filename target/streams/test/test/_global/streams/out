@@ -1,4 +1,58 @@
+<<<<<<< HEAD
 [0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(Documents.Htwg.se.MADN.MenschAergereDichNicht.MainSpec, org.scalatest.tools.Framework$$anon$1@4942d867, false, [SuiteSelector])[0m
+=======
+<<<<<<< HEAD
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(MainSpec, org.scalatest.tools.Framework$$anon$1@210e3bb8, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMainSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMain[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should have a bar as String of form '+----+'|    |+----+[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should have a scalable bar *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "+----+[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  [|    |[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  +----+[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ]" was not equal to "+----+[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  []" (MainSpec.scala:11)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Analysis:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "+----+[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m[|    |[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m+----+[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m]" -> "+----+[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m[]"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- have cells as String of form '|    |' *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "[+----+[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  |    |[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  +----+][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  " was not equal to "[|    |][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  " (MainSpec.scala:16)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Analysis:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "[+----+[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m|    |[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m+----+][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m" -> "[|    |][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- have scalable cells *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "[+----+[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  |    |[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  +----+][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  " was not equal to "[|    |][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  " (MainSpec.scala:19)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Analysis:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "[+----+[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m|    |[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m+----+][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m" -> "[|    |][0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 318 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 4[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 1, failed 3, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 3 TESTS FAILED ***[0m[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	MainSpec[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+=======
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(Documents.Htwg.se.MADN.MenschAergereDichNicht.MainSpec, org.scalatest.tools.Framework$$anon$1@b42dd68, false, [SuiteSelector])[0m
+>>>>>>> 344892251d6bb72e9adf1486a81a71558bd20030
 [0m[[0m[0minfo[0m] [0m[0m[32mMainSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mMain[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should have a scalable field String of form'[0m[0m
@@ -20,3 +74,4 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Documents.Htwg.se.MADN.MenschAergereDichNicht.MainSpec[0m
+>>>>>>> 80ad196a9142d222dc23e03ae59299abcff83869

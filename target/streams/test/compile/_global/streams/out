@@ -1,6 +1,23 @@
+<<<<<<< HEAD
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\MenschAergereDichNicht\MenschAergereDichNicht\src\test\scala\MainSpec.scala:18:9 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m18 |[0m    Madn.cells() should be([31m"|    |"[0m + [31m"\n"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |    [31m^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |   value cells is not a member of object Madn - did you mean Madn.hello?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\MenschAergereDichNicht\MenschAergereDichNicht\src\test\scala\MainSpec.scala:21:9 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m21 |[0m    Madn.cells([31m1[0m) should be([31m"|    |"[0m + [31m"\n"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |    [31m^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |   value cells is not a member of object Madn - did you mean Madn.hello?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\MenschAergereDichNicht\MenschAergereDichNicht\src\test\scala\MainSpec.scala:22:9 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m22 |[0m    Madn.cells([31m2[0m) should be([31m"|    |    |"[0m + [31m"\n"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |    [31m^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |   value cells is not a member of object Madn - did you mean Madn.hello?[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+=======
 [error] -- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\MainSpec.scala:11:19 
 [error] 11 |      Madn.field() have length (21)
 [error]    |      ^^^^^^^^^^^^^^^^^
 [error]    |      value have is not a member of String - did you mean String.chars?
 [error] one error found
 [error] one error found
+>>>>>>> 80ad196a9142d222dc23e03ae59299abcff83869

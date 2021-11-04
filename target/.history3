@@ -11,6 +11,19 @@
 1635489925976:exit
 1635490300986:run
 1635490313968:test
+<<<<<<< HEAD
+1635491377805:run
+1635491402542:test
+1635491500292:help
+1635491607981:test
+1635491967315:run
+1635491993892:run
+1635492017270:run
+1635492020037:test
+1635492059534:run
+1635492082720:run
+1635492088871:test
+=======
 1635490562209:run
 1635490567529:test
 1635490757160:run
@@ -39,8 +52,12 @@
 1635498397631:;set _root_.scala.collection.Seq(historyPath := None,shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("C:/Users/User/AppData/Local/Temp/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "C:/Users/User/AppData/Roaming/JetBrains/IdeaIC2020.3/plugins/Scala/repo/org.jetbrains/sbt-structure-extractor/scala_2.12/sbt_1.0/2020.3/jars/sbt-structure-extractor.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
 1635501596595:run
 1635501599032:test
+<<<<<<< HEAD
 1635503005807:run
 1635503008337:test
 1635701455850:run
 1635701472921:test
 1636010332002:run
+=======
+>>>>>>> 80ad196a9142d222dc23e03ae59299abcff83869
+>>>>>>> 344892251d6bb72e9adf1486a81a71558bd20030
