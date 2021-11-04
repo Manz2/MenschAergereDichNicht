@@ -1,6 +1,6 @@
 package Documents.Htwg.se.MADN.MenschAergereDichNicht
 
-final case class Player(size: Int, inserts: Vector[String]) {
+final case class Player(inserts: Vector[String]) {
 
   override def toString: String = {
 
@@ -14,7 +14,7 @@ final case class Player(size: Int, inserts: Vector[String]) {
     })
 
     val box =
-      ("+") + ("----+" * size) + "\n" + s + "\n" + ("+") + ("----+" * size) + "\n"
+      ("+") + ("----+" * inserts.length) + "\n" + s + "\n" + ("+") + ("----+" * inserts.length) + "\n"
     box
   }
 }

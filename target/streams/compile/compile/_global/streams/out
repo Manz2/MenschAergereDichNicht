@@ -1,10 +1,9 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E052] Type Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\model\Player.scala:10:10 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m        s = s + [31m"    "[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |        [31m^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |        Reassignment to val s[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E052] Type Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\model\Player.scala:12:10 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m        s = s + [31m" "[0m + ins + [31m" |"[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |        [31m^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |        Reassignment to val s[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E161] Naming Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\model\Main.scala:49:8 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m49 |[0m    [33mdef[0m [36mhome[0m([36mplayer[0m: [35mInt[0m = [31m1[0m, [36mfigures[0m: [35mInt[0m = [31m1[0m) =[0m
+[0m[[0m[31merror[0m] [0m[0m   |    [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |home is already defined as [33mvariable[0m [35mhome[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |Note that overloaded methods must all be defined in the same group of toplevel definitions[0m
+[0m[[0m[31merror[0m] [0m[0m[31m50 |[0m      ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + [31m"\n"[0m + ([31m"|"[0m) + ([31m"    |"[0m * player * figures) + [31m"\n"[0m + ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + [31m"\n"[0m[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
