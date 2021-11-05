@@ -5,7 +5,7 @@ import org.scalatest.matchers.should.Matchers._
 
 class HomeSpec extends AnyWordSpec:
   "Home" should {
-    "create a Filed of cells" in {
+    "create a small Home Filed of 2 cells" in {
       var z: Array[String] = new Array[String](2)
       val home = new Home(2,z)
       home.toString should contain only ('+', '-', '|', ' ', '\n')
@@ -13,14 +13,15 @@ class HomeSpec extends AnyWordSpec:
       home.toString.count(_ == '+') should equal(6)
       home.toString.count(_ == '-') should equal(16)
       home.toString.count(_ == '|') should equal (3)
-
-      /*var x: Array[String] = new Array[String](10)
-      val field2 = new Field(10,z)
-      field2.toString should contain only ('+', '-', '|', ' ', '\n')
-      field2.toString should contain allOf ('+', '-', '|', ' ', '\n')
-      field2.toString.count(_ == '+') should equal(22)
-      field2.toString.count(_ == '-') should equal(80)
-      field2.toString.count(_ == '|') should equal (11)*/
+    }
+    "create a big Home Filed of 10 cells" in {
+      var x: Array[String] = new Array[String](10)
+      val home2 = new Home(10,x)
+      home2.toString should contain only ('+', '-', '|', ' ', '\n')
+      home2.toString should contain allOf ('+', '-', '|', ' ', '\n')
+      home2.toString.count(_ == '+') should equal(22)
+      home2.toString.count(_ == '-') should equal(80)
+      home2.toString.count(_ == '|') should equal (11)
         
     }
   }
