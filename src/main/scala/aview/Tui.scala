@@ -28,12 +28,14 @@ class Tui(controller: Controller) extends Observer:
         inserts += d
       }
     }
-  }
+  } 
+  //val inserts = SpielerChar.map(e=> if(e.equals(" ")) "" else e)
+
+
   var insertsArray = inserts.toArray
 
   //Field
   var fieldpos: Array[String] = new Array[String](Felderanz)
-
   //home
   var hpmepos: Array[String] = new Array[String](insertsArray.length)
 

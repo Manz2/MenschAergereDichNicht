@@ -1,10 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:4:7 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m4 |[0m[33mimport[0m Contrller.Contrller[0m
-[0m[[0m[31merror[0m] [0m[0m  |       [31m^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  |       Not found: Contrller[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\Main.scala:15:23 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m15 |[0m  [33mval[0m [36mcontroller[0m = [33mnew[0m [35mController[0m(home, player, field)[0m
-[0m[[0m[31merror[0m] [0m[0m   |                       [31m^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                       Not found: type Controller[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\aview\Tui.scala:42:29 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m42 |[0m  println(controller.newGame(insertsArray, fieldpos, hpmepos))[0m
+[0m[[0m[31merror[0m] [0m[0m   |                             [31m^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                             Found:    (insertsArray : Array[Matchable])[0m
+[0m[[0m[31merror[0m] [0m[0m   |                             Required: Array[String][0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
