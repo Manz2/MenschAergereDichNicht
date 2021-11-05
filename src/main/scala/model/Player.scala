@@ -6,7 +6,7 @@ final case class Player(inserts: Array[String]) {
 
     var s = "|"
     inserts.foreach(ins => {
-      if (ins == null) {
+      if (ins == 0) {
         s = s + "    |"
       } else {
         s = s + " " + ins + " |"
