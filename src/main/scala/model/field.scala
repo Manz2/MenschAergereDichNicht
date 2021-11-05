@@ -1,4 +1,4 @@
-package Documents.Htwg.se.MADN.MenschAergereDichNicht
+package Documents.Htwg.se.MADN.MenschAergereDichNicht.model
 
 final case class Field(size: Int, positions: Array[String]) {
 

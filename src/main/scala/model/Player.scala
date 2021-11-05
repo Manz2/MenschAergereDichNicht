@@ -1,4 +1,4 @@
-package Documents.Htwg.se.MADN.MenschAergereDichNicht
+package Documents.Htwg.se.MADN.MenschAergereDichNicht.model
 
 final case class Player(inserts: Array[String]) {
 
@@ -6,7 +6,7 @@ final case class Player(inserts: Array[String]) {
 
     var s = "|"
     inserts.foreach(ins => {
-      if (ins == 0) {
+      if (ins == null) {
         s = s + "    |"
       } else {
         s = s + " " + ins + " |"

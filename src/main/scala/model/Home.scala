@@ -1,6 +1,6 @@
-package Documents.Htwg.se.MADN.MenschAergereDichNicht
+package Documents.Htwg.se.MADN.MenschAergereDichNicht.model
 
-final case class Home(size: Int, inserts: Array[String]) {
+final case class Home(inserts: Array[String]) {
 
   override def toString: String = {
 
@@ -14,7 +14,7 @@ final case class Home(size: Int, inserts: Array[String]) {
     })
 
     val box =
-      ("+") + ("----+" * size) + "\n" + s + "\n" + ("+") + ("----+" * size) + "\n"
+      ("+") + ("----+" * inserts.length) + "\n" + s + "\n" + ("+") + ("----+" * inserts.length) + "\n"
     box
   }
 }
