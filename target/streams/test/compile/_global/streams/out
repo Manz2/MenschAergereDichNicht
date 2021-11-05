@@ -1,32 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\FiledSpec.scala:10:19 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m      String field = [33mnew[0m Field([31m2[0m,z)[0m
-[0m[[0m[31merror[0m] [0m[0m   |                   [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                   end of statement expected but '=' found[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\FiledSpec.scala:10:6 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m      String field = [33mnew[0m Field([31m2[0m,z)[0m
-[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |postfix operator `field` needs to be enabled[0m
-[0m[[0m[31merror[0m] [0m[0m   |by making the implicit value scala.language.postfixOps visible.[0m
-[0m[[0m[31merror[0m] [0m[0m   |----[0m
-[0m[[0m[31merror[0m] [0m[0m   |This can be achieved by adding the import clause 'import scala.language.postfixOps'[0m
-[0m[[0m[31merror[0m] [0m[0m   |or by setting the compiler option -language:postfixOps.[0m
-[0m[[0m[31merror[0m] [0m[0m   |See the Scaladoc for value scala.language.postfixOps for a discussion[0m
-[0m[[0m[31merror[0m] [0m[0m   |why the feature needs to be explicitly enabled.[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\FiledSpec.scala:11:6 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m      field should contain only ([31m'+'[0m, [31m'-'[0m, [31m'|'[0m, [31m' '[0m, [31m'\n'[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |      Not found: field[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\FiledSpec.scala:12:6 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m      field should contain allOf ([31m'+'[0m, [31m'-'[0m, [31m'|'[0m, [31m' '[0m, [31m'\n'[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |      Not found: field[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\FiledSpec.scala:13:6 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m      field.count(_ == [31m'+'[0m) should equal([31m6[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |      Not found: field[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\FiledSpec.scala:14:6 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m      field.count(_ == [31m'-'[0m) should equal([31m16[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |      Not found: field[0m
-[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
-[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\FiledSpec.scala:6:41 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m[33mclass[0m [35mFiledSpec[0m [33mextends[0m [35mAnyWordSpec[0m [33mwith[0m [35mMatchers[0m:[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                         [31m^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                         Not found: type Matchers[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\PlayerSpec.scala:6:42 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m[33mclass[0m [35mPlayerSpec[0m [33mextends[0m [35mAnyWordSpec[0m [33mwith[0m [35mMatchers[0m:[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                          [31m^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                          Not found: type Matchers[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

@@ -25,8 +25,8 @@ object Madn {
         }
       }
     }
-    var insertsVector = inserts.toVector
-    var player = new Player(insertsVector)
+    var insertsArray = inserts.toArray
+    var player = new Player(insertsArray)
     print(player)
     //Field
     var z: Array[String] = new Array[String](Felderanz)
@@ -34,8 +34,8 @@ object Madn {
     print(filed)
 
     //home
-    var h: Array[String] = new Array[String](insertsVector.length)
-    var homes = new Field(insertsVector.length, h)
+    var h: Array[String] = new Array[String](insertsArray.length)
+    var homes = new Field(insertsArray.length, h)
     println(homes)
 
     //Anzahl Spielfelder

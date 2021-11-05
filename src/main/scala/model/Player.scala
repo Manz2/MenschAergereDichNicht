@@ -1,6 +1,6 @@
 package Documents.Htwg.se.MADN.MenschAergereDichNicht
 
-final case class Player(inserts: Vector[String]) {
+final case class Player(inserts: Array[String]) {
 
   override def toString: String = {
 

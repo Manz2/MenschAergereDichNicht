@@ -1,9 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E161] Naming Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\model\Main.scala:49:8 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m49 |[0m    [33mdef[0m [36mhome[0m([36mplayer[0m: [35mInt[0m = [31m1[0m, [36mfigures[0m: [35mInt[0m = [31m1[0m) =[0m
-[0m[[0m[31merror[0m] [0m[0m   |    [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |home is already defined as [33mvariable[0m [35mhome[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |[0m
-[0m[[0m[31merror[0m] [0m[0m   |Note that overloaded methods must all be defined in the same group of toplevel definitions[0m
-[0m[[0m[31merror[0m] [0m[0m[31m50 |[0m      ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + [31m"\n"[0m + ([31m"|"[0m) + ([31m"    |"[0m * player * figures) + [31m"\n"[0m + ([31m"+"[0m) + ([31m"----+"[0m * player * figures) + [31m"\n"[0m[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\model\Main.scala:37:45 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m37 |[0m    [33mvar[0m [36mh[0m: [35mArray[String][0m = [33mnew[0m [35mArray[String][0m(insertsVector.length)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                             [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                             Not found: insertsVector[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\model\Main.scala:38:26 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m38 |[0m    [33mvar[0m [36mhomes[0m = [33mnew[0m [35mField[0m(insertsVector.length, h)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                          [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                          Not found: insertsVector[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
