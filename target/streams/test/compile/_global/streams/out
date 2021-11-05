@@ -1,32 +1,26 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\FiledSpec.scala:10:19 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m      String field = [33mnew[0m Field([31m2[0m,z)[0m
-[0m[[0m[31merror[0m] [0m[0m   |                   [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                   end of statement expected but '=' found[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\FiledSpec.scala:10:6 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m      String field = [33mnew[0m Field([31m2[0m,z)[0m
-[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |postfix operator `field` needs to be enabled[0m
-[0m[[0m[31merror[0m] [0m[0m   |by making the implicit value scala.language.postfixOps visible.[0m
-[0m[[0m[31merror[0m] [0m[0m   |----[0m
-[0m[[0m[31merror[0m] [0m[0m   |This can be achieved by adding the import clause 'import scala.language.postfixOps'[0m
-[0m[[0m[31merror[0m] [0m[0m   |or by setting the compiler option -language:postfixOps.[0m
-[0m[[0m[31merror[0m] [0m[0m   |See the Scaladoc for value scala.language.postfixOps for a discussion[0m
-[0m[[0m[31merror[0m] [0m[0m   |why the feature needs to be explicitly enabled.[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\FiledSpec.scala:11:6 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m      field should contain only ([31m'+'[0m, [31m'-'[0m, [31m'|'[0m, [31m' '[0m, [31m'\n'[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |      Not found: field[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\FiledSpec.scala:12:6 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m      field should contain allOf ([31m'+'[0m, [31m'-'[0m, [31m'|'[0m, [31m' '[0m, [31m'\n'[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |      Not found: field[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\FiledSpec.scala:13:6 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m      field.count(_ == [31m'+'[0m) should equal([31m6[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |      Not found: field[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\model\FiledSpec.scala:14:6 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m      field.count(_ == [31m'-'[0m) should equal([31m16[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |      Not found: field[0m
-[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
-[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E161] Naming Error: C:\Users\User\Documents\MenschAergereDichNicht\MenschAergereDichNicht\src\test\scala\model\HomeSpec.scala:6:6 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m[33mclass[0m [35mFiledSpec[0m [33mextends[0m [35mAnyWordSpec[0m:[0m
+[0m[[0m[31merror[0m] [0m[0m   |[31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |FiledSpec is already defined as [33mclass[0m [35mFiledSpec[0m in C:\Users\User\Documents\MenschAergereDichNicht\MenschAergereDichNicht\src\test\scala\model\FiledSpec.scala[0m
+[0m[[0m[31merror[0m] [0m[0m[31m7 |[0m  [31m"Field"[0m should {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m8 |[0m    [31m"create a Filed of cells"[0m in {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m9 |[0m      [33mvar[0m [36mz[0m: [35mArray[String][0m = [33mnew[0m [35mArray[String][0m([31m2[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m      [33mval[0m [36mhome[0m = [33mnew[0m [35mHome[0m([31m2[0m,z)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m      field.toString should contain only ([31m'+'[0m, [31m'-'[0m, [31m'|'[0m, [31m' '[0m, [31m'\n'[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m      field.toString should contain allOf ([31m'+'[0m, [31m'-'[0m, [31m'|'[0m, [31m' '[0m, [31m'\n'[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m      field.toString.count(_ == [31m'+'[0m) should equal([31m6[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m      field.toString.count(_ == [31m'-'[0m) should equal([31m16[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m15 |[0m      field.toString.count(_ == [31m'|'[0m) should equal ([31m3[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m16 |[0m      [34m/*var x: Array[String] = new Array[String](10)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m17 |[0m      val field2 = new Field(10,z)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m18 |[0m      field2.toString should contain only ('+', '-', '|', ' ', '\n')[0m
+[0m[[0m[31merror[0m] [0m[0m[31m19 |[0m      field2.toString should contain allOf ('+', '-', '|', ' ', '\n')[0m
+[0m[[0m[31merror[0m] [0m[0m[31m20 |[0m      field2.toString.count(_ == '+') should equal(22)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m21 |[0m      field2.toString.count(_ == '-') should equal(80)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m22 |[0m      field2.toString.count(_ == '|') should equal (11)*/[0m
+[0m[[0m[31merror[0m] [0m[0m[31m23 |[0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m24 |[0m        [0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m    }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m  }[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
