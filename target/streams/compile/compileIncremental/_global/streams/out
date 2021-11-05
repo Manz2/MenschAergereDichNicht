@@ -1,35 +1,44 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
 [0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 16 products, 8 sources, 2 libraries[0m
-[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/model/Game.scala, ${BASE}/src/main/scala/aview/Tui.scala, ${BASE}/src/main/scala/model/Home.scala, ${BASE}/src/main/scala/util/Observer.scala, ${BASE}/src/main/scala/model/field.scala, ${BASE}/src/main/scala/Controller/Controller.scala, ${BASE}/src/main/scala/Main.scala, ${BASE}/src/main/scala/model/Player.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/model/Player.scala, ${BASE}/src/main/scala/model/Home.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/aview/Tui.scala, ${BASE}/src/main/scala/model/Home.scala, ${BASE}/src/main/scala/util/Observer.scala, ${BASE}/src/main/scala/model/field.scala, ${BASE}/src/main/scala/Controller/Controller.scala, ${BASE}/src/main/scala/Main.scala, ${BASE}/src/main/scala/model/Player.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(${BASE}/src/main/scala/model/Game.scala), changed = Set(${BASE}/src/main/scala/aview/Tui.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed: Set(${BASE}/src/main/scala/model/Game.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/model/Player.scala, ${BASE}/src/main/scala/model/Home.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/aview/Tui.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(Documents.Htwg.se.MADN.MenschAergereDichNicht.model.Player, Documents.Htwg.se.MADN.MenschAergereDichNicht.model.Home)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(Documents.Htwg.se.MADN.MenschAergereDichNicht.model.Game, Documents.Htwg.se.MADN.MenschAergereDichNicht.aview.Tui)[0m
 [0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(Documents.Htwg.se.MADN.MenschAergereDichNicht.model.Player, Documents.Htwg.se.MADN.MenschAergereDichNicht.model.Home)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/model/Player.scala, ${BASE}/src/main/scala/model/Home.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Documents.Htwg.se.MADN.MenschAergereDichNicht.model.Player, Documents.Htwg.se.MADN.MenschAergereDichNicht.model.Home[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(Documents.Htwg.se.MADN.MenschAergereDichNicht.model.Game, Documents.Htwg.se.MADN.MenschAergereDichNicht.aview.Tui)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/aview/Tui.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Documents.Htwg.se.MADN.MenschAergereDichNicht.model.Game, Documents.Htwg.se.MADN.MenschAergereDichNicht.aview.Tui[0m
 [0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: C:\Users\User\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-sbt-bridge\3.1.0\scala3-sbt-bridge-3.1.0.jar.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 51b9c8da for Scala Compiler version 3.1.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 16ece328 for Scala Compiler version 3.1.0[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	C:\Users\User\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-library_3\3.1.0\scala3-library_3-3.1.0.jar;C:\Users\User\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.6\scala-library-2.13.6.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes;C:\Users\User\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalactic\scalactic_3\3.2.10\scalactic_3-3.2.10.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.4450008 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.3642137 s[0m
 [0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from Documents.Htwg.se.MADN.MenschAergereDichNicht.model.Game...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Documents.Htwg.se.MADN.MenschAergereDichNicht.model.Game[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(Documents.Htwg.se.MADN.MenschAergereDichNicht.model.Game)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(Documents.Htwg.se.MADN.MenschAergereDichNicht.model.Game,ModifiedNames(changes = UsedName(MirroredLabel,[Default]), UsedName(finalize,[Default]), UsedName(##,[Default]), UsedName(synchronized,[Default]), UsedName(notifyAll,[Default]), UsedName(Game,[Default]), UsedName(canEqual,[Default]), UsedName(notify,[Default]), UsedName(unapply,[Default]), UsedName($asInstanceOf,[Default]), UsedName(eq,[Default]), UsedName(Object;init;,[Default]), UsedName(ne,[Default]), UsedName(clone,[Default]), UsedName(MirroredMonoType,[Default]), UsedName(toString,[Default]), UsedName(!=,[Default]), UsedName(asInstanceOf,[Default]), UsedName(equals,[Default]), UsedName(fromProduct,[Default]), UsedName(apply,[Default]), UsedName(==,[Default]), UsedName(Game;init;,[Default]), UsedName(MirroredElemLabels,[Default]), UsedName(Mirror;init;,[Default]), UsedName(hashCode,[Default]), UsedName(productArity,[Default]), UsedName(Serializable;init;,[Default]), UsedName(productElementName,[Default]), UsedName(productElement,[Default]), UsedName($isInstanceOf,[Default]), UsedName(isInstanceOf,[Default]), UsedName(productPrefix,[Default]), UsedName(Game;init;$,[Default]), UsedName(Product;init;,[Default]), UsedName(copy,[Default]), UsedName(getClass,[Default]), UsedName(wait,[Default]))) invalidates 1 classes due to The Documents.Htwg.se.MADN.MenschAergereDichNicht.model.Game has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(MirroredLabel,[Default]), UsedName(finalize,[Default]), UsedName(##,[Default]), UsedName(synchronized,[Default]), UsedName(notifyAll,[Default]), UsedName(Game,[Default]), UsedName(canEqual,[Default]), UsedName(notify,[Default]), UsedName(unapply,[Default]), UsedName($asInstanceOf,[Default]), UsedName(eq,[Default]), UsedName(Object;init;,[Default]), UsedName(ne,[Default]), UsedName(clone,[Default]), UsedName(MirroredMonoType,[Default]), UsedName(toString,[Default]), UsedName(!=,[Default]), UsedName(asInstanceOf,[Default]), UsedName(equals,[Default]), UsedName(fromProduct,[Default]), UsedName(apply,[Default]), UsedName(==,[Default]), UsedName(Game;init;,[Default]), UsedName(MirroredElemLabels,[Default]), UsedName(Mirror;init;,[Default]), UsedName(hashCode,[Default]), UsedName(productArity,[Default]), UsedName(Serializable;init;,[Default]), UsedName(productElementName,[Default]), UsedName(productElement,[Default]), UsedName($isInstanceOf,[Default]), UsedName(isInstanceOf,[Default]), UsedName(productPrefix,[Default]), UsedName(Game;init;$,[Default]), UsedName(Product;init;,[Default]), UsedName(copy,[Default]), UsedName(getClass,[Default]), UsedName(wait,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(Documents.Htwg.se.MADN.MenschAergereDichNicht.model.Game)[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
 [0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
 [0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
