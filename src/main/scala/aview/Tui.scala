@@ -31,7 +31,6 @@ class Tui(controller: Controller) extends Observer:
   } 
   //val inserts = SpielerChar.map(e=> if(e.equals(" ")) "" else e)
 
-
   var insertsArray = inserts.toArray
 
   //Field
