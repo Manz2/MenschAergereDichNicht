@@ -1,5 +1,5 @@
-package Documents.Htwg.se.MADN.MenschAergereDichNicht
-import Documents.Htwg.se.MADN.MenschAergereDichNicht.model.{Player, Field, Home}
+package de.htwg.se.madn
+import model.{Player, Field, Home}
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatest.matchers.should.Matchers._
 
@@ -7,7 +7,7 @@ class HomeSpec extends AnyWordSpec:
   "Home" should {
     "create a small Home Filed of 2 cells" in {
       var z: Array[String] = new Array[String](2)
-      val home = new Home(2,z)
+      val home = new Home(z)
       home.toString should contain only ('+', '-', '|', ' ', '\n')
       home.toString should contain allOf ('+', '-', '|', ' ', '\n')
       home.toString.count(_ == '+') should equal(6)
@@ -16,7 +16,7 @@ class HomeSpec extends AnyWordSpec:
     }
     "create a big Home Filed of 10 cells" in {
       var x: Array[String] = new Array[String](10)
-      val home2 = new Home(10,x)
+      val home2 = new Home(x)
       home2.toString should contain only ('+', '-', '|', ' ', '\n')
       home2.toString should contain allOf ('+', '-', '|', ' ', '\n')
       home2.toString.count(_ == '+') should equal(22)

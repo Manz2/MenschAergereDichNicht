@@ -1,7 +1,7 @@
-package Documents.Htwg.se.MADN.MenschAergereDichNicht
+package de.htwg.se.madn
 package util
 
-import Documents.Htwg.se.MADN.MenschAergereDichNicht.model.{Player, Field, Home}
+import model.{Player, Field, Home}
 
 trait Observer {
   def update: Unit

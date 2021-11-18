@@ -1,5 +1,5 @@
-package Documents.Htwg.se.MADN.MenschAergereDichNicht
-import Documents.Htwg.se.MADN.MenschAergereDichNicht.model.{Player, Field, Home}
+package de.htwg.se.madn
+import model.{Player, Field, Home}
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatest.matchers.should.Matchers
 

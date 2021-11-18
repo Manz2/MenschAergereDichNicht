@@ -1,4 +1,5 @@
-package Documents.Htwg.se.MADN.MenschAergereDichNicht.model
+package de.htwg.se.madn
+package model
 
 final case class Home(inserts: Array[String]) {
 

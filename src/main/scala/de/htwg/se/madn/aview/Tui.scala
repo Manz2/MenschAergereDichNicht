@@ -1,4 +1,4 @@
-package Documents.Htwg.se.MADN.MenschAergereDichNicht
+package de.htwg.se.madn
 package aview
 import Controller.Controller
 import model.{Player, Field, Home}
@@ -15,7 +15,7 @@ class Tui(controller: Controller) extends Observer:
   print("Anzahl Figuren pro Spieler: ")
   var anzFig = readLine()
   println("")
-  print("Anzahl Spielfelder: ")
+  print("Anzahl2 Spielfelder: ")
   var Felderanz = readLine().toInt
   println("")
 
