@@ -21,6 +21,10 @@ class ObserverSpec extends AnyWordSpec with Matchers {
         observable.remove(observer)
         observable.subscribers.contains(observer) should be(false)
       }
+      "have a subscriber add" in {
+          observable.add(observer)
+          observable.subscribers.contains(observer) should be(true)
+    }
     }
   }
 }
