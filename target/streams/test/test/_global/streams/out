@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 [0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(de.htwg.se.madn.PlayerSpec, org.scalatest.tools.Framework$$anon$1@36434dbc, false, [SuiteSelector])[0m
 [0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(de.htwg.se.madn.HomeSpec, org.scalatest.tools.Framework$$anon$1@36434dbc, false, [SuiteSelector])[0m
 [0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(de.htwg.se.madn.FiledSpec, org.scalatest.tools.Framework$$anon$1@36434dbc, false, [SuiteSelector])[0m
 [0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(de.htwg.se.madn.TuiSpec, org.scalatest.tools.Framework$$anon$1@36434dbc, false, [SuiteSelector])[0m
 [0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(de.htwg.se.madn.Controller.ControllerSpec, org.scalatest.tools.Framework$$anon$1@36434dbc, false, [SuiteSelector])[0m
 [0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(de.htwg.se.madn.util.ObserverSpec, org.scalatest.tools.Framework$$anon$1@36434dbc, false, [SuiteSelector])[0m
+=======
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(de.htwg.se.madn.HomeSpec, org.scalatest.tools.Framework$$anon$1@1d1db159, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(de.htwg.se.madn.TuiSpec, org.scalatest.tools.Framework$$anon$1@1d1db159, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(de.htwg.se.madn.FiledSpec, org.scalatest.tools.Framework$$anon$1@1d1db159, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(de.htwg.se.madn.PlayerSpec, org.scalatest.tools.Framework$$anon$1@1d1db159, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(de.htwg.se.madn.Controller.ControllerSpec, org.scalatest.tools.Framework$$anon$1@1d1db159, false, [SuiteSelector])[0m
+>>>>>>> 0aa86efa1fed48a717f8d9dc99e110c96e703adc
 [0m[[0m[31merror[0m] [0m[0mjava.lang.NumberFormatException: For input string: "======"[0m
 [0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)[0m
 [0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Long.parseLong(Long.java:707)[0m
@@ -455,11 +463,18 @@
 [0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:832)[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mControllerSpec:[0m[0m
 [0m[[0m[31merror[0m] [0m[0mjava.lang.NumberFormatException: For input string: "======"[0m
+<<<<<<< HEAD
 [0m[[0m[0minfo[0m] [0m[0m[32mA Controller[0m[0m
 [0m[[0m[31merror[0m] [0m[0mjava.lang.NumberFormatException: For input string: "======"[0m
 [0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)[0m
 [0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Long.parseLong(Long.java:707)[0m
 [0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Long.parseLong(Long.java:832)[0m
+=======
+[0m[[0m[31merror[0m] [0m[0mjava.lang.NumberFormatException: For input string: "======"[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Long.parseLong(Long.java:714)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Long.parseLong(Long.java:839)[0m
+>>>>>>> 0aa86efa1fed48a717f8d9dc99e110c96e703adc
 [0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.StringLike.toLong(StringLike.scala:309)[0m
 [0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.StringLike.toLong$(StringLike.scala:309)[0m
 [0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.StringOps.toLong(StringOps.scala:33)[0m
@@ -504,16 +519,34 @@
 [0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
 [0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)[0m
 [0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)[0m
+<<<<<<< HEAD
 [0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:832)[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m  when observed by an Observer[0m[0m
 [0m[[0m[31merror[0m] [0m[0mjava.lang.NumberFormatException: For input string: "======"[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m  - should notify its Observer after creation[0m[0m
+=======
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:831)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.NumberFormatException: For input string: "======"[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mControllerSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mA Controller[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  when observed by an Observer[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - should notify its Observer after creation[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTuiSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mA Tui[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should hava arguments[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create a new game  array on input 'A B 2 2'[0m[0m
+>>>>>>> 0aa86efa1fed48a717f8d9dc99e110c96e703adc
 [0m[[0m[0minfo[0m] [0m[0m[32mFiledSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mField[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should create a small Filed of 2 cells[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should create a big Filed of 10 cells[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mPlayerSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mPlayer[0m[0m
+<<<<<<< HEAD
+=======
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create a small Player Filed of 2 cells[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create a bigger Player Filed of 10 cells[0m[0m
+>>>>>>> 0aa86efa1fed48a717f8d9dc99e110c96e703adc
 [0m[[0m[0minfo[0m] [0m[0m[32mHomeSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mHome[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should create a small Home Filed of 2 cells[0m[0m
@@ -674,10 +707,17 @@
 [0m[[0m[31merror[0m] [0m[0m	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)[0m
 [0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Thread.run(Thread.java:832)[0m
 [0m[[0m[31merror[0m] [0m[0mjava.lang.NumberFormatException: For input string: "======"[0m
+<<<<<<< HEAD
 [0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 236 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 10[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 6, aborted 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 10, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+=======
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 283 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 9[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 5, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 9, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+>>>>>>> 0aa86efa1fed48a717f8d9dc99e110c96e703adc
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	de.htwg.se.madn.util.ObserverSpec[0m
