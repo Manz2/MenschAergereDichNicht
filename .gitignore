@@ -2,7 +2,6 @@
 *.log
 .metals/
 .vscode/
-out
 # Intellij
 .idea/
 target/
