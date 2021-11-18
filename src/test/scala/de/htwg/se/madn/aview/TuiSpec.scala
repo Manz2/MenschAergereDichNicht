@@ -33,7 +33,6 @@ class TuiSpec extends AnyWordSpec with Matchers {
         val controller = new Controller(smallHomefield,smallPlayerfield,smallfield)
         val tui = new Tui(controller)
         //tui.run should be(new Controller.newGame(z,z,z))
-        tui.run
         }
         
     }
