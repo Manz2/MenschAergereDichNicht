@@ -24,7 +24,12 @@ class ObserverSpec extends AnyWordSpec with Matchers {
       "have a subscriber add" in {
           observable.add(observer)
           observable.subscribers.contains(observer) should be(true)
-    }
+      }
+      "have a notifyObservers" in {
+          observable.subscribers.foreach(o => o.update)
+          observable.subscribers.contains(observer) should be(true)
+      }
+
     }
   }
 }
