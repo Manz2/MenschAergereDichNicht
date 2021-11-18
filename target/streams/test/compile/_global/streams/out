@@ -1,6 +1,124 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:26:12 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m            Felder should be < [31m20[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |            [31m^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |            Not found: Felder[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:35:41 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m35 |[0m        tui.run should be([33mnew[0m Controller.newGame(z,z,z))[0m
+[0m[[0m[31merror[0m] [0m[0m   |                              [31m^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |type newGame is not a member of object de.htwg.se.madn.Controller.Controller²[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |where:    Controller  is a package in [33mpackage[0m [35mde.htwg.se.madn[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |          Controller² is a object in [33mpackage[0m [35mde.htwg.se.madn.Controller[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:35:16 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m35 |[0m        tui.run should be([33mnew[0m Controller.newGame(z,z,z))[0m
+[0m[[0m[31merror[0m] [0m[0m   |        [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value should is not a member of Unit.[0m
+[0m[[0m[31merror[0m] [0m[0m   |An extension method was tried, but could not be fully constructed:[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |    [33mthis[0m.should(tui.run)    failed with[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |        Ambiguous overload. The overloaded alternatives of [33mmethod[0m [35mshould[0m in [33mtrait[0m [35mMatchers[0m with types[0m
+[0m[[0m[31merror[0m] [0m[0m   |         [T][0m
+[0m[[0m[31merror[0m] [0m[0m   |          (leftSideValue: T)[0m
+[0m[[0m[31merror[0m] [0m[0m   |            ([33musing [0mpos: org.scalactic.source.Position, prettifier: [0m
+[0m[[0m[31merror[0m] [0m[0m   |              org.scalactic.Prettifier[0m
+[0m[[0m[31merror[0m] [0m[0m   |            )[0m
+[0m[[0m[31merror[0m] [0m[0m   |              (endWithWord: org.scalatest.matchers.dsl.EndWithWord)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                ([33mimplicit [0mev: T <:< String): TuiSpec.this.ResultOfEndWithWordForString[0m
+[0m[[0m[31merror[0m] [0m[0m   |         [T][0m
+[0m[[0m[31merror[0m] [0m[0m   |          (leftSideValue: T)[0m
+[0m[[0m[31merror[0m] [0m[0m   |            ([33musing [0mpos: org.scalactic.source.Position, prettifier: [0m
+[0m[[0m[31merror[0m] [0m[0m   |              org.scalactic.Prettifier[0m
+[0m[[0m[31merror[0m] [0m[0m   |            )[0m
+[0m[[0m[31merror[0m] [0m[0m   |              (startWithWord: org.scalatest.matchers.dsl.StartWithWord)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                ([33mimplicit [0mev: T <:< String): TuiSpec.this.ResultOfStartWithWordForString[0m
+[0m[[0m[31merror[0m] [0m[0m   |         [T][0m
+[0m[[0m[31merror[0m] [0m[0m   |          (leftSideValue: T)[0m
+[0m[[0m[31merror[0m] [0m[0m   |            ([33musing [0mpos: org.scalactic.source.Position, prettifier: [0m
+[0m[[0m[31merror[0m] [0m[0m   |              org.scalactic.Prettifier[0m
+[0m[[0m[31merror[0m] [0m[0m   |            )[0m
+[0m[[0m[31merror[0m] [0m[0m   |              (includeWord: org.scalatest.matchers.dsl.IncludeWord)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                ([33mimplicit [0mev: T <:< String): TuiSpec.this.ResultOfIncludeWordForString[0m
+[0m[[0m[31merror[0m] [0m[0m   |         [T][0m
+[0m[[0m[31merror[0m] [0m[0m   |          (leftSideValue: T)[0m
+[0m[[0m[31merror[0m] [0m[0m   |            ([33musing [0mpos: org.scalactic.source.Position, prettifier: [0m
+[0m[[0m[31merror[0m] [0m[0m   |              org.scalactic.Prettifier[0m
+[0m[[0m[31merror[0m] [0m[0m   |            )[0m
+[0m[[0m[31merror[0m] [0m[0m   |              (notExist: org.scalatest.matchers.dsl.ResultOfNotExist)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                ([33mimplicit [0mexistence: org.scalatest.enablers.Existence[T]): [0m
+[0m[[0m[31merror[0m] [0m[0m   |                  org.scalatest.Assertion[0m
+[0m[[0m[31merror[0m] [0m[0m   |         [T][0m
+[0m[[0m[31merror[0m] [0m[0m   |          (leftSideValue: T)[0m
+[0m[[0m[31merror[0m] [0m[0m   |            ([33musing [0mpos: org.scalactic.source.Position, prettifier: [0m
+[0m[[0m[31merror[0m] [0m[0m   |              org.scalactic.Prettifier[0m
+[0m[[0m[31merror[0m] [0m[0m   |            )[0m
+[0m[[0m[31merror[0m] [0m[0m   |              (existWord: org.scalatest.matchers.dsl.ExistWord)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                ([33mimplicit [0mexistence: org.scalatest.enablers.Existence[T]): [0m
+[0m[[0m[31merror[0m] [0m[0m   |                  org.scalatest.Assertion[0m
+[0m[[0m[31merror[0m] [0m[0m   |         [T][0m
+[0m[[0m[31merror[0m] [0m[0m   |          (leftSideValue: T)[0m
+[0m[[0m[31merror[0m] [0m[0m   |            ([33musing [0mpos: org.scalactic.source.Position, prettifier: [0m
+[0m[[0m[31merror[0m] [0m[0m   |              org.scalactic.Prettifier[0m
+[0m[[0m[31merror[0m] [0m[0m   |            )[0m
+[0m[[0m[31merror[0m] [0m[0m   |              (containWord: org.scalatest.matchers.dsl.ContainWord): [0m
+[0m[[0m[31merror[0m] [0m[0m   |                org.scalatest.matchers.dsl.ResultOfContainWord[T][0m
+[0m[[0m[31merror[0m] [0m[0m   |         [T][0m
+[0m[[0m[31merror[0m] [0m[0m   |          (leftSideValue: T)[0m
+[0m[[0m[31merror[0m] [0m[0m   |            ([33musing [0mpos: org.scalactic.source.Position, prettifier: [0m
+[0m[[0m[31merror[0m] [0m[0m   |              org.scalactic.Prettifier[0m
+[0m[[0m[31merror[0m] [0m[0m   |            )[0m
+[0m[[0m[31merror[0m] [0m[0m   |              (haveWord: org.scalatest.matchers.dsl.HaveWord): [0m
+[0m[[0m[31merror[0m] [0m[0m   |                TuiSpec.this.ResultOfHaveWordForExtent[T][0m
+[0m[[0m[31merror[0m] [0m[0m   |         [T][0m
+[0m[[0m[31merror[0m] [0m[0m   |          (leftSideValue: T)[0m
+[0m[[0m[31merror[0m] [0m[0m   |            ([33musing [0mpos: org.scalactic.source.Position, prettifier: [0m
+[0m[[0m[31merror[0m] [0m[0m   |              org.scalactic.Prettifier[0m
+[0m[[0m[31merror[0m] [0m[0m   |            )[0m
+[0m[[0m[31merror[0m] [0m[0m   |              (beWord: org.scalatest.matchers.dsl.BeWord): [0m
+[0m[[0m[31merror[0m] [0m[0m   |                TuiSpec.this.ResultOfBeWordForAny[T][0m
+[0m[[0m[31merror[0m] [0m[0m   |         [T][0m
+[0m[[0m[31merror[0m] [0m[0m   |          (leftSideValue: T)[0m
+[0m[[0m[31merror[0m] [0m[0m   |            ([33musing [0mpos: org.scalactic.source.Position, prettifier: [0m
+[0m[[0m[31merror[0m] [0m[0m   |              org.scalactic.Prettifier[0m
+[0m[[0m[31merror[0m] [0m[0m   |            )[0m
+[0m[[0m[31merror[0m] [0m[0m   |              (inv: org.scalactic.TripleEqualsSupport.TripleEqualsInvocationOnSpread[T])[0m
+[0m[[0m[31merror[0m] [0m[0m   |                ([33mimplicit [0mev: Numeric[T]): org.scalatest.Assertion[0m
+[0m[[0m[31merror[0m] [0m[0m   |         [T, U][0m
+[0m[[0m[31merror[0m] [0m[0m   |          (leftSideValue: T)[0m
+[0m[[0m[31merror[0m] [0m[0m   |            ([33musing [0mpos: org.scalactic.source.Position, prettifier: [0m
+[0m[[0m[31merror[0m] [0m[0m   |              org.scalactic.Prettifier[0m
+[0m[[0m[31merror[0m] [0m[0m   |            )[0m
+[0m[[0m[31merror[0m] [0m[0m   |              (inv: org.scalactic.TripleEqualsSupport.TripleEqualsInvocation[U])[0m
+[0m[[0m[31merror[0m] [0m[0m   |                ([33mimplicit [0mconstraint: org.scalactic.CanEqual[T, U]): [0m
+[0m[[0m[31merror[0m] [0m[0m   |                  org.scalatest.Assertion[0m
+[0m[[0m[31merror[0m] [0m[0m   |         [T][0m
+[0m[[0m[31merror[0m] [0m[0m   |          (leftSideValue: T)[0m
+[0m[[0m[31merror[0m] [0m[0m   |            ([33musing [0mpos: org.scalactic.source.Position, prettifier: [0m
+[0m[[0m[31merror[0m] [0m[0m   |              org.scalactic.Prettifier[0m
+[0m[[0m[31merror[0m] [0m[0m   |            )[0m
+[0m[[0m[31merror[0m] [0m[0m   |              (notWord: org.scalatest.matchers.dsl.NotWord): [0m
+[0m[[0m[31merror[0m] [0m[0m   |                org.scalatest.matchers.dsl.ResultOfNotWordForAny[T][0m
+[0m[[0m[31merror[0m] [0m[0m   |         [T, TYPECLASS1[_$13], TYPECLASS2[_$14]][0m
+[0m[[0m[31merror[0m] [0m[0m   |          (leftSideValue: T)[0m
+[0m[[0m[31merror[0m] [0m[0m   |            ([33musing [0mpos: org.scalactic.source.Position, prettifier: [0m
+[0m[[0m[31merror[0m] [0m[0m   |              org.scalactic.Prettifier[0m
+[0m[[0m[31merror[0m] [0m[0m   |            )[0m
+[0m[[0m[31merror[0m] [0m[0m   |              (rightMatcherFactory2: [0m
+[0m[[0m[31merror[0m] [0m[0m   |                org.scalatest.matchers.dsl.MatcherFactory2[T, TYPECLASS1, TYPECLASS2][0m
+[0m[[0m[31merror[0m] [0m[0m   |              )[0m
+[0m[[0m[31merror[0m] [0m[0m   |                ([33mimplicit [0mtypeClass1: TYPECLASS1[T], typeClass2: TYPECLASS2[T]): [0m
+[0m[[0m[31merror[0m] [0m[0m   |                  org.scalatest.Assertion[0m
+[0m[[0m[31merror[0m] [0m[0m   |         [T, TYPECLASS1[_$12]][0m
+[0m[[0m[31merror[0m] [0m[0m   |          (leftSideValue: T)[0m
+[0m[[0m[31merror[0m] [0m[0m   |            ([33musing [0mpos: org.scalactic.source.Position, prettifier: [0m
+[0m[[0m[31merror[0m] [0m[0m   |              org.scalactic.Prettifier[0m
+[0m[[0m[31merror[0m] [0m[0m   |            )[0m
+[0m[[0m[31merror[0m] [0m[0m   |              (rightMatcherFactory1: [0m
+[0m[[0m[31merror[0m] [0m[0m   |                org.scalatest.matchers.dsl.MatcherFactory1[T, TYPECLASS1][0m
+[0m[[0m[31merror[0m] [0m[0m   |              )([33mimplicit [0mtypeClass1: TYPECLASS1[T]): org.scalatest.Assertion[0m
+[0m[[0m[31merror[0m] [0m[0m   |         [T][0m
+[0m[[0m[31merror[0m] [0m[0m   |          (leftSideValue: T)[0m
+[0m[[0m[31merror[0m] [0m[0m   |            ([33musing [0mpos: org.scalactic.source.Position, prettifier: [0m
+[0m[[0m[31merror[0m] [0m[0m   |              org.scalactic.Prettifier[0m
+[0m[[0m[31merror[0m] [0m[0m   |            )[0m
+[0m[[0m[31merror[0m] [0m[0m   |              (rightMatcherX1: org.scalatest.matchers.Matcher[T]): [0m
+[0m[[0m[31merror[0m] [0m[0m   |                org.scalatest.Assertion[0m
+[0m[[0m[31merror[0m] [0m[0m   |        all match arguments ((tui.run : => Unit))[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
