@@ -7,21 +7,14 @@ import scala.io.StdIn.readLine
 
 class Tui(controller: Controller) extends Observer:
   controller.add(this)
-  def run = {
-  print("Pro Spieler einen Buchstaben (mit Leertaste trennen): ")
-  var Spieler = readLine()
-  val SpielerChar = Spieler.toCharArray
-  println("")
-  print("Anzahl Figuren pro Spieler: ")
-  var anzFig = readLine()
-  println("")
-  print("Anzahl2 Spielfelder: ")
-  var Felderanz = readLine().toInt
-  println("")
+  def run(Spieler: String,
+      anzFig: Int,
+      Felderanz: Int) = {
 
   //Player
+  var Spieler1 = Spieler.toCharArray
   val inserts = scala.collection.mutable.ArrayBuffer.empty[String]
-  for (a <- SpielerChar) {
+  for (a <- Spieler1) {
     if (a != ' ') {
       for (b <- 1 until anzFig.toInt + 1) {
         val d = a.toString + b.toString

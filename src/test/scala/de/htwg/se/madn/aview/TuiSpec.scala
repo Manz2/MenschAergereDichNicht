@@ -26,17 +26,25 @@ class TuiSpec extends AnyWordSpec with Matchers {
             Felderanz should fullyMatch regex """[1-9]"""
         }
         "create a new game  array on input 'A B 2 2'" in {
-        var z: Array[String] = new Array[String](2)
-        val smallfield = new Field(2,z)
-        val smallHomefield = new Home(z)
-        val smallPlayerfield = new Player(z)
-        val controller = new Controller(smallHomefield,smallPlayerfield,smallfield)
-        val tui = new Tui(controller)
-        //tui.run should be(new Controller.newGame(z,z,z))
+            var z: Array[String] = new Array[String](2)
+            val smallfield = new Field(2,z)
+            val smallHomefield = new Home(z)
+            val smallPlayerfield = new Player(z)
+            val controller = new Controller(smallHomefield,smallPlayerfield,smallfield)
+            val tui = new Tui(controller)
+            //tui.run should be(new Controller.newGame(z,z,z))
         }
-        
-    }
-
-    
-  
+        "run" should{
+            var z: Array[String] = new Array[String](2)
+            val smallfield = new Field(2,z)
+            val smallHomefield = new Home(z)
+            val smallPlayerfield = new Player(z)
+            val controller = new Controller(smallHomefield,smallPlayerfield,smallfield)
+            val tui = new Tui(controller)
+            tui.run("A B",2,2)
+            //tui.player.toString.count(_ == '+') should equal(6)
+            //tui.home.toString.count(_ == '+') should equal(6)
+            //tui.field.toString.count(_ == '+') should equal(6)
+        }
+    } 
 }

@@ -21,9 +21,11 @@ class ControllerSpec extends AnyWordSpec with Matchers:
             controller.newGame(z,z,z)
             obs.updated should be(true)
             controller.player.toString.count(_ == '+') should equal(6)
+            controller.home.toString.count(_ == '+') should equal(6)
+            controller.field.toString.count(_ == '+') should equal(6)
           }
         }
   }
   case class Obs() extends Observer:
     var updated = false
-    override def update: Unit = updated = true
+    override def update: Unit = updated = true 
