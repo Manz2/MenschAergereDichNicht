@@ -10,7 +10,7 @@ import org.scalatest.matchers.should.Matchers
 class TuiSpec extends AnyWordSpec with Matchers {
 
     "A Tui" should {
-        "hava arguments" in {
+        "have arguments" in {
             var inserts: Array[String] = new Array[String](10)
             val ho = new Home(inserts: Array[String])
             val fi = new Field(1, inserts: Array[String])

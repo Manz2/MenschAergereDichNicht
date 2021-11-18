@@ -1,16 +1,18 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\util\ObserverSpec.scala:29:15 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m29 |[0m      observer.isUpdated should be([31mfalse[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |      value isUpdated is not a member of de.htwg.se.madn.util.Observer[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\util\ObserverSpec.scala:31:15 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m31 |[0m      observer.isUpdated should be([31mtrue[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |      value isUpdated is not a member of de.htwg.se.madn.util.Observer[0m
-[0m[[0m[33mwarn[0m] [0m[0m[33m-- Warning: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\util\ObserverSpec.scala:33:4 [0m[0m
-[0m[[0m[33mwarn[0m] [0m[0m[33m33 |[0m    [31m"remove an Observer"[0m in {[0m
-[0m[[0m[33mwarn[0m] [0m[0m   |    [33m^[0m[0m
-[0m[[0m[33mwarn[0m] [0m[0m   |    Line is indented too far to the left, or a `}` is missing[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\controller\ControllerSpec.scala:21:23 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m21 |[0m            controller.create()[0m
+[0m[[0m[31merror[0m] [0m[0m   |            [31m^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |   value create is not a member of de.htwg.se.madn.Controller.Controller[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\controller\ControllerSpec.scala:23:23 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m23 |[0m            controller.hexfield.matrix.col should be([31m9[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |            [31m^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value hexfield is not a member of de.htwg.se.madn.Controller.Controller - did you mean controller.field?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\controller\ControllerSpec.scala:26:23 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m            controller.placeX([31m0[0m, [31m0[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |            [31m^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value placeX is not a member of de.htwg.se.madn.Controller.Controller - did you mean controller.player?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\controller\ControllerSpec.scala:28:23 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m28 |[0m            controller.hexfield.matrix.cell([31m0[0m, [31m0[0m) should be([31m'X'[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |            [31m^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value hexfield is not a member of de.htwg.se.madn.Controller.Controller - did you mean controller.field?[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
