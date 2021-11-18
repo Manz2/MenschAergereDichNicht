@@ -1,6 +1,6 @@
 language: scala
 scala:
-  - 2.12.14
+  - 3.1.0
 
 script:
   - sbt clean test jacoco
