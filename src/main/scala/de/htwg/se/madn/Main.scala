@@ -1,4 +1,4 @@
-package Documents.Htwg.se.MADN.MenschAergereDichNicht
+package de.htwg.se.madn
 
 import model.{Player, Field, Home}
 import Controller.Controller
@@ -7,7 +7,7 @@ import scala.io.StdIn.readLine
 
 object Madn {
   @main def main: Unit = {
-    println("Mensch  Ärgere Dich nicht")
+    println("Mensch  Aergere Dich nicht")
     var init: Array[String] = new Array[String](1)
     val home = new Home(init)
     val player = new Player(init)

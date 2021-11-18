@@ -1,4 +1,4 @@
-package Documents.Htwg.se.MADN.MenschAergereDichNicht
+package de.htwg.se.madn
 package Controller
 
 import model.{Player, Field, Home}

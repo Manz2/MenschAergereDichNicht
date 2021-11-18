@@ -1,10 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\aview\Tui.scala:8:51: ';' expected but ':' found.[0m
-[0m[[0m[31merror[0m] [0m[0mclass Tui(controller: Controller) extends Observer:[0m
-[0m[[0m[31merror[0m] [0m[0m                                                  ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\aview\Tui.scala:10:3: expected class or object definition[0m
-[0m[[0m[31merror[0m] [0m[0m  def run = {[0m
-[0m[[0m[31merror[0m] [0m[0m  ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\aview\Tui.scala:43:12: expected start of definition[0m
-[0m[[0m[31merror[0m] [0m[0m  override def update: Unit =  println(controller.toString)[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\util\Observer.scala:4:7 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m4 |[0m[33mimport[0m Documents.Htwg.se.MADN.MenschAergereDichNicht.model.{Player, Field, Home}[0m
+[0m[[0m[31merror[0m] [0m[0m  |       [31m^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |       Not found: Documents[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

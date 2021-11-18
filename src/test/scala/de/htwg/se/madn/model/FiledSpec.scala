@@ -1,10 +1,10 @@
-package Documents.Htwg.se.MADN.MenschAergereDichNicht
-import Documents.Htwg.se.MADN.MenschAergereDichNicht.model.{Player, Field, Home}
+package de.htwg.se.madn
+import model.{Player, Field, Home}
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatest.matchers.should.Matchers
 
-class TUISpec extends AnyWordSpec with Matchers:
-  "A MADN TUI" should {
+class FiledSpec extends AnyWordSpec with Matchers:
+  "Field" should {
     "create a small Filed of 2 cells" in {
       var z: Array[String] = new Array[String](2)
       val field = new Field(2,z)
@@ -24,5 +24,4 @@ class TUISpec extends AnyWordSpec with Matchers:
       field2.toString.count(_ == '|') should equal (11)
     }
   }
-
 
