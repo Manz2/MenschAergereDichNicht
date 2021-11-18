@@ -19,12 +19,20 @@
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\sbt\\1.5.5\\sbt-1.5.5.jar",
             "C:\\Users\\User\\.sbt\\boot\\scala-2.12.14\\lib\\scala-library.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.4.11\\sbt-bloop-1.4.11.jar",
+            "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\sbt\\sbt-jacoco_2.12_1.0\\3.4.0\\sbt-jacoco-3.4.0.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\main_2.12\\1.5.5\\main_2.12-1.5.5.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\io_2.12\\1.5.1\\io_2.12-1.5.1.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\net\\java\\dev\\jna\\jna\\5.5.0\\jna-5.5.0.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\net\\java\\dev\\jna\\jna-platform\\5.5.0\\jna-platform-5.5.0.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\code\\gson\\gson\\2.7\\gson-2.7.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\code\\findbugs\\jsr305\\3.0.2\\jsr305-3.0.2.jar",
+            "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jacoco\\org.jacoco.core\\0.8.7\\org.jacoco.core-0.8.7.jar",
+            "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jacoco\\org.jacoco.report\\0.8.7\\org.jacoco.report-0.8.7.jar",
+            "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\jsuereth\\scala-arm_2.12\\2.0\\scala-arm_2.12-2.0.jar",
+            "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.13.0\\jackson-core-2.13.0.jar",
+            "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalaj\\scalaj-http_2.12\\2.4.2\\scalaj-http_2.12-2.4.2.jar",
+            "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\commons-codec\\commons-codec\\1.15\\commons-codec-1.15.jar",
+            "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\eclipse\\jgit\\org.eclipse.jgit\\5.13.0.202109080827-r\\org.eclipse.jgit-5.13.0.202109080827-r.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\logic_2.12\\1.5.5\\logic_2.12-1.5.5.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\actions_2.12\\1.5.5\\actions_2.12-1.5.5.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\main-settings_2.12\\1.5.5\\main-settings_2.12-1.5.5.jar",
@@ -46,6 +54,11 @@
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\compiler-interface\\1.5.7\\compiler-interface-1.5.7.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\zinc-compile_2.12\\1.5.7\\zinc-compile_2.12-1.5.7.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\swoval\\file-tree-views\\2.1.6\\file-tree-views-2.1.6.jar",
+            "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\ow2\\asm\\asm\\9.1\\asm-9.1.jar",
+            "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\ow2\\asm\\asm-commons\\9.1\\asm-commons-9.1.jar",
+            "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\ow2\\asm\\asm-tree\\9.1\\asm-tree-9.1.jar",
+            "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\googlecode\\javaewah\\JavaEWAH\\1.1.12\\JavaEWAH-1.1.12.jar",
+            "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\slf4j-api\\1.7.30\\slf4j-api-1.7.30.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\util-relation_2.12\\1.5.5\\util-relation_2.12-1.5.5.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\completion_2.12\\1.5.5\\completion_2.12-1.5.5.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\task-system_2.12\\1.5.5\\task-system_2.12-1.5.5.jar",
@@ -74,12 +87,12 @@
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\checkerframework\\checker-qual\\3.4.1\\checker-qual-3.4.1.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\errorprone\\error_prone_annotations\\2.4.0\\error_prone_annotations-2.4.0.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_2.12\\2.4.2\\scala-collection-compat_2.12-2.4.2.jar",
-            "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\slf4j-api\\1.7.26\\slf4j-api-1.7.26.jar",
             "C:\\Users\\User\\.sbt\\boot\\scala-2.12.14\\lib\\scala-compiler.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\jcraft\\jsch\\0.1.54\\jsch-0.1.54.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\eed3si9n\\gigahorse-okhttp_2.12\\0.5.0\\gigahorse-okhttp_2.12-0.5.0.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\squareup\\okhttp3\\okhttp-urlconnection\\3.7.0\\okhttp-urlconnection-3.7.0.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\ivy\\ivy\\2.3.0-sbt-fbc4f586aeeb1591710b14eb4f41b94880dcd745\\ivy-2.3.0-sbt-fbc4f586aeeb1591710b14eb4f41b94880dcd745.jar",
+            "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\ow2\\asm\\asm-analysis\\9.1\\asm-analysis-9.1.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jline\\jline-reader\\3.19.0\\jline-reader-3.19.0.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jline\\jline-builtins\\3.19.0\\jline-builtins-3.19.0.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-agent\\1.5.5\\test-agent-1.5.5.jar",
@@ -148,8 +161,8 @@
                 "import _root_.sbt._",
                 "import _root_.sbt.Keys._",
                 "import _root_.sbt.nio.Keys._",
-                "import _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.JUnitXmlReportPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.bloop.integrations.sbt.BloopPlugin.autoImport._",
-                "import _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.bloop.integrations.sbt.BloopPlugin"
+                "import _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.JUnitXmlReportPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.bloop.integrations.sbt.BloopPlugin.autoImport._, _root_.com.github.sbt.jacoco.JacocoItPlugin.autoImport._, _root_.com.github.sbt.jacoco.JacocoPlugin.autoImport._, _root_.com.github.sbt.jacoco.coveralls.JacocoCoverallsPlugin.autoImport._",
+                "import _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.bloop.integrations.sbt.BloopPlugin, _root_.com.github.sbt.jacoco.JacocoItPlugin, _root_.com.github.sbt.jacoco.JacocoPlugin, _root_.com.github.sbt.jacoco.coveralls.JacocoCoverallsPlugin"
             ]
         },
         "test": {
@@ -223,6 +236,18 @@
                     ]
                 },
                 {
+                    "organization": "com.github.sbt",
+                    "name": "sbt-jacoco",
+                    "version": "3.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sbt-jacoco",
+                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\sbt\\sbt-jacoco_2.12_1.0\\3.4.0\\sbt-jacoco-3.4.0.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "com.google.code.gson",
                     "name": "gson",
                     "version": "2.7",
@@ -247,14 +272,122 @@
                     ]
                 },
                 {
-                    "organization": "org.scala-sbt",
-                    "name": "sbt",
-                    "version": "1.5.5",
+                    "organization": "org.jacoco",
+                    "name": "org.jacoco.core",
+                    "version": "0.8.7",
                     "configurations": "default",
                     "artifacts": [
                         {
-                            "name": "sbt",
-                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\sbt\\1.5.5\\sbt-1.5.5.jar"
+                            "name": "org.jacoco.core",
+                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jacoco\\org.jacoco.core\\0.8.7\\org.jacoco.core-0.8.7.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.jacoco",
+                    "name": "org.jacoco.report",
+                    "version": "0.8.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "org.jacoco.report",
+                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jacoco\\org.jacoco.report\\0.8.7\\org.jacoco.report-0.8.7.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.jsuereth",
+                    "name": "scala-arm_2.12",
+                    "version": "2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-arm_2.12",
+                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\jsuereth\\scala-arm_2.12\\2.0\\scala-arm_2.12-2.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-core",
+                    "version": "2.13.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-core",
+                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.13.0\\jackson-core-2.13.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalaj",
+                    "name": "scalaj-http_2.12",
+                    "version": "2.4.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalaj-http_2.12",
+                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalaj\\scalaj-http_2.12\\2.4.2\\scalaj-http_2.12-2.4.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-codec",
+                    "name": "commons-codec",
+                    "version": "1.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "commons-codec",
+                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\commons-codec\\commons-codec\\1.15\\commons-codec-1.15.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.eclipse.jgit",
+                    "name": "org.eclipse.jgit",
+                    "version": "5.13.0.202109080827-r",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "org.eclipse.jgit",
+                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\eclipse\\jgit\\org.eclipse.jgit\\5.13.0.202109080827-r\\org.eclipse.jgit-5.13.0.202109080827-r.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.ow2.asm",
+                    "name": "asm",
+                    "version": "9.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "asm",
+                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\ow2\\asm\\asm\\9.1\\asm-9.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.ow2.asm",
+                    "name": "asm-commons",
+                    "version": "9.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "asm-commons",
+                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\ow2\\asm\\asm-commons\\9.1\\asm-commons-9.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.ow2.asm",
+                    "name": "asm-tree",
+                    "version": "9.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "asm-tree",
+                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\ow2\\asm\\asm-tree\\9.1\\asm-tree-9.1.jar"
                         }
                     ]
                 },
@@ -267,6 +400,54 @@
                         {
                             "name": "scala-library",
                             "path": "C:\\Users\\User\\.sbt\\boot\\scala-2.12.14\\lib\\scala-library.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.googlecode.javaewah",
+                    "name": "JavaEWAH",
+                    "version": "1.1.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "JavaEWAH",
+                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\googlecode\\javaewah\\JavaEWAH\\1.1.12\\JavaEWAH-1.1.12.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "1.7.30",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\slf4j-api\\1.7.30\\slf4j-api-1.7.30.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.ow2.asm",
+                    "name": "asm-analysis",
+                    "version": "9.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "asm-analysis",
+                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\ow2\\asm\\asm-analysis\\9.1\\asm-analysis-9.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-sbt",
+                    "name": "sbt",
+                    "version": "1.5.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sbt",
+                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\sbt\\1.5.5\\sbt-1.5.5.jar"
                         }
                     ]
                 },
@@ -903,18 +1084,6 @@
                         {
                             "name": "scala-collection-compat_2.12",
                             "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_2.12\\2.4.2\\scala-collection-compat_2.12-2.4.2.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.slf4j",
-                    "name": "slf4j-api",
-                    "version": "1.7.26",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "slf4j-api",
-                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\slf4j-api\\1.7.26\\slf4j-api-1.7.26.jar"
                         }
                     ]
                 },
