@@ -10,7 +10,7 @@ import org.scalatest.matchers.should.Matchers
 class TuiSpec extends AnyWordSpec with Matchers {
 
     "A Tui" should {
-        "have arguments" in {
+        /*"have arguments" in {
             var inserts: Array[String] = new Array[String](10)
             val ho = new Home(inserts: Array[String])
             val fi = new Field(1, inserts: Array[String])
@@ -24,7 +24,12 @@ class TuiSpec extends AnyWordSpec with Matchers {
             Spieler should fullyMatch regex """[A-Za-z]+"""
             anzFig should fullyMatch regex """[1-4]{1}"""
             Felderanz should fullyMatch regex """[1-9]"""
-        }
+        }*/
+        /*"run schould read correctly" in {
+            val in = new ByteArrayInputStream("abc".getBytes)
+            System.setIn(in)
+            StdIn.readLine() === "abc"
+        }*/
         "create an empty madn Game on input 'A B 2 2'" in {
             var inserts: Array[String] = new Array[String](10)
             val ho = new Home(inserts: Array[String])
