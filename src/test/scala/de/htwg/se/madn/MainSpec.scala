@@ -19,6 +19,13 @@ class MainSpec extends AnyWordSpec with Matchers{
       val field = new Field(1, init)
       val controller = new Controller(home, player, field)
       val tui = Tui(controller)
+      var Spieler = "A B"
+      var anzFig = 2
+      var Felderanz = 2
+
+      var anzFig1 = anzFig.toInt
+      var Felderanz1 = Felderanz.toInt
+      tui.run(Spieler,anzFig1,Felderanz1)
     }
   }
 }
