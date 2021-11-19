@@ -1,7 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\Tui.scala:36:3 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m36 |[0m  }[0m
-[0m[[0m[31merror[0m] [0m[0m   |   [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |   Found:    Unit[0m
-[0m[[0m[31merror[0m] [0m[0m   |   Required: String[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\Tui.scala:21:57 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m21 |[0m  [33mdef[0m [36mprintplayer[0m([36mSpieler[0m:[35mString[0m,[36manzFig[0m:[35mString[0m,[36mFelderanz[0m:[35mSpieler[0m)={[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                         [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                 Not found: type Spieler[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

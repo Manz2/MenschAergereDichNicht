@@ -25,26 +25,18 @@ class TuiSpec extends AnyWordSpec with Matchers {
             anzFig should fullyMatch regex """[1-4]{1}"""
             Felderanz should fullyMatch regex """[1-9]"""
         }
-        "create a new game  array on input 'A B 2 2'" in {
-            var z: Array[String] = new Array[String](2)
-            val smallfield = new Field(2,z)
-            val smallHomefield = new Home(z)
-            val smallPlayerfield = new Player(z)
-            val controller = new Controller(smallHomefield,smallPlayerfield,smallfield)
-            val tui = new Tui(controller)
-            //tui.run should be(new Controller.newGame(z,z,z))
+        "create an empty madn Game on input 'A B 2 2'" in {
+            var inserts: Array[String] = new Array[String](10)
+            val ho = new Home(inserts: Array[String])
+            val fi = new Field(1, inserts: Array[String])
+            val pl = new Player(inserts: Array[String]) 
+            val co = new Controller(ho, pl, fi)
+            val tui = new Tui(co)
+            tui.printplayer("A B","2","2")
+            co.player.toString.count(_ == '+') should equal(10)
+            co.home.toString.count(_ == '+') should equal(10)
+            co.field.toString.count(_ == '+') should equal(6)
         }
-        "run" should{
-            var z: Array[String] = new Array[String](2)
-            val smallfield = new Field(2,z)
-            val smallHomefield = new Home(z)
-            val smallPlayerfield = new Player(z)
-            val controller = new Controller(smallHomefield,smallPlayerfield,smallfield)
-            val tui = new Tui(controller)
-            tui.run("A B",2,2)
-            //tui.player.toString.count(_ == '+') should equal(6)
-            //tui.home.toString.count(_ == '+') should equal(6)
-            //tui.field.toString.count(_ == '+') should equal(6)
-        }
-    } 
+    }
 }
+
