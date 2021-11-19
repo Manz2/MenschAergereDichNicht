@@ -7,6 +7,8 @@ lazy val root = project
     version := "0.1.0-SNAPSHOT",
     scalaVersion := scala3Version,
     libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.10",
-    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.10" % "test"
+    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.10" % "test",
+    jacocoCoverallsPullRequest := sys.env.get("GITHUB_EVENT_NAME"),
+    jacocoCoverallsRepoToken := sys.env.get("COVERALLS_REPO_TOKEN")
   )
   .enablePlugins(JacocoCoverallsPlugin)
