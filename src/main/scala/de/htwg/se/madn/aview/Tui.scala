@@ -15,8 +15,9 @@ class Tui(controller: Controller) extends Observer:
     var anzFig = readLine()
     println("")
     print("Anzahl2 Spielfelder: ")
-    var Felderanz = readLine().toInt
+    var Felderanz = readLine()
     println("")
+    printplayer(Spieler,anzFig,Felderanz)
   }
   def printplayer(Spieler:String,anzFig:String,Felderanz:String)={
 

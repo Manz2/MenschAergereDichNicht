@@ -9,10 +9,7 @@ object Madn {
   @main def main: Unit = {
     println("Mensch  Aergere Dich nicht")
       var init: Array[String] = new Array[String](1)
-      val home = new Home(init)
-      val player = new Player(init)
-      val field = new Field(1, init)
-      val controller = new Controller(home, player, field)
+      val controller = new Controller(new Home(init), new Player(init), new Field(1, init))
       val tui = Tui(controller)
       tui.run
   }
