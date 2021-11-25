@@ -29,5 +29,11 @@ class HomeSpec extends AnyWordSpec:
       val home3 = new Home(x)
       home3.move("A1",1) should equal ("-1")
     }
+    "move a Figure by 2 spaces" in {
+      var x: Array[String] = Array("A1","A2","B1","B2","B3")
+      val home3 = new Home(x)
+      home3.move("A1",2) should equal ("B1")
+    }
+
   }
 

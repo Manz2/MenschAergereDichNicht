@@ -26,12 +26,12 @@ final case class Home(inserts: Array[String]) extends Strategy {
       }else{
         figuren(aktuell) = null//null wird noch ersetzt
         if(figuren(aktuell+Anzahl)!= null){
-          figuren(aktuell+Anzahl)=Figur
-          Figur
-        } else{
           var alt = figuren(aktuell+Anzahl)
           figuren(aktuell+Anzahl)=Figur
           alt
+        } else{
+          figuren(aktuell+Anzahl)=Figur
+          Figur
         }
       }
   }

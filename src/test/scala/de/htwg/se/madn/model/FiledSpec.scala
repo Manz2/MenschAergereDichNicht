@@ -28,5 +28,10 @@ class FiledSpec extends AnyWordSpec with Matchers:
       val field3 = new Field(x)
       field3.move("A1",1) should equal ("-1")
     }
+    "move a Figure by 2 spaces" in {
+      var x: Array[String] = Array("A1","A2","B1","B2","B3")
+      val field3 = new Field(x)
+      field3.move("A1",2) should equal ("B1")
+    }
   }
 
