@@ -1,7 +1,8 @@
 package de.htwg.se.madn
 package model
 
-final case class Field(size: Int, positions: Array[String]) {
+final case class Field(positions: Array[String]) extends Strategy {
+  val figuren = positions
 
   override def toString: String = {
 
@@ -15,7 +16,23 @@ final case class Field(size: Int, positions: Array[String]) {
     })
 
     val box =
-      ("+") + ("----+" * size) + "\n" + s + "\n" + ("+") + ("----+" * size) + "\n"
+      ("+") + ("----+" * positions.length) + "\n" + s + "\n" + ("+") + ("----+" * positions.length) + "\n"
     box
+  }
+  override def move(Figur:String,Anzahl:Int):String ={
+      var aktuell = figuren.indexOf(Figur)
+      if (aktuell== -1){
+        "-1"
+      }else{
+        figuren(aktuell) = null//null wird noch ersetzt
+        if(figuren(aktuell+Anzahl)!= null){
+          figuren(aktuell+Anzahl)=Figur
+          Figur
+        } else{
+          var alt = figuren(aktuell+Anzahl)
+          figuren(aktuell+Anzahl)=Figur
+          alt
+        }
+      }
   }
 }

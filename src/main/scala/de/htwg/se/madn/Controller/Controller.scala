@@ -11,7 +11,7 @@ case class Controller(var home: Home, var player: Player, var field: Field)
       fieldpositions: Array[String],
       homepositions: Array[String]
   ) = {
-    field = new Field(fieldpositions.length, fieldpositions)
+    field = new Field(fieldpositions)
     player = new Player(inserts)
     home = new Home(homepositions)
     notifyObservers

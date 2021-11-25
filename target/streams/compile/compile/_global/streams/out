@@ -1,7 +1,17 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\Tui.scala:20:31 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m20 |[0m    printplayer(Spieler,anzFig,Felderanz)[0m
-[0m[[0m[31merror[0m] [0m[0m   |                               [31m^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                               Found:    (Felderanz : Int)[0m
-[0m[[0m[31merror[0m] [0m[0m   |                               Required: String[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\Home.scala:26:7 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m      }[33melse[0m{[0m
+[0m[[0m[31merror[0m] [0m[0m   |       [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |       Found:    Unit[0m
+[0m[[0m[31merror[0m] [0m[0m   |       Required: String[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\Player.scala:26:7 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m      }[33melse[0m{[0m
+[0m[[0m[31merror[0m] [0m[0m   |       [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |       Found:    Unit[0m
+[0m[[0m[31merror[0m] [0m[0m   |       Required: String[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\field.scala:26:7 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m      }[33melse[0m{[0m
+[0m[[0m[31merror[0m] [0m[0m   |       [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |       Found:    Unit[0m
+[0m[[0m[31merror[0m] [0m[0m   |       Required: String[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

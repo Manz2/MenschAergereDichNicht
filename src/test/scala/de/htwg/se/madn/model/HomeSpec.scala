@@ -24,5 +24,10 @@ class HomeSpec extends AnyWordSpec:
       home2.toString.count(_ == '|') should equal (11)
         
     }
+    "move a Figure by 10 spaces" in {
+      var x: Array[String] = new Array[String](10)
+      val home3 = new Home(x)
+      home3.move("A1",1) should equal ("-1")
+    }
   }
 

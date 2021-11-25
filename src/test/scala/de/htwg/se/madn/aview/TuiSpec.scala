@@ -18,7 +18,7 @@ class TuiSpec extends AnyWordSpec with Matchers {
         "create an empty madn Game on input 'A B 2 2'" in {
             var inserts: Array[String] = new Array[String](10)
             val ho = new Home(inserts: Array[String])
-            val fi = new Field(1, inserts: Array[String])
+            val fi = new Field(inserts: Array[String])
             val pl = new Player(inserts: Array[String]) 
             val co = new Controller(ho, pl, fi)
             val tui = new Tui(co)
