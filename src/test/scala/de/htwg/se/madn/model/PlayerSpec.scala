@@ -33,4 +33,10 @@ class PlayerSpec extends AnyWordSpec with Matchers:
       val player3 = new Player(x)
       player3.move("A1",2) should equal ("B1")
     }
+    "move a Figure in an empty space" in {
+      var x: Array[String] = new Array[String](10)
+      x(1)="A1"
+      val player3 = new Player(x)
+      player3.move("A1",2) should equal ("A1")
+    }
   }

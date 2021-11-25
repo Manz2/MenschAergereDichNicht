@@ -34,6 +34,12 @@ class HomeSpec extends AnyWordSpec:
       val home3 = new Home(x)
       home3.move("A1",2) should equal ("B1")
     }
+    "move a Figure in an empty space" in {
+      var x: Array[String] = new Array[String](10)
+      x(1)="A1"
+      val home3 = new Home(x)
+      home3.move("A1",2) should equal ("A1")
+    }
 
   }
 

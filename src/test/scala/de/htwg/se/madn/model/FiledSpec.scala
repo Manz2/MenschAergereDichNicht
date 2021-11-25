@@ -33,5 +33,11 @@ class FiledSpec extends AnyWordSpec with Matchers:
       val field3 = new Field(x)
       field3.move("A1",2) should equal ("B1")
     }
+    "move a Figure in an empty space" in {
+      var x: Array[String] = new Array[String](10)
+      x(1)="A1"
+      val field3 = new Field(x)
+      field3.move("A1",2) should equal ("A1")
+    }
   }
 
