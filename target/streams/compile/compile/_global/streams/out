@@ -1,7 +1,18 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\Tui.scala:20:31 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m20 |[0m    printplayer(Spieler,anzFig,Felderanz)[0m
-[0m[[0m[31merror[0m] [0m[0m   |                               [31m^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                               Found:    (Felderanz : Int)[0m
-[0m[[0m[31merror[0m] [0m[0m   |                               Required: String[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\State.scala:5:20 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m  [33mdef[0m [36mchangeState[0m([36me[0m:[35mEvent[0m):[35mState[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                    [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                    Not found: type Event[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\field.scala:38:29 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m38 |[0m  [33moverride[0m [33mdef[0m changeState(e:Event): State = {[0m
+[0m[[0m[31merror[0m] [0m[0m   |                             [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                             Not found: type Event[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\field.scala:40:18 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m40 |[0m      [33mcase[0m clear: empty => state = empty[0m
+[0m[[0m[31merror[0m] [0m[0m   |                  [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                  Not found: type empty[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\field.scala:40:27 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m40 |[0m      [33mcase[0m clear: empty => state = empty[0m
+[0m[[0m[31merror[0m] [0m[0m   |                           [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                           Not found: state[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m

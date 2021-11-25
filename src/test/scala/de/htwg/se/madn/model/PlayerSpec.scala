@@ -23,4 +23,20 @@ class PlayerSpec extends AnyWordSpec with Matchers:
       player2.toString.count(_ == '-') should equal(80)
       player2.toString.count(_ == '|') should equal (11)   
     }
+    "move a Figure by 10 spaces" in {
+      var x: Array[String] = new Array[String](10)
+      val player3 = new Player(x)
+      player3.move("A1",1) should equal ("-1")
+    }
+    "move a Figure by 2 spaces" in {
+      var x: Array[String] = Array("A1","A2","B1","B2","B3")
+      val player3 = new Player(x)
+      player3.move("A1",2) should equal ("B1")
+    }
+    "move a Figure in an empty space" in {
+      var x: Array[String] = new Array[String](10)
+      x(1)="A1"
+      val player3 = new Player(x)
+      player3.move("A1",2) should equal ("A1")
+    }
   }

@@ -37,7 +37,8 @@ class Tui(controller: Controller) extends Observer:
     var fieldpos: Array[String] = new Array[String](Felderanz.toInt)
     //home
     var hpmepos: Array[String] = new Array[String](inserts.toArray.length)
-
+    
     println(controller.newGame(inserts.toArray, fieldpos, hpmepos))
+
 }
   override def update: Unit =  println(controller.toString)

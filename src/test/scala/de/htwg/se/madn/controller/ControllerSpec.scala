@@ -11,7 +11,7 @@ class ControllerSpec extends AnyWordSpec with Matchers:
   "A Controller" when {
     "observed by an Observer" should {
           var z: Array[String] = new Array[String](2)
-          val field = new Field(2,z)
+          val field = new Field(z)
           val home = new Home(z)
           val player = new Player(z)
           val controller = new Controller(home,player,field)
