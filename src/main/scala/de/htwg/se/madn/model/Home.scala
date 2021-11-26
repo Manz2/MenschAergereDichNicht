@@ -1,6 +1,8 @@
 package de.htwg.se.madn
 package model
 
+import scala.collection.View.Single
+
 final case class Home(inserts: Array[String]) extends Strategy {
   val figuren = inserts
 
@@ -19,7 +21,9 @@ final case class Home(inserts: Array[String]) extends Strategy {
       ("+") + ("----+" * inserts.length) + "\n" + s + "\n" + ("+") + ("----+" * inserts.length) + "\n"
     box
   }
-  override def move(Figur:String,Anzahl:Int):String ={
+
+  object Singleton {
+    def moving(Figur: String,Anzahl: Int): String = {
       var aktuell = figuren.indexOf(Figur)
       if (aktuell== -1){
         "-1"
@@ -34,5 +38,10 @@ final case class Home(inserts: Array[String]) extends Strategy {
           Figur
         }
       }
+    }
+  }
+  
+  override def move(Figur:String,Anzahl:Int):String ={
+      Singleton.moving(Figur, Anzahl)
   }
 }

@@ -27,6 +27,14 @@ class TuiSpec extends AnyWordSpec with Matchers {
             co.home.toString.count(_ == '+') should equal(10)
             co.field.toString.count(_ == '+') should equal(6)
         }
+        "have those inputs" in {
+            var inserts: Array[String] = new Array[String](10)
+            val ho = new Home(inserts: Array[String])
+            val fi = new Field(inserts: Array[String])
+            val pl = new Player(inserts: Array[String]) 
+            val co = new Controller(ho, pl, fi)
+            val tui = new Tui(co)
+        }
     }
 }
 
