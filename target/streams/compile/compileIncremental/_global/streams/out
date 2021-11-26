@@ -1,5 +1,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
+<<<<<<< HEAD
 [0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 21 products, 9 sources, 2 libraries[0m
 [0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/de/htwg/se/madn/Controller/Controller.scala, ${BASE}/src/main/scala/de/htwg/se/madn/Main.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Dice.scala, ${BASE}/src/main/scala/de/htwg/se/madn/util/Observer.scala, ${BASE}/src/main/scala/de/htwg/se/madn/aview/Tui.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Home.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Player.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Strategy.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/field.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/de/htwg/se/madn/model/Dice.scala, ${BASE}/src/main/scala/de/htwg/se/madn/Controller/Controller.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
@@ -30,3 +31,9 @@
 [0m[[0m[0mdebug[0m] [0m[0m	C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes;C:\Users\User\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalactic\scalactic_3\3.2.10\scalactic_3-3.2.10.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mCompilation failed[0m
 [0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+=======
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 23 products, 9 sources, 2 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/de/htwg/se/madn/Controller/Controller.scala, ${BASE}/src/main/scala/de/htwg/se/madn/Main.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Dice.scala, ${BASE}/src/main/scala/de/htwg/se/madn/util/Observer.scala, ${BASE}/src/main/scala/de/htwg/se/madn/aview/Tui.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Home.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Player.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Strategy.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/field.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
+>>>>>>> b868cb5d8fdc4315998e394451d5323a7ec221cf

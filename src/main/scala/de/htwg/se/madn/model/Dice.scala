@@ -1,17 +1,23 @@
-trait Animal {
- def run = println("animal running")
+package de.htwg.se.madn
+package model
+/*Factory pattern*/
+import scala.util.Random
+
+trait Dice {
+    def throwTheDice: Int
 }
-private class Dog extends Animal {
- override def run: Unit = println("dog running")
+
+private class Seis extends Dice {
+ override def throwTheDice: Int = new Random().nextInt(6)
 }
-private class Cat extends Animal {
- override def run: Unit = println("cat running")
+
+private class Diez extends Dice {
+ override def throwTheDice: Int = new Random().nextInt(10)
 }
-object Animal {
+
+object Dice {
  def apply(kind: String) = kind match {
-   case "dog" => new Dog()
-   case "cat" => new Cat()
+   case "six" => new Seis()
+   case "ten" => new Diez()
  }
 }
-val animal = Animal("dog")
-animal.run
