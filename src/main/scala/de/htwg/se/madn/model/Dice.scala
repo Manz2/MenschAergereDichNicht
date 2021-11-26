@@ -1,25 +1,23 @@
-/*
 package de.htwg.se.madn
 package model
-/*Builder pattern*/
-import scala.compiletime.ops.boolean
+/*Factory pattern*/
+import scala.util.Random
 
-abstract class DiceBuilder{
-    var augen = Int
-    var fair = Boolean
-
-    def fairDice(fair: Boolean):DiceBuilder
-    def Numeyes(eyes:Int):DiceBuilder
-
-    //def build:dice
+trait Dice {
+    def throwTheDice: Int
 }
 
-class fairDice(builder:DiceBuilder) {
-    val augen = builder.augen
-    val r = scala.util.Random
-
-    def rollTheDice = r.nextInt(augen)
+private class Seis extends Dice {
+ override def throwTheDice: Int = new Random().nextInt(6)
 }
 
-var random = new DiceBuilder.fairDice(true).Numeyes(6)
-*/
+private class Diez extends Dice {
+ override def throwTheDice: Int = new Random().nextInt(10)
+}
+
+object Dice {
+ def apply(kind: String) = kind match {
+   case "six" => new Seis()
+   case "ten" => new Diez()
+ }
+}

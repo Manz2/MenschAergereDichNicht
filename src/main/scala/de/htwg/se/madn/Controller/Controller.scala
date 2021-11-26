@@ -1,7 +1,7 @@
 package de.htwg.se.madn
 package Controller
 
-import model.{Player, Field, Home}
+import model.{Player, Field, Home, Dice}
 import util.Observable
 
 case class Controller(var home: Home, var player: Player, var field: Field)
@@ -14,6 +14,9 @@ case class Controller(var home: Home, var player: Player, var field: Field)
     field = new Field(fieldpositions)
     player = new Player(inserts)
     home = new Home(homepositions)
+    val dices = Dice("six")
+    val random = dices.throwTheDice
+    println("Random digit: " + random)
     notifyObservers
   }
   override def toString = field.toString + home.toString + player.toString
