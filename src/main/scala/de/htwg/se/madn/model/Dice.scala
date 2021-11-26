@@ -1,25 +1,17 @@
-/*
-package de.htwg.se.madn
-package model
-/*Builder pattern*/
-import scala.compiletime.ops.boolean
-
-abstract class DiceBuilder{
-    var augen = Int
-    var fair = Boolean
-
-    def fairDice(fair: Boolean):DiceBuilder
-    def Numeyes(eyes:Int):DiceBuilder
-
-    //def build:dice
+trait Animal {
+ def run = println("animal running")
 }
-
-class fairDice(builder:DiceBuilder) {
-    val augen = builder.augen
-    val r = scala.util.Random
-
-    def rollTheDice = r.nextInt(augen)
+private class Dog extends Animal {
+ override def run: Unit = println("dog running")
 }
-
-var random = new DiceBuilder.fairDice(true).Numeyes(6)
-*/
+private class Cat extends Animal {
+ override def run: Unit = println("cat running")
+}
+object Animal {
+ def apply(kind: String) = kind match {
+   case "dog" => new Dog()
+   case "cat" => new Cat()
+ }
+}
+val animal = Animal("dog")
+animal.run
