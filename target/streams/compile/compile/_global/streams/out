@@ -1,6 +1,13 @@
+<<<<<<< HEAD
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\Controller\Controller.scala:17:33 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m17 |[0m    [33mvar[0m [36mrandom[0m = [33mnew[0m DiceBuilder.fairDice([31mtrue[0m).Numeyes([31m6[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                     [31m^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |type fairDice is not a member of object de.htwg.se.madn.model.DiceBuilder[0m
+=======
 [0m[[0m[31merror[0m] [0m[0m[31m-- [E103] Syntax Error: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\Dice.scala:28:0 [0m[0m
 [0m[[0m[31merror[0m] [0m[0m[31m28 |[0mdices.throwTheDice[0m
 [0m[[0m[31merror[0m] [0m[0m   |[31m^^^^^[0m[0m
 [0m[[0m[31merror[0m] [0m[0m   |Illegal start of toplevel definition[0m
+>>>>>>> b868cb5d8fdc4315998e394451d5323a7ec221cf
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

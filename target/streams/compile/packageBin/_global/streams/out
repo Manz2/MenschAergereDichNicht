@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\menschaergeredichnicht_3-0.1.0-SNAPSHOT.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	de[0m
@@ -88,4 +89,90 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\util\Observer.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\util\Observer.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\util\Observer.tasty[0m
+=======
+[0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\menschaergeredichnicht_3-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\aview[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\aview[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\aview\Tui.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\aview\Tui.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\aview\Tui.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\aview\Tui.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\Controller[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\Controller[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\Controller\Controller$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\Controller\Controller$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\Controller\Controller.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\Controller\Controller.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\Controller\Controller.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\Controller\Controller.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\Madn$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\Madn$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\Madn$Select$1$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\Madn$Select$1$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\Madn.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\Madn.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\Madn.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\Madn.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model\DiceBuilder.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model\DiceBuilder.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model\DiceBuilder.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model\DiceBuilder.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model\fairDice.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model\fairDice.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model\fairDice.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model\fairDice.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model\Field$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model\Field$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model\Field$Singleton$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model\Field$Singleton$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model\Field.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model\Field.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model\Field.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model\Field.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model\Home$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model\Home$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model\Home$Singleton$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model\Home$Singleton$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model\Home.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model\Home.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model\Home.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model\Home.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model\Player$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model\Player$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model\Player$Singleton$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model\Player$Singleton$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model\Player.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model\Player.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model\Player.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model\Player.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model\Strategy.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model\Strategy.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\model\Strategy.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\model\Strategy.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\util[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\util[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\util\Observable.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\util\Observable.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\util\Observable.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\util\Observable.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\util\Observer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\util\Observer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	de\htwg\se\madn\util\Observer.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\de\htwg\se\madn\util\Observer.tasty[0m
+>>>>>>> 18c17243ab42b7da3386aac400aa34943607d841
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
