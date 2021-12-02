@@ -20,26 +20,20 @@ final case class Player(inserts: Array[String]) extends Strategy  {
     box
   }
 
-  object Singleton {
-    def moving(Figur: String, Anzahl: Int): String = {
-      var aktuell = figuren.indexOf(Figur)
-      if (aktuell== -1){
-        "-1"
-      }else{
-        figuren(aktuell) = null//null wird noch ersetzt
-        if(figuren(aktuell+Anzahl)!= null){
-          var alt = figuren(aktuell+Anzahl)
-          figuren(aktuell+Anzahl)=Figur
-          alt
-        } else{
-          figuren(aktuell+Anzahl)=Figur
-          Figur
-        }
+  def move(Figur: String, Anzahl: Int): String = {
+    var aktuell = figuren.indexOf(Figur)
+    if (aktuell== -1){
+      "-1"
+    }else{
+      figuren(aktuell) = null//null wird noch ersetzt
+      if(figuren(aktuell+Anzahl)!= null){
+        var alt = figuren(aktuell+Anzahl)
+        figuren(aktuell+Anzahl)=Figur
+        alt
+      } else{
+        figuren(aktuell+Anzahl)=Figur
+        Figur
       }
     }
-  }
-  
-  override def move(Figur:String,Anzahl:Int):String ={
-      Singleton.moving(Figur, Anzahl)
   }
 }

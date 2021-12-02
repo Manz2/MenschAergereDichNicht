@@ -20,8 +20,7 @@ final case class Field(positions: Array[String]) extends Strategy {
     box
   }
 
-  object Singleton {
-    def moving(Figur:String,Anzahl:Int): String = {
+    def move(Figur:String,Anzahl:Int): String = {
       var aktuell = figuren.indexOf(Figur)
       if (aktuell== -1){
         "-1"
@@ -37,8 +36,4 @@ final case class Field(positions: Array[String]) extends Strategy {
         }
       }
     }
-  }
-  override def move(Figur:String,Anzahl:Int):String ={
-      Singleton.moving(Figur, Anzahl)
-  }
 }

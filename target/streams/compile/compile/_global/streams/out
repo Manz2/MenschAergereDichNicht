@@ -1,13 +1,58 @@
-<<<<<<< HEAD
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\Controller\Controller.scala:17:33 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m17 |[0m    [33mvar[0m [36mrandom[0m = [33mnew[0m DiceBuilder.fairDice([31mtrue[0m).Numeyes([31m6[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m   |                     [31m^^^^^^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |type fairDice is not a member of object de.htwg.se.madn.model.DiceBuilder[0m
-=======
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E103] Syntax Error: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\Dice.scala:28:0 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m28 |[0mdices.throwTheDice[0m
-[0m[[0m[31merror[0m] [0m[0m   |[31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |Illegal start of toplevel definition[0m
->>>>>>> b868cb5d8fdc4315998e394451d5323a7ec221cf
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\Controller\Controller.scala:11:25 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m  [33mdef[0m [36mdoAndPubish[0m([36mdoThis[0m:[35mMove[0m=>[35mField[0m,[36mmove[0m:[35mMove[0m) = [0m
+[0m[[0m[31merror[0m] [0m[0m   |                         [31m^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                         Not found: type Move[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\Controller\Controller.scala:11:42 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m  [33mdef[0m [36mdoAndPubish[0m([36mdoThis[0m:[35mMove[0m=>[35mField[0m,[36mmove[0m:[35mMove[0m) = [0m
+[0m[[0m[31merror[0m] [0m[0m   |                                          [31m^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                          Not found: type Move[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\Controller\Controller.scala:14:15 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m  [33mdef[0m [36mput[0m([36mmove[0m:[35mMove[0m):[35mField[0m = UndoManager.doStep(field,PutCommand(move))[0m
+[0m[[0m[31merror[0m] [0m[0m   |               [31m^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |               Not found: type Move[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\Controller\PutCommand.scala:11:22 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m[33mclass[0m [35mPutCommand[0m([36mmove[0m:[35mMove[0m) [33mextends[0m [35mCommand[Field][0m {[0m
+[0m[[0m[31merror[0m] [0m[0m   |                      [31m^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                      Not found: type Move[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\Controller\Controller.scala:14:41 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m  [33mdef[0m [36mput[0m([36mmove[0m:[35mMove[0m):[35mField[0m = UndoManager.doStep(field,PutCommand(move))[0m
+[0m[[0m[31merror[0m] [0m[0m   |                             [31m^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   | value doStep is not a member of object de.htwg.se.madn.util.UndoManager[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\Controller\PutCommand.scala:12:48 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m  [33moverride[0m [33mdef[0m doStep(field: Field) = field.move()[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                      [31m^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |missing argument for parameter Figur of [33mmethod[0m [35mmove[0m in [33mclass[0m [35mField[0m: (Figur: String, Anzahl: Int): String[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\Controller\PutCommand.scala:13:50 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m13 |[0m  [33moverride[0m [33mdef[0m undoStep(field: Field) = field.move()[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                        [31m^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |missing argument for parameter Figur of [33mmethod[0m [35mmove[0m in [33mclass[0m [35mField[0m: (Figur: String, Anzahl: Int): String[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\Controller\PutCommand.scala:14:50 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m  [33moverride[0m [33mdef[0m undoStep(field: Field) = field.move()[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                        [31m^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |missing argument for parameter Figur of [33mmethod[0m [35mmove[0m in [33mclass[0m [35mField[0m: (Figur: String, Anzahl: Int): String[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E120] Naming Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\Controller\PutCommand.scala:14:15 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m  [33moverride[0m [33mdef[0m undoStep(field: Field) = field.move()[0m
+[0m[[0m[31merror[0m] [0m[0m   |               [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |Double definition:[0m
+[0m[[0m[31merror[0m] [0m[0m   |[33moverride[0m def undoStep[0m
+[0m[[0m[31merror[0m] [0m[0m   |  (field: de.htwg.se.madn.model.Field): de.htwg.se.madn.model.Field in [33mclass[0m [35mPutCommand[0m at line 13 and[0m
+[0m[[0m[31merror[0m] [0m[0m   |[33moverride[0m def undoStep[0m
+[0m[[0m[31merror[0m] [0m[0m   |  (field: de.htwg.se.madn.model.Field): de.htwg.se.madn.model.Field in [33mclass[0m [35mPutCommand[0m at line 14[0m
+[0m[[0m[31merror[0m] [0m[0m   |have the same type after erasure.[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |Consider adding a @targetName annotation to one of the conflicting definitions[0m
+[0m[[0m[31merror[0m] [0m[0m   |for disambiguation.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\Tui.scala:47:40 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m47 |[0m  [33mdef[0m [36manalyseInput[0m([36minput[0m:[35mString[0m):[35mOption[move][0m = [0m
+[0m[[0m[31merror[0m] [0m[0m   |                                        [31m^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                        Not found: type move[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\Tui.scala:49:18 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m49 |[0m      [33mcase[0m [31m"z"[0m => PutCommand.doAndPubish(controller.redo); None[0m
+[0m[[0m[31merror[0m] [0m[0m   |                  [31m^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                  Not found: PutCommand[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\Tui.scala:50:18 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m50 |[0m      [33mcase[0m [31m"y"[0m => PutCommand.doAndPubish(controller.undo); None[0m
+[0m[[0m[31merror[0m] [0m[0m   |                  [31m^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                  Not found: PutCommand[0m
+[0m[[0m[31merror[0m] [0m[0m12 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m12 errors found[0m
