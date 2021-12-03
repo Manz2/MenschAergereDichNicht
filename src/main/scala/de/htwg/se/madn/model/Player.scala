@@ -20,7 +20,7 @@ final case class Player(inserts: Array[String]) extends Strategy  {
     box
   }
 
-  def move(Figur: String, Anzahl: Int): String = {
+  override def move(Figur: String, Anzahl: Int): String = {
     var aktuell = figuren.indexOf(Figur)
     if (aktuell== -1){
       "-1"

@@ -20,7 +20,7 @@ final case class Field(positions: Array[Option[String]]) extends Strategy {
     box
   }
 
-    def move(Figur:Option[String],Anzahl:Int): Option[String] = {
+    override def move(Figur:Option[String],Anzahl:Int): Option[String] = {
       var aktuell = figuren.indexOf(Figur)
       if (aktuell== -1){
         Some("-1")

@@ -3,7 +3,7 @@ package model
 
 import scala.collection.View.Single
 
-final case class Home(inserts: Array[Option[String]]) extends Strategy {
+final case class Home(inserts: Array[String]) extends Strategy {
   val figuren = inserts
 
   override def toString: String = {
@@ -21,7 +21,7 @@ final case class Home(inserts: Array[Option[String]]) extends Strategy {
       ("+") + ("----+" * inserts.length) + "\n" + s + "\n" + ("+") + ("----+" * inserts.length) + "\n"
     box
   }
-    def move(Figur: String,Anzahl: Int): String = {
+    override def move(Figur: String,Anzahl: Int): String = {
       var aktuell = figuren.indexOf(Figur)
       if (aktuell== -1){
         "-1"
