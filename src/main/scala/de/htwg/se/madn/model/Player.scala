@@ -1,14 +1,14 @@
 package de.htwg.se.madn
 package model
 
-final case class Player(inserts: Array[String]) extends Strategy  {
+final case class Player(inserts: Array[Option[String]]) extends Strategy  {
   val figuren = inserts
 
   override def toString: String = {
 
     var s = "|"
     inserts.foreach(ins => {
-      if (ins == null) {
+      if (ins == None) {
         s = s + "    |"
       } else {
         s = s + " " + ins + " |"
@@ -20,13 +20,17 @@ final case class Player(inserts: Array[String]) extends Strategy  {
     box
   }
 
+<<<<<<< HEAD
   override def move(Figur: String, Anzahl: Int): String = {
+=======
+  def move(Figur: String, Anzahl: Int): Option[String] = {
+>>>>>>> 09b8f85ee8e53211dfbcaba76cafcaa9d29d9e37
     var aktuell = figuren.indexOf(Figur)
     if (aktuell== -1){
       "-1"
     }else{
-      figuren(aktuell) = null//null wird noch ersetzt
-      if(figuren(aktuell+Anzahl)!= null){
+      figuren(aktuell) = None//null wird noch ersetzt
+      if(figuren(aktuell+Anzahl)!= None){
         var alt = figuren(aktuell+Anzahl)
         figuren(aktuell+Anzahl)=Figur
         alt
