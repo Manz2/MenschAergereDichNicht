@@ -37,7 +37,7 @@ class Tui(controller: Controller) extends Observer:
     } 
     //Field
     val fieldpos: Array[Option[String]] = new Array[Option[String]](Felderanz.toInt)//müssen mit none gefüllt werden 
-    fieldpos.foreach(ins => {
+    fieldpos.foreach(ins => {//Umwandeln?
       ins = None
     })
     fieldpos(1) = Some("A1")

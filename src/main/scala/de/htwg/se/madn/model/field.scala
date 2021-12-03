@@ -7,7 +7,7 @@ final case class Field(positions: Array[Option[String]]) extends Strategy {
   override def toString: String = {
 
     var s = "|"
-    positions.foreach(ins => {
+    positions.foreach(ins => {//wieso istt das kein option array
       if (ins.isEmpty) {
         s = s + "    |"
       } else {
