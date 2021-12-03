@@ -10,7 +10,7 @@ final case class Home(inserts: Array[Option[String]]) extends Strategy {
 
     var s = "|"
     inserts.foreach(ins => {
-      if (ins == null) {
+      if (ins == None) {
         s = s + "    |"
       } else {
         s = s + " " + ins + " |"
@@ -21,13 +21,13 @@ final case class Home(inserts: Array[Option[String]]) extends Strategy {
       ("+") + ("----+" * inserts.length) + "\n" + s + "\n" + ("+") + ("----+" * inserts.length) + "\n"
     box
   }
-    def move(Figur: String,Anzahl: Int): String = {
+    override def move(Figur: String,Anzahl: Int): Option[String] = {
       var aktuell = figuren.indexOf(Figur)
       if (aktuell== -1){
         "-1"
       }else{
         figuren(aktuell) = null//null wird noch ersetzt
-        if(figuren(aktuell+Anzahl)!= null){
+        if(figuren(aktuell+Anzahl)!= None){
           var alt = figuren(aktuell+Anzahl)
           figuren(aktuell+Anzahl)=Figur
           alt
