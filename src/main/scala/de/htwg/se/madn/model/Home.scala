@@ -26,7 +26,7 @@ final case class Home(inserts: Array[Option[String]]) extends Strategy {
       if (aktuell== -1){
         "-1"
       }else{
-        figuren(aktuell) = null//null wird noch ersetzt
+        figuren(aktuell) = None//null wird noch ersetzt
         if(figuren(aktuell+Anzahl)!= None){
           var alt = figuren(aktuell+Anzahl)
           figuren(aktuell+Anzahl)=Figur
