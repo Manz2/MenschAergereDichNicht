@@ -8,7 +8,7 @@ final case class Field(positions: Array[Option[String]]) extends Strategy {
 
     var s = "|"
     positions.foreach(ins => {
-      if (ins == None) {
+      if (ins.isEmpty) {
         s = s + "    |"
       } else {
         s = s + " " + ins + " |"
@@ -20,21 +20,21 @@ final case class Field(positions: Array[Option[String]]) extends Strategy {
     box
   }
 
-    override def move(Figur:Option[String],Anzahl:Int): Option[String] = {
-      var aktuell = figuren.indexOf(Figur)
-      if (aktuell== -1){
-        Some("-1")
-      }else{
-        figuren(aktuell) = None//null wird noch ersetzt
-        if(figuren(aktuell+Anzahl)!= None){
-          var alt = figuren(aktuell+Anzahl)
-          figuren(aktuell+Anzahl)=Figur
-          alt
-        } else{
-          figuren(aktuell+Anzahl)=Figur
-          Figur
-        }
+  def move(Figur:Option[String],Anzahl:Int): Option[String] = {
+    var aktuell = figuren.indexOf(Figur)
+    if (aktuell== -1){
+      Some("-1")
+    }else{
+      figuren(aktuell) = None//null wird noch ersetzt
+      if(!figuren(aktuell+Anzahl).isEmpty){
+        var alt = figuren(aktuell+Anzahl)
+        figuren(aktuell+Anzahl)=Figur
+        alt
+      } else{
+        figuren(aktuell+Anzahl)=Figur
+        Figur
       }
     }
+  }
 
 }

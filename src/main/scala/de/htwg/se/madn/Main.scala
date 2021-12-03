@@ -7,7 +7,7 @@ import aview.Tui
 object Madn {
   @main def main: Unit = {
     println("Mensch aergere dich nicht")
-      var init: Array[String] = new Array[String](1)
+      var init: Array[Option[String]] = new Array[Option[String]](1)
       var inito: Array[Option[String]] = new Array[Option[String]](1)
       val controller = new Controller(new Home(init), new Player(init), new Field(inito))
       val tui = Tui(controller)
