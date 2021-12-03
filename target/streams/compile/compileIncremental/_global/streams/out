@@ -1,29 +1,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 21 products, 9 sources, 2 libraries[0m
-[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/de/htwg/se/madn/Controller/Controller.scala, ${BASE}/src/main/scala/de/htwg/se/madn/Main.scala, ${BASE}/src/main/scala/de/htwg/se/madn/Controller/PutCommand.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Dice.scala, ${BASE}/src/main/scala/de/htwg/se/madn/util/Observer.scala, ${BASE}/src/main/scala/de/htwg/se/madn/aview/Tui.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Home.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Player.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Strategy.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/field.scala, ${BASE}/src/main/scala/de/htwg/se/madn/util/Command.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(${BASE}/src/main/scala/de/htwg/se/madn/Controller/PutCommand.scala, ${BASE}/src/main/scala/de/htwg/se/madn/util/Command.scala), removed = Set(), changed = Set(${BASE}/src/main/scala/de/htwg/se/madn/aview/Tui.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Dice.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/field.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Home.scala, ${BASE}/src/main/scala/de/htwg/se/madn/Controller/Controller.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Player.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
-[0m[[0m[0mdebug[0m] [0m[0m[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	added: Set(${BASE}/src/main/scala/de/htwg/se/madn/Controller/PutCommand.scala, ${BASE}/src/main/scala/de/htwg/se/madn/util/Command.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/de/htwg/se/madn/Controller/Controller.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Dice.scala, ${BASE}/src/main/scala/de/htwg/se/madn/aview/Tui.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Home.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Player.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/field.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(de.htwg.se.madn.model.DiceBuilder, de.htwg.se.madn.model.fairDice, de.htwg.se.madn.model.Player, de.htwg.se.madn.model.Field.Singleton, de.htwg.se.madn.model.Player.Singleton, de.htwg.se.madn.model.Field, de.htwg.se.madn.aview.Tui, de.htwg.se.madn.model.Home.Singleton, de.htwg.se.madn.model.Home, de.htwg.se.madn.Controller.Controller)[0m
-[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(de.htwg.se.madn.model.DiceBuilder, de.htwg.se.madn.model.fairDice, de.htwg.se.madn.model.Player, de.htwg.se.madn.model.Field.Singleton, de.htwg.se.madn.model.Player.Singleton, de.htwg.se.madn.model.Field, de.htwg.se.madn.aview.Tui, de.htwg.se.madn.model.Home.Singleton, de.htwg.se.madn.model.Home, de.htwg.se.madn.Controller.Controller)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/de/htwg/se/madn/Controller/Controller.scala, ${BASE}/src/main/scala/de/htwg/se/madn/Controller/PutCommand.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Dice.scala, ${BASE}/src/main/scala/de/htwg/se/madn/aview/Tui.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Home.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Player.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/field.scala, ${BASE}/src/main/scala/de/htwg/se/madn/util/Command.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: de.htwg.se.madn.model.DiceBuilder, de.htwg.se.madn.model.fairDice, de.htwg.se.madn.model.Player, de.htwg.se.madn.model.Field.Singleton, de.htwg.se.madn.model.Player.Singleton, de.htwg.se.madn.model.Field, de.htwg.se.madn.aview.Tui, de.htwg.se.madn.model.Home.Singleton, de.htwg.se.madn.model.Home, de.htwg.se.madn.Controller.Controller[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 0 products, 0 sources, 0 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/de/htwg/se/madn/Controller/Controller.scala, ${BASE}/src/main/scala/de/htwg/se/madn/Main.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Dice.scala, ${BASE}/src/main/scala/de/htwg/se/madn/util/Observer.scala, ${BASE}/src/main/scala/de/htwg/se/madn/aview/Tui.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Home.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Player.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Strategy.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/field.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(${BASE}/src/main/scala/de/htwg/se/madn/Main.scala, ${BASE}/src/main/scala/de/htwg/se/madn/aview/Tui.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Strategy.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Dice.scala, ${BASE}/src/main/scala/de/htwg/se/madn/util/Observer.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/field.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Home.scala, ${BASE}/src/main/scala/de/htwg/se/madn/Controller/Controller.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Player.scala), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mFull compilation, no sources in previous analysis.[0m
+[0m[[0m[0mdebug[0m] [0m[0mall 9 sources are invalidated[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
 [0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0% of all sources[0m
 [0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 11 Scala sources to C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 9 Scala sources to C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: C:\Users\User\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-sbt-bridge\3.1.0\scala3-sbt-bridge-3.1.0.jar.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 36f0621e for Scala Compiler version 3.1.0[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 6c41c324 for Scala Compiler version 3.1.0[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	C:\Users\User\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-library_3\3.1.0\scala3-library_3-3.1.0.jar;C:\Users\User\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.6\scala-library-2.13.6.jar[0m
@@ -31,49 +18,3 @@
 [0m[[0m[0mdebug[0m] [0m[0m	C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes;C:\Users\User\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalactic\scalactic_3\3.2.10\scalactic_3-3.2.10.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mCompilation failed[0m
 [0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
-<<<<<<< HEAD
-=======
-=======
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 23 products, 9 sources, 2 libraries[0m
-[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/de/htwg/se/madn/Controller/Controller.scala, ${BASE}/src/main/scala/de/htwg/se/madn/Main.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Dice.scala, ${BASE}/src/main/scala/de/htwg/se/madn/util/Observer.scala, ${BASE}/src/main/scala/de/htwg/se/madn/aview/Tui.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Home.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Player.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/Strategy.scala, ${BASE}/src/main/scala/de/htwg/se/madn/model/field.scala)[0m
-<<<<<<< HEAD
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/de/htwg/se/madn/Controller/Controller.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
-[0m[[0m[0mdebug[0m] [0m[0m[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/de/htwg/se/madn/Controller/Controller.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(de.htwg.se.madn.Controller.Controller)[0m
-[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(de.htwg.se.madn.Controller.Controller)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/de/htwg/se/madn/Controller/Controller.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: de.htwg.se.madn.Controller.Controller[0m
-[0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: C:\Users\User\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-sbt-bridge\3.1.0\scala3-sbt-bridge-3.1.0.jar.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 49767ca6 for Scala Compiler version 3.1.0[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\User\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-library_3\3.1.0\scala3-library_3-3.1.0.jar;C:\Users\User\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.6\scala-library-2.13.6.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes;C:\Users\User\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scalactic\scalactic_3\3.2.10\scalactic_3-3.2.10.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.3206593 s[0m
-[0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m
-[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
-[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
-[0m[[0m[0mdebug[0m] [0m[0mFinal step, transitive dependencies:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m
-=======
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
-[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
->>>>>>> b868cb5d8fdc4315998e394451d5323a7ec221cf
->>>>>>> 18c17243ab42b7da3386aac400aa34943607d841
->>>>>>> 54e04b531859aa09da59b82ee363b9e61ebadba4

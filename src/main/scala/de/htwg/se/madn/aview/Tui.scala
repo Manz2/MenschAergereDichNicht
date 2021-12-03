@@ -1,8 +1,8 @@
 package de.htwg.se.madn
 package aview
 import Controller.Controller
-import Controller.PutCommand
-import model.move
+//import Controller.PutCommand
+//import model.move
 import model.{Player, Field, Home}
 import util.Observer
 import scala.io.StdIn.readLine
@@ -36,7 +36,7 @@ class Tui(controller: Controller) extends Observer:
     } 
 
     //Field
-    var fieldpos: Array[String] = new Array[String](Felderanz.toInt)
+    var fieldpos: Array[Option[String]] = new Array[Option[String]](Felderanz.toInt)
     //home
     var hpmepos: Array[String] = new Array[String](inserts.toArray.length)
     
@@ -44,8 +44,8 @@ class Tui(controller: Controller) extends Observer:
 
 
   }
-  def analyseInput(input:String):Option[move] = 
+  /*def analyseInput(input:String):Option[move] = 
     input match
       case "z" => PutCommand.doAndPubish(controller.redo); None
       case "y" => PutCommand.doAndPubish(controller.undo); None
-  override def update: Unit =  println(controller.toString)
+  override def update: Unit =  println(controller.toString)*/

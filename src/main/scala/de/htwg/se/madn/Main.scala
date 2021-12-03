@@ -8,7 +8,8 @@ object Madn {
   @main def main: Unit = {
     println("Mensch aergere dich nicht")
       var init: Array[String] = new Array[String](1)
-      val controller = new Controller(new Home(init), new Player(init), new Field(init))
+      var inito: Array[Option[String]] = new Array[Option[String]](1)
+      val controller = new Controller(new Home(init), new Player(init), new Field(inito))
       val tui = Tui(controller)
       println("Welcome to our game: if you want to play, tab play, tab any button to exit");
       var select = scala.io.StdIn.readLine()

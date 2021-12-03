@@ -1,20 +1,20 @@
 package de.htwg.se.madn
 package Controller
 
-import model.move
+//import model.move
 import model.{Player, Field, Home, Dice}
 import util.Observable
 import util.UndoManager //java.swing.undooManager
 
 case class Controller(var home: Home, var player: Player, var field: Field)
     extends Observable {
-  def doAndPubish(doThis:Move=>Field,move:Move) = 
+  /*def doAndPubish(doThis:Move=>Field,move:Move) = 
     field = doThis(move)
-    notifyObservers
-  def put(move:Move):Field = UndoManager.doStep(field,PutCommand(move))
+    notifyObservers*/
+  //def put(move:Move):Field = UndoManager.doStep(field,PutCommand(move))
   def newGame(
       inserts: Array[String],
-      fieldpositions: Array[String],
+      fieldpositions: Array[Option[String]],
       homepositions: Array[String]
   ) = {
     field = new Field(fieldpositions)

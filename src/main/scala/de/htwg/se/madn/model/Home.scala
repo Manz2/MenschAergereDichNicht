@@ -3,7 +3,7 @@ package model
 
 import scala.collection.View.Single
 
-final case class Home(inserts: Array[String]) extends Strategy {
+final case class Home(inserts: Array[Option[String]]) extends Strategy {
   val figuren = inserts
 
   override def toString: String = {
@@ -37,4 +37,5 @@ final case class Home(inserts: Array[String]) extends Strategy {
         }
       }
     }
+
 }
