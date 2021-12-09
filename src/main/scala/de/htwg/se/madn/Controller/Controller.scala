@@ -3,7 +3,9 @@ package Controller
 
 import model.{Player, Field, Home, Dice}
 import util.Observable
-import util.UndoManager 
+import util.UndoManager
+import scala.util.{Try,Success,Failure}
+import scala.util.Random
 
 case class Controller(var home: Home, var player: Player, var field: Field)
     extends Observable {
@@ -27,14 +29,25 @@ case class Controller(var home: Home, var player: Player, var field: Field)
     player = new Player(inserts)
     home = new Home(homepositions)
     val dices = Dice("six")
-    val random = dices.throwTheDice
+    val random = dices.throwTheDice(6)
+    random match {
+      case Success(v) => new Random().nextInt(v) + 1
+      case Failure(f) => println(f.getMessage)
+    }
+
     println("Random digit: " + random)
     notifyObservers
   }
   override def toString = field.toString + home.toString + player.toString
 
+<<<<<<< HEAD
   /*def setmove(Figur:Option[String],Anzahl:Int): Unit = {
     undoManager.doStep(new MoveCommand(Figur:Option[String],Anzahl:Int,this))
+=======
+  def setmove: Unit = {
+    undoManager.doStep
+    notifyObservers
+>>>>>>> e0a8d73edc664861d33534d277d08823f6354aa7
   }
 
   def undo: Unit = {

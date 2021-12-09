@@ -1,18 +1,24 @@
 package de.htwg.se.madn
 package model
 /*Factory pattern*/
-import scala.util.Random
+import scala.util.{Try,Success,Failure}
 
 trait Dice {
-    def throwTheDice: Int
+    def throwTheDice(dice : Int): Try[Int]
 }
 
 private class Seis extends Dice {
- override def throwTheDice: Int = new Random().nextInt(6)
+ override def throwTheDice(dice: Int): Try[Int] = {
+   if dice == 6 then return Failure(NoValidThrowException("Fehler"));
+   else return Success(dice)
+ }
 }
 
 private class Diez extends Dice {
- override def throwTheDice: Int = new Random().nextInt(10)
+ override def throwTheDice(dice : Int): Try[Int] = {
+   if dice == 10 then return Failure(NoValidThrowException("Fehler"));
+   else return Success(dice)
+ }
 }
 
 object Dice {
@@ -21,3 +27,5 @@ object Dice {
    case "ten" => new Diez()
  }
 }
+
+case class NoValidThrowException(message: String) extends Exception(message)
