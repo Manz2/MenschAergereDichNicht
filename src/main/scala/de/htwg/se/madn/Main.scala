@@ -20,5 +20,6 @@ object Madn {
         def exit = sys.exit(0)
       }
       Select.choosen //Strategy Pattern
+      gui.top
   }
 }
