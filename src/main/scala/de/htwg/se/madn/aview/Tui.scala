@@ -25,27 +25,35 @@ class Tui(controller: Controller) extends Observer:
 
   //Player
     var Spieler1 = Spieler.toCharArray
-    val inserts = scala.collection.mutable.ArrayBuffer.empty[String]
+    val inserts = scala.collection.mutable.ArrayBuffer.empty[Option[String]]
     for (a <- Spieler1) {
       if (a != ' ') {
         for (b <- 1 until anzFig.toInt + 1) {
           val d = a.toString + b.toString
-          inserts += d
+          Some(d)
+          inserts += Some(d)
         }
       }
     } 
-
     //Field
-    var fieldpos: Array[Option[String]] = new Array[Option[String]](Felderanz.toInt)
+    val fieldpos: Array[Option[String]] = new Array[Option[String]](Felderanz.toInt)//müssen mit none gefüllt werden 
+    fieldpos.foreach(ins => {//Umwandeln?
+      ins = None
+    })
+    fieldpos(1) = Some("A1")
     //home
-    var hpmepos: Array[String] = new Array[String](inserts.toArray.length)
+    val hpmepos: Array[Option[String]] = new Array[Option[String]](inserts.toArray.length)
+    hpmepos.foreach(ins => {
+      ins = None
+    })
     
     println(controller.newGame(inserts.toArray, fieldpos, hpmepos))
 
 
   }
+   override def update: Unit =  println(controller.toString)
   /*def analyseInput(input:String):Option[move] = 
     input match
       case "z" => PutCommand.doAndPubish(controller.redo); None
-      case "y" => PutCommand.doAndPubish(controller.undo); None
-  override def update: Unit =  println(controller.toString)*/
+      case "y" => PutCommand.doAndPubish(controller.undo); None*/
+ 

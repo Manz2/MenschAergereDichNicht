@@ -1,34 +1,32 @@
-package de.htwg.se.madn
-package util
-trait Command[T] {
-  //def noStep(t:T): T 
-  def doStep(t:T):T
-  def undoStep(t:T):T
-  def redoStep(t:T):T 
+package de.htwg.se.madn.util
+trait Command {
+  def doStep: Unit
+  def undoStep:Unit
+  def redoStep:Unit
 }
-class UndoManager[T]:
-    private var undoStack: List[Command[T]] = Nil
-    private var redoStack: List[Command[T]] = Nil
-    def doStep(t:T,command:Command[T])=
+class UndoManager{
+    private var undoStack: List[Command] = Nil
+    private var redoStack: List[Command] = Nil
+    def doStep(command:Command)=
         undoStack = command :: undoStack
-        command.doStep(t)
-    def undoStep(t:T): T =
+        command.doStep
+    def undoStep =
         undoStack match {
-            case Nil => t
+            case Nil =>
             case head :: stack => {
-                val result = head.undoStep(t)
+                head.undoStep
                 undoStack = stack
                 redoStack = head :: redoStack
-                result
+
             }
         }
-    def redoStep(t:T): T =
+    def redoStep =
         redoStack match {
-            //case Nil => new Field()
+            case Nil =>
             case head::stack => {
-                val result = head.redoStep(t)
+                head.redoStep
                 redoStack = stack
                 undoStack = head::undoStack
-                result
             }
         }
+    }

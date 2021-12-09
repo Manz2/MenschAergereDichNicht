@@ -1,27 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\Tui.scala:10:6 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m[33mclass[0m [35mTui[0m([36mcontroller[0m: [35mController[0m) [33mextends[0m [35mObserver[0m:[0m
-[0m[[0m[31merror[0m] [0m[0m   |      [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |class Tui needs to be abstract, since def update: Unit in [33mtrait[0m [35mObserver[0m in [33mpackage[0m [35mde.htwg.se.madn.util[0m is not defined [0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\Home.scala:6:17 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m[33mfinal[0m [33mcase class[0m [35mHome[0m([36minserts[0m: [35mArray[String][0m) [33mextends[0m [35mStrategy[0m {[0m
-[0m[[0m[31merror[0m] [0m[0m  |                 [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  |class Home needs to be abstract, since def move(Figur: Option[String], Anzahl: Int): String in [33mtrait[0m [35mStrategy[0m in [33mpackage[0m [35mde.htwg.se.madn.model[0m is not defined [0m
-[0m[[0m[31merror[0m] [0m[0m  |(Note that[0m
-[0m[[0m[31merror[0m] [0m[0m  | parameter Option[String] in def move(Figur: Option[String], Anzahl: Int): String in [33mtrait[0m [35mStrategy[0m in [33mpackage[0m [35mde.htwg.se.madn.model[0m does not match[0m
-[0m[[0m[31merror[0m] [0m[0m  | parameter String in def move(Figur: String, Anzahl: Int): String in [33mclass[0m [35mHome[0m in [33mpackage[0m [35mde.htwg.se.madn.model[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  | )[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\Player.scala:4:17 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m4 |[0m[33mfinal[0m [33mcase class[0m [35mPlayer[0m([36minserts[0m: [35mArray[String][0m) [33mextends[0m [35mStrategy[0m  {[0m
-[0m[[0m[31merror[0m] [0m[0m  |                 [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  |class Player needs to be abstract, since def move(Figur: Option[String], Anzahl: Int): String in [33mtrait[0m [35mStrategy[0m in [33mpackage[0m [35mde.htwg.se.madn.model[0m is not defined [0m
-[0m[[0m[31merror[0m] [0m[0m  |(Note that[0m
-[0m[[0m[31merror[0m] [0m[0m  | parameter Option[String] in def move(Figur: Option[String], Anzahl: Int): String in [33mtrait[0m [35mStrategy[0m in [33mpackage[0m [35mde.htwg.se.madn.model[0m does not match[0m
-[0m[[0m[31merror[0m] [0m[0m  | parameter String in def move(Figur: String, Anzahl: Int): String in [33mclass[0m [35mPlayer[0m in [33mpackage[0m [35mde.htwg.se.madn.model[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  | )[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E163] Declaration Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\field.scala:23:8 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m23 |[0m    [33mdef[0m [36mmove[0m([36mFigur[0m:[35mOption[String][0m,[36mAnzahl[0m:[35mInt[0m): [35mOption[String][0m = {[0m
-[0m[[0m[31merror[0m] [0m[0m   |        [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |error overriding [33mmethod[0m [35mmove[0m in [33mtrait[0m [35mStrategy[0m of type (Figur: Option[String], Anzahl: Int): String;[0m
-[0m[[0m[31merror[0m] [0m[0m   |  [33mmethod[0m [35mmove[0m of type (Figur: Option[String], Anzahl: Int): Option[String] has incompatible type[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E052] Type Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\Tui.scala:41:10 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m41 |[0m      ins = None[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      Reassignment to val ins[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E052] Type Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\Tui.scala:47:10 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m47 |[0m      ins = None[0m
+[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |      Reassignment to val ins[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
