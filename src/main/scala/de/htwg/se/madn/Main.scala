@@ -11,6 +11,7 @@ object Madn {
       var inito: Array[Option[String]] = new Array[Option[String]](1)
       val controller = new Controller(new Home(init), new Player(init), new Field(inito))
       val tui = Tui(controller)
+      val gui = GUI(controller)
       println("Welcome to our game: if you want to play, tab play, tab any button to exit");
       var select = scala.io.StdIn.readLine()
       object Select {

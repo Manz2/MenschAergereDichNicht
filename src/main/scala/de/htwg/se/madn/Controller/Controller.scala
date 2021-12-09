@@ -33,7 +33,7 @@ case class Controller(var home: Home, var player: Player, var field: Field)
   }
   override def toString = field.toString + home.toString + player.toString
 
-  def setmove(Figur:Option[String],Anzahl:Int): Unit = {
+  /*def setmove(Figur:Option[String],Anzahl:Int): Unit = {
     undoManager.doStep(new MoveCommand(Figur:Option[String],Anzahl:Int,this))
   }
 
@@ -45,6 +45,6 @@ case class Controller(var home: Home, var player: Player, var field: Field)
   def redo: Unit = {
     undoManager.redoStep
     notifyObservers
-  }
+  }*/
 }
 
