@@ -13,7 +13,7 @@ final case class Home(inserts: Array[Option[String]]) extends Strategy {
       if (ins.isEmpty) {
         s = s + "    |"
       } else {
-        s = s + " " + ins + " |"
+        s = s + " " + ins.get + " |"
       }
     })
 

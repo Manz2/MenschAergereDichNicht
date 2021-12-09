@@ -16,7 +16,7 @@ class Tui(controller: Controller) extends Observer:
     print("Anzahl Figuren pro Spieler: ")
     var anzFig = readLine()
     println("")
-    print("Anzahl2 Spielfelder: ")
+    print("Anzahl Spielfelder: ")
     var Felderanz = readLine()
     println("")
     printplayer(Spieler,anzFig,Felderanz)
@@ -37,19 +37,24 @@ class Tui(controller: Controller) extends Observer:
     } 
     //Field
     val fieldpos: Array[Option[String]] = new Array[Option[String]](Felderanz.toInt)//müssen mit none gefüllt werden 
+    var count = 0;
     fieldpos.foreach(ins => {//Umwandeln?
-      ins = None
+      fieldpos(count) = None: Option[String]
+      count = count + 1
     })
     fieldpos(1) = Some("A1")
     //home
+    count = 0;
     val hpmepos: Array[Option[String]] = new Array[Option[String]](inserts.toArray.length)
     hpmepos.foreach(ins => {
-      ins = None
+      hpmepos(count) = None: Option[String]
+      count = count + 1
     })
     
     println(controller.newGame(inserts.toArray, fieldpos, hpmepos))
-
-
+    controller.domove(Some("A1"),3)
+    controller.undo
+    //println(controller.newGame(inserts.toArray, fieldpos, hpmepos))
   }
    override def update: Unit =  println(controller.toString)
   /*def analyseInput(input:String):Option[move] = 

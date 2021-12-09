@@ -9,16 +9,6 @@ import scala.util.Random
 
 case class Controller(var home: Home, var player: Player, var field: Field)
     extends Observable {
-  /*def doAndPubish(doThis:move=>Field,Figur:Option[String],Anzahl:Int) = 
-    field = doThis(move)
-    notifyObservers*/
-  /*def put(Figur:Option[String],Anzahl:Int):Field = 
-    UndoManager.doStep(field,PutCommand("A1",2))
-    notifyObservers*/
-  /*def executeAndNotify(command: List[String] => ChessCommand, args: List[String]): Unit = {
-  field = putCommand.doStep(command(args))
-  notifyObservers
-  }*/
   val undoManager = new UndoManager 
   def newGame(
       inserts: Array[Option[String]],
@@ -40,14 +30,9 @@ case class Controller(var home: Home, var player: Player, var field: Field)
   }
   override def toString = field.toString + home.toString + player.toString
 
-<<<<<<< HEAD
-  /*def setmove(Figur:Option[String],Anzahl:Int): Unit = {
-    undoManager.doStep(new MoveCommand(Figur:Option[String],Anzahl:Int,this))
-=======
-  def setmove: Unit = {
-    undoManager.doStep
+  def domove(Figur:Option[String],Anzahl:Int): Unit = {
+    undoManager.doStep(new MoveCommand(Figur,Anzahl,this))
     notifyObservers
->>>>>>> e0a8d73edc664861d33534d277d08823f6354aa7
   }
 
   def undo: Unit = {
@@ -58,6 +43,6 @@ case class Controller(var home: Home, var player: Player, var field: Field)
   def redo: Unit = {
     undoManager.redoStep
     notifyObservers
-  }*/
+  }
 }
 
