@@ -36,4 +36,5 @@ final case class Player(inserts: Array[Option[String]]) extends Strategy  {
       }
     }
   }
+  
 }

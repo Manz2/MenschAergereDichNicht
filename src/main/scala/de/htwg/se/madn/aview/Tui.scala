@@ -3,9 +3,11 @@ package aview
 import Controller.Controller
 //import Controller.PutCommand
 //import model.move
-import model.{Player, Field, Home}
+import model.{Player, Field, Home,Dice}
+import scala.util.{Try,Success,Failure}
 import util.Observer
 import scala.io.StdIn.readLine
+import scala.util.Random
 
 class Tui(controller: Controller) extends Observer:
   controller.add(this)
@@ -22,7 +24,6 @@ class Tui(controller: Controller) extends Observer:
     printplayer(Spieler,anzFig,Felderanz)
   }
   def printplayer(Spieler:String,anzFig:String,Felderanz:String)={
-
   //Player
     var Spieler1 = Spieler.toCharArray
     val inserts = scala.collection.mutable.ArrayBuffer.empty[Option[String]]
@@ -37,14 +38,14 @@ class Tui(controller: Controller) extends Observer:
     } 
     //Field
     val fieldpos: Array[Option[String]] = new Array[Option[String]](Felderanz.toInt)//müssen mit none gefüllt werden 
-    var count = 0;
+    var count = 0
     fieldpos.foreach(ins => {//Umwandeln?
       fieldpos(count) = None: Option[String]
       count = count + 1
     })
-    fieldpos(1) = Some("A1")
+    //fieldpos(1) = Some("A1")
     //home
-    count = 0;
+    count = 0
     val hpmepos: Array[Option[String]] = new Array[Option[String]](inserts.toArray.length)
     hpmepos.foreach(ins => {
       hpmepos(count) = None: Option[String]
@@ -52,13 +53,30 @@ class Tui(controller: Controller) extends Observer:
     })
     
     println(controller.newGame(inserts.toArray, fieldpos, hpmepos))
+    val size = inserts.length/anzFig.toInt
+    val uebergabe = new Array[Char](size)
+    count = 0
+    for (a <- Spieler1) {
+      if (a != ' ') {
+          uebergabe(count) =  a
+          count = count + 1
+      }
+    } 
+    neueRunde(uebergabe,size)
+    /*
     controller.domove(Some("A1"),3)
-    controller.undo
+    controller.undo*/
     //println(controller.newGame(inserts.toArray, fieldpos, hpmepos))
+
   }
-   override def update: Unit =  println(controller.toString)
-  /*def analyseInput(input:String):Option[move] = 
-    input match
-      case "z" => PutCommand.doAndPubish(controller.redo); None
-      case "y" => PutCommand.doAndPubish(controller.undo); None*/
- 
+  
+  def neueRunde(Spieler:Array[Char],Maennchen:Int) = {
+    Spieler.foreach(player =>{
+      println("neue Runde  Spieler "+ player + " ist an der Reihe")
+      println(controller.neueRunde(player,Maennchen))
+      
+
+    })
+  
+  }
+  override def update: Unit =  println(controller.toString)

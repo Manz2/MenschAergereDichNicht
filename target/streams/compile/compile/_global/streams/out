@@ -1,6 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\Tui.scala:55:21 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m55 |[0m    controller.field.domove(Some([31m"A1"[0m),[31m3[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m   |    [31m^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |value domove is not a member of de.htwg.se.madn.model.Field - did you mean Field.move?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\Controller\Controller.scala:62:10 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m62 |[0m          breakable[0m
+[0m[[0m[31merror[0m] [0m[0m   |          [31m^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |          missing arguments for value of type (=> Unit) => Unit[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

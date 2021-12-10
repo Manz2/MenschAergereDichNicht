@@ -37,4 +37,5 @@ final case class Home(inserts: Array[Option[String]]) extends Strategy {
       }
     }
   }
+  
 }

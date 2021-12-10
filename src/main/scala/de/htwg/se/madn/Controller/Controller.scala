@@ -6,6 +6,7 @@ import util.Observable
 import util.UndoManager
 import scala.util.{Try,Success,Failure}
 import scala.util.Random
+import scala.util.control.Breaks._
 
 case class Controller(var home: Home, var player: Player, var field: Field)
     extends Observable {
@@ -18,14 +19,6 @@ case class Controller(var home: Home, var player: Player, var field: Field)
     field = new Field(fieldpositions)
     player = new Player(inserts)
     home = new Home(homepositions)
-    val dices = Dice("six")
-    val random = dices.throwTheDice(6)
-    random match {
-      case Success(v) => new Random().nextInt(v) + 1
-      case Failure(f) => println(f.getMessage)
-    }
-
-    println("Random digit: " + random)
     notifyObservers
   }
   override def toString = field.toString + home.toString + player.toString
@@ -44,5 +37,46 @@ case class Controller(var home: Home, var player: Player, var field: Field)
     undoManager.redoStep
     notifyObservers
   }
+
+  def nochAlle(spieler:Char,Maennchen:Int) : Boolean = {
+    var counter = 0
+    player.figuren.foreach(ins => {
+      if(ins.get.charAt(0).equals(spieler)){
+        counter = counter + 1
+      }
+    })
+    if(counter == Maennchen){
+      true
+    }else{
+      false
+
+    }  
+  }
+
+  def neueRunde(player:Char,Maennchen:Int) : String = { 
+    var Ausgabe = " "
+    val dices = Dice("six")
+
+    if(nochAlle(player,Maennchen)){
+          Ausgabe = "Spieler "+ player.toString + " Darf 3x wuerfeln" ;
+          //breakable{
+          for( k <- 0 to 3){
+            val random = dices.throwTheDice(6)
+            random match {
+            case Success(v) => new Random().nextInt(v) + 1
+            case Failure(f) => println(f.getMessage)
+            }
+            Ausgabe = Ausgabe +"\n"+"gewuerfelt: " + random.get;
+            if(random.get == 6){//würfel funktioniert nochnicht
+              Ausgabe = Ausgabe + "\n"+"du darfst raus";
+              //break
+            }
+          }
+        //}
+        }else{
+          Ausgabe = "Spieler "+ player.toString + " Darf 1x wuerfeln ";
+        }
+        Ausgabe
+      }
 }
 

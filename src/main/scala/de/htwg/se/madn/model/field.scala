@@ -36,5 +36,4 @@ final case class Field(positions: Array[Option[String]]) extends Strategy {
       }
     }
   }
-
 }
