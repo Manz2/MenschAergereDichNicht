@@ -25,7 +25,7 @@ case class Controller(var home: Home, var player: Player, var field: Field)
       case Failure(f) => println(f.getMessage)
     }
 
-    println("Random digit: " + random)
+    println("Random digit: " + random.get)
     notifyObservers
   }
   override def toString = field.toString + home.toString + player.toString
