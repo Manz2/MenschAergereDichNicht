@@ -11,7 +11,7 @@ final case class Field(positions: Array[Option[String]]) extends Strategy {
       if (ins.isEmpty) {
         s = s + "    |"
       } else {
-        s = s + " " + ins + " |"
+        s = s + " " + ins.get + " |"
       }
     })
 

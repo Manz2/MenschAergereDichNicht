@@ -5,32 +5,40 @@ import model.{Player, Field, Home, Dice}
 import util.Observer
 import scala.io.StdIn.readLine
 import scala.swing._
-
+import scala.swing.BorderPanel
+import scala.swing.event._
 
 class GUI(controller: Controller) extends Observer {
   controller.add(this)
 
   def top = new MainFrame {
    title = "Mensch ärgere dich nicht"
-   object player extends TextField { columns = 4 }
-   object dice extends TextField { columns = 1 }
-   val button = new Button("klick mich")
+   iconImage = toolkit.getImage("dice.jpg")
+   //object player extends TextField { columns = 4 }
+   //object dice extends TextField { columns = 4 }
+   var mainMenu = new Label("Start Game")
+   var ananiSikerim = new Button("Click me")
+   var closeGame = new Label("Cancel Game")
+   var orospu = new Button("Click me")
    contents = new FlowPanel {
-     contents += player
-     contents += new Label(" Anzahl Spieler (2-4) :  ")
-     contents += dice
-     contents += button
-     contents += new Label(" gewürfelt")
+     contents += mainMenu 
+     contents += closeGame
+     contents += ananiSikerim
+     contents += orospu
+     //contents += new ImagePanel("dice.jpg")
      border = Swing.EmptyBorder(15, 10, 10, 10)
    }
-   listenTo(player)
-   listenTo(button)
+   listenTo(ananiSikerim)
+   listenTo(orospu)
    reactions += {
-     case ButtonClicked(`button`) =>
-       println("Mouse clicked at " + e.point)
-     case EditDone(`player`) =>
-       val f = fahrenheit.text.toInt
+     case ButtonClicked(`ananiSikerim`) =>
+       sys.exit(0)
+     case ButtonClicked(`orospu`) =>
+       println("starting Game...")
    }
+   size = new Dimension(500,500)
+   centerOnScreen
+   visible = true
  }
+  override def update: Unit =  println(controller.toString)
 }
-override def update: Unit =  println(controller.toString)

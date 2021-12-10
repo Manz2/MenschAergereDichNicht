@@ -9,14 +9,14 @@ trait Dice {
 
 private class Seis extends Dice {
  override def throwTheDice(dice: Int): Try[Int] = {
-   if dice == 6 then return Failure(NoValidThrowException("Fehler"));
+   if dice != 6 then return Failure(NoValidThrowException("Fehler"));
    else return Success(dice)
  }
 }
 
 private class Diez extends Dice {
  override def throwTheDice(dice : Int): Try[Int] = {
-   if dice == 10 then return Failure(NoValidThrowException("Fehler"));
+   if dice != 10 then return Failure(NoValidThrowException("Fehler"));
    else return Success(dice)
  }
 }
