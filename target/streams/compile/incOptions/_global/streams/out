@@ -1,41 +1,65 @@
-[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes.bak[0m
 [0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
-<<<<<<< HEAD
-[0m[[0m[0mdebug[0m] [0m[0m	Controller.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Controller$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Controller.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Controller$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$exchange$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$player$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$spielfeld$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$dice$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$Figur$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$1.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$exchange$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$player$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$spielfeld$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$3.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$dice$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$2.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$Figur$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$4.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Controller.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Controller$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Controller.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Controller$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$exchange$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$player$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$spielfeld$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$dice$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$Figur$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$1.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$exchange$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$player$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$spielfeld$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$3.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$dice$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$2.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$Figur$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$4.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Controller.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Controller$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Controller.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Controller$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$exchange$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$player$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$spielfeld$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$dice$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$Figur$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$1.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$exchange$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$player$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$spielfeld$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$3.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$dice$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$2.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$Figur$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$4.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes.bak[0m
-=======
-[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GUI.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$2.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$1.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GUI.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$2.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GUI.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$2.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$1.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GUI.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$2.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0mRolling back changes to class files.[0m
-[0m[[0m[0mdebug[0m] [0m[0mRemoving generated classes:[0m
-[0m[[0m[0mdebug[0m] [0m[0mRestoring class files: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	GUI.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GUI.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GUI$$anon$2.class[0m
-[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes.bak[0m
->>>>>>> 56ed035e2f76cb93a8df995b353dd388e72d018a

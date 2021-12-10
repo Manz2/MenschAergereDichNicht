@@ -12,7 +12,7 @@ import scala.util.Random
 class Tui(controller: Controller) extends Observer:
   controller.add(this)
   def run = {
-    print("Pro Spieler einen Buchstaben (mit Leertaste trennen): ")
+    print("Pro Spieler einen Buchstaben (mit Leertaste trennen): \n")
     var Spieler = readLine()
     println("")
     print("Anzahl Figuren pro Spieler: ")
@@ -70,13 +70,11 @@ class Tui(controller: Controller) extends Observer:
 
   }
   
-  def neueRunde(Spieler:Array[Char],Maennchen:Int) = {
+  def neueRunde(Spieler:Array[Char],Maennchen:Int) : Unit= {
     Spieler.foreach(player =>{
       println("neue Runde  Spieler "+ player + " ist an der Reihe")
-      println(controller.neueRunde(player,Maennchen))
-      
-
+      //println(controller.Runde(player,Maennchen))
     })
-  
+    //neueRunde(Spieler,Maennchen)
   }
   override def update: Unit =  println(controller.toString)

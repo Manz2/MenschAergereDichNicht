@@ -8,7 +8,7 @@ final case class Field(positions: Array[Option[String]]) extends Strategy {
 
     var s = "|"
     positions.foreach(ins => {//wieso istt das kein option array
-      if (ins.isEmpty) {
+      if (ins.equals(None)) {
         s = s + "    |"
       } else {
         s = s + " " + ins.get + " |"

@@ -8,7 +8,7 @@ final case class Player(inserts: Array[Option[String]]) extends Strategy  {
 
     var s = "|"
     inserts.foreach(ins => {
-      if (ins.isEmpty) {
+      if (ins.equals(None)) {
         s = s + "    |"
       } else {
         s = s + " " + ins.get + " |"

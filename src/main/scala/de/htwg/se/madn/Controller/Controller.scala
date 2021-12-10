@@ -19,17 +19,6 @@ case class Controller(var home: Home, var player: Player, var field: Field)
     field = new Field(fieldpositions)
     player = new Player(inserts)
     home = new Home(homepositions)
-<<<<<<< HEAD
-=======
-    val dices = Dice("six")
-    val random = dices.throwTheDice(6)
-    random match {
-      case Success(v) => new Random().nextInt(v) + 1
-      case Failure(f) => println(f.getMessage)
-    }
-
-    println("Random digit: " + random.get)
->>>>>>> 56ed035e2f76cb93a8df995b353dd388e72d018a
     notifyObservers
   }
   override def toString = field.toString + home.toString + player.toString
@@ -63,31 +52,29 @@ case class Controller(var home: Home, var player: Player, var field: Field)
 
     }  
   }
+  def throwDicec : String= {
+    val r = scala.util.Random
+    val e = r.nextInt(6)+1  
+    e.toString
+  }
 
-  def neueRunde(player:Char,Maennchen:Int) : String = { 
-    var Ausgabe = " "
-    val dices = Dice("six")
-
-    if(nochAlle(player,Maennchen)){
-          Ausgabe = "Spieler "+ player.toString + " Darf 3x wuerfeln" ;
-          //breakable{
-          for( k <- 0 to 3){
-            val random = dices.throwTheDice(6)
-            random match {
-            case Success(v) => new Random().nextInt(v) + 1
-            case Failure(f) => println(f.getMessage)
-            }
-            Ausgabe = Ausgabe +"\n"+"gewuerfelt: " + random.get;
-            if(random.get == 6){//würfel funktioniert nochnicht
-              Ausgabe = Ausgabe + "\n"+"du darfst raus";
-              //break
+  def Runde(player:Array[Char],Maennchen:Int)= { 
+    player.foreach(p => {
+      if(nochAlle(p,Maennchen)){    
+        for( k <- 0 to 3){
+          val random = throwDicec.toInt
+          if(random == 6){
+            p match {
+              case 'A' => 
             }
           }
-        //}
-        }else{
-          Ausgabe = "Spieler "+ player.toString + " Darf 1x wuerfeln ";
         }
-        Ausgabe
-      }
+      }/*else{
+        val random = throwDicec.toInt
+
+      }*/
+      })
+  }
+  
 }
 

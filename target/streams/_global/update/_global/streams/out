@@ -1,3 +1,4 @@
-[0m[[0m[0mdebug[0m] [0m[0mnot up to date. inChanged = true, force = false[0m
+[0m[[0m[33mwarn[0m] [0m[0mscala-swing_2.13-3.0.0.jar no longer exists at C:\Users\User\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-swing_2.13\3.0.0\scala-swing_2.13-3.0.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mnot up to date. inChanged = false, force = false[0m
 [0m[[0m[0mdebug[0m] [0m[0mUpdating ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone updating [0m
