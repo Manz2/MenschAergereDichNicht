@@ -19,6 +19,17 @@ case class Controller(var home: Home, var player: Player, var field: Field)
     field = new Field(fieldpositions)
     player = new Player(inserts)
     home = new Home(homepositions)
+<<<<<<< HEAD
+=======
+    val dices = Dice("six")
+    val random = dices.throwTheDice(6)
+    random match {
+      case Success(v) => new Random().nextInt(v) + 1
+      case Failure(f) => println(f.getMessage)
+    }
+
+    println("Random digit: " + random.get)
+>>>>>>> 56ed035e2f76cb93a8df995b353dd388e72d018a
     notifyObservers
   }
   override def toString = field.toString + home.toString + player.toString

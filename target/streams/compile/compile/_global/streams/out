@@ -1,6 +1,19 @@
+<<<<<<< HEAD
 [0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\Controller\Controller.scala:62:10 [0m[0m
 [0m[[0m[31merror[0m] [0m[0m[31m62 |[0m          breakable[0m
 [0m[[0m[31merror[0m] [0m[0m   |          [31m^^^^^^^^^[0m[0m
 [0m[[0m[31merror[0m] [0m[0m   |          missing arguments for value of type (=> Unit) => Unit[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
+=======
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E135] Type Error: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\GUI.scala:34:24 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m34 |[0m     [33mcase[0m ButtonClicked(`ananiSikerim`) =>[0m
+[0m[[0m[31merror[0m] [0m[0m   |                        [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                 Stable identifier required, but [33mthis[0m.ananiSikerim found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E135] Type Error: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\GUI.scala:36:24 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m36 |[0m     [33mcase[0m ButtonClicked(`orospu`) =>[0m
+[0m[[0m[31merror[0m] [0m[0m   |                        [31m^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                       Stable identifier required, but [33mthis[0m.orospu found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+>>>>>>> 56ed035e2f76cb93a8df995b353dd388e72d018a

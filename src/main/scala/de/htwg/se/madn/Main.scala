@@ -2,7 +2,7 @@ package de.htwg.se.madn
 
 import model.{Player, Field, Home}
 import Controller.Controller
-import aview.Tui
+import aview.{Tui, GUI}
 
 object Madn {
   @main def main: Unit = {
@@ -11,7 +11,8 @@ object Madn {
       var inito: Array[Option[String]] = new Array[Option[String]](1)
       val controller = new Controller(new Home(init), new Player(init), new Field(inito))
       val tui = Tui(controller)
-      //val gui = GUI(controller)
+      val gui = GUI(controller)
+      gui.top
       println("Welcome to our game: if you want to play, tab play, tab any button to exit");
       var select = scala.io.StdIn.readLine()
       object Select {
