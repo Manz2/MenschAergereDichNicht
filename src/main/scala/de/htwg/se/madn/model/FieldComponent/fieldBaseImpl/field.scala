@@ -1,15 +1,14 @@
 package de.htwg.se.madn
-package model
+package model.FieldComponent.fieldBaseImpl
+import model.FieldComponent.FieldInterface
 
-import scala.collection.View.Single
-
-final case class Home(inserts: Array[Option[String]]) extends Strategy {
-  val figuren = inserts
+final case class Field(positions: Array[Option[String]]) extends Strategy with FieldInterface {
+  val figuren = positions
 
   override def toString: String = {
 
     var s = "|"
-    inserts.foreach(ins => {
+    positions.foreach(ins => {//wieso istt das kein option array
       if (ins.equals(None)) {
         s = s + "    |"
       } else {
@@ -18,15 +17,16 @@ final case class Home(inserts: Array[Option[String]]) extends Strategy {
     })
 
     val box =
-      ("+") + ("----+" * inserts.length) + "\n" + s + "\n" + ("+") + ("----+" * inserts.length) + "\n"
+      ("+") + ("----+" * positions.length) + "\n" + s + "\n" + ("+") + ("----+" * positions.length) + "\n"
     box
   }
-  def move(Figur: Option[String],Anzahl: Int): Option[String] = {
+
+  def move(Figur:Option[String],Anzahl:Int): Option[String] = {
     var aktuell = figuren.indexOf(Figur)
     if (aktuell== -1){
       Some("-1")
     }else{
-      figuren(aktuell) =None
+      figuren(aktuell) = None//null wird noch ersetzt
       if(!figuren(aktuell+Anzahl).isEmpty){
         var alt = figuren(aktuell+Anzahl)
         figuren(aktuell+Anzahl)=Figur
@@ -37,5 +37,4 @@ final case class Home(inserts: Array[Option[String]]) extends Strategy {
       }
     }
   }
-  
 }

@@ -1,15 +1,20 @@
 package de.htwg.se.madn
-package Controller
+package Controller.controllerComponent.controllerBaseImpl
 
-import model.{Player, Field, Home, Dice}
-import util.Observable
+import model.PlayerComponent.PlayerInterface
+import model.PlayerComponent.PlayerBaseImpl.Player
+import model.HomeComponent.HomeInterface
+import model.HomeComponent.HomeBaseImpl.Home
+import model.FieldComponent.FieldInterface
+import model.FieldComponent.fieldBaseImpl.Field
+import de.htwg.se.madn.Controller.controllerComponent._
 import util.UndoManager
 import scala.util.{Try,Success,Failure}
 import scala.util.Random
 import scala.util.control.Breaks._
 
-case class Controller(var home: Home, var player: Player, var field: Field)
-    extends Observable {
+case class Controller(var home: HomeInterface, var player: PlayerInterface, var field: FieldInterface)
+    extends ControllerInterface {
   val undoManager = new UndoManager 
   def newGame(
       inserts: Array[Option[String]],

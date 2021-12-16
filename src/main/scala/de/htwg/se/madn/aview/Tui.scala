@@ -1,16 +1,19 @@
 package de.htwg.se.madn
 package aview
-import Controller.Controller
 //import Controller.PutCommand
 //import model.move
-import model.{Player, Field, Home,Dice}
+import model.PlayerComponent.PlayerInterface
+import model.HomeComponent.HomeInterface
+import model.FieldComponent.FieldInterface
 import scala.util.{Try,Success,Failure}
 import util.Observer
 import scala.io.StdIn.readLine
 import scala.util.Random
+import Controller.controllerComponent.ControllerInterface
 
-class Tui(controller: Controller) extends Observer:
+class Tui(controller: ControllerInterface) extends Observer:
   controller.add(this)
+  //override def update: Unit =  println(controller.toString)
   def run = {
     print("Pro Spieler einen Buchstaben (mit Leertaste trennen): \n")
     var Spieler = readLine()

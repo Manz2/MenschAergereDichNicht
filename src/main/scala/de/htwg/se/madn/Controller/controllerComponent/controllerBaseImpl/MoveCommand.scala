@@ -1,7 +1,9 @@
 package de.htwg.se.madn
-package Controller
+package Controller.controllerComponent.controllerBaseImpl
 
-import model.{Player, Field, Home, Dice}
+import model.PlayerComponent.PlayerInterface
+import model.HomeComponent.HomeInterface
+import model.FieldComponent.FieldInterface
 import util.Observable
 import util.Command
 import util.UndoManager

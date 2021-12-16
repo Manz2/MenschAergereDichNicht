@@ -1,7 +1,7 @@
 package de.htwg.se.madn
-package model
-
-final case class Player(inserts: Array[Option[String]]) extends Strategy  {
+package model.PlayerComponent.PlayerBaseImpl
+import model.PlayerComponent.PlayerInterface
+final case class Player(inserts: Array[Option[String]]) extends Strategy with PlayerInterface {
   val figuren = inserts
 
   override def toString: String = {

@@ -1,8 +1,9 @@
 package de.htwg.se.madn
 package aview
-import Controller.Controller
 import aview.{Tui}
-import model.{Player, Field, Home, Dice}
+import model.PlayerComponent.PlayerInterface
+import model.HomeComponent.HomeInterface
+import model.FieldComponent.FieldInterface
 import util.Observer
 import scala.io.StdIn.readLine
 import scala.swing._
@@ -10,8 +11,9 @@ import scala.swing.BorderPanel
 import scala.swing.event._
 import java.awt.TextArea
 import scala.util.Random
+import Controller.controllerComponent.ControllerInterface
 
-class GUI(controller: Controller) extends MainFrame with Observer {
+class GUI(controller: ControllerInterface) extends MainFrame with Observer {
 
   controller.add(this)
 
