@@ -13,7 +13,7 @@ import Controller.controllerComponent.ControllerInterface
 
 class Tui(controller: ControllerInterface) extends Observer:
   controller.add(this)
-  //override def update: Unit =  println(controller.toString)
+  override def update: Unit =  println(controller.toString)
   def run = {
     print("Pro Spieler einen Buchstaben (mit Leertaste trennen): \n")
     var Spieler = readLine()
@@ -76,8 +76,11 @@ class Tui(controller: ControllerInterface) extends Observer:
   def neueRunde(Spieler:Array[Char],Maennchen:Int) : Unit= {
     Spieler.foreach(player =>{
       println("neue Runde  Spieler "+ player + " ist an der Reihe")
+      val r = controller.throwDicec
+      println("Spieler " + player + " hat eine " + r + " gewuerfelt")
+      //controller.field.figuren(1) = Some("A1")
       //println(controller.Runde(player,Maennchen))
     })
     //neueRunde(Spieler,Maennchen)
   }
-  override def update: Unit =  println(controller.toString)
+  //override def update: Unit =  println(controller.toString)
