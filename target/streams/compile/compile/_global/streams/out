@@ -1,10 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\FieldComponent\fieldMockImpl\field.scala:5:6 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m[33mclass[0m [35mfield[0m([36mpositions[0m: [35mArray[Option[String]][0m) [33mextends[0m [35mStrategy[0m [33mwith[0m [35mFieldInterface[0m {[0m
-[0m[[0m[31merror[0m] [0m[0m  |      [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  |class field needs to be abstract, since val figuren: Array[Option[String]] in [33mtrait[0m [35mFieldInterface[0m in [33mpackage[0m [35mde.htwg.se.madn.model.FieldComponent[0m is not defined [0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\HomeComponent\HomeMockImpl\Home.scala:5:6 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m[33mclass[0m [35mfield[0m([36mpositions[0m: [35mArray[Option[String]][0m) [33mextends[0m [35mStrategy[0m [33mwith[0m [35mHomeInterface[0m {[0m
-[0m[[0m[31merror[0m] [0m[0m  |      [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  |class field needs to be abstract, since val figuren: Array[Option[String]] in [33mtrait[0m [35mHomeInterface[0m in [33mpackage[0m [35mde.htwg.se.madn.model.HomeComponent[0m is not defined [0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Warning: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\Controller\controllerComponent\controllerBaseImpl\Controller.scala:195:0 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m195 |[0m[33mdef[0m [36mraus[0m([36ms[0m:[35mOption[String][0m,[36mspieler[0m:[35mChar[0m):[35mString[0m ={[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |[33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
