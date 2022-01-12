@@ -18,7 +18,7 @@ Spiel Gruppe3
 * `test` : tests the programm
 * `n1` `n2` `n3` `n4` : new Game with 1-4 players
 * `1` `2` `3` `4` : to choose a figure 1-4
-* `q` : exits the game
+* `q` : exits the >Game
 
 ## Authors
 Erik Manz <br>
