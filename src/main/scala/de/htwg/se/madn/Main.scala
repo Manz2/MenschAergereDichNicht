@@ -19,7 +19,7 @@ object Madn {
       val controller = new Controller(new Home(init), new Player(init), new Field(inito))
       val tui = Tui(controller)
       //val gui = GUI(controller)
-      /*println("Welcome to our game: if you want to play, tab play, tab any button to exitt");
+      /*println("Welcome to our game: if you want to play, tab play, tab any button to exit");
       var select = scala.io.StdIn.readLine()
       object Select {
         var choosen = if (select == "play") game else exit
