@@ -1,25 +1,6 @@
 
-Skip to content
-Pull requests
-Issues
-Marketplace
-Explore
-@Manz2
-Public
 
-Code
-Issues
-Pull requests
-Actions
-Projects 1
-Wiki
-Security
-
-    Insights
-
-.github/workflows/scala.yml
-
-name: Scala CI
+name: scala
 
 on:
   push:
@@ -41,19 +22,3 @@ jobs:
         distribution: 'adopt'
     - name: Run tests
       run: sbt test
-
-    © 2022 GitHub, Inc.
-
-    Terms
-    Privacy
-    Security
-    Status
-    Docs
-    Contact GitHub
-    Pricing
-    API
-    Training
-    Blog
-    About
-
-Loading complete
