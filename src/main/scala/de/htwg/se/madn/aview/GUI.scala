@@ -44,7 +44,7 @@ class GUI(controller: ControllerInterface) extends MainFrame with Observer {
    title = "Mensch ärgere dich nicht"
    iconImage = toolkit.getImage("dice.jpg")
    
-   
+   //test
    val start = new Button("START")
    val aButton = new Button("A")
    val bButton = new Button("B")
