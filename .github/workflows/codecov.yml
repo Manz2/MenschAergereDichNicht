@@ -1,5 +1,8 @@
 name: Scala Codecov
 
+codecov:
+  token: 317605eb-3ea2-46f3-a74b-2da79dac1e04
+
 on:
   push:
     branches: [ main ]
