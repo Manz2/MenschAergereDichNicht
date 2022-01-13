@@ -4,7 +4,7 @@ Spiel Gruppe3
 ## status
 
 
-[![Build](https://github.com/Manz2/MenschAergereDichNicht/actions/workflows/scala.yml/badge.svg)](https://github.com/test/MenschAergereDichNicht/actions)
+[![Build](https://github.com/Manz2/MenschAergereDichNicht/actions/workflows/scalaCI.yml/badge.svg)](https://github.com/test/MenschAergereDichNicht/actions)
 
 [![Coverage Status](https://coveralls.io/repos/github/Manz2/MenschAergereDichNicht/badge.svg?branch=main)](https://coveralls.io/github/Manz2/MenschAergereDichNicht?branch=main)
 
