@@ -26,5 +26,5 @@ jobs:
     - name: Add x Flag
       run: chmod +x codecov
     - name: Run Codecov
-      run: ./codecov -t ${{ 317605eb-3ea2-46f3-a74b-2da79dac1e04 }}
+      run: ./codecov -t ${{ secrets.CODECOV_TOKEN }}
   
