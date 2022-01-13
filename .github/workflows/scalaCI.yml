@@ -2,15 +2,11 @@ name: Scala CI
 
 on:
   push:
-    branches:
-      - main
-      - development
+    branches: [ main ]
   pull_request:
-    branches:
-      - main
-      - development
+    branches: [ main ]
 
-jjobs:
+jobs:
   build:
 
     runs-on: ubuntu-latest
@@ -23,10 +19,4 @@ jjobs:
         java-version: '11'
         distribution: 'adopt'
     - name: Run tests
-      run: sbt jacoco
-    - name: Download Codecov
-      run: curl -Os https://uploader.codecov.io/latest/linux/codecov
-    - name: Add x Flag
-      run: chmod +x codecov
-    - name: Run Codecov
-      run: ./codecov -t ${{ secrets.CODECOV_TOKEN }}
+      run: sbt test
