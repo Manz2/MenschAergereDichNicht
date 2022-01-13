@@ -8,6 +8,7 @@ import model.HomeComponent.HomeBaseImpl.Home
 import model.FieldComponent.FieldInterface
 import model.FieldComponent.fieldBaseImpl.Field
 import aview.{Tui, GUI}
+import scala.io.StdIn.readLine
 
 
 object Madn {
@@ -18,7 +19,7 @@ object Madn {
       val controller = new Controller(new Home(init), new Player(init), new Field(inito))
       val tui = Tui(controller)
       //val gui = GUI(controller)
-      /*println("Welcome to our game: if you want to play, tab play, tab any button to exit");
+      /*println("Welcome to our game: if you want to play, tab play, tab any button to exit ");
       var select = scala.io.StdIn.readLine()
       object Select {
         var choosen = if (select == "play") game else exit
@@ -29,7 +30,18 @@ object Madn {
         def exit = sys.exit(0)
       }*/
       val gui = new aview.GUI(controller)
-      tui.run
+
+    var input: String = ""
+
+    print("Game started\n")  
+    input = readLine()
+    tui.processInputLine(input)
+
+    while (input != "q"){
+      input = readLine()
+      tui.processInputLine(input)
+    } 
+  
       //Select.choosen //Strategy Pattern
   }
 }

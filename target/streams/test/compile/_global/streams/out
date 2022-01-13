@@ -1,6 +1,38 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\model\PlayerSpec.scala:29:6 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m29 |[0m      player.move([31m"A1"[0m,[31m1[0m) should equal ([31m"-1"[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m   |      [31m^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |      Not found: player[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\model\FiledSpec.scala:2:14 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m2 |[0m[33mimport[0m model.{Player, Field, Home}[0m
+[0m[[0m[31merror[0m] [0m[0m  |              [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |              value Player is not a member of de.htwg.se.madn.model[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\model\FiledSpec.scala:2:22 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m2 |[0m[33mimport[0m model.{Player, Field, Home}[0m
+[0m[[0m[31merror[0m] [0m[0m  |                      [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                      value Field is not a member of de.htwg.se.madn.model[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\model\FiledSpec.scala:2:29 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m2 |[0m[33mimport[0m model.{Player, Field, Home}[0m
+[0m[[0m[31merror[0m] [0m[0m  |                             [31m^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                       value Home is not a member of de.htwg.se.madn.model[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\model\HomeSpec.scala:2:14 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m2 |[0m[33mimport[0m model.{Player, Field, Home}[0m
+[0m[[0m[31merror[0m] [0m[0m  |              [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |              value Player is not a member of de.htwg.se.madn.model[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\model\HomeSpec.scala:2:22 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m2 |[0m[33mimport[0m model.{Player, Field, Home}[0m
+[0m[[0m[31merror[0m] [0m[0m  |                      [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                      value Field is not a member of de.htwg.se.madn.model[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\model\HomeSpec.scala:2:29 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m2 |[0m[33mimport[0m model.{Player, Field, Home}[0m
+[0m[[0m[31merror[0m] [0m[0m  |                             [31m^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                       value Home is not a member of de.htwg.se.madn.model[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\model\PlayerSpec.scala:2:14 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m2 |[0m[33mimport[0m model.{Player, Field, Home}[0m
+[0m[[0m[31merror[0m] [0m[0m  |              [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |              value Player is not a member of de.htwg.se.madn.model[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\model\PlayerSpec.scala:2:22 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m2 |[0m[33mimport[0m model.{Player, Field, Home}[0m
+[0m[[0m[31merror[0m] [0m[0m  |                      [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                      value Field is not a member of de.htwg.se.madn.model[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\model\PlayerSpec.scala:2:29 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m2 |[0m[33mimport[0m model.{Player, Field, Home}[0m
+[0m[[0m[31merror[0m] [0m[0m  |                             [31m^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                       value Home is not a member of de.htwg.se.madn.model[0m
+[0m[[0m[31merror[0m] [0m[0m9 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m9 errors found[0m

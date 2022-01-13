@@ -18,7 +18,7 @@
         "classpath": [
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\sbt\\1.5.5\\sbt-1.5.5.jar",
             "C:\\Users\\User\\.sbt\\boot\\scala-2.12.14\\lib\\scala-library.jar",
-            "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.4.11\\sbt-bloop-1.4.11.jar",
+            "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.4.12\\sbt-bloop-1.4.12.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\sbt\\sbt-jacoco_2.12_1.0\\3.4.0\\sbt-jacoco-3.4.0.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\main_2.12\\1.5.5\\main_2.12-1.5.5.jar",
             "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\io_2.12\\1.5.1\\io_2.12-1.5.1.jar",
@@ -139,7 +139,10 @@
                 "C:\\Users\\User\\.sbt\\boot\\scala-2.12.14\\lib\\scala-reflect.jar",
                 "C:\\Users\\User\\.sbt\\boot\\scala-2.12.14\\lib\\scala-xml_2.12-1.0.6.jar"
             ],
+<<<<<<< HEAD
             "analysis": "C:\\Users\\User\\OneDrive\\Dokumente\\Htwg\\se\\MADN\\MenschAergereDichNicht\\project\\target\\streams\\compile\\bloopAnalysisOut\\_global\\streams\\inc_compile_2.12.zip",
+=======
+>>>>>>> aed04a8e6a0e52b864ad43b1baa42bb6a36d0428
             "setup": {
                 "order": "mixed",
                 "addLibraryToBootClasspath": true,
@@ -226,12 +229,12 @@
                 {
                     "organization": "ch.epfl.scala",
                     "name": "sbt-bloop",
-                    "version": "1.4.11",
+                    "version": "1.4.12",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "sbt-bloop",
-                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.4.11\\sbt-bloop-1.4.11.jar"
+                            "path": "C:\\Users\\User\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.4.12\\sbt-bloop-1.4.12.jar"
                         }
                     ]
                 },

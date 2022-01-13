@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\menschaergeredichnicht_3-0.1.0-SNAPSHOT.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	de[0m
@@ -233,3 +234,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m	ImagePanel.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes\ImagePanel.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
+=======
+[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\menschaergeredichnicht_3-0.1.0-SNAPSHOT.jar[0m
+>>>>>>> aed04a8e6a0e52b864ad43b1baa42bb6a36d0428

@@ -1,23 +1,45 @@
-*.class
-*.log
-.metals/
-.vscode/
-# Intellij
-.idea/
-target/
+# *.class
+# *.log
+# .metals/
+# .vscode/
+# # Intellij
+# .idea/
+# target/
+# # sbt
+# .cache
+# .history
+# .history3
+# .lib/
+# dist/*
+# target/
+# lib_managed/
+# src_managed/
+# project/boot/
+# project/plugins/project/
+# project/target/
+# project/project/
+# logs/
+# project/.sbtserver
+# .sbtserver/
+.vscode
+.metals
+.bloop
+
+project/metals.sbt
+
 # sbt
-.cache
-.history
-.history3
-.lib/
-dist/*
-target/
-lib_managed/
-src_managed/
-project/boot/
-project/plugins/project/
-project/target/
 project/project/
-logs/
-project/.sbtserver
-.sbtserver/
+project/target/
+target/
+target
+
+.ammonite
+.bsp
+
+out
+.idea
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf

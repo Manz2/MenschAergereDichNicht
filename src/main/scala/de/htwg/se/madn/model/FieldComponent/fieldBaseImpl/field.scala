@@ -26,7 +26,7 @@ final case class Field(positions: Array[Option[String]]) extends Strategy with F
     if (aktuell== -1){
       Some("-1")
     }else{
-      figuren(aktuell) = None//null wird noch ersetzt
+      figuren(aktuell) = None
       if(!figuren(aktuell+Anzahl).isEmpty){
         var alt = figuren(aktuell+Anzahl)
         figuren(aktuell+Anzahl)=Figur

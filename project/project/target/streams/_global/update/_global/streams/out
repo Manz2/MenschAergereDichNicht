@@ -1,3 +1,8 @@
 [0m[[0m[0mdebug[0m] [0m[0mnot up to date. inChanged = true, force = false[0m
+<<<<<<< HEAD
 [0m[[0m[0mdebug[0m] [0m[0mUpdating ProjectRef(uri("file:/C:/Users/User/OneDrive/Dokumente/Htwg/se/MADN/MenschAergereDichNicht/project/project/"), "menschaergeredichnicht-build-build")...[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone updating ProjectRef(uri("file:/C:/Users/User/OneDrive/Dokumente/Htwg/se/MADN/MenschAergereDichNicht/project/project/"), "menschaergeredichnicht-build-build")[0m
+=======
+[0m[[0m[0mdebug[0m] [0m[0mUpdating ProjectRef(uri("file:/C:/Users/User/Documents/Htwg/se/MADN/MenschAergereDichNicht/project/project/"), "menschaergeredichnicht-build-build")...[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone updating ProjectRef(uri("file:/C:/Users/User/Documents/Htwg/se/MADN/MenschAergereDichNicht/project/project/"), "menschaergeredichnicht-build-build")[0m
+>>>>>>> aed04a8e6a0e52b864ad43b1baa42bb6a36d0428

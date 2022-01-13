@@ -12,7 +12,11 @@ trait ControllerInterface extends Observable{
   def domove(Figur:Option[String],Anzahl:Int): Unit 
   def undo: Unit 
   def redo: Unit 
-  def nochAlle(spieler:Char,Maennchen:Int) : Boolean 
+  def nochAlle(spieler:Char) : Boolean 
   def throwDicec : String
-  def Runde(player:Array[Char],Maennchen:Int):Unit
+  def Alleda(spieler:Char): String
+  def move(fig:Int,pl:Char,dicev:Int):String
+  def backHome(i:Int):Unit
+  def reachedEnd(fig:Int,pl:Char,dicev:Int):Unit
+  def raus(s:Option[String],spieler:Char):String
 }
