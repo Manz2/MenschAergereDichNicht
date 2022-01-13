@@ -22,6 +22,8 @@ jobs:
         distribution: 'adopt'
     - name: Run tests
       run: sbt test
+    after_success:
+      - sbt jacocoCoveralls
 
     
     # - name: npm install, make test-coverage
