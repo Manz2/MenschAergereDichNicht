@@ -42,15 +42,8 @@ case class Controller @Inject() () extends ControllerInterface {
       fieldpositions: Array[Option[String]],
       homepositions: Array[Option[String]]
   ) = {
-    
-    //field = new Field(fieldpositions)
-    
     field.figuren = fieldpositions
-    //player = new Player(inserts)
-    
     player.figuren = inserts
-    //home = new Home(homepositions)
-    
     home.figuren = homepositions
     notifyObservers
   }

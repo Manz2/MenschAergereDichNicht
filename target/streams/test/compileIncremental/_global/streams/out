@@ -2,6 +2,7 @@
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
 [0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 9 products, 6 sources, 7 libraries[0m
 [0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/test/scala/de/htwg/se/madn/util/ObserverSpec.scala, ${BASE}/src/test/scala/de/htwg/se/madn/aview/TuiSpec.scala, ${BASE}/src/test/scala/de/htwg/se/madn/model/HomeSpec.scala, ${BASE}/src/test/scala/de/htwg/se/madn/model/FiledSpec.scala, ${BASE}/src/test/scala/de/htwg/se/madn/model/PlayerSpec.scala, ${BASE}/src/test/scala/de/htwg/se/madn/controller/ControllerSpec.scala)[0m
+<<<<<<< HEAD
 [0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/test/scala/de/htwg/se/madn/aview/TuiSpec.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
@@ -36,3 +37,7 @@
 [0m[[0m[0mdebug[0m] [0m[0mFinal step, transitive dependencies:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m
+=======
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
+>>>>>>> 71b422fa66dcf27900a76226616ae4c839c73971

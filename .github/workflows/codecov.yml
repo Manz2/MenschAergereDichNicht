@@ -1,6 +1,5 @@
 name: Scala Codecov
 
-
 on:
   push:
     branches: [ main ]

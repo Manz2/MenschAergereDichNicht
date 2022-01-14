@@ -42,6 +42,46 @@ class ControllerSpec extends AnyWordSpec with Matchers:
             controller.home.toString.count(_ == '+') should equal(6)
             controller.field.toString.count(_ == '+') should equal(6)
           }
+          "controller should move a figure" in{
+            controller.newGame(z,z,z)
+            var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),None,Some("B2"),Some("B3"))
+            controller.field.figuren = x
+            controller.domove(Some("A1"),2)
+            controller.field.figuren(2) should equal(Some("A1"))
+            obs.updated should be(true)
+          }
+          "controller should undo a step" in {
+            controller.newGame(z,z,z)
+            var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),None,Some("B2"),Some("B3"))
+            controller.field.figuren = x
+            controller.domove(Some("A1"),2)
+            controller.undo
+            controller.field.figuren(0) should equal(Some("A1"))
+            obs.updated should be(true)
+          }
+          "controller should redo a step" in {
+            controller.newGame(z,z,z)
+            var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),None,Some("B2"),Some("B3"))
+            controller.field.figuren = x
+            controller.domove(Some("A1"),2)
+            controller.undo
+            controller.field.figuren(0) should equal(Some("A1"))
+            controller.redo
+            controller.field.figuren(2) should equal(Some("A1"))
+            obs.updated should be(true)
+          }
+          "controller should check the player field" in{
+            controller.newGame(z,z,z)
+              var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),Some("A3"),Some("A4"))
+              controller.player.figuren = x
+              controller.nochAlle('A') should equal(true)
+              x = Array(Some("A1"),Some("A2"),Some("A3"),None)
+              controller.player.figuren = x
+              controller.nochAlle('A') should equal(false)
+          }
+          "controller shoud throw the dice" in {
+            controller.throwDicec.toInt should be <=6
+          }
         }
   }
   case class Obs() extends Observer:
