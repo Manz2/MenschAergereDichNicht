@@ -1,6 +1,8 @@
 package de.htwg.se.madn
 
-import Controller.controllerComponent.controllerBaseImpl.Controller
+import com.google.inject.Guice
+import de.htwg.se.madn.Controller.controllerComponent.controllerBaseImpl.Controller
+import de.htwg.se.madn.Controller.controllerComponent.ControllerInterface
 import model.PlayerComponent.PlayerInterface
 import model.PlayerComponent.PlayerBaseImpl.Player
 import model.HomeComponent.HomeInterface
@@ -13,10 +15,12 @@ import scala.io.StdIn.readLine
 
 object Madn {
   @main def main: Unit = {
+    val injector = Guice.createInjector(new madnModule)
+    val controller = injector.getInstance(classOf[ControllerInterface])
     println("Mensch aergere dich nicht")
-      var init: Array[Option[String]] = new Array[Option[String]](1)
-      var inito: Array[Option[String]] = new Array[Option[String]](1)
-      val controller = new Controller(new Home(init), new Player(init), new Field(inito))
+      //var init: Array[Option[String]] = new Array[Option[String]](1)
+      //var inito: Array[Option[String]] = new Array[Option[String]](1)
+      //val controller = new Controller(new Home(init), new Player(init), new Field(inito))
       val tui = Tui(controller)
       //val gui = GUI(controller)
       /*println("Welcome to our game: if you want to play, tab play, tab any button to exit ");

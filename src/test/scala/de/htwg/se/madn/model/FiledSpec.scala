@@ -18,7 +18,8 @@ class FiledSpec extends AnyWordSpec with Matchers:
       z(count1) = None: Option[String]
       count1 = count1 + 1
       })
-      val field = new Field(z)
+      val field = new Field()
+      field.figuren = z
       field.toString should contain only ('+', '-', '|', ' ', '\n')
       field.toString should contain allOf ('+', '-', '|', ' ', '\n')
       field.toString.count(_ == '+') should equal(6)
@@ -32,7 +33,8 @@ class FiledSpec extends AnyWordSpec with Matchers:
       x(count1) = None: Option[String]
       count1 = count1 + 1
       })
-      val field2 = new Field(x)
+      val field2 = new Field()
+      field2.figuren = x
       field2.toString should contain only ('+', '-', '|', ' ', '\n')
       field2.toString should contain allOf ('+', '-', '|', ' ', '\n')
       field2.toString.count(_ == '+') should equal(22)
@@ -46,12 +48,14 @@ class FiledSpec extends AnyWordSpec with Matchers:
       x(count1) = None: Option[String]
       count1 = count1 + 1
       })
-      val field3 = new Field(x)
+      val field3 = new Field()
+      field3.figuren = x
       field3.move(Some("A1"),1) should equal (Some("-1"))
     }
     "move a Figure by 2 spaces" in {
       var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),Some("B1"),Some("B2"),Some("B3"))
-      val field3 = new Field(x)
+      val field3 = new Field()
+      field3.figuren = x
       field3.move(Some("A1"),2) should equal (Some("B1"))
     }
     "move a Figure in an empty space" in {
@@ -62,7 +66,8 @@ class FiledSpec extends AnyWordSpec with Matchers:
       count1 = count1 + 1
       })
       x(1)=Some("A1")
-      val field3 = new Field(x)
+      val field3 = new Field()
+      field3.figuren = x
       field3.move(Some("A1"),2) should equal (Some("A1"))
     }
   }

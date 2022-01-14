@@ -1,13 +1,21 @@
 package de.htwg.se.madn
 package model.PlayerComponent.PlayerBaseImpl
 import model.PlayerComponent.PlayerInterface
-final case class Player(inserts: Array[Option[String]]) extends Strategy with PlayerInterface {
-  val figuren = inserts
+final case class Player() extends Strategy with PlayerInterface {
+
+  var x: Array[Option[String]] = new Array[Option[String]](10)
+      var count1 = 0
+      x.foreach(ins => {
+      x(count1) = None: Option[String]
+      count1 = count1 + 1
+      })
+
+  var figuren = x
 
   override def toString: String = {
 
     var s = "|"
-    inserts.foreach(ins => {
+    figuren.foreach(ins => {
       if (ins.equals(None)) {
         s = s + "    |"
       } else {
@@ -16,7 +24,7 @@ final case class Player(inserts: Array[Option[String]]) extends Strategy with Pl
     })
 
     val box =
-      ("+") + ("----+" * inserts.length) + "\n" + s + "\n" + ("+") + ("----+" * inserts.length) + "\n"
+      ("+") + ("----+" * figuren.length) + "\n" + s + "\n" + ("+") + ("----+" * figuren.length) + "\n"
     box
   }
 

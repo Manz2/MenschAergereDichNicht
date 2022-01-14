@@ -3,13 +3,21 @@ package model.HomeComponent.HomeBaseImpl
 import model.HomeComponent.HomeInterface
 import scala.collection.View.Single
 
-final case class Home(inserts: Array[Option[String]]) extends Strategy with HomeInterface {
-  val figuren = inserts
+final case class Home() extends Strategy with HomeInterface {
+
+  var x: Array[Option[String]] = new Array[Option[String]](10)
+      var count1 = 0
+      x.foreach(ins => {
+      x(count1) = None: Option[String]
+      count1 = count1 + 1
+      })
+
+  var figuren = x
 
   override def toString: String = {
 
     var s = "|"
-    inserts.foreach(ins => {
+    figuren.foreach(ins => {
       if (ins.equals(None)) {
         s = s + "    |"
       } else {
@@ -18,7 +26,7 @@ final case class Home(inserts: Array[Option[String]]) extends Strategy with Home
     })
 
     val box =
-      ("+") + ("----+" * inserts.length) + "\n" + s + "\n" + ("+") + ("----+" * inserts.length) + "\n"
+      ("+") + ("----+" * figuren.length) + "\n" + s + "\n" + ("+") + ("----+" * figuren.length) + "\n"
     box
   }
   def move(Figur: Option[String],Anzahl: Int): Option[String] = {
