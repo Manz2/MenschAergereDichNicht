@@ -1,18 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:27:30 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m27 |[0m            [33mval[0m [36mho[0m = [33mnew[0m [35mHome[0m(inserts: [35mArray[Option[String]][0m)[0m
-[0m[[0m[31merror[0m] [0m[0m   |                              [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |too many arguments for [33mconstructor[0m [35mHome[0m in [33mclass[0m [35mHome[0m: (): de.htwg.se.madn.model.HomeComponent.HomeBaseImpl.Home[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:28:31 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m28 |[0m            [33mval[0m [36mfi[0m = [33mnew[0m [35mField[0m(inserts: [35mArray[Option[String]][0m)[0m
-[0m[[0m[31merror[0m] [0m[0m   |                               [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |too many arguments for [33mconstructor[0m [35mField[0m in [33mclass[0m [35mField[0m: (): de.htwg.se.madn.model.FieldComponent.fieldBaseImpl.Field[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:29:32 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m29 |[0m            [33mval[0m [36mpl[0m = [33mnew[0m [35mPlayer[0m(inserts: [35mArray[Option[String]][0m) [0m
-[0m[[0m[31merror[0m] [0m[0m   |                                [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |too many arguments for [33mconstructor[0m [35mPlayer[0m in [33mclass[0m [35mPlayer[0m: (): de.htwg.se.madn.model.PlayerComponent.PlayerBaseImpl.Player[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:30:36 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m30 |[0m            [33mval[0m [36mco[0m = [33mnew[0m [35mController[0m(ho, pl, fi)[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                    [31m^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |too many arguments for [33mconstructor[0m [35mController[0m in [33mclass[0m [35mController[0m: (): de.htwg.se.madn.Controller.controllerComponent.controllerBaseImpl.Controller[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\controller\ControllerSpec.scala:83:41 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m83 |[0m            controller.throwDicec should contains oneOf([31m"1"[0m,[31m"2"[0m,[31m"3"[0m,[31m"4"[0m,[31m"5"[0m,[31m"6"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                         [31m^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                         Not found: contains[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
