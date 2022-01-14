@@ -24,10 +24,10 @@ class TuiSpec extends AnyWordSpec with Matchers {
         }*/
         "create an empty madn Game on input 'n2'" in {
             var inserts: Array[Option[String]] = new Array[Option[String]](10)
-            val ho = new Home(inserts: Array[Option[String]])
-            val fi = new Field(inserts: Array[Option[String]])
-            val pl = new Player(inserts: Array[Option[String]]) 
-            val co = new Controller(ho, pl, fi)
+            val ho = new Home()
+            val fi = new Field()
+            val pl = new Player() 
+            val co = new Controller()
             val tui = new Tui(co)
             tui.startGame(2)
             co.player.toString.count(_ == '+') should equal(18)

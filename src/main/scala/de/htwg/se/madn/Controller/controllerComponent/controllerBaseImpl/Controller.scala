@@ -1,6 +1,10 @@
 package de.htwg.se.madn
 package Controller.controllerComponent.controllerBaseImpl
 
+import com.google.inject.name.Names
+import com.google.inject.{Guice, Inject}
+import net.codingwell.scalaguice.InjectorExtensions._
+import de.htwg.se.madn.madnModule
 import model.PlayerComponent.PlayerInterface
 import model.PlayerComponent.PlayerBaseImpl.Player
 import model.HomeComponent.HomeInterface
@@ -14,9 +18,12 @@ import scala.util.Random
 import scala.util.control.Breaks._
 import scala.collection.mutable.Map
 
-case class Controller(var home: HomeInterface, var player: PlayerInterface, var field: FieldInterface)
-    extends ControllerInterface {
+case class Controller @Inject() ()extends ControllerInterface {
   val undoManager = new UndoManager 
+  val injector = Guice.createInjector(new madnModule)
+  var field = injector.getInstance(classOf[FieldInterface])
+  var player = injector.getInstance(classOf[PlayerInterface])
+  var home = injector.getInstance(classOf[HomeInterface])
   val states = collection.mutable.Map(
     "B1" -> false,
     "B2" -> false,
@@ -35,9 +42,16 @@ case class Controller(var home: HomeInterface, var player: PlayerInterface, var 
       fieldpositions: Array[Option[String]],
       homepositions: Array[Option[String]]
   ) = {
-    field = new Field(fieldpositions)
-    player = new Player(inserts)
-    home = new Home(homepositions)
+    
+    //field = new Field(fieldpositions)
+    
+    field.figuren = fieldpositions
+    //player = new Player(inserts)
+    
+    player.figuren = inserts
+    //home = new Home(homepositions)
+    
+    home.figuren = homepositions
     notifyObservers
   }
   override def toString = field.toString + home.toString + player.toString

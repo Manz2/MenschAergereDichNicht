@@ -29,10 +29,10 @@ class ControllerSpec extends AnyWordSpec with Matchers:
           z(count1) = None: Option[String]
           count1 = count1 + 1
           })
-          val field = new Field(z)
+          /*val field = new Field(z)
           val home = new Home(z)
-          val player = new Player(z)
-          val controller = new Controller(home,player,field)
+          val player = new Player(z)*/
+          val controller = new Controller()
           val obs = new Obs()
           controller.add(obs)
           "notify its Observer after a new game" in {

@@ -2,13 +2,20 @@ package de.htwg.se.madn
 package model.FieldComponent.fieldBaseImpl
 import model.FieldComponent.FieldInterface
 
-final case class Field(positions: Array[Option[String]]) extends Strategy with FieldInterface {
-  val figuren = positions
+final case class Field() extends Strategy with FieldInterface {
+  
+  var x: Array[Option[String]] = new Array[Option[String]](10)
+      var count1 = 0
+      x.foreach(ins => {
+      x(count1) = None: Option[String]
+      count1 = count1 + 1
+      })
+  var figuren = x
 
   override def toString: String = {
 
     var s = "|"
-    positions.foreach(ins => {//wieso istt das kein option array
+    figuren.foreach(ins => {//wieso istt das kein option array
       if (ins.equals(None)) {
         s = s + "    |"
       } else {
@@ -17,7 +24,7 @@ final case class Field(positions: Array[Option[String]]) extends Strategy with F
     })
 
     val box =
-      ("+") + ("----+" * positions.length) + "\n" + s + "\n" + ("+") + ("----+" * positions.length) + "\n"
+      ("+") + ("----+" * figuren.length) + "\n" + s + "\n" + ("+") + ("----+" * figuren.length) + "\n"
     box
   }
 

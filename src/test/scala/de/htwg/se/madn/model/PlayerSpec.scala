@@ -18,7 +18,8 @@ class PlayerSpec extends AnyWordSpec with Matchers:
       z(count1) = None: Option[String]
       count1 = count1 + 1
       })
-      val player = new Player(z)
+      val player = new Player()
+      player.figuren = z
       player.toString should contain only ('+', '-', '|', ' ', '\n')
       player.toString should contain allOf ('+', '-', '|', ' ', '\n')
       player.toString.count(_ == '+') should equal(6)
@@ -32,7 +33,8 @@ class PlayerSpec extends AnyWordSpec with Matchers:
       x(count1) = None: Option[String]
       count1 = count1 + 1
       })
-      val player2 = new Player(x)
+      val player2 = new Player()
+      player2.figuren = x
       player2.toString should contain only ('+', '-', '|', ' ', '\n')
       player2.toString should contain allOf ('+', '-', '|', ' ', '\n')
       player2.toString.count(_ == '+') should equal(22)
@@ -46,12 +48,14 @@ class PlayerSpec extends AnyWordSpec with Matchers:
       x(count1) = None: Option[String]
       count1 = count1 + 1
       })
-      val player3 = new Player(x)
+      val player3 = new Player()
+      player3.figuren = x
       player3.move(Some("A1"),1) should equal (Some("-1"))
     }
     "move a Figure by 2 spaces" in {
       var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),Some("B1"),Some("B2"),Some("B3"))
-      val player3 = new Player(x)
+      val player3 = new Player()
+      player3.figuren = x
       player3.move(Some("A1"),2) should equal (Some("B1"))
     }
     "move a Figure in an empty space" in {
@@ -62,7 +66,8 @@ class PlayerSpec extends AnyWordSpec with Matchers:
       count1 = count1 + 1
       })
       x(1)=Some("A1")
-      val player3 = new Player(x)
+      val player3 = new Player()
+      player3.figuren = x
       player3.move(Some("A1"),2) should equal (Some("A1"))
     }
   }
