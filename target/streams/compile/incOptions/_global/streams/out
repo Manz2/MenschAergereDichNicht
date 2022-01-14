@@ -1,7 +1,2 @@
-<<<<<<< HEAD
 [0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes.bak[0m
 [0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes.bak[0m
-=======
-[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes.bak[0m
-[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\target\scala-3.1.0\classes.bak[0m
->>>>>>> ffb2c6fd755d9069c35a9a112bac8e7865d7495e

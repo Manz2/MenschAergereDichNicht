@@ -18,7 +18,7 @@ import scala.util.Random
 import scala.util.control.Breaks._
 import scala.collection.mutable.Map
 
-case class Controller @Inject() ()extends ControllerInterface {
+case class Controller @Inject() () extends ControllerInterface {
   val undoManager = new UndoManager 
   val injector = Guice.createInjector(new madnModule)
   var field = injector.getInstance(classOf[FieldInterface])
