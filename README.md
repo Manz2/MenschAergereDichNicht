@@ -8,9 +8,6 @@ Spiel Gruppe3
 
 [![Coverage Status](https://coveralls.io/repos/github/Manz2/MenschAergereDichNicht/badge.svg?branch=main)](https://coveralls.io/github/Manz2/MenschAergereDichNicht?branch=main)
 
-[![codecov](https://codecov.io/gh/Manz2/MenschAergereDichNicht/branch/main/graph/badge.svg?token=3GA31FYUYT)](https://codecov.io/gh/Manz2/MenschAergereDichNicht)
-
-
 ## Commands
 * `run` : runs the programm
 * `test` : tests the programm
