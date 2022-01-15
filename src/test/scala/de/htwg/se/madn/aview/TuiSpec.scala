@@ -72,6 +72,13 @@ class TuiSpec extends AnyWordSpec with Matchers {
             tui.turn should equal('a')
             tui.diceVal.toInt should be <= 6
         }
+        "start a new round with player a's turn were he has no players in the field on input 'a'" in {
+            val co = new Controller()
+            val tui = new Tui(co)
+            tui.startGame(1)
+            tui.processInputLine("a")
+            tui.turn should equal('a')
+        }
         "start a new round with player b's turn on input 'b'" in {
             val co = new Controller()
             val tui = new Tui(co)

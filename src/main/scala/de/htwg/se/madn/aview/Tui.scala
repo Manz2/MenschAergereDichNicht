@@ -57,6 +57,7 @@ class Tui(controller: ControllerInterface) extends Observer:
     if(alle == true){
       print(player.toUpper + " darf 3x wuerfeln\n")
       print(controller.Alleda(player.toUpper))
+      turn = player
     } else{
       diceVal =  controller.throwDicec
       print(player.toUpper + " hat eine "+ diceVal +" gewuerfelt\n")
