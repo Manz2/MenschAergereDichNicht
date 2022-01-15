@@ -144,6 +144,7 @@ class ControllerSpec extends AnyWordSpec with Matchers:
             var y: Array[Option[String]] = Array(None,Some("A2"),Some("A3"),Some("A4"))
             controller.field.figuren = x
             controller.field.figuren(2) = Some("A1")
+            controller.field.figuren(1) = Some("B2")
             controller.field.figuren(5) = Some("B1")
             controller.field.figuren(10) = Some("C1")
             controller.field.figuren(15) = Some("D1")
@@ -163,6 +164,9 @@ class ControllerSpec extends AnyWordSpec with Matchers:
             controller.move(2,'a',18)
             controller.home.figuren(1) should equal(Some("A2"))
 
+            controller.move(2,'b',1)
+            controller.player.figuren(0) should equal(Some("A1"))
+
             //Test for player b,c,d
             controller.move(1,'b',15)
             controller.field.figuren(0) should equal(Some("B1"))
@@ -181,9 +185,36 @@ class ControllerSpec extends AnyWordSpec with Matchers:
 
             controller.move(1,'d',18)
             controller.home.figuren(12) should equal(Some("D1"))
+          }
+          "leave the player field with the next figure" in {
+            controller.newGame(z,z,z)
 
+            var x: Array[Option[String]] = new Array[Option[String]](20)
+            var count1 = 0
+            x.foreach(ins => {
+              x(count1) = None: Option[String]
+              count1 = count1 + 1
+            })
 
+            var y: Array[Option[String]] = new Array[Option[String]](16)
+            var count2 = 0
+            y.foreach(ins => {
+              y(count2) = None: Option[String]
+              count2 = count2 + 1
+            })
 
+            controller.field.figuren = x
+            controller.player.figuren = y
+            controller.field.figuren(0) = Some("B2")
+            controller.field.figuren(5) = Some("C2")
+            controller.field.figuren(10) = Some("D2")
+            controller.field.figuren(15) = Some("A2")
+            controller.raus(Some("A1"),'A')
+            controller.raus(Some("B1"),'B')
+            controller.raus(Some("C1"),'C')
+            controller.raus(Some("D1"),'D')
+
+            controller.field.figuren should contain inOrder (Some("A1"),Some("B1"),Some("C1"),Some("D1"),None)
           }
         }
   }
