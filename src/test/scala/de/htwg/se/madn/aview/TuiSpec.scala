@@ -34,7 +34,7 @@ class TuiSpec extends AnyWordSpec with Matchers {
             co.home.toString.count(_ == '+') should equal(10)
             co.field.toString.count(_ == '+') should equal(42)
         }
-        "create an empty madn Game on input 'n2'" in {
+        /*"create an empty madn Game on input 'n2'" in {
             var inserts: Array[Option[String]] = new Array[Option[String]](10)
             val ho = new Home()
             val fi = new Field()
@@ -121,7 +121,7 @@ class TuiSpec extends AnyWordSpec with Matchers {
             val tui = new Tui(co)
             co.move(4,'A',6) should equal("noch einer Raus")
             tui.diceVal.toInt should be <= 6
-        }
+        }*/
 
         /*"have those inputs" in {
             var inserts: Array[String] = new Array[String](10)
