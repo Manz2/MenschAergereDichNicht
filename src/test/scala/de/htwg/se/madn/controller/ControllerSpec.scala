@@ -86,7 +86,7 @@ class ControllerSpec extends AnyWordSpec with Matchers:
             controller.newGame(z,z,z)
             var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),Some("A3"),Some("A4"))
             controller.player.figuren = x
-            controller.Alleda('A')
+            controller.Alleda('A').length should be > 5;
         }
         }
   }

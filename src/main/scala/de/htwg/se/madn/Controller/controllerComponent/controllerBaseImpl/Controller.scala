@@ -86,7 +86,10 @@ case class Controller @Inject() () extends ControllerInterface {
     val e = r.nextInt(6)+1  
     e.toString
   }
-
+  
+  /*
+   *try 3 times to leave the playeer field
+   */
   def Alleda(spieler:Char): String = {
     var count = 0
     var out = ""
