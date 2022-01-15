@@ -17,8 +17,8 @@ import model.FieldComponent.FieldInterface
 import model.FieldComponent.fieldBaseImpl._
 import scala.util.{Try,Success,Failure}
 import util.Observer
-import Controller.controllerComponent.ControllerInterface
-import Controller.controllerComponent.controllerBaseImpl._
+import de.htwg.se.madn.Controller.controllerComponent.ControllerInterface
+import de.htwg.se.madn.Controller.controllerComponent.controllerBaseImpl._
 
 class ControllerSpec extends AnyWordSpec with Matchers:
   "A Controller" when {

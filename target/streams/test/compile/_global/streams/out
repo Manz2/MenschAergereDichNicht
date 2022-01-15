@@ -1,6 +1,51 @@
+<<<<<<< HEAD
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:76:33 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m76 |[0m            tui.processInputLine([31m'a'[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                 [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                             Found:    ([31m'a'[0m : Char)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                             Required: String[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |                             The following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |                               import org.scalactic.Prettifier.default[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:83:33 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m83 |[0m            tui.processInputLine([31m'b'[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                 [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                             Found:    ([31m'b'[0m : Char)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                             Required: String[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |                             The following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |                               import org.scalactic.Prettifier.default[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:90:33 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m90 |[0m            tui.processInputLine([31m'c'[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                 [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                             Found:    ([31m'c'[0m : Char)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                             Required: String[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |                             The following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |                               import org.scalactic.Prettifier.default[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:97:33 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m97 |[0m            tui.processInputLine([31m'd'[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                 [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                             Found:    ([31m'd'[0m : Char)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                             Required: String[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |                             The following import might fix the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m   |                               import org.scalactic.Prettifier.default[0m
+[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+=======
 [0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\controller\ControllerSpec.scala:83:41 [0m[0m
 [0m[[0m[31merror[0m] [0m[0m[31m83 |[0m            controller.throwDicec should contains oneOf([31m"1"[0m,[31m"2"[0m,[31m"3"[0m,[31m"4"[0m,[31m"5"[0m,[31m"6"[0m)[0m
 [0m[[0m[31merror[0m] [0m[0m   |                                         [31m^^^^^^^^[0m[0m
 [0m[[0m[31merror[0m] [0m[0m   |                                         Not found: contains[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
+>>>>>>> 71b422fa66dcf27900a76226616ae4c839c73971
