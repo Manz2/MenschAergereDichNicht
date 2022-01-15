@@ -54,6 +54,7 @@ class ControllerSpec extends AnyWordSpec with Matchers:
             controller.newGame(z,z,z)
             var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),None,Some("B2"),Some("B3"))
             controller.field.figuren = x
+            controller.undo
             controller.domove(Some("A1"),2)
             controller.undo
             controller.field.figuren(0) should equal(Some("A1"))
@@ -64,6 +65,7 @@ class ControllerSpec extends AnyWordSpec with Matchers:
             var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),None,Some("B2"),Some("B3"))
             controller.field.figuren = x
             controller.domove(Some("A1"),2)
+            controller.redo
             controller.undo
             controller.field.figuren(0) should equal(Some("A1"))
             controller.redo
