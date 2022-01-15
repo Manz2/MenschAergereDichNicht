@@ -1,11 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\controller\ControllerSpec.scala:91:36 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m91 |[0m            [33mwhile[0m(controller.Alleda.length != [31m26[0m){}[0m
-[0m[[0m[31merror[0m] [0m[0m   |                  [31m^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |value length is not a member of Char => String, but could be made available as an extension method.[0m
-[0m[[0m[31merror[0m] [0m[0m   |[0m
-[0m[[0m[31merror[0m] [0m[0m   |The following import might fix the problem:[0m
-[0m[[0m[31merror[0m] [0m[0m   |[0m
-[0m[[0m[31merror[0m] [0m[0m   |  import org.scalactic.Prettifier.default[0m
-[0m[[0m[31merror[0m] [0m[0m   |[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E039] Reference Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\controller\ControllerSpec.scala:127:31 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m127 |[0m            controller.newGame(z,z,z)[0m
+[0m[[0m[31merror[0m] [0m[0m    |                               [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |           z is a forward reference extending over the definition of x[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

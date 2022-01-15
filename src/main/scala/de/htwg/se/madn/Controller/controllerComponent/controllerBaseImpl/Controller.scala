@@ -163,7 +163,7 @@ case class Controller @Inject() () extends ControllerInterface {
       
       
       if(!field.figuren.contains(Some(f))){
-        out = f + "ist nicht im Feld waehle eine andere Figur"
+        out = f + " ist nicht im Feld waehle eine andere Figur"
       }else{
         if(field.figuren.indexOf(Some(f))+dicev >= field.figuren.size){
           reachedEnd(fig,pl,dicev)

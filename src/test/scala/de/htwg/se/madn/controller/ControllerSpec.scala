@@ -42,7 +42,7 @@ class ControllerSpec extends AnyWordSpec with Matchers:
             controller.home.toString.count(_ == '+') should equal(6)
             controller.field.toString.count(_ == '+') should equal(6)
           }
-          "move a figure" in{
+          "move a figure an do a step" in{
             controller.newGame(z,z,z)
             var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),None,Some("B2"),Some("B3"))
             controller.field.figuren = x
@@ -101,7 +101,89 @@ class ControllerSpec extends AnyWordSpec with Matchers:
           }
 
           "send a figure back to the playerfield" in {
-              
+            controller.newGame(z,z,z)
+
+            var x: Array[Option[String]] = new Array[Option[String]](16)
+            var count1 = 0
+            x.foreach(ins => {
+              x(count1) = None: Option[String]
+              count1 = count1 + 1
+            })
+
+            var y: Array[Option[String]] = Array(Some("A1"),Some("B1"),Some("C1"),Some("D1"),None)
+
+            controller.player.figuren = x
+            controller.field.figuren = y
+            controller.backHome(0)
+            controller.backHome(1)
+            controller.backHome(2)
+            controller.backHome(3)
+
+            controller.field.figuren should contain only(None)
+            controller.player.figuren should contain inOrder (Some("A1"),Some("B1"),Some("C1"),Some("D1"),None)
+          }
+
+          "move a figure" in {
+            controller.newGame(z,z,z)
+
+            var x: Array[Option[String]] = new Array[Option[String]](20)
+            var count1 = 0
+            x.foreach(ins => {
+              x(count1) = None: Option[String]
+              count1 = count1 + 1
+            })
+
+            var w: Array[Option[String]] = new Array[Option[String]](16)
+            var count2 = 0
+            w.foreach(ins => {
+              w(count2) = None: Option[String]
+              count2 = count2 + 1
+            })
+
+
+            var y: Array[Option[String]] = Array(None,Some("A2"),Some("A3"),Some("A4"))
+            controller.field.figuren = x
+            controller.field.figuren(2) = Some("A1")
+            controller.field.figuren(5) = Some("B1")
+            controller.field.figuren(10) = Some("C1")
+            controller.field.figuren(15) = Some("D1")
+            controller.player.figuren = y
+            controller.home.figuren = w
+
+
+            controller.move(1,'x',3) should equal("X1 ist nicht im Feld waehle eine andere Figur")
+
+            //Tests for player a
+            controller.move(1,'a',6)
+            controller.field.figuren(0) should equal(Some("A2"))
+
+            controller.move(2,'a',4)
+            controller.field.figuren(4) should equal(Some("A2"))
+
+            controller.move(2,'a',18)
+            controller.home.figuren(1) should equal(Some("A2"))
+
+            //Test for player b,c,d
+            controller.move(1,'b',15)
+            controller.field.figuren(0) should equal(Some("B1"))
+
+            controller.move(1,'b',15)
+            controller.home.figuren(4) should equal(Some("B1"))
+
+            controller.move(1,'c',10)
+            controller.field.figuren(0) should equal(Some("C1"))
+
+            controller.move(1,'c',15)
+            controller.home.figuren(8) should equal(Some("C1"))
+
+            controller.move(1,'d',5)
+            controller.field.figuren(0) should equal(Some("D1"))
+
+            controller.move(1,'d',18)
+            controller.home.figuren(12) should equal(Some("D1"))
+
+
+
           }
         }
   }
