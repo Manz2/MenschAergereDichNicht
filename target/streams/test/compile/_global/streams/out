@@ -1,18 +1,18 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:99:16 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m99 |[0m            tui.newGame([31m1[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m   |            [31m^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |            value newGame is not a member of de.htwg.se.madn.aview.Tui[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:106:16 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m106 |[0m            tui.newGame([31m1[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |            value newGame is not a member of de.htwg.se.madn.aview.Tui[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:113:16 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m113 |[0m            tui.newGame([31m1[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |            value newGame is not a member of de.htwg.se.madn.aview.Tui[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:120:16 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m120 |[0m            tui.newGame([31m1[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |            value newGame is not a member of de.htwg.se.madn.aview.Tui[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:102:12 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m102 |[0m            controller.field.figuren([31m0[0m) should equal(Some([31m"A1"[0m)) [0m
+[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |            Not found: controller[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:110:12 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m110 |[0m            controller.field.figuren([31m0[0m) should equal(Some([31m"A1"[0m)) [0m
+[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |            Not found: controller[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:118:12 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m118 |[0m            controller.field.figuren([31m0[0m) should equal(Some([31m"A1"[0m)) [0m
+[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |            Not found: controller[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:126:12 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m126 |[0m            controller.field.figuren([31m0[0m) should equal(Some([31m"A1"[0m)) [0m
+[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |            Not found: controller[0m
 [0m[[0m[31merror[0m] [0m[0mfour errors found[0m
 [0m[[0m[31merror[0m] [0m[0mfour errors found[0m

@@ -93,29 +93,37 @@ class TuiSpec extends AnyWordSpec with Matchers {
             tui.turn should equal('d')
             tui.diceVal.toInt should be <= 6
         }
-        "move figure 1 on input '1'" in {
+        "move figure 1 or leave player field with the next figure on input '1'" in {
             val co = new Controller()
             val tui = new Tui(co)
             tui.startGame(1)
-            co.move(1,'A',6) should equal("noch einer Raus")
+            tui.diceVal = "6"
+            tui.processInputLine("1")
+            co.field.figuren(0) should equal(Some("A1")) 
         }
-        "move figure 2 on input '2'" in {
+        "move figure 2 or leave player field with the next figure on input '2'" in {
             val co = new Controller()
             val tui = new Tui(co)
             tui.startGame(1)
-            co.move(2,'A',6) should equal("noch einer Raus")
+            tui.diceVal = "6"
+            tui.processInputLine("2")
+            co.field.figuren(0) should equal(Some("A1")) 
         }
-        "move figure 2 on input '3'" in {
+        "move figure 3 or leave player field with the next figure on input '3'" in {
             val co = new Controller()
             val tui = new Tui(co)
             tui.startGame(1)
-            co.move(3,'A',6) should equal("noch einer Raus")
+            tui.diceVal = "6"
+            tui.processInputLine("3")
+            co.field.figuren(0) should equal(Some("A1")) 
         }
-        "move figure 2 on input '4'" in {
+        "move figure 4 or leave player field with the next figureon input '4'" in {
             val co = new Controller()
             val tui = new Tui(co)
             tui.startGame(1)
-            co.move(4,'A',6) should equal("noch einer Raus")
+            tui.diceVal = "6"
+            tui.processInputLine("4")
+            co.field.figuren(0) should equal(Some("A1")) 
         }
     }
 }
