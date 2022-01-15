@@ -1,42 +1,18 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\controller\ControllerSpec.scala:204:33 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m204 |[0m            controller.raus(Some([31m"A1"[0m,[31m'A'[0m))[0m
-[0m[[0m[31merror[0m] [0m[0m    |                                 [31m^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |                           Found:    [1m[31m([0mString[1m[31m,[0m[1m[31m [0m[1m[31mChar[0m[1m[31m)[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |                           Required: String[0m
-[0m[[0m[31merror[0m] [0m[0m    |[0m
-[0m[[0m[31merror[0m] [0m[0m    |                           The following import might fix the problem:[0m
-[0m[[0m[31merror[0m] [0m[0m    |[0m
-[0m[[0m[31merror[0m] [0m[0m    |                             import org.scalactic.Prettifier.default[0m
-[0m[[0m[31merror[0m] [0m[0m    |[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\controller\ControllerSpec.scala:205:33 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m205 |[0m            controller.raus(Some([31m"B1"[0m,[31m'B'[0m))[0m
-[0m[[0m[31merror[0m] [0m[0m    |                                 [31m^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |                           Found:    [1m[31m([0mString[1m[31m,[0m[1m[31m [0m[1m[31mChar[0m[1m[31m)[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |                           Required: String[0m
-[0m[[0m[31merror[0m] [0m[0m    |[0m
-[0m[[0m[31merror[0m] [0m[0m    |                           The following import might fix the problem:[0m
-[0m[[0m[31merror[0m] [0m[0m    |[0m
-[0m[[0m[31merror[0m] [0m[0m    |                             import org.scalactic.Prettifier.default[0m
-[0m[[0m[31merror[0m] [0m[0m    |[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\controller\ControllerSpec.scala:206:33 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m206 |[0m            controller.raus(Some([31m"C1"[0m,[31m'C'[0m))[0m
-[0m[[0m[31merror[0m] [0m[0m    |                                 [31m^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |                           Found:    [1m[31m([0mString[1m[31m,[0m[1m[31m [0m[1m[31mChar[0m[1m[31m)[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |                           Required: String[0m
-[0m[[0m[31merror[0m] [0m[0m    |[0m
-[0m[[0m[31merror[0m] [0m[0m    |                           The following import might fix the problem:[0m
-[0m[[0m[31merror[0m] [0m[0m    |[0m
-[0m[[0m[31merror[0m] [0m[0m    |                             import org.scalactic.Prettifier.default[0m
-[0m[[0m[31merror[0m] [0m[0m    |[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\controller\ControllerSpec.scala:207:33 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m207 |[0m            controller.raus(Some([31m"D1"[0m,[31m'D'[0m))[0m
-[0m[[0m[31merror[0m] [0m[0m    |                                 [31m^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |                           Found:    [1m[31m([0mString[1m[31m,[0m[1m[31m [0m[1m[31mChar[0m[1m[31m)[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |                           Required: String[0m
-[0m[[0m[31merror[0m] [0m[0m    |[0m
-[0m[[0m[31merror[0m] [0m[0m    |                           The following import might fix the problem:[0m
-[0m[[0m[31merror[0m] [0m[0m    |[0m
-[0m[[0m[31merror[0m] [0m[0m    |                             import org.scalactic.Prettifier.default[0m
-[0m[[0m[31merror[0m] [0m[0m    |[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:99:16 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m99 |[0m            tui.newGame([31m1[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |            [31m^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |            value newGame is not a member of de.htwg.se.madn.aview.Tui[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:106:16 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m106 |[0m            tui.newGame([31m1[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |            value newGame is not a member of de.htwg.se.madn.aview.Tui[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:113:16 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m113 |[0m            tui.newGame([31m1[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |            value newGame is not a member of de.htwg.se.madn.aview.Tui[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:120:16 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m120 |[0m            tui.newGame([31m1[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |            value newGame is not a member of de.htwg.se.madn.aview.Tui[0m
 [0m[[0m[31merror[0m] [0m[0mfour errors found[0m
 [0m[[0m[31merror[0m] [0m[0mfour errors found[0m
