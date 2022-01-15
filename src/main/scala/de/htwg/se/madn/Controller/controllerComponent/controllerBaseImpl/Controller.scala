@@ -246,7 +246,7 @@ case class Controller @Inject() () extends ControllerInterface {
         notifyObservers
         
       case _ =>
-        print("fai")
+        print("fail")
     } 
     out
   }

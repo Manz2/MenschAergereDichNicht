@@ -1,14 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\Tui.scala:5:7 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m[33mimport[0m PlayerComponent.PlayerInterface[0m
-[0m[[0m[31merror[0m] [0m[0m  |       [31m^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  |       Not found: PlayerComponent[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\Tui.scala:6:7 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m[33mimport[0m HomeComponent.HomeInterface[0m
-[0m[[0m[31merror[0m] [0m[0m  |       [31m^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  |       Not found: HomeComponent[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\Tui.scala:7:7 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m7 |[0m[33mimport[0m FieldComponent.FieldInterface[0m
-[0m[[0m[31merror[0m] [0m[0m  |       [31m^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  |       Not found: FieldComponent[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\Main.scala:18:4 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m18 |[0m    out = [31m"du hast es raus geschafft\n"[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |    [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |    Not found: out[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\Main.scala:19:10 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m19 |[0m    print(out.length)[0m
+[0m[[0m[31merror[0m] [0m[0m   |          [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |          Not found: out[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

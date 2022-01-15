@@ -42,7 +42,7 @@ class ControllerSpec extends AnyWordSpec with Matchers:
             controller.home.toString.count(_ == '+') should equal(6)
             controller.field.toString.count(_ == '+') should equal(6)
           }
-          "controller should move a figure" in{
+          "move a figure" in{
             controller.newGame(z,z,z)
             var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),None,Some("B2"),Some("B3"))
             controller.field.figuren = x
@@ -50,7 +50,7 @@ class ControllerSpec extends AnyWordSpec with Matchers:
             controller.field.figuren(2) should equal(Some("A1"))
             obs.updated should be(true)
           }
-          "controller should undo a step" in {
+          "undo a step" in {
             controller.newGame(z,z,z)
             var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),None,Some("B2"),Some("B3"))
             controller.field.figuren = x
@@ -59,7 +59,7 @@ class ControllerSpec extends AnyWordSpec with Matchers:
             controller.field.figuren(0) should equal(Some("A1"))
             obs.updated should be(true)
           }
-          "controller should redo a step" in {
+          "redo a step" in {
             controller.newGame(z,z,z)
             var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),None,Some("B2"),Some("B3"))
             controller.field.figuren = x
@@ -70,7 +70,7 @@ class ControllerSpec extends AnyWordSpec with Matchers:
             controller.field.figuren(2) should equal(Some("A1"))
             obs.updated should be(true)
           }
-          "controller should check the player field" in{
+          "check the player field" in{
             controller.newGame(z,z,z)
               var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),Some("A3"),Some("A4"))
               controller.player.figuren = x
@@ -79,15 +79,30 @@ class ControllerSpec extends AnyWordSpec with Matchers:
               controller.player.figuren = x
               controller.nochAlle('A') should equal(false)
           }
-          "controller shoud throw the dice" in {
+          "throw the dice" in {
             controller.throwDicec.toInt should be <=6
           }
-          "controllershould try 3 times to leave the player field" in {
+          "try 3 times to leave the player field" in {
             controller.newGame(z,z,z)
             var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),Some("A3"),Some("A4"))
             controller.player.figuren = x
             controller.Alleda('A').length should be > 5;
-        }
+            
+          }
+          "move a figure out if the dice shows 6" in{
+            controller.newGame(z,z,z)
+            var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),Some("A3"),Some("A4"))
+            controller.player.figuren = x
+            var a = controller.Alleda('A')
+            while(!a.equals("du hast es raus geschafft\n")){
+              a = controller.Alleda('A')
+            }
+            controller.field.figuren(0) should equal(Some("A1"))
+          }
+
+          "send a figure back to the playerfield" in {
+              
+          }
         }
   }
   case class Obs() extends Observer:
