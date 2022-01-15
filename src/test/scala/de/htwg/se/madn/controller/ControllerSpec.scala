@@ -82,6 +82,12 @@ class ControllerSpec extends AnyWordSpec with Matchers:
           "controller shoud throw the dice" in {
             controller.throwDicec.toInt should be <=6
           }
+          "controllershould try 3 times to leave the player field" in {
+            controller.newGame(z,z,z)
+            var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),Some("A3"),Some("A4"))
+            controller.player.figuren = x
+            controller.Alleda('A')
+        }
         }
   }
   case class Obs() extends Observer:
