@@ -11,10 +11,13 @@ class CommandSpec extends AnyWordSpec with Matchers {
       "try to undo a step" in {
         val undoManager = new UndoManager 
         undoManager.undoStep
+        undoManager.undoStack should equal(Nil)
+
       }
       "try to redo a step" in {
         val undoManager = new UndoManager 
         undoManager.redoStep
+        undoManager.redoStack should equal(Nil)
       }
 
     }

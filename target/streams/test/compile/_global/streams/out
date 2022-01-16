@@ -1,18 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:102:12 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m102 |[0m            controller.field.figuren([31m0[0m) should equal(Some([31m"A1"[0m)) [0m
-[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |            Not found: controller[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:110:12 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m110 |[0m            controller.field.figuren([31m0[0m) should equal(Some([31m"A1"[0m)) [0m
-[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |            Not found: controller[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:118:12 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m118 |[0m            controller.field.figuren([31m0[0m) should equal(Some([31m"A1"[0m)) [0m
-[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |            Not found: controller[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\aview\TuiSpec.scala:126:12 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m126 |[0m            controller.field.figuren([31m0[0m) should equal(Some([31m"A1"[0m)) [0m
-[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |            Not found: controller[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\util\CommandSpec.scala:14:20 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m        undoManager.undoStack should equal(Nil)[0m
+[0m[[0m[31merror[0m] [0m[0m   |        [31m^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |[33mvariable[0m [35mundoStack[0m cannot be accessed as a member of (undoManager : de.htwg.se.madn.util.UndoManager) from class CommandSpec.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\util\CommandSpec.scala:20:20 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m20 |[0m        undoManager.redoStack should equal(Nil)[0m
+[0m[[0m[31merror[0m] [0m[0m   |        [31m^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |[33mvariable[0m [35mredoStack[0m cannot be accessed as a member of (undoManager : de.htwg.se.madn.util.UndoManager) from class CommandSpec.[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
