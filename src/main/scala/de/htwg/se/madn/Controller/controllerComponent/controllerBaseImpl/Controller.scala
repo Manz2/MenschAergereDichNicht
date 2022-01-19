@@ -21,9 +21,9 @@ import scala.collection.mutable.Map
 case class Controller @Inject() () extends ControllerInterface {
   val undoManager = new UndoManager 
   val injector = Guice.createInjector(new madnModule)
-  var field = injector.getInstance(classOf[FieldInterface])
-  var player = injector.getInstance(classOf[PlayerInterface])
-  var home = injector.getInstance(classOf[HomeInterface])
+  var field = injector.getInstance(classOf[FieldInterface])//Spielfeld
+  var player = injector.getInstance(classOf[PlayerInterface])//basisfeld wo die figuren warten
+  var home = injector.getInstance(classOf[HomeInterface])//ziel feld
   val states = collection.mutable.Map(
     "B1" -> false,
     "B2" -> false,
@@ -122,6 +122,9 @@ case class Controller @Inject() () extends ControllerInterface {
     out
    
   }
+  /*
+   * send the figure at the possition i back to the base 
+   */
   def backHome(i:Int):Unit={
     val fig = field.figuren(i).get
     val pl = fig.charAt(0)
@@ -139,6 +142,9 @@ case class Controller @Inject() () extends ControllerInterface {
     }  
     field.figuren(i) = None: Option[String]
   }
+  /*
+   * moves figure plfig dicev fields
+   */
   def move(fig:Int,pl:Char,dicev:Int):String={
     var nochDa = false
     var out = ""
@@ -163,7 +169,7 @@ case class Controller @Inject() () extends ControllerInterface {
       if(!field.figuren.contains(Some(f))){
         out = f + " ist nicht im Feld waehle eine andere Figur"
       }else{
-        if(field.figuren.indexOf(Some(f))+dicev >= field.figuren.size){
+        if(field.figuren.indexOf(Some(f))+dicev >= field.figuren.size){//figur erreicht ende des feldes
           reachedEnd(fig,pl,dicev)
           out = f.toString
           notifyObservers
@@ -210,7 +216,7 @@ case class Controller @Inject() () extends ControllerInterface {
   def reachedEnd(fig:Int,pl:Char,dicev:Int):Unit={
     val f = pl.toUpper.toString.concat(fig.toString)
     pl.toUpper match{
-      case 'A' => 
+      case 'A' => //A erreicht home
         field.figuren(field.figuren.indexOf(Some(f)))= None: Option[String]
         home.figuren(fig-1) = Some(f)
       case _ =>
@@ -222,7 +228,6 @@ case class Controller @Inject() () extends ControllerInterface {
         field.figuren(field.figuren.indexOf(Some(f)))= None: Option[String]
         field.figuren(neu) = Some(f)
     }  
-    
   }
   def raus(s:Option[String],spieler:Char):String ={
     var out = ""

@@ -19,30 +19,14 @@ object Madn {
     val controller = injector.getInstance(classOf[ControllerInterface])
     println("Mensch aergere dich nicht")
     val tui = Tui(controller)
-    //val gui = GUI(controller)
-    /*println("Welcome to our game: if you want to play, tab play, tab any button to exit ");
-    var select = scala.io.StdIn.readLine()
-    object Select {
-      var choosen = if (select == "play") game else exit
-      def game = 
-        gui.top
-        tui.run
-        
-      def exit = sys.exit(0)
-    }*/
     val gui = new aview.GUI(controller)
-
     var input: String = ""
-
     print("Game started\n")  
     input = readLine()
     tui.processInputLine(input)
-
     while (input != "q"){
       input = readLine()
       tui.processInputLine(input)
     } 
-  
-      //Select.choosen //Strategy Pattern
   }
 }

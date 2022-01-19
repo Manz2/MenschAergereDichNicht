@@ -1,7 +1,5 @@
 package de.htwg.se.madn
 package aview
-//import Controller.PutCommand
-//import model.move
 import model.PlayerComponent.PlayerInterface
 import model.HomeComponent.HomeInterface
 import model.FieldComponent.FieldInterface
