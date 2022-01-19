@@ -29,9 +29,6 @@ class ControllerSpec extends AnyWordSpec with Matchers:
           z(count1) = None: Option[String]
           count1 = count1 + 1
           })
-          /*val field = new Field(z)
-          val home = new Home(z)
-          val player = new Player(z)*/
           val controller = new Controller()
           val obs = new Obs()
           controller.add(obs)
@@ -185,6 +182,26 @@ class ControllerSpec extends AnyWordSpec with Matchers:
 
             controller.move(1,'d',18)
             controller.home.figuren(12) should equal(Some("D1"))
+          }
+          "end the Game" in{
+            controller.newGame(z,z,z)
+
+            var x: Array[Option[String]] = new Array[Option[String]](20)
+            var count1 = 0
+            x.foreach(ins => {
+              x(count1) = None: Option[String]
+              count1 = count1 + 1
+            })
+            controller.field.figuren = x
+
+            var y: Array[Option[String]] = Array(Some("A1"),Some("A2"),Some("A3"),None)
+
+            controller.home.figuren = y
+
+            controller.field.figuren(18) = Some("A4")
+
+            controller.move(4,'a',5) should equal ("Spieler A hat gewonnen")
+
           }
           "leave the player field with the next figure" in {
             controller.newGame(z,z,z)

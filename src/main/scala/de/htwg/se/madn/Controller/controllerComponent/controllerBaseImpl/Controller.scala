@@ -160,8 +160,6 @@ case class Controller @Inject() () extends ControllerInterface {
       notifyObservers
       out = "noch einer Raus"
     }else{
-      
-      
       if(!field.figuren.contains(Some(f))){
         out = f + " ist nicht im Feld waehle eine andere Figur"
       }else{
@@ -186,7 +184,24 @@ case class Controller @Inject() () extends ControllerInterface {
             backHome(field.figuren.indexOf(Some(f))+dicev)
           }
           domove(Some(f),dicev)
-          out = f.toString}
+          out = f.toString
+        }
+        var I = Some(pl.toUpper.toString.concat("1"))
+        var II = Some(pl.toUpper.toString.concat("2"))
+        var III = Some(pl.toUpper.toString.concat("3"))
+        var IV = Some(pl.toUpper.toString.concat("4"))
+
+        var counter = 0
+        home.figuren.foreach(ins => {
+          if(!ins.equals(None)){
+            if(ins.get.charAt(0).equals(pl.toUpper)){
+              counter = counter + 1
+            }
+          }
+        })
+        if(counter == 4){
+          out = "Spieler " + pl.toUpper + " hat gewonnen"
+        }
       }
       
     }
