@@ -101,24 +101,44 @@ class GUI(controller: ControllerInterface) extends MainFrame with Observer {
      case ButtonClicked(`cButton`) => round('c')
      case ButtonClicked(`dButton`) => round('d')
      case ButtonClicked(`IButton`) => 
-       if(controller.move(1,turn,diceVal.toInt).length > 16){
+       var a = controller.move(1,turn,diceVal.toInt)
+       if(a.length > 16){
           IButton.background = java.awt.Color.red;
           IButton.enabled = false
+          if(a.length == 22){
+            spielfeld.text = a
+            spielfeld.background = java.awt.Color.green
+          }
        }
      case ButtonClicked(`IIButton`) => 
-       if(controller.move(2,turn,diceVal.toInt).length > 16){
+       var b = controller.move(2,turn,diceVal.toInt)
+       if(b.length > 16){
           IIButton.background = java.awt.Color.red;
           IIButton.enabled = false
+          if(b.length == 22){
+            spielfeld.text = b
+            spielfeld.background = java.awt.Color.green
+          }
        }
      case ButtonClicked(`IIIButton`) => 
-       if(controller.move(3,turn,diceVal.toInt).length > 16){
+       var c = controller.move(3,turn,diceVal.toInt)
+       if(c.length > 16){
           IIIButton.background = java.awt.Color.red;
           IIIButton.enabled = false
+          if(c.length == 22){
+            spielfeld.text = c
+            spielfeld.background = java.awt.Color.green
+          }
        }
      case ButtonClicked(`IVButton`) => 
-       if(controller.move(4,turn,diceVal.toInt).length > 16){
+       var d = controller.move(4,turn,diceVal.toInt)
+       if(d.length > 16){
           IVButton.background = java.awt.Color.red;
           IVButton.enabled = false
+          if(d.length == 22){
+            spielfeld.text = d
+            spielfeld.background = java.awt.Color.green
+          }
        }
      case ButtonClicked(`nextButton`) => 
        dice.background = java.awt.Color.white
@@ -153,6 +173,7 @@ class GUI(controller: ControllerInterface) extends MainFrame with Observer {
    visible = true
 
   def startGame = {
+    spielfeld.background = java.awt.Color.white
     val inserts = scala.collection.mutable.ArrayBuffer.empty[Option[String]]
         spieler123 = new Array[Char](player.text.toInt)
           var count1 = 0

@@ -1,14 +1,18 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\Tui.scala:5:7 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m[33mimport[0m PlayerComponent.PlayerInterface[0m
-[0m[[0m[31merror[0m] [0m[0m  |       [31m^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  |       Not found: PlayerComponent[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\Tui.scala:6:7 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m[33mimport[0m HomeComponent.HomeInterface[0m
-[0m[[0m[31merror[0m] [0m[0m  |       [31m^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  |       Not found: HomeComponent[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\OneDrive\Dokumente\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\Tui.scala:7:7 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m7 |[0m[33mimport[0m FieldComponent.FieldInterface[0m
-[0m[[0m[31merror[0m] [0m[0m  |       [31m^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  |       Not found: FieldComponent[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\GUI.scala:110:50 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m110 |[0m            spielfeld.background = java.awt.Color.Green[0m
+[0m[[0m[31merror[0m] [0m[0m    |                                   [31m^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value Green is not a member of object java.awt.Color - did you mean Color.green?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\GUI.scala:120:50 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m120 |[0m            spielfeld.background = java.awt.Color.Green[0m
+[0m[[0m[31merror[0m] [0m[0m    |                                   [31m^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value Green is not a member of object java.awt.Color - did you mean Color.green?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\GUI.scala:130:50 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m130 |[0m            spielfeld.background = java.awt.Color.Green[0m
+[0m[[0m[31merror[0m] [0m[0m    |                                   [31m^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value Green is not a member of object java.awt.Color - did you mean Color.green?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\aview\GUI.scala:140:50 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m140 |[0m            spielfeld.background = java.awt.Color.Green[0m
+[0m[[0m[31merror[0m] [0m[0m    |                                   [31m^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value Green is not a member of object java.awt.Color - did you mean Color.green?[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m

@@ -1,7 +1,5 @@
 package de.htwg.se.madn
 package aview
-//import Controller.PutCommand
-//import model.move
 import model.PlayerComponent.PlayerInterface
 import model.HomeComponent.HomeInterface
 import model.FieldComponent.FieldInterface
@@ -52,19 +50,17 @@ class Tui(controller: ControllerInterface) extends Observer:
   }
   def round(player:Char)={
 
-    print("Spieler "+ player.toUpper+" ist an der Reihe druecke w um zu wuerfeln\n")
-    var input = readLine()
-    if(input == "w"){
-      var alle = controller.nochAlle(player.toUpper)
-      if(alle == true){
-        print(player.toUpper + " darf 3x wuerfeln\n")
-        print(controller.Alleda(player.toUpper))
-      } else{
-        diceVal =  controller.throwDicec
-        print(player.toUpper + " hat eine "+ diceVal +" gewuerfelt\n")
-        println("Mit welcher Figur moechtest du Fahren (1-4)")
-        turn = player
-      }
+    print("Spieler "+ player.toUpper+" ist an der Reihe\n")
+    var alle = controller.nochAlle(player.toUpper)
+    if(alle == true){
+      print(player.toUpper + " darf 3x wuerfeln\n")
+      print(controller.Alleda(player.toUpper))
+      turn = player
+    } else{
+      diceVal =  controller.throwDicec
+      print(player.toUpper + " hat eine "+ diceVal +" gewuerfelt\n")
+      println("Mit welcher Figur moechtest du Fahren (1-4)")
+      turn = player
     }
   }
 

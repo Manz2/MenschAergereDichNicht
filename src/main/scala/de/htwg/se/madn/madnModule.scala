@@ -26,7 +26,6 @@ class madnModule extends AbstractModule {
     val defaultSize:Int = 9
 
     override def configure():Unit = {
-        //bindConstant().annotatedWith(Names.named("DefaultSize")).to(defaultSize)
         bind(classOf[PlayerInterface]).to(classOf[PlayerBaseImpl.Player])
         bind(classOf[HomeInterface]).to(classOf[HomeBaseImpl.Home])
         bind(classOf[FieldInterface]).to(classOf[fieldBaseImpl.Field])

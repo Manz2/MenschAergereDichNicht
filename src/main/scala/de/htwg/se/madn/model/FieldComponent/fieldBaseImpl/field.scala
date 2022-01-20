@@ -15,7 +15,7 @@ final case class Field() extends Strategy with FieldInterface {
   override def toString: String = {
 
     var s = "|"
-    figuren.foreach(ins => {//wieso istt das kein option array
+    figuren.foreach(ins => {
       if (ins.equals(None)) {
         s = s + "    |"
       } else {
