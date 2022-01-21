@@ -17,6 +17,7 @@ import scala.util.{Try,Success,Failure}
 import scala.util.Random
 import scala.util.control.Breaks._
 import scala.collection.mutable.Map
+import model.fileIoComponent.FileIOInterface
 
 case class Controller @Inject() () extends ControllerInterface {
   val undoManager = new UndoManager 
@@ -24,6 +25,7 @@ case class Controller @Inject() () extends ControllerInterface {
   var field = injector.getInstance(classOf[FieldInterface])//Spielfeld
   var player = injector.getInstance(classOf[PlayerInterface])//basisfeld wo die figuren warten
   var home = injector.getInstance(classOf[HomeInterface])//ziel feld
+  val fileIo = injector.getInstance(classOf[FileIOInterface])
   val states = collection.mutable.Map(
     "B1" -> false,
     "B2" -> false,
@@ -61,6 +63,16 @@ case class Controller @Inject() () extends ControllerInterface {
 
   def redo: Unit = {
     undoManager.redoStep
+    notifyObservers
+  }
+  def save: Unit = {
+    fileIo.save(player,field,home)
+    notifyObservers
+  }
+  def load: Unit = {
+    player = fileIo.loadPlayer
+    field = fileIo.loadField
+    home = fileIo.loadHome
     notifyObservers
   }
 

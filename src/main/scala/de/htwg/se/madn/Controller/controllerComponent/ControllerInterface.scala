@@ -12,6 +12,8 @@ trait ControllerInterface extends Observable{
   def domove(Figur:Option[String],Anzahl:Int): Unit 
   def undo: Unit 
   def redo: Unit 
+  def save: Unit
+  def load: Unit
   def nochAlle(spieler:Char) : Boolean 
   def throwDicec : String
   def Alleda(spieler:Char): String

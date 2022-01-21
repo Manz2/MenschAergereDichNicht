@@ -80,6 +80,8 @@ class Tui(controller: ControllerInterface) extends Observer:
       case "2"  => println(controller.move(2,turn,diceVal.toInt))
       case "3"  => println(controller.move(3,turn,diceVal.toInt))
       case "4"  => println(controller.move(4,turn,diceVal.toInt))
+      case "save"  => controller.save
+      case "load"  => controller.load
       case _ => 
     }
   }

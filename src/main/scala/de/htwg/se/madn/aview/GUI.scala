@@ -54,17 +54,23 @@ class GUI(controller: ControllerInterface) extends MainFrame with Observer {
    val IIButton = new Button("2")
    val IIIButton = new Button("3")
    val IVButton = new Button("4")
+   val saveButton = new Button("SAVE")
+   val loadButton = new Button("LOAD")
 
    val nextButton = new Button("neue Runde")
    val playerLabel = new Label("Anzahl Spieler: ")
    val emptyLabel1 = new Label("        ")
    val emptyLabel2 = new Label("        ")
-   val emptyLabel3 = new Label("        ")
+   val emptyLabel3 = new Label("              ")
    contents = new BoxPanel(Orientation.Vertical){
     contents += new FlowPanel {
       contents += playerLabel 
       contents += player
-      contents += start}
+      contents += start
+      contents += emptyLabel3
+      contents += saveButton
+      contents += loadButton
+    }
     contents += spielfeld
     contents += new FlowPanel{
       contents += dice
@@ -94,8 +100,12 @@ class GUI(controller: ControllerInterface) extends MainFrame with Observer {
    listenTo(IIIButton)
    listenTo(IVButton)
    listenTo(nextButton)
+   listenTo(saveButton)
+   listenTo(loadButton)
    reactions += {
      case ButtonClicked(`start`) => startGame
+     case ButtonClicked(`saveButton`) => controller.save
+     case ButtonClicked(`loadButton`) => controller.load
      case ButtonClicked(`aButton`) => round('a')
      case ButtonClicked(`bButton`) => round('b')
      case ButtonClicked(`cButton`) => round('c')

@@ -18,6 +18,8 @@ import scala.util.Random
 import Controller.controllerComponent.ControllerInterface
 import Controller.controllerComponent._
 import scala.io.StdIn.readLine
+import model.fileIoComponent.FileIOInterface
+import model.fileIoComponent._
 
 
 
@@ -30,5 +32,8 @@ class madnModule extends AbstractModule {
         bind(classOf[HomeInterface]).to(classOf[HomeBaseImpl.Home])
         bind(classOf[FieldInterface]).to(classOf[fieldBaseImpl.Field])
         bind(classOf[ControllerInterface]).to(classOf[controllerBaseImpl.Controller])
+
+        bind(classOf[FileIOInterface]).to(classOf[fileIoJsonImpl.fileIoJsonImpl])
+        //bind(classOf[FileIOInterface]).to(classOf[fileIoXmlImpl.fileIoXmlImpl])
     }
 }
