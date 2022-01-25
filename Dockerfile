@@ -1,5 +1,5 @@
-FROM hseeberger/scala-sbt:8u222_1.5.5_3.1.0
-RUN apt-get update && apt-get install -y sbt libxrender1 libxtst6 libxi6
+FROM hseeberger/scala-sbt:8u222_1.3.5_2.13.1
+RUN apt-get update && apt-get install -y sbt libxrender1 libxtst6 libxi6 
 COPY . /madn
 WORKDIR /madn
 CMD sbt run
