@@ -19,7 +19,7 @@ object Madn {
     val controller = injector.getInstance(classOf[ControllerInterface])
     println("Mensch aergere dich nicht")
     val tui = Tui(controller)
-    val gui = new aview.GUI(controller)
+    val gui = new aview.GUI(controller)//comment for docker use then "docker build -t madn" and after "docker run -ti madn"
     var input: String = ""
     print("Game started\n")  
     input = readLine()
