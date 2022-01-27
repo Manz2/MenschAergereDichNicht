@@ -1,6 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\controller\ControllerSpec.scala:204:18 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m204 |[0m            print(home.toString)[0m
-[0m[[0m[31merror[0m] [0m[0m    |                  [31m^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m    |                  Not found: home[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E039] Reference Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\model\XmlSpec.scala:29:35 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m29 |[0m                controller.newGame(z,z,z)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                   [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |             z is a forward reference extending over the definition of x[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
