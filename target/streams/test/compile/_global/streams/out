@@ -1,6 +1,14 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E039] Reference Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\model\XmlSpec.scala:29:35 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m29 |[0m                controller.newGame(z,z,z)[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                   [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |             z is a forward reference extending over the definition of x[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\controller\ControllerSpec.scala:81:31 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m81 |[0m                [33mval[0m [36minjector[0m = Guice.createInjector([33mnew[0m [35mmadnModule[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                               [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                               Not found: Guice[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E050] Type Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\controller\ControllerSpec.scala:103:27 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m103 |[0m                controller.save()[0m
+[0m[[0m[31merror[0m] [0m[0m    |                [31m^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |              [33mmethod[0m [35msave[0m in [33mclass[0m [35mController[0m does not take parameters[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E050] Type Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\test\scala\de\htwg\se\madn\controller\ControllerSpec.scala:105:27 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m105 |[0m                controller.load()[0m
+[0m[[0m[31merror[0m] [0m[0m    |                [31m^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |              [33mmethod[0m [35mload[0m in [33mclass[0m [35mController[0m does not take parameters[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

@@ -76,6 +76,35 @@ class ControllerSpec extends AnyWordSpec with Matchers:
               controller.player.figuren = x
               controller.nochAlle('A') should equal(false)
           }
+          "save the game" in {
+            var t: Array[Option[String]] = new Array[Option[String]](2)
+                val controller = new Controller()
+                controller.newGame(t,t,t)
+                var x: Array[Option[String]] = new Array[Option[String]](20)
+                var count1 = 0
+                x.foreach(ins => {
+                x(count1) = None: Option[String]
+                count1 = count1 + 1
+                })
+                controller.field.figuren = x
+
+                var y: Array[Option[String]] = Array(Some("A1"),Some("A2"),Some("A3"),Some("A4"))
+
+                controller.player.figuren = y
+
+                var z: Array[Option[String]] = new Array[Option[String]](4)
+                var count2 = 0
+                z.foreach(ins => {
+                z(count2) = None: Option[String]
+                count2 = count2 + 1
+                })
+                controller.home.figuren = z
+                controller.save
+                controller.newGame(t,t,t)
+                controller.load
+
+                controller.player.figuren should contain inOrder (Some("A1"),Some("A2"),Some("A3"),Some("A4"))
+          }
           "throw the dice" in {
             controller.throwDicec.toInt should be <=6
           }
