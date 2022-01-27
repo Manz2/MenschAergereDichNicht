@@ -33,7 +33,7 @@ class madnModule extends AbstractModule {
         bind(classOf[FieldInterface]).to(classOf[fieldBaseImpl.Field])
         bind(classOf[ControllerInterface]).to(classOf[controllerBaseImpl.Controller])
 
-        bind(classOf[FileIOInterface]).to(classOf[fileIoJsonImpl.fileIoJsonImpl])
-        //bind(classOf[FileIOInterface]).to(classOf[fileIoXmlImpl.fileIoXmlImpl])
+        //bind(classOf[FileIOInterface]).to(classOf[fileIoJsonImpl.fileIoJsonImpl])
+        bind(classOf[FileIOInterface]).to(classOf[fileIoXmlImpl.fileIoXmlImpl])
     }
 }
