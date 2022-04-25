@@ -2,7 +2,7 @@
 
 ![APM](https://img.shields.io/apm/l/vim-mode)
 
-## status
+## Status
 
 
 [![Build](https://github.com/Manz2/MenschAergereDichNicht/actions/workflows/scalaCI.yml/badge.svg)](https://github.com/Manz2/MenschAergereDichNicht/actions)   [![codecov](https://codecov.io/gh/Manz2/MenschAergereDichNicht/branch/main/graph/badge.svg?token=3GA31FYUYT)](https://codecov.io/gh/Manz2/MenschAergereDichNicht)
