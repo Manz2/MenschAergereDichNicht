@@ -1,5 +1,4 @@
 # MenschAergereDichNicht
-Spiel Gruppe3<br>
 
 ![APM](https://img.shields.io/apm/l/vim-mode)
 
