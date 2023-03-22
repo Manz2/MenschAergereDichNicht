@@ -1,48 +1,23 @@
 package de.htwg.se.madn
 package model.PlayerComponent.PlayerBaseImpl
+import model.FigureComponent.FigureBaseImpl.Figure
 import model.PlayerComponent.PlayerInterface
-final case class Player() extends Strategy with PlayerInterface {
 
-  var x: Array[Option[String]] = new Array[Option[String]](10)
-      var count1 = 0
-      x.foreach(ins => {
-      x(count1) = None: Option[String]
-      count1 = count1 + 1
-      })
-
-  var figuren = x
-
+final case class Player(val data:Vector[Figure]) extends Strategy with PlayerInterface {
+  
   override def toString: String = {
-
-    var s = "|"
-    figuren.foreach(ins => {
-      if (ins.equals(None)) {
-        s = s + "    |"
-      } else {
-        s = s + " " + ins.get + " |"
-      }
-    })
-
-    val box =
-      ("+") + ("----+" * figuren.length) + "\n" + s + "\n" + ("+") + ("----+" * figuren.length) + "\n"
-    box
+    def inner(value: Figure) : String = if (!value.number == -1) value.toString else Some("   ")
+    def row(figuren: Vector[Figure]): String ="|" + figuren.map(inner(_) + " |").toString
+    ("+") + ("----+" * data.length) + "\n" + row(data) + "\n" + ("+") + ("----+" * data.length) + "\n"
   }
 
-  def move(Figur: Option[String], Anzahl: Int): Option[String] = {
-    var aktuell = figuren.indexOf(Figur)
-    if (aktuell== -1){
-      Some("-1")
-    }else{
-      figuren(aktuell) = None//null wird noch ersetzt
-      if(!figuren(aktuell+Anzahl).isEmpty){
-        var alt = figuren(aktuell+Anzahl)
-        figuren(aktuell+Anzahl)=Figur
-        alt
-      } else{
-        figuren(aktuell+Anzahl)=Figur
-        Figur
-      }
+  def move(figur:Figure,anzahlFelder:Int): Player = {
+    val index = data.indexOf(figur)
+    index match{
+      case -1 => Player(data)
+      case _ => {
+        val dataUpdated = data.updated(index,Figure("",-1))
+        Player(dataUpdated.updated(index+anzahlFelder,figur))}
     }
   }
-  
 }

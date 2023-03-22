@@ -1,8 +1,9 @@
 package de.htwg.se.madn
 package model.FieldComponent
+import model.FigureComponent.FigureInterface
+import java.lang.reflect.Field
 
-trait FieldInterface {
-  var figuren :  Array[Option[String]]
-  def move(Figur:Option[String],Anzahl:Int): Option[String] 
+trait FieldInterface(val data: Vector[FigureInterface]) {
+  def move(figur:Figure,anzahlFelder:Int): FieldInterface
 }
 

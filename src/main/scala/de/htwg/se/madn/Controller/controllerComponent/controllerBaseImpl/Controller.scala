@@ -18,13 +18,14 @@ import scala.util.Random
 import scala.util.control.Breaks._
 import scala.collection.mutable.Map
 import model.fileIoComponent.FileIOInterface
+import model.FigureComponent.FigureBaseImpl.Figure
 
-case class Controller @Inject() () extends ControllerInterface {
+case class Controller @Inject() (val Home:Home,val Field:Field,val Player:Player) extends ControllerInterface {
   val undoManager = new UndoManager 
   val injector = Guice.createInjector(new madnModule)
-  var field = injector.getInstance(classOf[FieldInterface])//Spielfeld
+  /*var field = injector.getInstance(classOf[FieldInterface])//Spielfeld
   var player = injector.getInstance(classOf[PlayerInterface])//basisfeld wo die figuren warten
-  var home = injector.getInstance(classOf[HomeInterface])//ziel feld
+  var home = injector.getInstance(classOf[HomeInterface])//ziel feld*/
   val fileIo = injector.getInstance(classOf[FileIOInterface])
   val states = collection.mutable.Map(
     "B1" -> false,
@@ -282,6 +283,5 @@ case class Controller @Inject() () extends ControllerInterface {
     } 
     out
   }
-
 }
 

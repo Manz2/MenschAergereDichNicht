@@ -1,6 +1,7 @@
 package de.htwg.se.madn
 package model.FieldComponent.fieldBaseImpl
+import model.FigureComponent.FigureInterface
 
 trait Strategy {
-  def move(Figur:Option[String],Anzahl:Int) :Option[String]
+  def move(figur:FigureInterface,anzahlFelder:Int) :FieldInterface
 }

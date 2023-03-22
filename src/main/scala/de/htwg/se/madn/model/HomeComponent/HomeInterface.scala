@@ -1,9 +1,9 @@
 package de.htwg.se.madn
 package model.HomeComponent
+import model.FigureComponent.FigureInterface
 
-trait HomeInterface {
-  var figuren :  Array[Option[String]]
-  def move(Figur:Option[String],Anzahl:Int): Option[String] 
+trait HomeInterface(val data: Vector[FigureInterface]) {
+  def move(figur:Figure,anzahlFelder:Int): HomeInterface
 }
 
 

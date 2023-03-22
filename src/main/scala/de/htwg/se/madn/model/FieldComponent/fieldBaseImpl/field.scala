@@ -1,37 +1,24 @@
 package de.htwg.se.madn
 package model.FieldComponent.fieldBaseImpl
 import model.FieldComponent.FieldInterface
+import model.FigureComponent.FigureBaseImpl.Figure
+import scala.annotation.switch
 
-final case class Field() extends Strategy with FieldInterface {
-  
-  var x: Array[Option[String]] = new Array[Option[String]](10)
-      var count1 = 0
-      x.foreach(ins => {
-      x(count1) = None: Option[String]
-      count1 = count1 + 1
-      })
-  var figuren = x
+final case class Field(val data:Vector[Figure]) extends Strategy with FieldInterface {
 
   override def toString: String = {
-    def inner(value: Option[String]) : Option[String] = if (!value.equals(None)) Some(value) else Some("   ")
-    def row(figuren: Array[Option[String]]): String ="|" + figuren.map(inner(_).get + " |").toString
-    ("+") + ("----+" * figuren.length) + "\n" + row(figuren) + "\n" + ("+") + ("----+" * figuren.length) + "\n"
+    def inner(value: Figure) : String = if (!value.number == -1) value.toString else Some("   ")
+    def row(figuren: Vector[Figure]): String ="|" + figuren.map(inner(_) + " |").toString
+    ("+") + ("----+" * data.length) + "\n" + row(data) + "\n" + ("+") + ("----+" * data.length) + "\n"
   }
 
-  def move(Figur:Option[String],Anzahl:Int): Option[String] = {
-    var aktuell = figuren.indexOf(Figur)
-    if (aktuell== -1){
-      Some("-1")
-    }else{
-      figuren(aktuell) = None
-      if(!figuren(aktuell+Anzahl).isEmpty){
-        var alt = figuren(aktuell+Anzahl)
-        figuren(aktuell+Anzahl)=Figur
-        alt
-      } else{
-        figuren(aktuell+Anzahl)=Figur
-        Figur
-      }
+  def move(figur:Figure,anzahlFelder:Int): Field = {
+    val index = data.indexOf(figur)
+    index match{
+      case -1 => Field(data)
+      case _ => {
+        val dataUpdated = data.updated(index,Figure("",-1))
+        Field(dataUpdated.updated(index+anzahlFelder,figur))}
     }
   }
 }

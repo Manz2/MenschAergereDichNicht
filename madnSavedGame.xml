@@ -1,11 +1,16 @@
 <game>
     <playerfiguren>
-        <value>A1</value>
+        <value>-1</value>
         <value>A2</value>
         <value>A3</value>
         <value>A4</value>
+        <value>-1</value>
+        <value>B2</value>
+        <value>B3</value>
+        <value>B4</value>
     </playerfiguren>
     <fieldfiguren>
+        <value>A1</value>
         <value>-1</value>
         <value>-1</value>
         <value>-1</value>
@@ -14,8 +19,7 @@
         <value>-1</value>
         <value>-1</value>
         <value>-1</value>
-        <value>-1</value>
-        <value>-1</value>
+        <value>B1</value>
         <value>-1</value>
         <value>-1</value>
         <value>-1</value>
@@ -28,6 +32,10 @@
         <value>-1</value>
     </fieldfiguren>
     <homefiguren>
+        <value>-1</value>
+        <value>-1</value>
+        <value>-1</value>
+        <value>-1</value>
         <value>-1</value>
         <value>-1</value>
         <value>-1</value>

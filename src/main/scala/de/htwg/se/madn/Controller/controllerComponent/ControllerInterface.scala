@@ -7,9 +7,9 @@ import scala.util.{Try,Success,Failure}
 import scala.util.Random
 import scala.util.control.Breaks._
 
-trait ControllerInterface extends Observable{
-  def newGame(inserts: Array[Option[String]],fieldpositions: Array[Option[String]],homepositions: Array[Option[String]]) : Unit
-  def domove(Figur:Option[String],Anzahl:Int): Unit 
+trait ControllerInterface(val Home:HomeInterface,val Field:FieldInterface,val Player:PlayerInterface) extends Observable{
+  def newGame(inserts: Vector[Figure],fieldpositions: Vector[Figure],homepositions: Vector[Figure]) : Unit
+  def domove(figur:Figure,anzahlFelder:Int): Unit 
   def undo: Unit 
   def redo: Unit 
   def save: Unit
@@ -17,8 +17,8 @@ trait ControllerInterface extends Observable{
   def nochAlle(spieler:Char) : Boolean 
   def throwDicec : String
   def Alleda(spieler:Char): String
-  def move(fig:Int,pl:Char,dicev:Int):String
+  def move(figur:Figure,dicev:Int):String
   def backHome(i:Int):Unit
-  def reachedEnd(fig:Int,pl:Char,dicev:Int):Unit
-  def raus(s:Option[String],spieler:Char):String
+  def reachedEnd(figur:Figure,dicev:Int):Unit
+  def raus(figur:Figure,spieler:Char):String
 }
