@@ -13,19 +13,9 @@ final case class Field() extends Strategy with FieldInterface {
   var figuren = x
 
   override def toString: String = {
-
-    var s = "|"
-    figuren.foreach(ins => {
-      if (ins.equals(None)) {
-        s = s + "    |"
-      } else {
-        s = s + " " + ins.get + " |"
-      }
-    })
-
-    val box =
-      ("+") + ("----+" * figuren.length) + "\n" + s + "\n" + ("+") + ("----+" * figuren.length) + "\n"
-    box
+    def inner(value: Option[String]) : Option[String] = if (!value.equals(None)) Some(value) else Some("   ")
+    def row(figuren: Array[Option[String]]): String ="|" + figuren.map(inner(_).get + " |").toString
+    ("+") + ("----+" * figuren.length) + "\n" + row(figuren) + "\n" + ("+") + ("----+" * figuren.length) + "\n"
   }
 
   def move(Figur:Option[String],Anzahl:Int): Option[String] = {

@@ -1,26 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\fileIoComponent\fileIoJsonImpl\fileIoJsonImpl.scala:27:23 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m27 |[0m    [33mval[0m [36msize[0m = (json \ game\[31m"playerData"[0m \ [31m"size"[0m).get.toString.toInt[0m
-[0m[[0m[31merror[0m] [0m[0m   |                       [31m^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                       Not found: game[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\fileIoComponent\fileIoJsonImpl\fileIoJsonImpl.scala:30:26 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m30 |[0m        s(index) = (json \game\[31m"playerData"[0m\ [31m"value"[0m)(index).as[[35mString[0m][0m
-[0m[[0m[31merror[0m] [0m[0m   |                          [31m^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                          Not found: game[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\fileIoComponent\fileIoJsonImpl\fileIoJsonImpl.scala:52:23 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m52 |[0m    [33mval[0m [36msize[0m = (json \ game\[31m"fieldData"[0m \ [31m"size"[0m).get.toString.toInt[0m
-[0m[[0m[31merror[0m] [0m[0m   |                       [31m^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                       Not found: game[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\fileIoComponent\fileIoJsonImpl\fileIoJsonImpl.scala:55:26 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m55 |[0m        s(index) = (json \game\[31m"fieldData"[0m\ [31m"value"[0m)(index).as[[35mString[0m][0m
-[0m[[0m[31merror[0m] [0m[0m   |                          [31m^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                          Not found: game[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\fileIoComponent\fileIoJsonImpl\fileIoJsonImpl.scala:77:22 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m77 |[0m    [33mval[0m [36msize[0m = (json \game\ [31m"homeData"[0m \ [31m"size"[0m).get.toString.toInt[0m
-[0m[[0m[31merror[0m] [0m[0m   |                      [31m^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                      Not found: game[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\User\Documents\Htwg\se\MADN\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\fileIoComponent\fileIoJsonImpl\fileIoJsonImpl.scala:80:26 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m80 |[0m        s(index) = (json \game\[31m"homeData"[0m\ [31m"value"[0m)(index).as[[35mString[0m][0m
-[0m[[0m[31merror[0m] [0m[0m   |                          [31m^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                          Not found: game[0m
-[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
-[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\er741man\Documents\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\FieldComponent\fieldBaseImpl\field.scala:25:14 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m        inner(figur).get + [31m" |"[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |              [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |              Found:    (figur : Option[String])[0m
+[0m[[0m[31merror[0m] [0m[0m   |              Required: String[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
