@@ -31,26 +31,14 @@ case class Controller () extends ControllerInterface {
   var player: FieldInterface = Field(Vector());
   var home: FieldInterface = Field(Vector());
 
-  //def newGame(
-      //inserts: Array[Option[String]],
-      //fieldpositions: Array[Option[String]],
-      //homepositions: Array[Option[String]]
-  //) = {
-    //field.figuren = fieldpositions
-    //player.figuren = inserts
-    //home.figuren = homepositions
-    //notifyObservers
-  //}
-
   def newGame(
     nPlayer : Int
   ): Unit = {
     def inner(spielername: String): List[Figure] = (1 until 5).map(idx => Figure(spielername,idx)).toList
 
-    //println(Vector(List("A","B").map(inner(_)).flatten).flatten)
-    //player = Field(   Vector(   List("A","B","C","D").take(nPlayer)   .map(inner(_).flatten).flatten ))
     player = Field(Vector(List("A","B","C","D").take(nPlayer).map(inner(_)).flatten).flatten)
-    println(player)
+    field = Field(Vector.fill(20)(Figure("",-1)))
+    home = Field(Vector.fill(nPlayer*4)(Figure("",-1)))
 
     notifyObservers
   }
