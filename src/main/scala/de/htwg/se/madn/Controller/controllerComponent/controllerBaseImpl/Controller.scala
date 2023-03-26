@@ -92,11 +92,18 @@ case class Controller () extends ControllerInterface {
   def backHome(index:Int):Field={
     val figure = field.data(index)
     figure.playerName match{
-      case "A" => Field(player.data.updated(index,figure))
-      case "B" => Field(player.data.updated(index+4,figure))
-      case "C" => Field(player.data.updated(index+8,figure))
-      case "D" => Field(player.data.updated(index+12,figure))
+      case "A" => Field(player.data.updated(figure.number-1,figure))
+      case "B" => Field(player.data.updated(figure.number-1+4,figure))
+      case "C" => Field(player.data.updated(figure.number-1+8,figure))
+      case "D" => Field(player.data.updated(figure.number-1+12,figure))
     } 
+  }
+  
+  //try 3 times to leave the player field
+  def Alleda(spieler:Char): Boolean = {
+    val result = List.fill(3)(throwDice).contains(6)
+    if (result) raus(spieler.toString)
+    result  
   }
 
 
@@ -114,12 +121,7 @@ case class Controller () extends ControllerInterface {
   */
 
   
-  //try 3 times to leave the player field
-  def Alleda(spieler:Char): Boolean = {
-    val result = List.fill(3)(throwDice).contains(6)
-    if (result) raus(spieler.toString)
-    result  
-  }
+
 
   /*
   /*
