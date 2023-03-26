@@ -8,6 +8,7 @@ import model.FieldComponent.fieldBaseImpl.Field
 import aview.{Tui, GUI}
 import scala.io.StdIn.readLine
 import model.FigureComponent.FigureBaseImpl.Figure
+import scala.collection.immutable.LazyList.cons
 
 
 object Madn {
@@ -29,11 +30,11 @@ object Madn {
     */
 
     val controller = Controller()
-    controller.newGame(2)
-    val figur = controller.player.data(0)
-    controller.debug()
-    controller.raus(figur)
-    controller.debug()
+    controller.newGame(3)
+    val figur = controller.player.data(4)
+    //controller.debug()
+    //controller.raus(figur)
+    //controller.debug()
     //controller.field  = Field(controller.field.data.updated(0,figur))
     //controller.domove(figur,3)
     //controller.debug()
@@ -46,6 +47,14 @@ object Madn {
     //println(controller.nochAlle('B'))
     //println(controller.throwDice)
     //controller.debug()
+    controller.debug()
+    //println(controller.Alleda('C'))
+    controller.raus("B")
+    controller.debug()
+    controller.raus("B")
+    controller.debug()
+    controller.raus("B")
+    controller.debug()
 
 
 

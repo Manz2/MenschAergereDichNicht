@@ -38,17 +38,14 @@ case class Controller () extends ControllerInterface {
     println(home)
   }
 
-  def newGame(
-    nPlayer : Int
-  ): Unit = {
+  def newGame(nPlayer : Int): Unit = {
     def inner(spielername: String): List[Figure] = (1 until 5).map(idx => Figure(spielername,idx)).toList
-
     player = Field(Vector(List("A","B","C","D").take(nPlayer).map(inner(_)).flatten).flatten)
     field = Field(Vector.fill(20)(Figure("",-1)))
     home = Field(Vector.fill(nPlayer*4)(Figure("",-1)))
-
     notifyObservers
   }
+
   override def toString = field.toString + home.toString + player.toString
   
   def domove(figur:FigureInterface ,anzahl:Int): Unit = {
@@ -67,13 +64,14 @@ case class Controller () extends ControllerInterface {
     notifyObservers
   }
 
-  def raus(figur:FigureInterface):Unit ={
+  def raus(spieler:String):Unit ={
     def inner(index:Int):Unit = {
+      val figur = player.data.find(_.playerName==spieler.toString).get
       player = checkField(index)
       field = Field(field.data.updated(index,figur))
-      player = Field(player.data.updated(index,Figure("",-1)))
+      player = Field(player.data.updated(player.data.indexOf(figur),Figure("",-1)))
     }
-    figur.playerName match{
+    spieler match{
       case "A" =>inner(0)
       case "B" =>inner((field.data.size/4).toInt)
       case "C" =>inner(2*(field.data.size/4).toInt)
@@ -115,44 +113,13 @@ case class Controller () extends ControllerInterface {
   }
   */
 
-  /*
-  /*
-   *try 3 times to leave the player field
-   */
-
-  def Alleda(spieler:Char): String = {
-    var count = 0
-    var out = ""
-
-    while(count < 3){
-      var x = throwDicec.toInt
-      var z = player.figuren.size;
-      var s = None: Option[String]
-      var y = 0;
-      if(x == 6){
-        count = 3
-        while(y<z){
-          if(!player.figuren(y).equals(None)){
-              if(player.figuren(y).get.charAt(0).equals(spieler)){
-                s = player.figuren(y)
-                player.figuren(y) = None: Option[String]
-                y = z
-              }
-              y = y + 1
-          }else{
-            y = y + 1
-          }
-        }
-        out = raus(s,spieler)  
-      }else{
-        out = "du hast es leider nicht raus geschafft\n"
-        count = count + 1
-      }
-    }
-    out
-   
+  
+  //try 3 times to leave the player field
+  def Alleda(spieler:Char): Boolean = {
+    val result = List.fill(3)(throwDice).contains(6)
+    if (result) raus(spieler.toString)
+    result  
   }
-*/
 
   /*
   /*

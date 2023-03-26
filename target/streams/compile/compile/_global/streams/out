@@ -1,10 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:56:13 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m56 |[0m    player = checkField(field.data.indexOf(figur)+anzahl)[0m
-[0m[[0m[31merror[0m] [0m[0m   |             [31m^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |             Not found: checkField[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:73:15 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m73 |[0m      player = checkField(index)[0m
-[0m[[0m[31merror[0m] [0m[0m   |               [31m^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |               Not found: checkField[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E040] Syntax Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:120:42 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m120 |[0m    [33mif[0m (result) raus(spieler.toString).get)[0m
+[0m[[0m[31merror[0m] [0m[0m    |                                          [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |                                          '}' expected, but ')' found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
