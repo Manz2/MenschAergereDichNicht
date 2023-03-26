@@ -16,38 +16,6 @@ class Tui(controller: ControllerInterface) extends Observer:
   var diceVal = "";
   var turn = 'A'
 
-  def startGame(anzahl:Int) = {
-    val inserts = scala.collection.mutable.ArrayBuffer.empty[Option[String]]
-    var spieler123 = new Array[Char](anzahl)
-    val fieldpos: Array[Option[String]] = new Array[Option[String]](20)//40 
-    var count1 = 0
-    fieldpos.foreach(ins => {
-      fieldpos(count1) = None: Option[String]
-      count1 = count1 + 1
-    })
-       val Spielerbank = Array('A','B','C','D')
-       var count = 0;
-       spieler123.foreach(ins => {
-        spieler123(count) = Spielerbank(count) 
-        count = count + 1
-        })
-        count = 0
-        val hpmepos: Array[Option[String]] = new Array[Option[String]](anzahl*4)
-          hpmepos.foreach(ins => {
-          hpmepos(count) = None: Option[String]
-          count = count + 1
-        })
-       for (a <- spieler123) {
-        for (b <- 1 until 5) {
-          val d = a.toString + b.toString
-          Some(d)
-          inserts += Some(d)
-        }
-       }
-       
-       controller.newGame(inserts.toArray, fieldpos, hpmepos)
-       
-  }
   def round(player:Char)={
 
     print("Spieler "+ player.toUpper+" ist an der Reihe\n")
@@ -67,10 +35,10 @@ class Tui(controller: ControllerInterface) extends Observer:
 
   def processInputLine(input:String) = {
     input match {
-      case "n1" => startGame(1)//new Game with one Player
-      case "n2" => startGame(2)//new Game with two Players
-      case "n3" => startGame(3)//new Game with three Players
-      case "n4" => startGame(4)//new Game with four Players
+      case "n1" => controller.newGame(1)//new Game with one Player
+      case "n2" => controller.newGame(2)//new Game with two Players
+      case "n3" => controller.newGame(3)//new Game with three Players
+      case "n4" => controller.newGame(4)//new Game with four Players
       case "q"  => sys.exit(0)
       case "a"  => round('a')
       case "b"  => round('b')

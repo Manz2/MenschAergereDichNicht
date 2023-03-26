@@ -247,7 +247,8 @@ class GUI(controller: ControllerInterface) extends MainFrame with Observer {
           inserts += Some(d)
         }
        }
-       controller.newGame(inserts.toArray, fieldpos, hpmepos)
+       //controller.newGame(inserts.toArray, fieldpos, hpmepos)
+       controller.newGame(anzahlSpieler)
   }
   
     def round(player:Char)={

@@ -1,7 +1,409 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\er741man\Documents\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\FieldComponent\fieldBaseImpl\field.scala:25:14 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m        inner(figur).get + [31m" |"[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |              [31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |              Found:    (figur : Option[String])[0m
-[0m[[0m[31merror[0m] [0m[0m   |              Required: String[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/ControllerInterface.scala:10:35 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m[33mtrait[0m [35mControllerInterface[0m([33mval[0m [36mHome[0m:[35mHomeInterface[0m,[33mval[0m [36mField[0m:[35mFieldInterface[0m,[33mval[0m [36mPlayer[0m:[35mPlayerInterface[0m) [33mextends[0m [35mObservable[0m{[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                   [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                   Not found: type HomeInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/ControllerInterface.scala:10:59 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m[33mtrait[0m [35mControllerInterface[0m([33mval[0m [36mHome[0m:[35mHomeInterface[0m,[33mval[0m [36mField[0m:[35mFieldInterface[0m,[33mval[0m [36mPlayer[0m:[35mPlayerInterface[0m) [33mextends[0m [35mObservable[0m{[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                           [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                          Not found: type FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/ControllerInterface.scala:10:85 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m[33mtrait[0m [35mControllerInterface[0m([33mval[0m [36mHome[0m:[35mHomeInterface[0m,[33mval[0m [36mField[0m:[35mFieldInterface[0m,[33mval[0m [36mPlayer[0m:[35mPlayerInterface[0m) [33mextends[0m [35mObservable[0m{[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                                     [31m^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                         Not found: type PlayerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/ControllerInterface.scala:11:30 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m  [33mdef[0m [36mnewGame[0m([36minserts[0m: [35mVector[Figure][0m,[36mfieldpositions[0m: [35mVector[Figure][0m,[36mhomepositions[0m: [35mVector[Figure][0m) : [35mUnit[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                              [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                              Not found: type Figure[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/ControllerInterface.scala:11:61 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m  [33mdef[0m [36mnewGame[0m([36minserts[0m: [35mVector[Figure][0m,[36mfieldpositions[0m: [35mVector[Figure][0m,[36mhomepositions[0m: [35mVector[Figure][0m) : [35mUnit[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                             [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                  Not found: type Figure[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/ControllerInterface.scala:11:91 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m  [33mdef[0m [36mnewGame[0m([36minserts[0m: [35mVector[Figure][0m,[36mfieldpositions[0m: [35mVector[Figure][0m,[36mhomepositions[0m: [35mVector[Figure][0m) : [35mUnit[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                                           [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                  Not found: type Figure[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/ControllerInterface.scala:12:19 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m  [33mdef[0m [36mdomove[0m([36mfigur[0m:[35mFigure[0m,[36manzahlFelder[0m:[35mInt[0m): [35mUnit[0m [0m
+[0m[[0m[31merror[0m] [0m[0m   |                   [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                   Not found: type Figure[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/ControllerInterface.scala:20:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m20 |[0m  [33mdef[0m [36mmove[0m([36mfigur[0m:[35mFigure[0m,[36mdicev[0m:[35mInt[0m):[35mString[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                 [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                 Not found: type Figure[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/ControllerInterface.scala:22:23 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m22 |[0m  [33mdef[0m [36mreachedEnd[0m([36mfigur[0m:[35mFigure[0m,[36mdicev[0m:[35mInt[0m):[35mUnit[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                       [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                       Not found: type Figure[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/ControllerInterface.scala:23:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m23 |[0m  [33mdef[0m [36mraus[0m([36mfigur[0m:[35mFigure[0m,[36mspieler[0m:[35mChar[0m):[35mString[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                 [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                 Not found: type Figure[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/FigureComponent/FigureBaseImpl/Figure.scala:4:90 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m4 |[0m[33mfinal[0m [33mcase class[0m [35mFigure[0m([33mval[0m [36mplayerName[0m:[35mString[0m, [33mval[0m [36mnumber[0m:[35mInt[0m, [33mval[0m [36mstate[0m:[35mBoolean[0m) [33mextends[0m [35mFigureInterface[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                                                                          [31m^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                           Not found: type FigureInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/HomeComponent/HomeInterface.scala:5:37 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m[33mtrait[0m [35mHomeInterface[0m([33mval[0m [36mdata[0m: [35mVector[FigureInterface][0m) {[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                     [31m^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                     Not found: type FigureInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/FieldComponent/FieldInterface.scala:6:38 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m[33mtrait[0m [35mFieldInterface[0m([33mval[0m [36mdata[0m: [35mVector[FigureInterface][0m) {[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                      [31m^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                      Not found: type FigureInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/PlayerComponent/PlayerInterface.scala:5:39 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m[33mtrait[0m [35mPlayerInterface[0m([33mval[0m [36mdata[0m: [35mVector[FigureInterface][0m) {[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                       [31m^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                       Not found: type FigureInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E054] Type Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:23:90 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m23 |[0m[33mcase class[0m [35mController[0m @Inject() ([33mval[0m [36mHome[0m:[35mHome[0m,[33mval[0m [36mField[0m:[35mField[0m,[33mval[0m [36mPlayer[0m:[35mPlayer[0m) [33mextends[0m [35mControllerInterface[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                                          [31m^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |             Parameterized [33mtrait[0m [35mControllerInterface[0m lacks argument list[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:45:66 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m45 |[0m    [33mdef[0m [36minner[0m([36mspielername[0m: [35mString[0m) = ([31m1[0m until [31m5[0m).map([36midx[0m => Figure(spielername,idx))[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                            [31m^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |missing argument for parameter state of [33mmethod[0m [35mapply[0m in [33mobject[0m [35mFigure[0m: (playerName: String, number: Int, state: Boolean): [0m
+[0m[[0m[31merror[0m] [0m[0m   |  de.htwg.se.madn.model.FigureComponent.FigureBaseImpl.Figure[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E056] Syntax Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:46:24 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m46 |[0m    [33mval[0m [36mpossiblePlayer[0m: [35mVector[0m = List([31m"A"[0m,[31m"B"[0m,[31m"C"[0m,[31m"D"[0m).take(nPlayer).map(inner(_))[0m
+[0m[[0m[31merror[0m] [0m[0m   |                        [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                        Missing type parameter for Vector[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/MoveCommand.scala:11:24 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m[33mclass[0m [35mMoveCommand[0m([36mFigur[0m:[35mFiguree[0m,[36mAnzahl[0m:[35mInt[0m,[36mcontroller[0m:[35mController[0m) [33mextends[0m [35mCommand[0m{[0m
+[0m[[0m[31merror[0m] [0m[0m   |                        [31m^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                        Not found: type Figuree[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:79:11 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m79 |[0m    player.figuren.foreach([36mins[0m => {[0m
+[0m[[0m[31merror[0m] [0m[0m   |    [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |value figuren is not a member of de.htwg.se.madn.model.PlayerComponent.PlayerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:109:21 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m109 |[0m      [33mvar[0m [36mz[0m = player.figuren.size;[0m
+[0m[[0m[31merror[0m] [0m[0m    |              [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.PlayerComponent.PlayerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:115:21 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m115 |[0m          [33mif[0m(!player.figuren(y).equals(None)){[0m
+[0m[[0m[31merror[0m] [0m[0m    |              [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.PlayerComponent.PlayerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:116:24 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m116 |[0m              [33mif[0m(player.figuren(y).get.charAt([31m0[0m).equals(spieler)){[0m
+[0m[[0m[31merror[0m] [0m[0m    |                 [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.PlayerComponent.PlayerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:117:27 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m117 |[0m                s = player.figuren(y)[0m
+[0m[[0m[31merror[0m] [0m[0m    |                    [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.PlayerComponent.PlayerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:118:23 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m118 |[0m                player.figuren(y) = None: [35mOption[String][0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |                [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.PlayerComponent.PlayerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:139:20 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m139 |[0m    [33mval[0m [36mfig[0m = field.figuren(i).get[0m
+[0m[[0m[31merror[0m] [0m[0m    |              [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:145:15 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m145 |[0m        player.figuren(pos) = Some(fig)[34m//hier fehler[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |        [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.PlayerComponent.PlayerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:147:15 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m147 |[0m        player.figuren([31m4[0m+pos) = Some(fig)[0m
+[0m[[0m[31merror[0m] [0m[0m    |        [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.PlayerComponent.PlayerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:149:15 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m149 |[0m        player.figuren([31m8[0m+pos) = Some(fig)[0m
+[0m[[0m[31merror[0m] [0m[0m    |        [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.PlayerComponent.PlayerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:151:15 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m151 |[0m        player.figuren([31m12[0m+pos) = Some(fig)[0m
+[0m[[0m[31merror[0m] [0m[0m    |        [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.PlayerComponent.PlayerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:153:10 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m153 |[0m    field.figuren(i) = None: [35mOption[String][0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |    [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:163:11 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m163 |[0m    player.figuren.foreach([36mins[0m => {[0m
+[0m[[0m[31merror[0m] [0m[0m    |    [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.PlayerComponent.PlayerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:175:13 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m175 |[0m      player.figuren(player.figuren.indexOf(erster)) = None: [35mOption[String][0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |      [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.PlayerComponent.PlayerInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:179:16 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m179 |[0m      [33mif[0m(!field.figuren.contains(Some(f))){[0m
+[0m[[0m[31merror[0m] [0m[0m    |          [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:182:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m182 |[0m        [33mif[0m(field.figuren.indexOf(Some(f))+dicev >= field.figuren.size){[34m//figur erreicht ende des feldes[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |           [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:186:23 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m186 |[0m        }[33melse[0m [33mif[0m(field.figuren.indexOf(Some(f))+dicev >= field.figuren.size/[31m4[0m && pl == [31m'b'[0m&& states(f)==[31mtrue[0m){[34m//B erreicht home[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |                 [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:187:15 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m187 |[0m          home.figuren([31m4[0m+fig-[31m1[0m) = Some(f)[0m
+[0m[[0m[31merror[0m] [0m[0m    |          [31m^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.HomeComponent.HomeInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:188:16 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m188 |[0m          field.figuren(field.figuren.indexOf(Some(f)))= None: [35mOption[String][0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |          [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:190:23 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m190 |[0m        }[33melse[0m [33mif[0m(field.figuren.indexOf(Some(f))+dicev >= field.figuren.size/[31m4[0m*[31m2[0m && pl == [31m'c'[0m&& states(f)==[31mtrue[0m){[34m//C erreicht home[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |                 [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:191:15 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m191 |[0m          home.figuren([31m8[0m+fig-[31m1[0m) = Some(f)[0m
+[0m[[0m[31merror[0m] [0m[0m    |          [31m^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.HomeComponent.HomeInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:192:16 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m192 |[0m          field.figuren(field.figuren.indexOf(Some(f)))= None: [35mOption[String][0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |          [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:194:23 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m194 |[0m        }[33melse[0m [33mif[0m(field.figuren.indexOf(Some(f))+dicev >= field.figuren.size/[31m4[0m*[31m3[0m && pl == [31m'd'[0m&& states(f)==[31mtrue[0m){[34m//D erreicht home[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |                 [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:195:15 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m195 |[0m          home.figuren([31m12[0m+fig-[31m1[0m) = Some(f)[0m
+[0m[[0m[31merror[0m] [0m[0m    |          [31m^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.HomeComponent.HomeInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:196:16 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m196 |[0m          field.figuren(field.figuren.indexOf(Some(f)))= None: [35mOption[String][0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |          [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:199:20 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m199 |[0m          [33mif[0m(!field.figuren(field.figuren.indexOf(Some(f))+dicev).equals(None)){[0m
+[0m[[0m[31merror[0m] [0m[0m    |              [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:199:34 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m199 |[0m          [33mif[0m(!field.figuren(field.figuren.indexOf(Some(f))+dicev).equals(None)){[0m
+[0m[[0m[31merror[0m] [0m[0m    |                            [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:200:27 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m200 |[0m            backHome(field.figuren.indexOf(Some(f))+dicev)[0m
+[0m[[0m[31merror[0m] [0m[0m    |                     [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:211:13 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m211 |[0m        home.figuren.foreach([36mins[0m => {[0m
+[0m[[0m[31merror[0m] [0m[0m    |        [31m^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.HomeComponent.HomeInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:230:14 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m230 |[0m        field.figuren(field.figuren.indexOf(Some(f)))= None: [35mOption[String][0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |        [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:231:13 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m231 |[0m        home.figuren(fig-[31m1[0m) = Some(f)[0m
+[0m[[0m[31merror[0m] [0m[0m    |        [31m^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.HomeComponent.HomeInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:233:8 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m233 |[0m        states(f) = [31mtrue[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |        [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |        Not found: states[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:234:24 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m234 |[0m        [33mval[0m [36mneu[0m = field.figuren.indexOf(Some(f)) + dicev - field.figuren.size[0m
+[0m[[0m[31merror[0m] [0m[0m    |                  [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:235:18 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m235 |[0m        [33mif[0m(!field.figuren(neu).equals(None)){[0m
+[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:238:14 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m238 |[0m        field.figuren(field.figuren.indexOf(Some(f)))= None: [35mOption[String][0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |        [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:239:14 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m239 |[0m        field.figuren(neu) = Some(f)[0m
+[0m[[0m[31merror[0m] [0m[0m    |        [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:246:18 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m246 |[0m        [33mif[0m(!field.figuren([31m0[0m).equals(None)){[0m
+[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:249:14 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m249 |[0m        field.figuren([31m0[0m) = s[0m
+[0m[[0m[31merror[0m] [0m[0m    |        [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:254:18 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m254 |[0m        [33mif[0m(!field.figuren(field.figuren.size/[31m4[0m).equals(None)){[0m
+[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:254:32 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m254 |[0m        [33mif[0m(!field.figuren(field.figuren.size/[31m4[0m).equals(None)){[0m
+[0m[[0m[31merror[0m] [0m[0m    |                          [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:255:25 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m255 |[0m          backHome(field.figuren.size/[31m4[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m    |                   [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:257:14 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m257 |[0m        field.figuren(field.figuren.size/[31m4[0m) = s[0m
+[0m[[0m[31merror[0m] [0m[0m    |        [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:258:8 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m258 |[0m        states(s.get) = [31mfalse[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |        [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |        Not found: states[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:262:18 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m262 |[0m        [33mif[0m(!field.figuren(field.figuren.size/[31m4[0m*[31m2[0m).equals(None)){[0m
+[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:262:32 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m262 |[0m        [33mif[0m(!field.figuren(field.figuren.size/[31m4[0m*[31m2[0m).equals(None)){[0m
+[0m[[0m[31merror[0m] [0m[0m    |                          [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:263:25 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m263 |[0m          backHome(field.figuren.size/[31m4[0m*[31m2[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m    |                   [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:265:8 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m265 |[0m        states(s.get) = [31mfalse[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |        [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |        Not found: states[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:266:14 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m266 |[0m        field.figuren(field.figuren.size/[31m4[0m*[31m2[0m) = s[0m
+[0m[[0m[31merror[0m] [0m[0m    |        [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:270:18 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m270 |[0m        [33mif[0m(!field.figuren(field.figuren.size/[31m4[0m*[31m3[0m).equals(None)){[0m
+[0m[[0m[31merror[0m] [0m[0m    |            [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:270:32 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m270 |[0m        [33mif[0m(!field.figuren(field.figuren.size/[31m4[0m*[31m3[0m).equals(None)){[0m
+[0m[[0m[31merror[0m] [0m[0m    |                          [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:271:25 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m271 |[0m          backHome(field.figuren.size/[31m4[0m*[31m3[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m    |                   [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:273:8 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m273 |[0m        states(s.get) = [31mfalse[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |        [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |        Not found: states[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:274:14 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m274 |[0m        field.figuren(field.figuren.size/[31m4[0m*[31m3[0m) = s[0m
+[0m[[0m[31merror[0m] [0m[0m    |        [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |value figuren is not a member of de.htwg.se.madn.model.FieldComponent.FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/FieldComponent/FieldInterface.scala:7:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m7 |[0m  [33mdef[0m [36mmove[0m([36mfigur[0m:[35mFigure[0m,[36manzahlFelder[0m:[35mInt[0m): [35mFieldInterface[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                 [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                 Not found: type Figure[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/aview/Tui.scala:47:58 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m47 |[0m      [33mcase[0m [31m"1"[0m  => println(controller.move([31m1[0m,turn,diceVal.toInt))[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                  [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |         too many arguments for [33mmethod[0m [35mmove[0m in [33mtrait[0m [35mControllerInterface[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/aview/Tui.scala:48:58 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m48 |[0m      [33mcase[0m [31m"2"[0m  => println(controller.move([31m2[0m,turn,diceVal.toInt))[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                  [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |         too many arguments for [33mmethod[0m [35mmove[0m in [33mtrait[0m [35mControllerInterface[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/aview/Tui.scala:49:58 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m49 |[0m      [33mcase[0m [31m"3"[0m  => println(controller.move([31m3[0m,turn,diceVal.toInt))[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                  [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |         too many arguments for [33mmethod[0m [35mmove[0m in [33mtrait[0m [35mControllerInterface[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/aview/Tui.scala:50:58 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m50 |[0m      [33mcase[0m [31m"4"[0m  => println(controller.move([31m4[0m,turn,diceVal.toInt))[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                  [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |         too many arguments for [33mmethod[0m [35mmove[0m in [33mtrait[0m [35mControllerInterface[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/aview/GUI.scala:114:46 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m114 |[0m       [33mvar[0m [36ma[0m = controller.move([31m1[0m,turn,diceVal.toInt)[0m
+[0m[[0m[31merror[0m] [0m[0m    |                                      [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |       too many arguments for [33mmethod[0m [35mmove[0m in [33mtrait[0m [35mControllerInterface[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/aview/GUI.scala:124:46 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m124 |[0m       [33mvar[0m [36mb[0m = controller.move([31m2[0m,turn,diceVal.toInt)[0m
+[0m[[0m[31merror[0m] [0m[0m    |                                      [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |       too many arguments for [33mmethod[0m [35mmove[0m in [33mtrait[0m [35mControllerInterface[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/aview/GUI.scala:134:46 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m134 |[0m       [33mvar[0m [36mc[0m = controller.move([31m3[0m,turn,diceVal.toInt)[0m
+[0m[[0m[31merror[0m] [0m[0m    |                                      [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |       too many arguments for [33mmethod[0m [35mmove[0m in [33mtrait[0m [35mControllerInterface[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/aview/GUI.scala:144:46 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m144 |[0m       [33mvar[0m [36md[0m = controller.move([31m4[0m,turn,diceVal.toInt)[0m
+[0m[[0m[31merror[0m] [0m[0m    |                                      [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |       too many arguments for [33mmethod[0m [35mmove[0m in [33mtrait[0m [35mControllerInterface[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/FieldComponent/fieldBaseImpl/Strategy.scala:6:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m  [33mdef[0m [36mmove[0m([36mfigur[0m:[35mFigureInterface[0m,[36manzahlFelder[0m:[35mInt[0m) :[35mFieldInterface[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                 [31m^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                 Not found: type FigureInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/FieldComponent/fieldBaseImpl/Strategy.scala:6:52 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m  [33mdef[0m [36mmove[0m([36mfigur[0m:[35mFigureInterface[0m,[36manzahlFelder[0m:[35mInt[0m) :[35mFieldInterface[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                                    [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                            Not found: type FieldInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E054] Type Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/FieldComponent/fieldBaseImpl/field.scala:7:70 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m7 |[0m[33mfinal[0m [33mcase class[0m [35mField[0m([33mval[0m [36mdata[0m:[35mVector[Figure][0m) [33mextends[0m [35mStrategy[0m [33mwith[0m [35mFieldInterface[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                                                      [31m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                    Parameterized [33mtrait[0m [35mFieldInterface[0m lacks argument list[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/FieldComponent/fieldBaseImpl/field.scala:10:44 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m    [33mdef[0m [36minner[0m([36mvalue[0m: [35mFigure[0m) : [35mString[0m = [33mif[0m (!value.number == -[31m1[0m) value.toString [33melse[0m Some([31m"   "[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                            [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |     value unary_! is not a member of Int - did you mean number.unary_+?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/FieldComponent/fieldBaseImpl/field.scala:10:89 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m    [33mdef[0m [36minner[0m([36mvalue[0m: [35mFigure[0m) : [35mString[0m = [33mif[0m (!value.number == -[31m1[0m) value.toString [33melse[0m Some([31m"   "[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                                     [31m^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                  Found:    [1m[31mSome[0m[1m[31m[[0mString[1m[31m][0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                  Required: String[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/FieldComponent/fieldBaseImpl/field.scala:20:51 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m20 |[0m        [33mval[0m [36mdataUpdated[0m = data.updated(index,Figure([31m""[0m,-[31m1[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                             [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |missing argument for parameter state of [33mmethod[0m [35mapply[0m in [33mobject[0m [35mFigure[0m: (playerName: String, number: Int, state: Boolean): [0m
+[0m[[0m[31merror[0m] [0m[0m   |  de.htwg.se.madn.model.FigureComponent.FigureBaseImpl.Figure[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/FigureComponent/FigureInterface.scala:2:29 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m2 |[0m[33mimport[0m model.FigureComponent.FigureBaseImpl.Figure[0m
+[0m[[0m[31merror[0m] [0m[0m  |       [31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |       value FigureBaseImpl is not a member of model.FigureComponent[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E054] Type Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/HomeComponent/HomeBaseImpl/Home.scala:8:70 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m8 |[0m[33mfinal[0m [33mcase class[0m [35mHome[0m([33mval[0m [36mdata[0m: [35mVector[Figure][0m) [33mextends[0m [35mStrategy[0m [33mwith[0m [35mHomeInterface[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                                                      [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                     Parameterized [33mtrait[0m [35mHomeInterface[0m lacks argument list[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/HomeComponent/HomeBaseImpl/Home.scala:11:44 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m    [33mdef[0m [36minner[0m([36mvalue[0m: [35mFigure[0m) : [35mString[0m = [33mif[0m (!value.number == -[31m1[0m) value.toString [33melse[0m Some([31m"   "[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                            [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |     value unary_! is not a member of Int - did you mean number.unary_+?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/HomeComponent/HomeBaseImpl/Home.scala:11:89 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m11 |[0m    [33mdef[0m [36minner[0m([36mvalue[0m: [35mFigure[0m) : [35mString[0m = [33mif[0m (!value.number == -[31m1[0m) value.toString [33melse[0m Some([31m"   "[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                                                     [31m^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                  Found:    [1m[31mSome[0m[1m[31m[[0mString[1m[31m][0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                  Required: String[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/HomeComponent/HomeBaseImpl/Home.scala:21:51 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m21 |[0m        [33mval[0m [36mdataUpdated[0m = data.updated(index,Figure([31m""[0m,-[31m1[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                             [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |missing argument for parameter state of [33mmethod[0m [35mapply[0m in [33mobject[0m [35mFigure[0m: (playerName: String, number: Int, state: Boolean): [0m
+[0m[[0m[31merror[0m] [0m[0m   |  de.htwg.se.madn.model.FigureComponent.FigureBaseImpl.Figure[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/HomeComponent/HomeBaseImpl/Strategy.scala:6:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m  [33mdef[0m [36mmove[0m([36mfigur[0m:[35mFigureInterface[0m,[36manzahlFelder[0m:[35mInt[0m) :[35mHomeInterface[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                 [31m^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                 Not found: type FigureInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/HomeComponent/HomeBaseImpl/Strategy.scala:6:52 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m  [33mdef[0m [36mmove[0m([36mfigur[0m:[35mFigureInterface[0m,[36manzahlFelder[0m:[35mInt[0m) :[35mHomeInterface[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                                    [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                             Not found: type HomeInterface[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/HomeComponent/HomeInterface.scala:6:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m  [33mdef[0m [36mmove[0m([36mfigur[0m:[35mFigure[0m,[36manzahlFelder[0m:[35mInt[0m): [35mHomeInterface[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                 [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                 Not found: type Figure[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/PlayerComponent/PlayerInterface.scala:6:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m  [33mdef[0m [36mmove[0m([36mfigur[0m:[35mFigure[0m,[36manzahlFelder[0m:[35mInt[0m): [35mPlayerInterface[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                 [31m^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                 Not found: type Figure[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E054] Type Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/PlayerComponent/playerBaseImpl/Player.scala:6:71 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m[33mfinal[0m [33mcase class[0m [35mPlayer[0m([33mval[0m [36mdata[0m:[35mVector[Figure][0m) [33mextends[0m [35mStrategy[0m [33mwith[0m [35mPlayerInterface[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                                                       [31m^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                   Parameterized [33mtrait[0m [35mPlayerInterface[0m lacks argument list[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/PlayerComponent/playerBaseImpl/Player.scala:9:44 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m9 |[0m    [33mdef[0m [36minner[0m([36mvalue[0m: [35mFigure[0m) : [35mString[0m = [33mif[0m (!value.number == -[31m1[0m) value.toString [33melse[0m Some([31m"   "[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                            [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |       value unary_! is not a member of Int - did you mean number.unary_+?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/PlayerComponent/playerBaseImpl/Player.scala:9:89 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m9 |[0m    [33mdef[0m [36minner[0m([36mvalue[0m: [35mFigure[0m) : [35mString[0m = [33mif[0m (!value.number == -[31m1[0m) value.toString [33melse[0m Some([31m"   "[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                                                                     [31m^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                                    Found:    [1m[31mSome[0m[1m[31m[[0mString[1m[31m][0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                                                    Required: String[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/PlayerComponent/playerBaseImpl/Player.scala:19:51 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m19 |[0m        [33mval[0m [36mdataUpdated[0m = data.updated(index,Figure([31m""[0m,-[31m1[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                             [31m^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |missing argument for parameter state of [33mmethod[0m [35mapply[0m in [33mobject[0m [35mFigure[0m: (playerName: String, number: Int, state: Boolean): [0m
+[0m[[0m[31merror[0m] [0m[0m   |  de.htwg.se.madn.model.FigureComponent.FigureBaseImpl.Figure[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/model/PlayerComponent/playerBaseImpl/Strategy.scala:6:17 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m  [33mdef[0m [36mmove[0m([36mfigur[0m:[35mFigureInterface[0m,[36manzahlFelder[0m:[35mInt[0m) :[35mPlayerInterface[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                 [31m^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |                 Not found: type FigureInterface[0m
+[0m[[0m[31merror[0m] [0m[0m119 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m119 errors found[0m

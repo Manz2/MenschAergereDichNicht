@@ -23,31 +23,28 @@ import model.FigureComponent.FigureBaseImpl.Figure
 case class Controller @Inject() (val Home:Home,val Field:Field,val Player:Player) extends ControllerInterface {
   val undoManager = new UndoManager 
   val injector = Guice.createInjector(new madnModule)
-  /*var field = injector.getInstance(classOf[FieldInterface])//Spielfeld
+  var field = injector.getInstance(classOf[FieldInterface])//Spielfeld
   var player = injector.getInstance(classOf[PlayerInterface])//basisfeld wo die figuren warten
-  var home = injector.getInstance(classOf[HomeInterface])//ziel feld*/
+  var home = injector.getInstance(classOf[HomeInterface])//ziel feld
   val fileIo = injector.getInstance(classOf[FileIOInterface])
-  val states = collection.mutable.Map(
-    "B1" -> false,
-    "B2" -> false,
-    "B3" -> false,
-    "B4" -> false,
-    "C1" -> false,
-    "C2" -> false,
-    "C3" -> false,
-    "C4" -> false,
-    "D1" -> false,
-    "D2" -> false,
-    "D3" -> false,
-    "D4" -> false)
+
+  //def newGame(
+      //inserts: Array[Option[String]],
+      //fieldpositions: Array[Option[String]],
+      //homepositions: Array[Option[String]]
+  //) = {
+    //field.figuren = fieldpositions
+    //player.figuren = inserts
+    //home.figuren = homepositions
+    //notifyObservers
+  //}
+
   def newGame(
-      inserts: Array[Option[String]],
-      fieldpositions: Array[Option[String]],
-      homepositions: Array[Option[String]]
-  ) = {
-    field.figuren = fieldpositions
-    player.figuren = inserts
-    home.figuren = homepositions
+    nPlayer : Int
+  ): Unit = {
+    def inner(spielername: String) = (1 until 5).map(idx => Figure(spielername,idx))
+    val possiblePlayer: Vector = List("A","B","C","D").take(nPlayer).map(inner(_))
+
     notifyObservers
   }
   override def toString = field.toString + home.toString + player.toString
