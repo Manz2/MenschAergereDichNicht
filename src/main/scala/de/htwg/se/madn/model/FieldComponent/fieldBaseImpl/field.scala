@@ -17,11 +17,13 @@ case class Field(override val data:Vector[FigureInterface]) extends FieldInterfa
 
   def move(figur:FigureInterface,anzahlFelder:Int): Field = {
     val index = data.indexOf(figur)
+    println(index)
     index match{
       case -1 => Field(data)
       case _ => {
         val dataUpdated = data.updated(index,Figure("",-1))
-        Field(dataUpdated.updated(index+anzahlFelder,figur))}
+        Field(dataUpdated.updated(index+anzahlFelder,figur))
+      }
     }
   }
 }

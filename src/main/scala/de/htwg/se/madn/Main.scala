@@ -29,5 +29,14 @@ object Madn {
 
     val controller = Controller()
     controller.newGame(2)
+    val figur = controller.player.data(0)
+    controller.field  = Field(controller.field.data.updated(0,figur))
+    controller.domove(figur,3)
+    controller.debug()
+    controller.undo
+    controller.debug()
+    controller.redo
+    controller.debug()
+
   }
 }

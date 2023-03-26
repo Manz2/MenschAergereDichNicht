@@ -1,6 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:52:39 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m52 |[0m    home = Field(Vector.fill(nPlayer*[31m4[0m)())[0m
-[0m[[0m[31merror[0m] [0m[0m   |                 [31m^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |missing argument for parameter elem of [33mmethod[0m [35mfill[0m in [33mtrait[0m [35mStrictOptimizedSeqFactory[0m: (elem: => A): Vector[A][0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: /Users/sebastiankaeser/Study/SoftArch/MenschAergereDichNicht/src/main/scala/de/htwg/se/madn/Controller/controllerComponent/controllerBaseImpl/Controller.scala:61:4 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m61 |[0m    pr[0m
+[0m[[0m[31merror[0m] [0m[0m   |    [31m^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |    Not found: pr[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

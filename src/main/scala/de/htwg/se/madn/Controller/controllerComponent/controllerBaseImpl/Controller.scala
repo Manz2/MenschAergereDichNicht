@@ -15,6 +15,7 @@ import scala.util.control.Breaks._
 import scala.collection.mutable.Map
 import model.fileIoComponent.FileIOInterface
 import model.FigureComponent.FigureBaseImpl.Figure
+import model.FigureComponent.FigureInterface
 
 //case class Controller @Inject() (val Home:Home,val Field:Field,val Player:Player) extends ControllerInterface {
 case class Controller () extends ControllerInterface {
@@ -31,6 +32,12 @@ case class Controller () extends ControllerInterface {
   var player: FieldInterface = Field(Vector());
   var home: FieldInterface = Field(Vector());
 
+  def debug() = {
+    println(player)
+    println(field)
+    println(home)
+  }
+
   def newGame(
     nPlayer : Int
   ): Unit = {
@@ -44,21 +51,23 @@ case class Controller () extends ControllerInterface {
   }
   override def toString = field.toString + home.toString + player.toString
 
-  /*
-  def domove(figur:Option[String],Anzahl:Int): Unit = {
-    undoManager.doStep(new MoveCommand(figur,Anzahl,this))
+  
+  def domove(figur:FigureInterface ,anzahl:Int): Unit = {
+    field = undoManager.doStep(new MoveCommand(figur,anzahl,this))
     notifyObservers
   }
 
   def undo: Unit = {
-    undoManager.undoStep
+    field = undoManager.undoStep(field)
     notifyObservers
   }
 
   def redo: Unit = {
-    undoManager.redoStep
+    field = undoManager.redoStep(field)
     notifyObservers
   }
+  
+  /*
   def save: Unit = {
     fileIo.save(player,field,home)
     notifyObservers
@@ -69,7 +78,9 @@ case class Controller () extends ControllerInterface {
     home = fileIo.loadHome
     notifyObservers
   }
+  */
 
+ /*
   def nochAlle(spieler:Char) : Boolean = {
     var counter = 0
     player.figuren.foreach(ins => {
