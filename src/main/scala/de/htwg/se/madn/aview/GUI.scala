@@ -279,7 +279,7 @@ class GUI(controller: ControllerInterface) extends MainFrame with Observer {
           dice.background = java.awt.Color.red;
         }
       } else{
-        diceVal =  controller.throwDicec
+        diceVal = controller.throwDice
         dice.text = diceVal
       }
       turn = player

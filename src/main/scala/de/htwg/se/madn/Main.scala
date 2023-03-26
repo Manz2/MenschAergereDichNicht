@@ -7,6 +7,7 @@ import model.FieldComponent.FieldInterface
 import model.FieldComponent.fieldBaseImpl.Field
 import aview.{Tui, GUI}
 import scala.io.StdIn.readLine
+import model.FigureComponent.FigureBaseImpl.Figure
 
 
 object Madn {
@@ -30,13 +31,23 @@ object Madn {
     val controller = Controller()
     controller.newGame(2)
     val figur = controller.player.data(0)
-    controller.field  = Field(controller.field.data.updated(0,figur))
-    controller.domove(figur,3)
     controller.debug()
-    controller.undo
+    controller.raus(figur)
     controller.debug()
-    controller.redo
-    controller.debug()
+    //controller.field  = Field(controller.field.data.updated(0,figur))
+    //controller.domove(figur,3)
+    //controller.debug()
+    //controller.undo
+    //controller.debug()
+    //controller.redo
+    //controller.debug()
+    //controller.player = Field(controller.player.data.updated(0,Figure("",-1)))
+    //controller.debug()
+    //println(controller.nochAlle('B'))
+    //println(controller.throwDice)
+    //controller.debug()
+
+
 
   }
 }

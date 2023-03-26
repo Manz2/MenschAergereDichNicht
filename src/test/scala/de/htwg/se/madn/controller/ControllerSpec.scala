@@ -106,7 +106,7 @@ class ControllerSpec extends AnyWordSpec with Matchers:
                 controller.player.figuren should contain inOrder (Some("A1"),Some("A2"),Some("A3"),Some("A4"))
           }
           "throw the dice" in {
-            controller.throwDicec.toInt should be <=6
+            controller.throwDice should be <=6
           }
           "try 3 times to leave the player field" in {
             controller.newGame(z,z,z)

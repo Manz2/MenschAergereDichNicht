@@ -25,7 +25,7 @@ class Tui(controller: ControllerInterface) extends Observer:
       print(controller.Alleda(player.toUpper))
       turn = player
     } else{
-      diceVal =  controller.throwDicec
+      diceVal =  controller.throwDice
       print(player.toUpper + " hat eine "+ diceVal +" gewuerfelt\n")
       println("Mit welcher Figur moechtest du Fahren (1-4)")
       turn = player

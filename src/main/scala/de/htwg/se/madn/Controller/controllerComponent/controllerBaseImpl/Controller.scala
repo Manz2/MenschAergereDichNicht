@@ -50,9 +50,9 @@ case class Controller () extends ControllerInterface {
     notifyObservers
   }
   override def toString = field.toString + home.toString + player.toString
-
   
   def domove(figur:FigureInterface ,anzahl:Int): Unit = {
+    player = checkField(field.data.indexOf(figur)+anzahl)
     field = undoManager.doStep(new MoveCommand(figur,anzahl,this))
     notifyObservers
   }
@@ -66,7 +66,42 @@ case class Controller () extends ControllerInterface {
     field = undoManager.redoStep(field)
     notifyObservers
   }
-  
+
+  def raus(figur:FigureInterface):Unit ={
+    def inner(index:Int):Unit = {
+      player = checkField(index)
+      field = Field(field.data.updated(index,figur))
+      player = Field(player.data.updated(index,Figure("",-1)))
+    }
+    figur.playerName match{
+      case "A" =>inner(0)
+      case "B" =>inner((field.data.size/4).toInt)
+      case "C" =>inner(2*(field.data.size/4).toInt)
+      case "D" =>inner(3*(field.data.size/4).toInt)
+    }
+  }
+
+  // würfelt
+  def throwDice : Int = scala.util.Random.nextInt(6) + 1
+
+  // prüft ob alle spieler zuhause sind  
+  def nochAlle(spieler:Char) : Boolean = player.data.count(_.playerName==spieler.toString) == 4
+
+  // schickt Figur nach Hause, wenn vorhanden
+  def checkField(index:Int):FieldInterface = if(field.data(index).playerName != "") backHome(index) else player
+
+  //send the figure at the possition i back to the base 
+  def backHome(index:Int):Field={
+    val figure = field.data(index)
+    figure.playerName match{
+      case "A" => Field(player.data.updated(index,figure))
+      case "B" => Field(player.data.updated(index+4,figure))
+      case "C" => Field(player.data.updated(index+8,figure))
+      case "D" => Field(player.data.updated(index+12,figure))
+    } 
+  }
+
+
   /*
   def save: Unit = {
     fileIo.save(player,field,home)
@@ -80,33 +115,11 @@ case class Controller () extends ControllerInterface {
   }
   */
 
- /*
-  def nochAlle(spieler:Char) : Boolean = {
-    var counter = 0
-    player.figuren.foreach(ins => {
-      if(!ins.equals(None)){
-        if(ins.get.charAt(0).equals(spieler)){
-          counter = counter + 1
-        }
-      }
-    })
-    if(counter == 4){
-      true
-    }else{
-      false
-
-    }  
-  }
-
-  def throwDicec : String= {
-    val r = scala.util.Random
-    val e = r.nextInt(6)+1  
-    e.toString
-  }
-  
   /*
-   *try 3 times to leave the playeer field
+  /*
+   *try 3 times to leave the player field
    */
+
   def Alleda(spieler:Char): String = {
     var count = 0
     var out = ""
@@ -139,26 +152,9 @@ case class Controller () extends ControllerInterface {
     out
    
   }
+*/
+
   /*
-   * send the figure at the possition i back to the base 
-   */
-  def backHome(i:Int):Unit={
-    val fig = field.figuren(i).get
-    val pl = fig.charAt(0)
-    println(fig.charAt(1))
-    val pos = fig.charAt(1).asDigit -1
-    pl match{
-      case 'A' => 
-        player.figuren(pos) = Some(fig)//hier fehler
-      case 'B' => 
-        player.figuren(4+pos) = Some(fig)
-      case 'C' => 
-        player.figuren(8+pos) = Some(fig)
-      case 'D' => 
-        player.figuren(12+pos) = Some(fig)
-    }  
-    field.figuren(i) = None: Option[String]
-  }
   /*
    * moves figure plfig dicev fields
    */
@@ -245,48 +241,6 @@ case class Controller () extends ControllerInterface {
         field.figuren(field.figuren.indexOf(Some(f)))= None: Option[String]
         field.figuren(neu) = Some(f)
     }  
-  }
-  def raus(s:Option[String],spieler:Char):String ={
-    var out = ""
-    spieler match{
-      case 'A' => 
-        if(!field.figuren(0).equals(None)){
-          backHome(0)
-        }
-        field.figuren(0) = s
-        out = "du hast es raus geschafft\n"
-        notifyObservers
-        
-      case 'B' => 
-        if(!field.figuren(field.figuren.size/4).equals(None)){
-          backHome(field.figuren.size/4)
-        }
-        field.figuren(field.figuren.size/4) = s
-        states(s.get) = false
-        out = "du hast es raus geschafft\n"
-        notifyObservers
-      case 'C' =>
-        if(!field.figuren(field.figuren.size/4*2).equals(None)){
-          backHome(field.figuren.size/4*2)
-        }
-        states(s.get) = false
-        field.figuren(field.figuren.size/4*2) = s
-        out = "du hast es raus geschafft\n"
-        notifyObservers
-      case 'D' =>
-        if(!field.figuren(field.figuren.size/4*3).equals(None)){
-          backHome(field.figuren.size/4*3)
-        }
-        states(s.get) = false
-        field.figuren(field.figuren.size/4*3) = s
-        out = "du hast es raus geschafft\n"
-        notifyObservers
-        
-      case _ =>
-        print("fail")
-    } 
-    out
-  }
-  */
+  }*/
 }
 
