@@ -88,8 +88,8 @@ case class Controller () extends ControllerInterface {
   // schickt Figur nach Hause, wenn vorhanden
   def checkField(index:Int):FieldInterface = if(field.data(index).playerName != "") backHome(index) else player
 
-  //send the figure at the possition i back to the base 
-  def backHome(index:Int):Field={
+  //send the figure at the possition i back to the base Currying
+  def backHome(field: FieldInterface) = (index:Int) :Field =>{
     val figure = field.data(index)
     figure.playerName match{
       case "A" => Field(player.data.updated(figure.number-1,figure))
@@ -98,7 +98,7 @@ case class Controller () extends ControllerInterface {
       case "D" => Field(player.data.updated(figure.number-1+12,figure))
     } 
   }
-  
+
   //try 3 times to leave the player field
   def Alleda(spieler:Char): Boolean = {
     val result = List.fill(3)(throwDice).contains(6)
@@ -194,7 +194,18 @@ case class Controller () extends ControllerInterface {
       
     }
     out
+  }*/
+
+  def reachedEnd(figur:Figure0):Unit={
+      figure.playerName match{
+      case "A" => Field(home.data.updated(figure.number-1,figure))
+      case "B" => Field(home.data.updated(figure.number-1+4,figure))
+      case "C" => Field(home.data.updated(figure.number-1+8,figure))
+      case "D" => Field(home.data.updated(figure.number-1+12,figure))
+    } 
   }
+
+/*
   def reachedEnd(fig:Int,pl:Char,dicev:Int):Unit={
     val f = pl.toUpper.toString.concat(fig.toString)
     pl.toUpper match{
