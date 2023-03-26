@@ -2,8 +2,6 @@ package de.htwg.se.madn
 package util
 
 
-import model.PlayerComponent.PlayerBaseImpl.Player
-import model.HomeComponent.HomeBaseImpl.Home
 import model.FieldComponent.fieldBaseImpl.Field
 
 trait Observer {

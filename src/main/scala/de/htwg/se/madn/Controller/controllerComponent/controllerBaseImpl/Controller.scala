@@ -5,10 +5,6 @@ import com.google.inject.name.Names
 import com.google.inject.{Guice, Inject}
 import net.codingwell.scalaguice.InjectorExtensions._
 import de.htwg.se.madn.madnModule
-import model.PlayerComponent.PlayerInterface
-import model.PlayerComponent.PlayerBaseImpl.Player
-import model.HomeComponent.HomeInterface
-import model.HomeComponent.HomeBaseImpl.Home
 import model.FieldComponent.FieldInterface
 import model.FieldComponent.fieldBaseImpl.Field
 import de.htwg.se.madn.Controller.controllerComponent._
@@ -20,13 +16,20 @@ import scala.collection.mutable.Map
 import model.fileIoComponent.FileIOInterface
 import model.FigureComponent.FigureBaseImpl.Figure
 
-case class Controller @Inject() (val Home:Home,val Field:Field,val Player:Player) extends ControllerInterface {
+//case class Controller @Inject() (val Home:Home,val Field:Field,val Player:Player) extends ControllerInterface {
+case class Controller () extends ControllerInterface {
   val undoManager = new UndoManager 
+  /*
   val injector = Guice.createInjector(new madnModule)
   var field = injector.getInstance(classOf[FieldInterface])//Spielfeld
-  var player = injector.getInstance(classOf[PlayerInterface])//basisfeld wo die figuren warten
-  var home = injector.getInstance(classOf[HomeInterface])//ziel feld
+  var player = injector.getInstance(classOf[FieldInterface])//basisfeld wo die figuren warten
+  var home = injector.getInstance(classOf[FieldInterface])//ziel feld
   val fileIo = injector.getInstance(classOf[FileIOInterface])
+  */
+
+  var field : FieldInterface = Field(Vector());
+  var player: FieldInterface = Field(Vector());
+  var home: FieldInterface = Field(Vector());
 
   //def newGame(
       //inserts: Array[Option[String]],
@@ -42,15 +45,20 @@ case class Controller @Inject() (val Home:Home,val Field:Field,val Player:Player
   def newGame(
     nPlayer : Int
   ): Unit = {
-    def inner(spielername: String) = (1 until 5).map(idx => Figure(spielername,idx))
-    val possiblePlayer: Vector = List("A","B","C","D").take(nPlayer).map(inner(_))
+    def inner(spielername: String): List[Figure] = (1 until 5).map(idx => Figure(spielername,idx)).toList
+
+    //println(Vector(List("A","B").map(inner(_)).flatten).flatten)
+    //player = Field(   Vector(   List("A","B","C","D").take(nPlayer)   .map(inner(_).flatten).flatten ))
+    player = Field(Vector(List("A","B","C","D").take(nPlayer).map(inner(_)).flatten).flatten)
+    println(player)
 
     notifyObservers
   }
   override def toString = field.toString + home.toString + player.toString
 
-  def domove(Figur:Option[String],Anzahl:Int): Unit = {
-    undoManager.doStep(new MoveCommand(Figur,Anzahl,this))
+  /*
+  def domove(figur:Option[String],Anzahl:Int): Unit = {
+    undoManager.doStep(new MoveCommand(figur,Anzahl,this))
     notifyObservers
   }
 
@@ -280,5 +288,6 @@ case class Controller @Inject() (val Home:Home,val Field:Field,val Player:Player
     } 
     out
   }
+  */
 }
 

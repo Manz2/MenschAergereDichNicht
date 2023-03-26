@@ -1,6 +1,6 @@
+/*
 package de.htwg.se.madn
 package aview
-import model.PlayerComponent.PlayerInterface
 import model.HomeComponent.HomeInterface
 import model.FieldComponent.FieldInterface
 import scala.util.{Try,Success,Failure}
@@ -53,3 +53,4 @@ class Tui(controller: ControllerInterface) extends Observer:
       case _ => 
     }
   }
+  */

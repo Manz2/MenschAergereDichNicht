@@ -6,24 +6,20 @@ import com.google.inject.{Guice, Inject}
 import net.codingwell.scalaguice.InjectorExtensions._
 import de.htwg.se.madn.madnModule
 
-import model.PlayerComponent.PlayerInterface
-import model.PlayerComponent.PlayerBaseImpl.Player
-import model.HomeComponent.HomeInterface
-import model.HomeComponent.HomeBaseImpl.Home
 import model.FieldComponent.FieldInterface
 import model.FieldComponent.fieldBaseImpl.Field
 import de.htwg.se.madn.model.fileIoComponent.FileIOInterface
 import play.api.libs.json._
 import scala.io.Source
 
-
+/*
 class fileIoJsonImpl extends FileIOInterface{
-  override def loadPlayer: PlayerInterface = {
-    var player: PlayerInterface = null
+  override def loadPlayer: FieldInterface = {
+    var player: FieldInterface = null
     val source: String = Source.fromFile("madnSavedGame.json").getLines.mkString
     val json: JsValue = Json.parse(source)
     val injector = Guice.createInjector(new madnModule)
-    player = injector.getInstance(classOf[PlayerInterface])
+    player = injector.getInstance(classOf[FieldInterface])
     val size = (json \ "game"\"playerData" \ "size").get.toString.toInt
     var s: Array[String] = new Array[String](size)
     for(index<-0 until size){
@@ -68,12 +64,12 @@ class fileIoJsonImpl extends FileIOInterface{
     field
   }
 
-  override def loadHome: HomeInterface = {
-    var home: HomeInterface = null
+  override def loadHome: FieldInterface = {
+    var home: FieldInterface = null
     val source: String = Source.fromFile("madnSavedGame.json").getLines.mkString
     val json: JsValue = Json.parse(source)
     val injector = Guice.createInjector(new madnModule)
-    home = injector.getInstance(classOf[HomeInterface])
+    home = injector.getInstance(classOf[FieldInterface])
     val size = (json \"game"\ "homeData" \ "size").get.toString.toInt
     var s: Array[String] = new Array[String](size)
     for(index<-0 until size){
@@ -93,13 +89,13 @@ class fileIoJsonImpl extends FileIOInterface{
     home
   }
 
-  override def save(player:PlayerInterface,field:FieldInterface,home:HomeInterface) = {
+  override def save(player:FieldInterface,field:FieldInterface,home:FieldInterface) = {
     import java.io._
     val pw = new PrintWriter(new File("madnSavedGame.json"))
     pw.write(Json.prettyPrint(toJson(player,field,home)))
     pw.close
   }
-  def toJson(player:PlayerInterface,field:FieldInterface,home:HomeInterface) = {
+  def toJson(player:FieldInterface,field:FieldInterface,home:FieldInterface) = {
     var p= Seq[String]()//Array[play.api.libs.json.JsLookupResult] = new Array[play.api.libs.json.JsLookupResult](player.figuren.length)
     var f =  Seq[String]() //= new Seq[(String, play.api.libs.json.JsString)](field.figuren.length)
     var h= Seq[String]()//Array[play.api.libs.json.JsLookupResult] = new Array[play.api.libs.json.JsLookupResult](home.figuren.length)
@@ -152,3 +148,4 @@ class fileIoJsonImpl extends FileIOInterface{
     )
   }
 }
+*/

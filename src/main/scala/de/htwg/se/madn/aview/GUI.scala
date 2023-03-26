@@ -1,8 +1,6 @@
 package de.htwg.se.madn
 package aview
 import aview.{Tui}
-import model.PlayerComponent.PlayerInterface
-import model.HomeComponent.HomeInterface
 import model.FieldComponent.FieldInterface
 import util.Observer
 import scala.io.StdIn.readLine
@@ -15,6 +13,7 @@ import Controller.controllerComponent.ControllerInterface
 import io.AnsiColor._
 import scala.swing.Color
 
+/*
 class GUI(controller: ControllerInterface) extends MainFrame with Observer {
 
   controller.add(this)
@@ -287,3 +286,4 @@ class GUI(controller: ControllerInterface) extends MainFrame with Observer {
         
     }
 }
+*/

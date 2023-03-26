@@ -6,19 +6,16 @@ import com.google.inject.{Guice, Inject}
 import net.codingwell.scalaguice.InjectorExtensions._
 import de.htwg.se.madn.madnModule
 
-import model.PlayerComponent.PlayerInterface
-import model.PlayerComponent.PlayerBaseImpl.Player
-import model.HomeComponent.HomeInterface
-import model.HomeComponent.HomeBaseImpl.Home
 import model.FieldComponent.FieldInterface
 import model.FieldComponent.fieldBaseImpl.Field
 import de.htwg.se.madn.model.fileIoComponent.FileIOInterface
 
 import scala.xml.{ NodeSeq, PrettyPrinter }
 
+/*
 class fileIoXmlImpl extends FileIOInterface{
   override def loadPlayer: PlayerInterface = {
-    var player: PlayerInterface = null
+    var player: FieldInterface= null
     val file = scala.xml.XML.loadFile("madnSavedGame.xml")
     val injector = Guice.createInjector(new madnModule)
     player = injector.getInstance(classOf[PlayerInterface])
@@ -128,3 +125,4 @@ class fileIoXmlImpl extends FileIOInterface{
     pw.close
   }
 }
+*/
