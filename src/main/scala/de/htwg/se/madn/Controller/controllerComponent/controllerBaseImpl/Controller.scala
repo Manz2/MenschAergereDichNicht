@@ -64,7 +64,7 @@ case class Controller () extends ControllerInterface {
     notifyObservers
   }
 
-  def raus(spieler:String):Unit ={
+  def raus(spieler:String): FieldInterface={
     def inner(index:Int):Unit = {
       val figur = player.data.find(_.playerName==spieler.toString).get
       player = checkField(index)
@@ -77,6 +77,8 @@ case class Controller () extends ControllerInterface {
       case "C" =>inner(2*(field.data.size/4).toInt)
       case "D" =>inner(3*(field.data.size/4).toInt)
     }
+
+    player
   }
 
   // würfelt
@@ -86,16 +88,16 @@ case class Controller () extends ControllerInterface {
   def nochAlle(spieler:Char) : Boolean = player.data.count(_.playerName==spieler.toString) == 4
 
   // schickt Figur nach Hause, wenn vorhanden
-  def checkField(index:Int):FieldInterface = if(field.data(index).playerName != "") backHome(index) else player
+  def checkField(index:Int):FieldInterface = if(field.data(index).playerName != "") backHome(player)(index) else player
 
   //send the figure at the possition i back to the base Currying
-  def backHome(field: FieldInterface) = (index:Int) :Field =>{
+  def backHome(space: FieldInterface)(index:Int) :FieldInterface = {
     val figure = field.data(index)
     figure.playerName match{
-      case "A" => Field(player.data.updated(figure.number-1,figure))
-      case "B" => Field(player.data.updated(figure.number-1+4,figure))
-      case "C" => Field(player.data.updated(figure.number-1+8,figure))
-      case "D" => Field(player.data.updated(figure.number-1+12,figure))
+      case "A" => Field(space.data.updated(figure.number-1,figure))
+      case "B" => Field(space.data.updated(figure.number-1+4,figure))
+      case "C" => Field(space.data.updated(figure.number-1+8,figure))
+      case "D" => Field(space.data.updated(figure.number-1+12,figure))
     } 
   }
 
@@ -105,6 +107,26 @@ case class Controller () extends ControllerInterface {
     if (result) raus(spieler.toString)
     result  
   }
+
+  // wenn Figur wiever >= Startfield ankommt wird die in das Home Field geschoben
+  def reachedHome(figur:FigureInterface):FieldInterface={
+    println(field.data.indexOf(figur))
+    home = backHome(home)(field.data.indexOf(figur))
+    field = Field(field.data.updated(field.data.indexOf(figur),Figure("",-1)))
+    field
+  }
+
+
+  def reachedEnd(figur: FigureInterface, anzahl: Int): FieldInterface = {
+    def inner(thisField: FieldInterface, thisAnzahl: Int): FieldInterface = {
+      player = checkField(anzahl)
+      Field(thisField.data.updated(anzahl,figur).updated(thisField.data.size-1,Figure("",-1)))
+    }
+    if (figur.playerName == "A") reachedHome(figur)
+    else inner(Field(field.data.updated(field.data.indexOf(figur),Figure(figur.playerName,figur.number,true))),anzahl)
+  }
+
+
 
 
   /*
@@ -124,10 +146,28 @@ case class Controller () extends ControllerInterface {
 
 
   /*
-  /*
    * moves figure plfig dicev fields
    */
-  def move(fig:Int,pl:Char,dicev:Int):String={
+  def move(figur:FigureInterface,anzahl:Int):FieldInterface={
+    // Ist eine Figur des Spielers im Startfeld
+    val anyFigure = player.data.map(_.playerName).contains(figur.playerName)
+    // Ist die Figur im Hauptfeld
+    val InField= field.data.contains(figur)
+
+    def outer(inField: Boolean): FieldInterface = {
+      if (inField) field // Dummy
+      else field
+    }
+
+    def inner(anzahl: Int, figur: FigureInterface) = {
+      field = reachedEnd(figur,anzahl)
+    }
+
+
+    if(anzahl == 6 && anyFigure) raus(figur.playerName)
+    else field // Dummy
+
+    /*
     var nochDa = false
     var out = ""
     var erster = None: Option[String]
@@ -142,6 +182,10 @@ case class Controller () extends ControllerInterface {
         }
      }
     })
+
+
+
+    
     if(dicev == 6  && nochDa == true){
       raus(erster,pl.toUpper)
       player.figuren(player.figuren.indexOf(erster)) = None: Option[String]
@@ -194,33 +238,8 @@ case class Controller () extends ControllerInterface {
       
     }
     out
-  }*/
-
-  def reachedEnd(figur:Figure0):Unit={
-      figure.playerName match{
-      case "A" => Field(home.data.updated(figure.number-1,figure))
-      case "B" => Field(home.data.updated(figure.number-1+4,figure))
-      case "C" => Field(home.data.updated(figure.number-1+8,figure))
-      case "D" => Field(home.data.updated(figure.number-1+12,figure))
-    } 
+  */
+  
   }
-
-/*
-  def reachedEnd(fig:Int,pl:Char,dicev:Int):Unit={
-    val f = pl.toUpper.toString.concat(fig.toString)
-    pl.toUpper match{
-      case 'A' => //A erreicht home
-        field.figuren(field.figuren.indexOf(Some(f)))= None: Option[String]
-        home.figuren(fig-1) = Some(f)
-      case _ =>
-        states(f) = true
-        val neu = field.figuren.indexOf(Some(f)) + dicev - field.figuren.size
-        if(!field.figuren(neu).equals(None)){
-          backHome(neu)
-        }
-        field.figuren(field.figuren.indexOf(Some(f)))= None: Option[String]
-        field.figuren(neu) = Some(f)
-    }  
-  }*/
 }
 
