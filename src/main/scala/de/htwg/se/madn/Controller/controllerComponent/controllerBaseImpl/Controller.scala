@@ -126,6 +126,8 @@ case class Controller () extends ControllerInterface {
     else inner(Field(field.data.updated(field.data.indexOf(figur),Figure(figur.playerName,figur.number,true))),anzahl)
   }
 
+  //Test
+
 
 
 
