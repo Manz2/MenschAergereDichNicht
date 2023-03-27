@@ -50,9 +50,7 @@ case class Controller () extends ControllerInterface {
   
   def domove(figur:FigureInterface ,anzahl:Int): FieldInterface = {
     player = checkField(field.data.indexOf(figur)+anzahl)
-    field = undoManager.doStep(new MoveCommand(figur,anzahl,this))
-    notifyObservers
-    field
+    undoManager.doStep(new MoveCommand(figur,anzahl,this))
   }
 
   def undo: Unit = {
@@ -78,7 +76,6 @@ case class Controller () extends ControllerInterface {
       case "C" =>inner(2*(field.data.size/4).toInt)
       case "D" =>inner(3*(field.data.size/4).toInt)
     }
-
     player
   }
 
@@ -86,7 +83,7 @@ case class Controller () extends ControllerInterface {
   def throwDice : Int = scala.util.Random.nextInt(6) + 1
 
   // prüft ob alle spieler zuhause sind  
-  def nochAlle(spieler:Char) : Boolean = player.data.count(_.playerName==spieler.toString) == 4
+  def nochAlle(spieler:String) : Boolean = player.data.count(_.playerName==spieler) == 4
 
   // schickt Figur nach Hause, wenn vorhanden
   def checkField(index:Int):FieldInterface = if(field.data(index).playerName != "") backHome(player)(index) else player
@@ -95,25 +92,26 @@ case class Controller () extends ControllerInterface {
   def backHome(space: FieldInterface)(index:Int) :FieldInterface = {
     val figure = field.data(index)
     figure.playerName match{
-      case "A" => Field(space.data.updated(figure.number-1,figure))
-      case "B" => Field(space.data.updated(figure.number-1+4,figure))
-      case "C" => Field(space.data.updated(figure.number-1+8,figure))
-      case "D" => Field(space.data.updated(figure.number-1+12,figure))
+      case "A" => Field(space.data.updated(figure.number-1,Figure(figure.playerName,figure.number,false)))
+      case "B" => Field(space.data.updated(figure.number-1+4,Figure(figure.playerName,figure.number,false)))
+      case "C" => Field(space.data.updated(figure.number-1+8,Figure(figure.playerName,figure.number,false)))
+      case "D" => Field(space.data.updated(figure.number-1+12,Figure(figure.playerName,figure.number,false)))
     } 
   }
 
   //try 3 times to leave the player field
-  def Alleda(spieler:Char): Boolean = {
+  def Alleda(spieler:String): Boolean = {
     val result = List.fill(3)(throwDice).contains(6)
-    if (result) raus(spieler.toString)
+    if (result) raus(spieler)
+    notifyObservers
     result  
   }
 
   // wenn Figur wieder >= Startfield ankommt wird die in das Home Field geschoben
   def reachedHome(figur:FigureInterface):FieldInterface={
-    println(field.data.indexOf(figur))
     home = backHome(home)(field.data.indexOf(figur))
     field = Field(field.data.updated(field.data.indexOf(figur),Figure("",-1)))
+    notifyObservers
     field
   }
 
@@ -131,6 +129,11 @@ case class Controller () extends ControllerInterface {
 
   def anybodyWone(thisHome:FieldInterface):Option[String] = 
     thisHome.data.map(_.playerName).groupBy(identity).find((_, letters) => letters.length == 4).map((letter, _) => letter)
+
+  def getFigureFromField(player:String,nummer:Int): FigureInterface= {
+    val fig = field.data.find(a => a.playerName == player && a.number == nummer)
+    if(fig != None) fig.get else Figure("X",-1)
+    }
 
   /*
   def save: Unit = {
@@ -175,8 +178,9 @@ case class Controller () extends ControllerInterface {
     }
 
     if(anzahl == 6 && anyFigure) raus(figur.playerName)
-    else field = outer(InField)
-
+    else {
+      field = outer(InField)
+      }
     notifyObservers
     field
   }

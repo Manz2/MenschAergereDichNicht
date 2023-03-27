@@ -7,22 +7,26 @@ import scala.util.{Try,Success,Failure}
 import scala.util.Random
 import scala.util.control.Breaks._
 import model.FigureComponent.FigureBaseImpl.Figure
+import model.FieldComponent.FieldInterface
+import model.FigureComponent.FigureInterface
 
 //trait ControllerInterface(val Home:HomeInterface,val Field:FieldInterface,val Player:PlayerInterface) extends Observable{
 trait ControllerInterface() extends Observable{
   def newGame(nPlayer:Int) : Unit
-  /*
-  def domove(figur:Figure,anzahlFelder:Int): Unit 
+  def domove(figur:FigureInterface ,anzahl:Int): FieldInterface 
   def undo: Unit 
   def redo: Unit 
-  def save: Unit
-  def load: Unit
-  def nochAlle(spieler:Char) : Boolean 
-  def throwDicec : String
-  def Alleda(spieler:Char): String
-  def move(figur:Figure,dicev:Int):String
-  def backHome(i:Int):Unit
-  def reachedEnd(figur:Figure,dicev:Int):Unit
-  def raus(figur:Figure,spieler:Char):String
-  */
+  //def save: Unit
+  //def load: Unit
+  def raus(spieler:String):FieldInterface
+  def throwDice : Int
+  def nochAlle(spieler:String) : Boolean 
+  def checkField(index:Int):FieldInterface
+  def backHome(space:FieldInterface)(index:Int):FieldInterface
+  def Alleda(spieler:String): Boolean
+  def reachedHome(figur:FigureInterface):FieldInterface
+  def reachedEnd(figur: FigureInterface, anzahl: Int): FieldInterface
+  def move(figur:FigureInterface,anzahl:Int):FieldInterface
+  def anybodyWone(thisHome:FieldInterface):Option[String]
+  def getFigureFromField(player:String,nummer:Int): FigureInterface
 }

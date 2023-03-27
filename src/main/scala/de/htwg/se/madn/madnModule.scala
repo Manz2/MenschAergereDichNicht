@@ -17,6 +17,8 @@ import Controller.controllerComponent._
 import scala.io.StdIn.readLine
 import model.fileIoComponent.FileIOInterface
 import model.fileIoComponent._
+import model.FigureComponent.FigureBaseImpl
+import model.FigureComponent.FigureInterface
 
 
 
@@ -26,11 +28,9 @@ class madnModule extends AbstractModule {
 
     override def configure():Unit = {
         bind(classOf[FieldInterface]).to(classOf[fieldBaseImpl.Field])
-        bind(classOf[FieldInterface]).to(classOf[fieldBaseImpl.Field])
-        bind(classOf[FieldInterface]).to(classOf[fieldBaseImpl.Field])
         bind(classOf[ControllerInterface]).to(classOf[controllerBaseImpl.Controller])
 
         //bind(classOf[FileIOInterface]).to(classOf[fileIoJsonImpl.fileIoJsonImpl])
-        bind(classOf[FileIOInterface]).to(classOf[fileIoXmlImpl.fileIoXmlImpl])
+        //bind(classOf[FileIOInterface]).to(classOf[fileIoXmlImpl.fileIoXmlImpl])
     }
 }
