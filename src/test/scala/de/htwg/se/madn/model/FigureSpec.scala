@@ -8,32 +8,31 @@ import scala.language.postfixOps
 
 class FigureSpec extends AnyWordSpec with Matchers:
   "Figure" should {
+    val figure1 = Figure("A",1,true)
+    val figure2 = Figure("A",1,false)
+    val figure3 = Figure("B",1,false)
+    val figure4 = Figure("A",2,false)
+    val figure5 = Figure("B",2)
     "compare two similar Figures as true" in {
-      val figure1 = Figure("A",1)
-      val figure2 = Figure("A",1)
+      figure1.equals(figure1) should be(true)
+    }
+    "compare two similar Figures with different state as true" in {
       figure1.equals(figure2) should be(true)
     }
     "compare two different Figures as false" in {
-      val figure1 = Figure("A",1)
-      val figure2 = Figure("B",1)
-      figure1.equals(figure2) should be(false)
+      figure1.equals(figure3) should be(false)
     }
     "compare two different Figures in number as false" in {
-      val figure1 = Figure("A",1)
-      val figure2 = Figure("A",2)
-      figure1.equals(figure2) should be(false)
+      figure1.equals(figure4) should be(false)
     }
     "compare two totally different Figures as false" in {
-      val figure1 = Figure("A",1)
-      val figure2 = Figure("B",2)
-      figure1.equals(figure2) should be(false)
+      figure5.equals(figure2) should be(false)
     }
     "return a figure" in {
-      val figure1 = Figure("A",1)
       figure1.toString should equal("A1")
     }
     "return nothing" in {
-      val figure1 = Figure("",-1)
-      figure1.toString should equal("")
+      val figureNone = Figure("",-1)
+      figureNone.toString should equal("")
     }
   }
