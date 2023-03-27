@@ -48,10 +48,11 @@ case class Controller () extends ControllerInterface {
 
   override def toString = field.toString + home.toString + player.toString
   
-  def domove(figur:FigureInterface ,anzahl:Int): Unit = {
+  def domove(figur:FigureInterface ,anzahl:Int): FieldInterface = {
     player = checkField(field.data.indexOf(figur)+anzahl)
     field = undoManager.doStep(new MoveCommand(figur,anzahl,this))
     notifyObservers
+    field
   }
 
   def undo: Unit = {
@@ -108,7 +109,7 @@ case class Controller () extends ControllerInterface {
     result  
   }
 
-  // wenn Figur wiever >= Startfield ankommt wird die in das Home Field geschoben
+  // wenn Figur wieder >= Startfield ankommt wird die in das Home Field geschoben
   def reachedHome(figur:FigureInterface):FieldInterface={
     println(field.data.indexOf(figur))
     home = backHome(home)(field.data.indexOf(figur))
@@ -116,20 +117,20 @@ case class Controller () extends ControllerInterface {
     field
   }
 
-
   def reachedEnd(figur: FigureInterface, anzahl: Int): FieldInterface = {
-    def inner(thisField: FieldInterface, thisAnzahl: Int): FieldInterface = {
+    def inner(thisField: FieldInterface, thisAnzahl: Int,thisFigur:FigureInterface): FieldInterface = {
       player = checkField(anzahl)
-      Field(thisField.data.updated(anzahl,figur).updated(thisField.data.size-1,Figure("",-1)))
+      Field(thisField.data.updated(anzahl,thisFigur).updated(field.data.indexOf(figur),Figure("",-1)))
     }
     if (figur.playerName == "A") reachedHome(figur)
-    else inner(Field(field.data.updated(field.data.indexOf(figur),Figure(figur.playerName,figur.number,true))),anzahl)
+    else{
+      val fig = Figure(figur.playerName,figur.number,true)
+      inner(Field(field.data.updated(field.data.indexOf(figur),fig)),anzahl,fig)
+    } 
   }
 
-  //Test123
-
-
-
+  def anybodyWone(thisHome:FieldInterface):Option[String] = 
+    thisHome.data.map(_.playerName).groupBy(identity).find((_, letters) => letters.length == 4).map((letter, _) => letter)
 
   /*
   def save: Unit = {
@@ -144,12 +145,7 @@ case class Controller () extends ControllerInterface {
   }
   */
 
-  
-
-
-  /*
-   * moves figure plfig dicev fields
-   */
+  // moves figure plfig dicev fields
   def move(figur:FigureInterface,anzahl:Int):FieldInterface={
     // Ist eine Figur des Spielers im Startfeld
     val anyFigure = player.data.map(_.playerName).contains(figur.playerName)
@@ -157,91 +153,32 @@ case class Controller () extends ControllerInterface {
     val InField= field.data.contains(figur)
 
     def outer(inField: Boolean): FieldInterface = {
-      if (inField) field // Dummy
+      if (inField) inner(anzahl,figur)
       else field
     }
 
     def inner(anzahl: Int, figur: FigureInterface) = {
-      field = reachedEnd(figur,anzahl)
+      if(field.data.indexOf(figur)+anzahl >= field.data.size) reachedEnd(figur,anzahl-(field.data.size -field.data.indexOf(figur) ))
+      else{
+        if(isHome(figur,anzahl)) reachedHome(figur);
+        else domove(figur,anzahl)
+      }   
     }
 
+     def isHome(thatFigur:FigureInterface, anzahl:Int): Boolean ={
+      thatFigur.playerName match{
+          case "A" =>false
+          case "B" =>(field.data.indexOf(thatFigur)+anzahl >= ((field.data.size/4).toInt)) && thatFigur.state == true
+          case "C" =>(field.data.indexOf(thatFigur)+anzahl >= (2*(field.data.size/4).toInt)) && thatFigur.state == true
+          case "D" =>(field.data.indexOf(thatFigur)+anzahl >= (3*(field.data.size/4).toInt)) && thatFigur.state == true
+          }
+    }
 
     if(anzahl == 6 && anyFigure) raus(figur.playerName)
-    else field // Dummy
+    else field = outer(InField)
 
-    /*
-    var nochDa = false
-    var out = ""
-    var erster = None: Option[String]
-    val f = pl.toUpper.toString.concat(fig.toString)
-    player.figuren.foreach(ins => {
-      if(!ins.equals(None)){
-        if(ins.get.charAt(0)==pl.toUpper){
-          if(nochDa == false){
-            erster = ins
-          }
-          nochDa = true
-        }
-     }
-    })
-
-
-
-    
-    if(dicev == 6  && nochDa == true){
-      raus(erster,pl.toUpper)
-      player.figuren(player.figuren.indexOf(erster)) = None: Option[String]
-      notifyObservers
-      out = "noch einer Raus"
-    }else{
-      if(!field.figuren.contains(Some(f))){
-        out = f + " ist nicht im Feld waehle eine andere Figur"
-      }else{
-        if(field.figuren.indexOf(Some(f))+dicev >= field.figuren.size){//figur erreicht ende des feldes
-          reachedEnd(fig,pl,dicev)
-          out = f.toString
-          notifyObservers
-        }else if(field.figuren.indexOf(Some(f))+dicev >= field.figuren.size/4 && pl == 'b'&& states(f)==true){//B erreicht home
-          home.figuren(4+fig-1) = Some(f)
-          field.figuren(field.figuren.indexOf(Some(f)))= None: Option[String]
-          notifyObservers
-        }else if(field.figuren.indexOf(Some(f))+dicev >= field.figuren.size/4*2 && pl == 'c'&& states(f)==true){//C erreicht home
-          home.figuren(8+fig-1) = Some(f)
-          field.figuren(field.figuren.indexOf(Some(f)))= None: Option[String]
-          notifyObservers
-        }else if(field.figuren.indexOf(Some(f))+dicev >= field.figuren.size/4*3 && pl == 'd'&& states(f)==true){//D erreicht home
-          home.figuren(12+fig-1) = Some(f)
-          field.figuren(field.figuren.indexOf(Some(f)))= None: Option[String]
-          notifyObservers
-        }else{
-          if(!field.figuren(field.figuren.indexOf(Some(f))+dicev).equals(None)){
-            backHome(field.figuren.indexOf(Some(f))+dicev)
-          }
-          domove(Some(f),dicev)
-          out = f.toString
-        }
-        var I = Some(pl.toUpper.toString.concat("1"))
-        var II = Some(pl.toUpper.toString.concat("2"))
-        var III = Some(pl.toUpper.toString.concat("3"))
-        var IV = Some(pl.toUpper.toString.concat("4"))
-
-        var counter = 0
-        home.figuren.foreach(ins => {
-          if(!ins.equals(None)){
-            if(ins.get.charAt(0).equals(pl.toUpper)){
-              counter = counter + 1
-            }
-          }
-        })
-        if(counter == 4){
-          out = "Spieler " + pl.toUpper + " hat gewonnen"
-        }
-      }
-      
-    }
-    out
-  */
-  
+    notifyObservers
+    field
   }
 }
 
