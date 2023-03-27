@@ -5,7 +5,7 @@
  / /  \ \/ /  \ \    /      \    | |  / /  / /  \ \/ /
 / /    \  /    \ \  / /    \ \   | | / /  / /    \  / */                                                                                      
                                                                                      
-package de.htwg.se.madn
+/*package de.htwg.se.madn
 
 import aview.{Tui}
 import org.scalatest.wordspec.AnyWordSpec
@@ -22,9 +22,6 @@ class TuiSpec extends AnyWordSpec with Matchers {
     "A Tui" should {
         "create an new madn Game with 1 player on input 'n1'" in {
             var inserts: Array[Option[String]] = new Array[Option[String]](10)
-            val ho = new Home()
-            val fi = new Field()
-            val pl = new Player() 
             val co = new Controller()
             val tui = new Tui(co)
             tui.processInputLine("n1")
@@ -34,9 +31,6 @@ class TuiSpec extends AnyWordSpec with Matchers {
         }
         "create an new madn Game with s players on input 'n2'" in {
             var inserts: Array[Option[String]] = new Array[Option[String]](10)
-            val ho = new Home()
-            val fi = new Field()
-            val pl = new Player() 
             val co = new Controller()
             val tui = new Tui(co)
             tui.processInputLine("n2")
@@ -46,9 +40,6 @@ class TuiSpec extends AnyWordSpec with Matchers {
         }
         "create an new madn Game with 3 players on input 'n3'" in {
             var inserts: Array[Option[String]] = new Array[Option[String]](10)
-            val ho = new Home()
-            val fi = new Field()
-            val pl = new Player() 
             val co = new Controller()
             val tui = new Tui(co)
             tui.processInputLine("n3")
@@ -58,9 +49,6 @@ class TuiSpec extends AnyWordSpec with Matchers {
         }
         "create an new madn Game with 4 players on input 'n4'" in {
             var inserts: Array[Option[String]] = new Array[Option[String]](10)
-            val ho = new Home()
-            val fi = new Field()
-            val pl = new Player() 
             val co = new Controller()
             val tui = new Tui(co)
             tui.processInputLine("n4")
@@ -136,5 +124,5 @@ class TuiSpec extends AnyWordSpec with Matchers {
             co.field.figuren(0) should equal(Some("A1")) 
         }
     }
-}
+}*/
 

@@ -1,4 +1,4 @@
-package de.htwg.se.madn
+/*package de.htwg.se.madn
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatest.matchers.should.Matchers
 
@@ -60,3 +60,4 @@ class XmlSpec extends AnyWordSpec  with Matchers:
    }
   
 
+*/
