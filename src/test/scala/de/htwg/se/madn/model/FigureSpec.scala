@@ -23,4 +23,8 @@ class FigureSpec extends AnyWordSpec with Matchers:
       val figure2 = Figure("A",2)
       figure1.equals(figure2) should be(false)
     }
+    "return a figure" in {
+      val figure1 = Figure("A",1)
+      figure1.toString should equal("A1")
+    }
   }
