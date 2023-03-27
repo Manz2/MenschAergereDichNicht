@@ -5,8 +5,8 @@ import de.htwg.se.madn.Controller.controllerComponent.controllerBaseImpl.Control
 import de.htwg.se.madn.Controller.controllerComponent.ControllerInterface
 import model.FieldComponent.FieldInterface
 import model.FieldComponent.fieldBaseImpl.Field
-//import aview.{Tui, GUI}
-import aview.Tui
+import aview.{Tui, GUI}
+//import aview.Tui
 import scala.io.StdIn.readLine
 import model.FigureComponent.FigureBaseImpl.Figure
 import scala.collection.immutable.LazyList.cons
@@ -19,7 +19,7 @@ object Madn {
     val controller = Controller()
     println("Mensch aergere dich nicht")
     val tui = Tui(controller)
-    //val gui = new aview.GUI(controller)//comment for docker use then "docker build -t madn" and after "docker run -ti madn"
+    val gui = new aview.GUI(controller)//comment for docker use then "docker build -t madn" and after "docker run -ti madn"
     var input: String = ""
     print("Game started\n")  
     input = readLine()

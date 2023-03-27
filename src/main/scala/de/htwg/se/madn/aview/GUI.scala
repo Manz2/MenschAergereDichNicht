@@ -13,7 +13,7 @@ import Controller.controllerComponent.ControllerInterface
 import io.AnsiColor._
 import scala.swing.Color
 
-/*
+
 class GUI(controller: ControllerInterface) extends MainFrame with Observer {
 
   controller.add(this)
@@ -26,8 +26,8 @@ class GUI(controller: ControllerInterface) extends MainFrame with Observer {
   }
 
   val fieldpos: Array[Option[String]] = new Array[Option[String]](20)//40 
-  var diceVal = "";
-  var turn = 'A'
+  var diceVal = 0;
+  var turn = "A"
     
 
   object spielfeld extends TextPane {
@@ -103,49 +103,49 @@ class GUI(controller: ControllerInterface) extends MainFrame with Observer {
    listenTo(loadButton)
    reactions += {
      case ButtonClicked(`start`) => startGame
-     case ButtonClicked(`saveButton`) => controller.save
-     case ButtonClicked(`loadButton`) => controller.load
-     case ButtonClicked(`aButton`) => round('a')
-     case ButtonClicked(`bButton`) => round('b')
-     case ButtonClicked(`cButton`) => round('c')
-     case ButtonClicked(`dButton`) => round('d')
+     //case ButtonClicked(`saveButton`) => controller.save
+     //case ButtonClicked(`loadButton`) => controller.load
+     case ButtonClicked(`aButton`) => round("A")
+     case ButtonClicked(`bButton`) => round("B")
+     case ButtonClicked(`cButton`) => round("C")
+     case ButtonClicked(`dButton`) => round("D")
      case ButtonClicked(`IButton`) => 
-       var a = controller.move(1,turn,diceVal.toInt)
-       if(a.length > 16){
+       var a = controller.move(controller.getFigureFromField(turn,1),diceVal)
+       if(a.data.length > 16){
           IButton.background = java.awt.Color.red;
           IButton.enabled = false
-          if(a.length == 22){
-            spielfeld.text = a
+          if(a.data.length == 22){
+            spielfeld.text = a.toString
             spielfeld.background = java.awt.Color.green
           }
        }
      case ButtonClicked(`IIButton`) => 
-       var b = controller.move(2,turn,diceVal.toInt)
-       if(b.length > 16){
+       var b = controller.move(controller.getFigureFromField(turn,2),diceVal)
+       if(b.data.length > 16){
           IIButton.background = java.awt.Color.red;
           IIButton.enabled = false
-          if(b.length == 22){
-            spielfeld.text = b
+          if(b.data.length == 22){
+            spielfeld.text = b.toString
             spielfeld.background = java.awt.Color.green
           }
        }
      case ButtonClicked(`IIIButton`) => 
-       var c = controller.move(3,turn,diceVal.toInt)
-       if(c.length > 16){
+       var c = controller.move(controller.getFigureFromField(turn,3),diceVal)
+       if(c.data.length > 16){
           IIIButton.background = java.awt.Color.red;
           IIIButton.enabled = false
-          if(c.length == 22){
-            spielfeld.text = c
+          if(c.data.length == 22){
+            spielfeld.text = c.toString
             spielfeld.background = java.awt.Color.green
           }
        }
      case ButtonClicked(`IVButton`) => 
-       var d = controller.move(4,turn,diceVal.toInt)
-       if(d.length > 16){
+       var d = controller.move(controller.getFigureFromField(turn,4),diceVal)
+       if(d.data.length > 16){
           IVButton.background = java.awt.Color.red;
           IVButton.enabled = false
-          if(d.length == 22){
-            spielfeld.text = d
+          if(d.data.length == 22){
+            spielfeld.text = d.toString
             spielfeld.background = java.awt.Color.green
           }
        }
@@ -250,29 +250,29 @@ class GUI(controller: ControllerInterface) extends MainFrame with Observer {
        controller.newGame(anzahlSpieler)
   }
   
-    def round(player:Char)={
+    def round(player:String)={
 
       dice.background = java.awt.Color.white
        dice.text = ""
 
       player match{
-        case 'a' => 
+        case "A" => 
           aButton.background = java.awt.Color.red;
           aButton.enabled = false
-        case 'b' => 
+        case "B" => 
           bButton.background = java.awt.Color.red;
           bButton.enabled = false
-        case 'c' => 
+        case "C" => 
           cButton.background = java.awt.Color.red;
           cButton.enabled = false
-        case 'd' => 
+        case "D" => 
           dButton.background = java.awt.Color.red;
           dButton.enabled = false
       }
-      var alle = controller.nochAlle(player.toUpper)
+      var alle = controller.nochAlle(player)
       if(alle == true){
-        val v = controller.Alleda(player.toUpper)
-        if(v.length == 26){
+        val v = controller.Alleda(player)
+        if(v){
           dice.background = java.awt.Color.green;
           dice.text = "6"
         }else{
@@ -280,10 +280,10 @@ class GUI(controller: ControllerInterface) extends MainFrame with Observer {
         }
       } else{
         diceVal = controller.throwDice
-        dice.text = diceVal
+        dice.text = diceVal.toString
       }
       turn = player
         
     }
 }
-*/
+
