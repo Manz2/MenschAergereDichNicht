@@ -1,4 +1,4 @@
-/*package de.htwg.se.madn
+package de.htwg.se.madn
 package Controller
 
 import util.{Observer,Observable}
@@ -15,63 +15,57 @@ import scala.util.{Try,Success,Failure}
 import util.Observer
 import de.htwg.se.madn.Controller.controllerComponent.ControllerInterface
 import de.htwg.se.madn.Controller.controllerComponent.controllerBaseImpl._
+import model.FigureComponent.FigureBaseImpl.Figure
+import model.FigureComponent.FigureInterface
+import java.{util => ju}
 
 class ControllerSpec extends AnyWordSpec with Matchers:
   "A Controller" when {
     "observed by an Observer" should {
-          var z: Array[Option[String]] = new Array[Option[String]](2)
-          var count1 = 0
-          z.foreach(ins => {
-          z(count1) = None: Option[String]
-          count1 = count1 + 1
-          })
+          val z = Field(Vector.fill(10)(Figure("",-1)))
+          val f = Field(Vector(Figure("A",1),Figure("",-1),Figure("B",1)))
+          val f2 = Field(Vector(Figure("",-1),Figure("",-1),Figure("A",1)))
+          val f3 = Field(Vector(Figure("A",1),Figure("",-1),Figure("",-1)))
           val controller = new Controller()
-          val obs = new Obs()
+          val obs = new Obs
           controller.add(obs)
           "notify its Observer after a new game" in {
-            controller.newGame(z,z,z)
+            controller.newGame(2)
             obs.updated should be(true)
-            controller.player.toString.count(_ == '+') should equal(6)
-            controller.home.toString.count(_ == '+') should equal(6)
-            controller.field.toString.count(_ == '+') should equal(6)
+            controller.player.toString.count(_ == '+') should equal(18)
+            controller.home.toString.count(_ == '+') should equal(18)
+            controller.field.toString.count(_ == '+') should equal(42)
           }
           "move a figure an do a step" in{
-            controller.newGame(z,z,z)
-            var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),None,Some("B2"),Some("B3"))
-            controller.field.figuren = x
-            controller.domove(Some("A1"),2)
-            controller.field.figuren(2) should equal(Some("A1"))
+            controller.newGame(2)
+            controller.field = f
+            controller.domove(controller.field.data(0),2).toString should equal (f2.toString)
             obs.updated should be(true)
           }
           "undo a step" in {
-            controller.newGame(z,z,z)
-            var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),None,Some("B2"),Some("B3"))
-            controller.field.figuren = x
-            controller.domove(Some("A1"),2)
+            controller.newGame(2)
+            controller.field = f3
+            controller.field = controller.domove(controller.field.data(0),2)
             controller.undo
-            controller.field.figuren(0) should equal(Some("A1"))
+            controller.field.toString should equal(f3.toString)
             obs.updated should be(true)
           }
           "redo a step" in {
-            controller.newGame(z,z,z)
-            var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),None,Some("B2"),Some("B3"))
-            controller.field.figuren = x
-            controller.domove(Some("A1"),2)
+            controller.newGame(2)
+            controller.field = f3
+            controller.field = controller.domove(controller.field.data(0),2)
             controller.undo
-            controller.field.figuren(0) should equal(Some("A1"))
+            controller.field.toString should equal(f3.toString)
             controller.redo
-            controller.field.figuren(2) should equal(Some("A1"))
+            controller.field.toString should equal(f2.toString)
             obs.updated should be(true)
           }
           "check the player field" in{
-            controller.newGame(z,z,z)
-              var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),Some("A3"),Some("A4"))
-              controller.player.figuren = x
-              controller.nochAlle('A') should equal(true)
-              x = Array(Some("A1"),Some("A2"),Some("A3"),None)
-              controller.player.figuren = x
-              controller.nochAlle('A') should equal(false)
-          }
+            controller.newGame(2)
+              controller.nochAlle("A") should equal(true)
+              controller.player = f
+              controller.nochAlle("A") should equal(false)
+          }/*
           "save the game" in {
             var t: Array[Option[String]] = new Array[Option[String]](2)
                 val controller = new Controller()
@@ -100,17 +94,16 @@ class ControllerSpec extends AnyWordSpec with Matchers:
                 controller.load
 
                 controller.player.figuren should contain inOrder (Some("A1"),Some("A2"),Some("A3"),Some("A4"))
-          }
+          }*/
           "throw the dice" in {
             controller.throwDice should be <=6
           }
+          /*
           "try 3 times to leave the player field" in {
-            controller.newGame(z,z,z)
-            var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),Some("A3"),Some("A4"))
-            controller.player.figuren = x
-            controller.Alleda('A').length should be > 5;
+            controller.newGame(1)
+            controller.Alleda("A") should be (true||false);
             
-          }
+          }*//*
           "move a figure out if the dice shows 6" in{
             controller.newGame(z,z,z)
             var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),Some("A3"),Some("A4"))
@@ -259,7 +252,7 @@ class ControllerSpec extends AnyWordSpec with Matchers:
             controller.field.figuren should contain inOrder (Some("A1"),Some("B1"),Some("C1"),Some("D1"),None)
           }
         }
-  }
+  }*/}}
   case class Obs() extends Observer:
     var updated = false
-    override def update: Unit = updated = true */
+    override def update: Unit = updated = true
