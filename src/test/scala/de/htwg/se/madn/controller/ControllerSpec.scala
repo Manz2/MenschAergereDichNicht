@@ -155,79 +155,51 @@ class ControllerSpec extends AnyWordSpec with Matchers:
             controller.move(controller.field.data(0),6)
             controller.move(controller.field.data(5),1)
             controller.player.data(0).toString should equal(Figure("A",1).toString)
-/*
+
             //Test for player b,c,d
-            controller.move(1,'b',15)
-            controller.field.figuren(0) should equal(Some("B1"))
+            controller.move(controller.field.data(6),14)
+            controller.field.data(0).toString should equal(Figure("B",1).toString)
 
-            controller.move(1,'b',15)
-            controller.home.figuren(4) should equal(Some("B1"))
+            controller.move(controller.field.data(0),15)
+            controller.home.data(4).toString should equal("B1")
 
-            controller.move(1,'c',10)
-            controller.field.figuren(0) should equal(Some("C1"))
+            controller.move(controller.field.data(10),10)
+            controller.field.data(0).toString should equal("C1")
 
-            controller.move(1,'c',15)
-            controller.home.figuren(8) should equal(Some("C1"))
+            controller.move(controller.field.data(0),15)
+            controller.home.data(8).toString should equal("C1")
 
-            controller.move(1,'d',5)
-            controller.field.figuren(0) should equal(Some("D1"))
+            controller.move(controller.field.data(15),5)
+            controller.field.data(0).toString should equal("D1")
 
-            controller.move(1,'d',18)
-            controller.home.figuren(12) should equal(Some("D1"))*/
+            controller.move(controller.field.data(0),18)
+            controller.home.data(12).toString should equal("D1")
           }
-          /*
           "end the Game" in{
-            controller.newGame(z,z,z)
-
-            var x: Array[Option[String]] = new Array[Option[String]](20)
-            var count1 = 0
-            x.foreach(ins => {
-              x(count1) = None: Option[String]
-              count1 = count1 + 1
-            })
-            controller.field.figuren = x
-
-            var y: Array[Option[String]] = Array(Some("A1"),Some("A2"),Some("A3"),None)
-
-            controller.home.figuren = y
-
-            controller.field.figuren(18) = Some("A4")
-
-            controller.move(4,'a',5) should equal ("Spieler A hat gewonnen")
-
+            controller.newGame(1)
+            controller.home = Field(controller.player.data.updated(3,Figure("",-1)))
+            controller.field = Field(controller.field.data.updated(18,Figure("A",4)))
+            controller.move(controller.field.data(18),5) 
+            println(controller.home)
+            controller.anybodyWone(controller.home) should be (Some("A"))
           }
+
           "leave the player field with the next figure" in {
-            controller.newGame(z,z,z)
+            controller.newGame(4)
 
-            var x: Array[Option[String]] = new Array[Option[String]](20)
-            var count1 = 0
-            x.foreach(ins => {
-              x(count1) = None: Option[String]
-              count1 = count1 + 1
-            })
+            controller.raus("A")
+            controller.raus("B")
+            controller.raus("C")
+            controller.raus("D")
 
-            var y: Array[Option[String]] = new Array[Option[String]](16)
-            var count2 = 0
-            y.foreach(ins => {
-              y(count2) = None: Option[String]
-              count2 = count2 + 1
-            })
-
-            controller.field.figuren = x
-            controller.player.figuren = y
-            controller.field.figuren(0) = Some("B2")
-            controller.field.figuren(5) = Some("C2")
-            controller.field.figuren(10) = Some("D2")
-            controller.field.figuren(15) = Some("A2")
-            controller.raus(Some("A1"),'A')
-            controller.raus(Some("B1"),'B')
-            controller.raus(Some("C1"),'C')
-            controller.raus(Some("D1"),'D')
-
-            controller.field.figuren should contain inOrder (Some("A1"),Some("B1"),Some("C1"),Some("D1"),None)
+            controller.field.data should contain (Figure("A",1))
+            controller.field.data should contain (Figure("B",1))
+            controller.field.data should contain (Figure("C",1))
+            controller.field.data should contain (Figure("D",1))
           }
         }
-  }*/}}
+}
+
   case class Obs() extends Observer:
     var updated = false
     override def update: Unit = updated = true
