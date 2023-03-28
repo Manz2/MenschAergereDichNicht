@@ -26,6 +26,8 @@ class ControllerSpec extends AnyWordSpec with Matchers:
           val f = Field(Vector(Figure("A",1),Figure("",-1),Figure("B",1)))
           val f2 = Field(Vector(Figure("",-1),Figure("",-1),Figure("A",1)))
           val f3 = Field(Vector(Figure("A",1),Figure("",-1),Figure("",-1)))
+          def inner(spielername: String): List[Figure] = (1 until 5).map(idx => Figure(spielername,idx)).toList
+          val player = Field(Vector(List("A","B","C","D").take(4).map(inner(_)).flatten).flatten)
           val controller = new Controller()
           val obs = new Obs
           controller.add(obs)
@@ -103,85 +105,57 @@ class ControllerSpec extends AnyWordSpec with Matchers:
             controller.newGame(1)
             controller.Alleda("A") should be (true||false);
             
-          }*//*
+          }*/
           "move a figure out if the dice shows 6" in{
-            controller.newGame(z,z,z)
-            var x: Array[Option[String]] = Array(Some("A1"),Some("A2"),Some("A3"),Some("A4"))
-            controller.player.figuren = x
-            var a = controller.Alleda('A')
-            while(!a.equals("du hast es raus geschafft\n")){
-              a = controller.Alleda('A')
+            controller.newGame(1)
+            var a = controller.Alleda("A")
+            while(!a){
+              a=controller.Alleda("A")
             }
-            controller.field.figuren(0) should equal(Some("A1"))
+            controller.field.data(0).toString should equal(Figure("A",1).toString)
           }
-
           "send a figure back to the playerfield" in {
-            controller.newGame(z,z,z)
+            controller.newGame(4)
 
-            var x: Array[Option[String]] = new Array[Option[String]](16)
-            var count1 = 0
-            x.foreach(ins => {
-              x(count1) = None: Option[String]
-              count1 = count1 + 1
-            })
+            controller.raus("A")
+            controller.raus("B")
+            controller.raus("C")
+            controller.raus("D")
+            controller.player = controller.backHome(controller.player)(0)
+            controller.player = controller.backHome(controller.player)(5)
+            controller.player = controller.backHome(controller.player)(10)
+            controller.player = controller.backHome(controller.player)(15)
 
-            var y: Array[Option[String]] = Array(Some("A1"),Some("B1"),Some("C1"),Some("D1"),None)
-
-            controller.player.figuren = x
-            controller.field.figuren = y
-            controller.backHome(0)
-            controller.backHome(1)
-            controller.backHome(2)
-            controller.backHome(3)
-
-            controller.field.figuren should contain only(None)
-            controller.player.figuren should contain inOrder (Some("A1"),Some("B1"),Some("C1"),Some("D1"),None)
+            controller.player.toString should equal (player.toString)
           }
 
           "move a figure" in {
-            controller.newGame(z,z,z)
+            controller.newGame(4)    
 
-            var x: Array[Option[String]] = new Array[Option[String]](20)
-            var count1 = 0
-            x.foreach(ins => {
-              x(count1) = None: Option[String]
-              count1 = count1 + 1
-            })
+            controller.raus("A")
+            controller.raus("B")
+            controller.raus("C")
+            controller.raus("D")
 
-            var w: Array[Option[String]] = new Array[Option[String]](16)
-            var count2 = 0
-            w.foreach(ins => {
-              w(count2) = None: Option[String]
-              count2 = count2 + 1
-            })
+            val baseField = Field(controller.field.data)
 
-
-            var y: Array[Option[String]] = Array(None,Some("A2"),Some("A3"),Some("A4"))
-            controller.field.figuren = x
-            controller.field.figuren(2) = Some("A1")
-            controller.field.figuren(1) = Some("B2")
-            controller.field.figuren(5) = Some("B1")
-            controller.field.figuren(10) = Some("C1")
-            controller.field.figuren(15) = Some("D1")
-            controller.player.figuren = y
-            controller.home.figuren = w
-
-
-            controller.move(1,'x',3) should equal("X1 ist nicht im Feld waehle eine andere Figur")
-
+            controller.move(Figure("A",3),3).toString should equal (baseField.toString)
+            
             //Tests for player a
-            controller.move(1,'a',6)
-            controller.field.figuren(0) should equal(Some("A2"))
+            controller.move(controller.field.data(0),6)
+            controller.field.data(0).toString should equal(Figure("A",2).toString)
+            
+            controller.move(controller.field.data(0),4)
+            controller.field.data(4).toString should equal(Figure("A",2).toString)
 
-            controller.move(2,'a',4)
-            controller.field.figuren(4) should equal(Some("A2"))
+            controller.move(controller.field.data(4),18)
+            controller.home.data(1).toString should equal(Figure("A",2).toString)
 
-            controller.move(2,'a',18)
-            controller.home.figuren(1) should equal(Some("A2"))
-
-            controller.move(2,'b',1)
-            controller.player.figuren(0) should equal(Some("A1"))
-
+            controller.raus("A")
+            controller.move(controller.field.data(0),6)
+            controller.move(controller.field.data(5),1)
+            controller.player.data(0).toString should equal(Figure("A",1).toString)
+/*
             //Test for player b,c,d
             controller.move(1,'b',15)
             controller.field.figuren(0) should equal(Some("B1"))
@@ -199,8 +173,9 @@ class ControllerSpec extends AnyWordSpec with Matchers:
             controller.field.figuren(0) should equal(Some("D1"))
 
             controller.move(1,'d',18)
-            controller.home.figuren(12) should equal(Some("D1"))
+            controller.home.figuren(12) should equal(Some("D1"))*/
           }
+          /*
           "end the Game" in{
             controller.newGame(z,z,z)
 
