@@ -24,6 +24,8 @@
 .vscode
 .metals
 .bloop
+*.json
+*.xml
 
 project/metals.sbt
 
