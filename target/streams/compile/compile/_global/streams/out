@@ -1,7 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\User\Documents\SoftwareArchitekturen\MenschAergereDichNicht\src\main\scala\de\htwg\se\madn\model\FieldComponent\fieldBaseImpl\field.scala:24:56 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m24 |[0m    [33mval[0m [36mlist[0m:[35mList[Option[Figure]][0m =  data.map(inner(_)).toList[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                     [31m^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |Found:    List[Option[de.htwg.se.madn.model.FigureComponent.[1m[31mFigureInterface[0m]][0m
-[0m[[0m[31merror[0m] [0m[0m   |Required: List[Option[de.htwg.se.madn.model.FigureComponent.[1m[32mFigureBaseImpl[0m[1m[32m.[0m[1m[32mFigure[0m]][0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
