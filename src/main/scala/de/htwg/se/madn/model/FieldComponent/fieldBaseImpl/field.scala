@@ -10,9 +10,17 @@ import scala.annotation.switch
 case class Field(override val data:Vector[FigureInterface]) extends FieldInterface(data) {
 
   override def toString: String = {
-    def inner(value: FigureInterface) : String = if (!(value.number == -1)) value.toString() else "  "
-    def row(figuren: Vector[FigureInterface]): String ="|" + figuren.map(" " + inner(_) + " |").mkString
-    ("+") + ("----+" * data.length) + "\n" + row(data) + "\n" + ("+") + ("----+" * data.length) + "\n"
+    def inner(value: FigureInterface) : Option[FigureInterface] = if (!(value.number == -1)) Some(value) else None
+    val list:List[Option[FigureInterface]] =  data.map(inner(_)).toList
+
+    def outer(list : List[Option[FigureInterface]]) : List[String] = {
+      for (
+          maybeFigure <- list) yield maybeFigure match {
+        case Some(b) => " "+ b.toString() + " |"
+        case None => "    |"
+      }
+    }
+    ("+") + ("----+" * data.length) + "\n" + "|"+outer(list).mkString + "\n" + ("+") + ("----+" * data.length) + "\n"
   }
 
   def move(figur:FigureInterface,anzahlFelder:Int): Field = {
