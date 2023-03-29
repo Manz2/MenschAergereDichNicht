@@ -197,6 +197,13 @@ class ControllerSpec extends AnyWordSpec with Matchers:
             controller.field.data should contain (Figure("C",1))
             controller.field.data should contain (Figure("D",1))
           }
+          "get a Figure from a field" in {
+            controller.newGame(4)
+            controller.field = f
+            controller.getFigureFromField("A",1).toString should equal("A1")
+            controller.getFigureFromField("B",1).toString should equal("B1")
+            controller.getFigureFromField("C",1).toString should equal("")
+          }
         }
 }
 

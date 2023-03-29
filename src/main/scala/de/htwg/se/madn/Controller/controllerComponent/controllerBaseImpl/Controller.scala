@@ -17,26 +17,12 @@ import model.fileIoComponent.FileIOInterface
 import model.FigureComponent.FigureBaseImpl.Figure
 import model.FigureComponent.FigureInterface
 
-//case class Controller @Inject() (val Home:Home,val Field:Field,val Player:Player) extends ControllerInterface {
 case class Controller () extends ControllerInterface {
   val undoManager = new UndoManager 
-  /*
-  val injector = Guice.createInjector(new madnModule)
-  var field = injector.getInstance(classOf[FieldInterface])//Spielfeld
-  var player = injector.getInstance(classOf[FieldInterface])//basisfeld wo die figuren warten
-  var home = injector.getInstance(classOf[FieldInterface])//ziel feld
-  val fileIo = injector.getInstance(classOf[FileIOInterface])
-  */
 
   var field : FieldInterface = Field(Vector());
   var player: FieldInterface = Field(Vector());
   var home: FieldInterface = Field(Vector());
-
-  def debug() = {
-    println(player)
-    println(field)
-    println(home)
-  }
 
   def newGame(nPlayer : Int): Unit = {
     def inner(spielername: String): List[Figure] = (1 until 5).map(idx => Figure(spielername,idx)).toList
@@ -53,14 +39,16 @@ case class Controller () extends ControllerInterface {
     undoManager.doStep(new MoveCommand(figur,anzahl,this))
   }
 
-  def undo: Unit = {
+  def undo: FieldInterface = {
     field = undoManager.undoStep(field)
     notifyObservers
+    field
   }
 
-  def redo: Unit = {
+  def redo: FieldInterface = {
     field = undoManager.redoStep(field)
     notifyObservers
+    field
   }
 
   def raus(spieler:String): FieldInterface={
@@ -134,19 +122,6 @@ case class Controller () extends ControllerInterface {
     val fig = field.data.find(a => a.playerName == player && a.number == nummer)
     if(fig != None) fig.get else Figure("X",-1)
     }
-
-  /*
-  def save: Unit = {
-    fileIo.save(player,field,home)
-    notifyObservers
-  }
-  def load: Unit = {
-    player = fileIo.loadPlayer
-    field = fileIo.loadField
-    home = fileIo.loadHome
-    notifyObservers
-  }
-  */
 
   // moves figure plfig dicev fields
   def move(figur:FigureInterface,anzahl:Int):FieldInterface={

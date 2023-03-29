@@ -95,26 +95,29 @@ class TuiSpec extends AnyWordSpec with Matchers {
             val co = new Controller()
             val tui = new Tui(co)
             co.newGame(1)
+            tui.processInputLine("a")
             tui.diceVal = 6
-            tui.processInputLine("1")
-            co.field.data(0).toString should equal(Figure("A",1).toString) 
+            tui.processInputLine("2")
+            co.field.data(0).toString should equal(Figure("A",2).toString) 
         }
         "move figure 2 or leave player field with the next figure on input '2'" in {
             val co = new Controller()
             val tui = new Tui(co)
-            tui.startGame(1)
-            tui.diceVal = "6"
+            co.newGame(1)
+            tui.processInputLine("a")
+            tui.diceVal = 6
             tui.processInputLine("2")
-            co.field.figuren(0) should equal(Some("A1")) 
+            co.field.data(0).toString should equal("A1") 
         }
         "move figure 3 or leave player field with the next figure on input '3'" in {
             val co = new Controller()
             val tui = new Tui(co)
-            tui.startGame(1)
-            tui.diceVal = "6"
+            co.newGame(1)
+            tui.processInputLine("a")
+            tui.diceVal = 6
             tui.processInputLine("3")
-            co.field.figuren(0) should equal(Some("A1")) 
-        }
+            co.field.data(0).toString should equal("A1") 
+        }/*
         "move figure 4 or leave player field with the next figureon input '4'" in {
             val co = new Controller()
             val tui = new Tui(co)
@@ -122,7 +125,7 @@ class TuiSpec extends AnyWordSpec with Matchers {
             tui.diceVal = "6"
             tui.processInputLine("4")
             co.field.figuren(0) should equal(Some("A1")) 
-        }*/
+        }*/*/
     }
 }
 

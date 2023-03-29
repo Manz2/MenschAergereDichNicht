@@ -14,8 +14,8 @@ import model.FigureComponent.FigureInterface
 trait ControllerInterface() extends Observable{
   def newGame(nPlayer:Int) : Unit
   def domove(figur:FigureInterface ,anzahl:Int): FieldInterface 
-  def undo: Unit 
-  def redo: Unit 
+  def undo: FieldInterface
+  def redo: FieldInterface
   //def save: Unit
   //def load: Unit
   def raus(spieler:String):FieldInterface
