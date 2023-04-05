@@ -55,7 +55,7 @@ case class Controller () extends ControllerInterface {
   }
 
   def raus(spieler:String): FieldInterface={
-    def inner(index:Int):Unit = {
+    def inner(index:Int):FieldInterface = {
       val figur = player.data.find(_.playerName==spieler.toString).get
       checkField(index) match {
         case Success(res) => player = res
@@ -63,6 +63,7 @@ case class Controller () extends ControllerInterface {
       }
       field = Field(field.data.updated(index,figur))
       player = Field(player.data.updated(player.data.indexOf(figur),Figure("",-1)))
+      player
     }
     spieler match{
       case "A" =>inner(0)
