@@ -1,15 +1,16 @@
-package  de.htwg.se.madn.Controller.controllerComponent.controllerBaseImpl
+package de.htwg.se.madn
+package Controller.controllerComponent.controllerBaseImpl 
 
 
 
 import com.google.inject.name.Names
 import com.google.inject.{Guice, Inject}
 import net.codingwell.scalaguice.InjectorExtensions._
-import de.htwg.se.madn.madnModule
-import FieldComponent.FieldInterface
-import FieldComponent.fieldBaseImpl.Field
-import Controller.controllerComponent._
-import util.UndoManager
+//import de.htwg.se.madn.madnModule
+import de.htwg.se.madn.FieldComponent.FieldInterface
+import de.htwg.se.madn.FieldComponent.fieldBaseImpl.Field
+import de.htwg.se.madn.Controller.controllerComponent._
+//import util.UndoManager
 import scala.util.{Try,Success,Failure}
 import scala.util.Random
 import scala.util.control.Breaks._

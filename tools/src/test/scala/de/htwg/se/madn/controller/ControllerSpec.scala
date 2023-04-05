@@ -1,22 +1,20 @@
 package de.htwg.se.madn
 package Controller
 
-import util.{Observer,Observable}
+
 //import Controller.Controller
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatest.matchers.should.Matchers
 
-import aview.{Tui}
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatest.matchers.should.Matchers
-import model.FieldComponent.FieldInterface
-import model.FieldComponent.fieldBaseImpl._
+import FieldComponent.FieldInterface
+import FieldComponent.fieldBaseImpl._
 import scala.util.{Try,Success,Failure}
-import util.Observer
 import de.htwg.se.madn.Controller.controllerComponent.ControllerInterface
 import de.htwg.se.madn.Controller.controllerComponent.controllerBaseImpl._
-import model.FigureComponent.FigureBaseImpl.Figure
-import model.FigureComponent.FigureInterface
+import FigureComponent.FigureBaseImpl.Figure
+import FigureComponent.FigureInterface
 import java.{util => ju}
 
 class ControllerSpec extends AnyWordSpec with Matchers:

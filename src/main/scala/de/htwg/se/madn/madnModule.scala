@@ -9,7 +9,7 @@ import FieldComponent.FieldInterface
 
 import FieldComponent._
 import scala.util.{Try,Success,Failure}
-import util.Observer
+//import util.Observer
 import scala.io.StdIn.readLine
 import scala.util.Random
 import Controller.controllerComponent.ControllerInterface

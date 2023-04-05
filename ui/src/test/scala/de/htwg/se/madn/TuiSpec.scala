@@ -7,17 +7,15 @@
                                                                                      
 package de.htwg.se.madn
 
-import aview.{Tui}
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatest.matchers.should.Matchers
-import model.FieldComponent.FieldInterface
-import model.FieldComponent.fieldBaseImpl._
+import FieldComponent.FieldInterface
+import FieldComponent.fieldBaseImpl._
 import scala.util.{Try,Success,Failure}
-import util.Observer
 import Controller.controllerComponent.ControllerInterface
 import Controller.controllerComponent.controllerBaseImpl._
-import model.FigureComponent.FigureBaseImpl.Figure
-import model.FigureComponent.FigureInterface
+import FigureComponent.FigureBaseImpl.Figure
+import FigureComponent.FigureInterface
 
 class TuiSpec extends AnyWordSpec with Matchers {
 

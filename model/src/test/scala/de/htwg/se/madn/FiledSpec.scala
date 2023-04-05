@@ -2,10 +2,10 @@ package de.htwg.se.madn
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatest.matchers.should.Matchers
 
-import model.FieldComponent.FieldInterface
-import model.FieldComponent.fieldBaseImpl._
-import model.FigureComponent.FigureBaseImpl.Figure
-import model.FigureComponent.FigureInterface
+import FieldComponent.FieldInterface
+import FieldComponent.fieldBaseImpl._
+import FigureComponent.FigureBaseImpl.Figure
+import FigureComponent.FigureInterface
 import scala.language.postfixOps
 
 class FiledSpec extends AnyWordSpec with Matchers:

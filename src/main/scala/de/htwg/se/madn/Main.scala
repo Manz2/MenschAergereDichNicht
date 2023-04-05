@@ -3,10 +3,10 @@ package de.htwg.se.madn
 import com.google.inject.Guice
 import de.htwg.se.madn.Controller.controllerComponent.controllerBaseImpl.Controller
 import de.htwg.se.madn.Controller.controllerComponent.ControllerInterface
-import FieldComponent.FieldInterface
-import fieldBaseImpl.Field
-import aview.{Tui, GUI}
-//import aview.Tui
+import de.htwg.se.madn.FieldComponent.FieldInterface
+import de.htwg.se.madn.FieldComponent.fieldBaseImpl.Field
+//import aview.{Tui, GUI}
+//import Tui
 import scala.io.StdIn.readLine
 import FigureComponent.FigureBaseImpl.Figure
 import scala.collection.immutable.LazyList.cons
@@ -19,7 +19,7 @@ object Madn {
     val controller = Controller()
     println("Mensch aergere dich nicht")
     val tui = Tui(controller)
-    val gui = new aview.GUI(controller)//comment for docker use then "docker build -t madn" and after "docker run -ti madn"
+    val gui = new GUI(controller)//comment for docker use then "docker build -t madn" and after "docker run -ti madn"
     var input: String = ""
     print("Game started\n")  
     input = readLine()

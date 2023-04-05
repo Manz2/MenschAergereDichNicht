@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="MenschAergereDichNicht,menschaergeredichnicht_4482,model,root,tools,ui" />
+    <profile name="sbt 1" modules="MenschAergereDichNicht,MenschAergereDichNicht.model,MenschAergereDichNicht.root,MenschAergereDichNicht.tools,MenschAergereDichNicht.ui,menschaergeredichnicht_4482,model,root,tools,ui" />
   </component>
 </project>

@@ -2,8 +2,8 @@ package de.htwg.se.madn
 import org.scalatest.wordspec.AnyWordSpec
 import org.scalatest.matchers.should.Matchers
 
-import model.FigureComponent.FigureBaseImpl.Figure
-import model.FigureComponent.FigureInterface
+import FigureComponent.FigureBaseImpl.Figure
+import FigureComponent.FigureInterface
 import scala.language.postfixOps
 
 class FigureSpec extends AnyWordSpec with Matchers:

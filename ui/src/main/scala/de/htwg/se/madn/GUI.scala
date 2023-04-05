@@ -1,17 +1,13 @@
 package de.htwg.se.madn
-package aview
-import aview.{Tui}
-import model.FieldComponent.FieldInterface
-import util.Observer
+
+import java.awt.TextArea
+import scala.io.AnsiColor._
 import scala.io.StdIn.readLine
 import scala.swing._
-import scala.swing.BorderPanel
 import scala.swing.event._
-import java.awt.TextArea
-import scala.util.Random
-import Controller.controllerComponent.ControllerInterface
-import io.AnsiColor._
-import scala.swing.Color
+import de.htwg.se.madn.Controller.controllerComponent.ControllerInterface
+import de.htwg.se.madn.FieldComponent.FieldInterface
+
 
 
 class GUI(controller: ControllerInterface) extends MainFrame with Observer {
@@ -22,7 +18,7 @@ class GUI(controller: ControllerInterface) extends MainFrame with Observer {
   override def update: Unit = {
     spielfeld.text = ""
     spielfeld.text = controller.toString
-    repaint
+    repaint()
   }
 
   val fieldpos: Array[Option[String]] = new Array[Option[String]](20)//40 
@@ -178,7 +174,7 @@ class GUI(controller: ControllerInterface) extends MainFrame with Observer {
        }
        
     } 
-   centerOnScreen
+   centerOnScreen()
    visible = true
 
   def startGame = {
@@ -286,4 +282,3 @@ class GUI(controller: ControllerInterface) extends MainFrame with Observer {
         
     }
 }
-

@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MenschAergereDichNicht-build.iml" filepath="$PROJECT_DIR$/.idea/modules/MenschAergereDichNicht-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MenschAergereDichNicht.model.iml" filepath="$PROJECT_DIR$/.idea/modules/MenschAergereDichNicht.model.iml" group="MenschAergereDichNicht" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MenschAergereDichNicht.root.iml" filepath="$PROJECT_DIR$/.idea/modules/MenschAergereDichNicht.root.iml" group="MenschAergereDichNicht" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MenschAergereDichNicht.tools.iml" filepath="$PROJECT_DIR$/.idea/modules/MenschAergereDichNicht.tools.iml" group="MenschAergereDichNicht" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MenschAergereDichNicht.ui.iml" filepath="$PROJECT_DIR$/.idea/modules/MenschAergereDichNicht.ui.iml" group="MenschAergereDichNicht" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/model.iml" filepath="$PROJECT_DIR$/.idea/modules/model.iml" group="MenschAergereDichNicht" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/root.iml" filepath="$PROJECT_DIR$/.idea/modules/root.iml" group="MenschAergereDichNicht" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/tools.iml" filepath="$PROJECT_DIR$/.idea/modules/tools.iml" group="MenschAergereDichNicht" />

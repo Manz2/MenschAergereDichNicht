@@ -1,12 +1,8 @@
 package de.htwg.se.madn
-package aview
-import model.FieldComponent.FieldInterface
-import scala.util.{Try,Success,Failure}
-import util.Observer
-import scala.io.StdIn.readLine
-import scala.util.Random
+
 import Controller.controllerComponent.ControllerInterface
 import scala.io.StdIn.readLine
+import scala.util.*
 
 
 class Tui(controller: ControllerInterface) extends Observer:

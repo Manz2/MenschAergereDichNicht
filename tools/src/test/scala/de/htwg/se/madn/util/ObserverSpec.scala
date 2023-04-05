@@ -1,4 +1,4 @@
-package de.htwg.se.madn.util
+package de.htwg.se.madn
 
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.wordspec.AnyWordSpec
