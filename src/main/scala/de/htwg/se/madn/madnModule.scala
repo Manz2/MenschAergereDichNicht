@@ -5,9 +5,9 @@ import com.google.inject.AbstractModule
 import com.google.inject.name.Names
 import net.codingwell.scalaguice.ScalaModule
 
-import model.FieldComponent.FieldInterface
+import FieldComponent.FieldInterface
 
-import model.FieldComponent._
+import FieldComponent._
 import scala.util.{Try,Success,Failure}
 import util.Observer
 import scala.io.StdIn.readLine
@@ -15,10 +15,10 @@ import scala.util.Random
 import Controller.controllerComponent.ControllerInterface
 import Controller.controllerComponent._
 import scala.io.StdIn.readLine
-import model.fileIoComponent.FileIOInterface
-import model.fileIoComponent._
-import model.FigureComponent.FigureBaseImpl
-import model.FigureComponent.FigureInterface
+//import fileIoComponent.FileIOInterface
+//import fileIoComponent._
+import FigureComponent.FigureBaseImpl
+import FigureComponent.FigureInterface
 
 
 

@@ -1,6 +1,7 @@
+package de.htwg.se.madn
 
-package de.htwg.se.madn.util
-import de.htwg.se.madn.model.FieldComponent.FieldInterface
+import FieldComponent.FieldInterface
+
 trait Command {
   def doStep: FieldInterface
   def undoStep:FieldInterface

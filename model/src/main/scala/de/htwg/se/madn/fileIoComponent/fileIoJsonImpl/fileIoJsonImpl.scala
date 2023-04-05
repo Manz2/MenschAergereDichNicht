@@ -1,4 +1,4 @@
-package de.htwg.se.madn
+/*package de.htwg.se.madn
 package model.fileIoComponent.fileIoJsonImpl
 
 import com.google.inject.name.Names
@@ -6,13 +6,13 @@ import com.google.inject.{Guice, Inject}
 import net.codingwell.scalaguice.InjectorExtensions._
 import de.htwg.se.madn.madnModule
 
-import model.FieldComponent.FieldInterface
-import model.FieldComponent.fieldBaseImpl.Field
+import FieldComponent.FieldInterface
+import FieldComponent.fieldBaseImpl.Field
 import de.htwg.se.madn.model.fileIoComponent.FileIOInterface
 import play.api.libs.json._
 import scala.io.Source
 
-/*
+
 class fileIoJsonImpl extends FileIOInterface{
   override def loadPlayer: FieldInterface = {
     var player: FieldInterface = null

@@ -3,12 +3,12 @@ package de.htwg.se.madn
 import com.google.inject.Guice
 import de.htwg.se.madn.Controller.controllerComponent.controllerBaseImpl.Controller
 import de.htwg.se.madn.Controller.controllerComponent.ControllerInterface
-import model.FieldComponent.FieldInterface
-import model.FieldComponent.fieldBaseImpl.Field
+import FieldComponent.FieldInterface
+import fieldBaseImpl.Field
 import aview.{Tui, GUI}
 //import aview.Tui
 import scala.io.StdIn.readLine
-import model.FigureComponent.FigureBaseImpl.Figure
+import FigureComponent.FigureBaseImpl.Figure
 import scala.collection.immutable.LazyList.cons
 
 

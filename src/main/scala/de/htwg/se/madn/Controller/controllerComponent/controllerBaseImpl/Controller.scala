@@ -1,21 +1,22 @@
-package de.htwg.se.madn
-package Controller.controllerComponent.controllerBaseImpl
+package  de.htwg.se.madn.Controller.controllerComponent.controllerBaseImpl
+
+
 
 import com.google.inject.name.Names
 import com.google.inject.{Guice, Inject}
 import net.codingwell.scalaguice.InjectorExtensions._
 import de.htwg.se.madn.madnModule
-import model.FieldComponent.FieldInterface
-import model.FieldComponent.fieldBaseImpl.Field
-import de.htwg.se.madn.Controller.controllerComponent._
+import FieldComponent.FieldInterface
+import FieldComponent.fieldBaseImpl.Field
+import Controller.controllerComponent._
 import util.UndoManager
 import scala.util.{Try,Success,Failure}
 import scala.util.Random
 import scala.util.control.Breaks._
 import scala.collection.mutable.Map
-import model.fileIoComponent.FileIOInterface
-import model.FigureComponent.FigureBaseImpl.Figure
-import model.FigureComponent.FigureInterface
+//import fileIoComponent.FileIOInterface
+import FigureComponent.FigureBaseImpl.Figure
+import FigureComponent.FigureInterface
 
 case class Controller () extends ControllerInterface {
   val undoManager = new UndoManager 

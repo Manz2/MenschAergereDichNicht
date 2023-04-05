@@ -1,9 +1,9 @@
 package de.htwg.se.madn
-package model.FieldComponent.fieldBaseImpl
+package FieldComponent.fieldBaseImpl
 
-import model.FieldComponent.FieldInterface
-import model.FigureComponent.FigureBaseImpl.Figure
-import model.FigureComponent.FigureInterface
+import FieldComponent.FieldInterface
+import FigureComponent.FigureBaseImpl.Figure
+import FigureComponent.FigureInterface
 import scala.annotation.switch
 
 

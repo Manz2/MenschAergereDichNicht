@@ -1,6 +1,6 @@
 package de.htwg.se.madn
-package model.FigureComponent.FigureBaseImpl
-import model.FigureComponent.FigureInterface
+package FigureComponent.FigureBaseImpl
+import FigureComponent.FigureInterface
 
 final case class Figure (override val playerName:String, override val number:Int, override val state:Boolean=false) extends FigureInterface(playerName,number,state) {
     override def toString: String = if (number == -1) "" else  playerName + number

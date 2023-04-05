@@ -1,14 +1,15 @@
 package de.htwg.se.madn
 package Controller.controllerComponent
 
-import util.Observable
-import util.UndoManager
+
+
+import UndoManager
 import scala.util.{Try,Success,Failure}
 import scala.util.Random
 import scala.util.control.Breaks._
-import model.FigureComponent.FigureBaseImpl.Figure
-import model.FieldComponent.FieldInterface
-import model.FigureComponent.FigureInterface
+import FigureComponent.FigureBaseImpl.Figure
+import FieldComponent.FieldInterface
+import FigureComponent.FigureInterface
 
 //trait ControllerInterface(val Home:HomeInterface,val Field:FieldInterface,val Player:PlayerInterface) extends Observable{
 trait ControllerInterface() extends Observable{

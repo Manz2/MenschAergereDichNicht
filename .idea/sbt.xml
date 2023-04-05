@@ -7,7 +7,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/model" />
             <option value="$PROJECT_DIR$/project" />
+            <option value="$PROJECT_DIR$/tools" />
+            <option value="$PROJECT_DIR$/ui" />
           </set>
         </option>
         <option name="sbtVersion" value="1.5.5" />

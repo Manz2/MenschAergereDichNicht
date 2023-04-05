@@ -1,8 +1,8 @@
 package de.htwg.se.madn
 package model.fileIoComponent
 
-import model.FieldComponent.FieldInterface
-import model.FieldComponent.fieldBaseImpl.Field
+import FieldComponent.FieldInterface
+import FieldComponent.fieldBaseImpl.Field
 
 trait FileIOInterface {
   def loadPlayer: FieldInterface

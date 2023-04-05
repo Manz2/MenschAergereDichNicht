@@ -1,7 +1,7 @@
 package de.htwg.se.madn
-package model.FieldComponent
+package FieldComponent
 
-import model.FigureComponent.FigureInterface
+import FigureComponent.FigureInterface
 import java.lang.reflect.Field
 
 trait FieldInterface(val data: Vector[FigureInterface]) {

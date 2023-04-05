@@ -8,6 +8,7 @@ import scala.util.Random
 import Controller.controllerComponent.ControllerInterface
 import scala.io.StdIn.readLine
 
+
 class Tui(controller: ControllerInterface) extends Observer:
   controller.add(this)
   override def update: Unit =  println(controller.toString)

@@ -1,8 +1,7 @@
 package de.htwg.se.madn
-package util
 
 
-import model.FieldComponent.fieldBaseImpl.Field
+import FieldComponent.fieldBaseImpl.Field
 
 trait Observer {
   def update: Unit
