@@ -21,7 +21,7 @@ trait ControllerInterface() extends Observable{
   def raus(spieler:String):FieldInterface
   def throwDice : Int
   def nochAlle(spieler:String) : Boolean 
-  def checkField(index:Int):FieldInterface
+  def checkField(index:Int): Try[FieldInterface]
   def backHome(space:FieldInterface)(index:Int):FieldInterface
   def Alleda(spieler:String): Boolean
   def reachedHome(figur:FigureInterface):FieldInterface

@@ -35,7 +35,10 @@ case class Controller () extends ControllerInterface {
   override def toString = field.toString + home.toString + player.toString
   
   def domove(figur:FigureInterface ,anzahl:Int): FieldInterface = {
-    player = checkField(field.data.indexOf(figur)+anzahl)
+    checkField(field.data.indexOf(figur)+anzahl) match {
+      case Success(res) => player = res
+      case Failure(res) => player
+    }
     undoManager.doStep(new MoveCommand(figur,anzahl,this))
   }
 
@@ -54,7 +57,10 @@ case class Controller () extends ControllerInterface {
   def raus(spieler:String): FieldInterface={
     def inner(index:Int):Unit = {
       val figur = player.data.find(_.playerName==spieler.toString).get
-      player = checkField(index)
+      checkField(index) match {
+        case Success(res) => player = res
+        case Failure(res) => player
+      }
       field = Field(field.data.updated(index,figur))
       player = Field(player.data.updated(player.data.indexOf(figur),Figure("",-1)))
     }
@@ -74,7 +80,14 @@ case class Controller () extends ControllerInterface {
   def nochAlle(spieler:String) : Boolean = player.data.count(_.playerName==spieler) == 4
 
   // schickt Figur nach Hause, wenn vorhanden
-  def checkField(index:Int):FieldInterface = if(field.data(index).playerName != "") backHome(player)(index) else player
+  //def checkField(index:Int):FieldInterface = if(field.data(index).playerName != "") backHome(player)(index) else player
+  def checkField(index: Int): Try[FieldInterface] = Try {
+    if (field.data(index).playerName != "") {
+      backHome(player)(index)
+    } else {
+      player
+    }
+  }
 
   //send the figure at the possition i back to the base Currying
   def backHome(space: FieldInterface)(index:Int) :FieldInterface = {
@@ -105,7 +118,10 @@ case class Controller () extends ControllerInterface {
 
   def reachedEnd(figur: FigureInterface, anzahl: Int): FieldInterface = {
     def inner(thisField: FieldInterface, thisAnzahl: Int,thisFigur:FigureInterface): FieldInterface = {
-      player = checkField(anzahl)
+      checkField(anzahl) match {
+        case Success(res) => player = res
+        case Failure(res) => player
+      }
       Field(thisField.data.updated(anzahl,thisFigur).updated(field.data.indexOf(figur),Figure("",-1)))
     }
     if (figur.playerName == "A") reachedHome(figur)

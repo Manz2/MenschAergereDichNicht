@@ -14,7 +14,7 @@ target
 
 .ammonite
 .bsp
-
+null/
 out
 .idea
 .idea/**/workspace.xml
