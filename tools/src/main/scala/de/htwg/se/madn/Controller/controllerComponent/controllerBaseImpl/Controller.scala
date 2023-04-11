@@ -6,16 +6,13 @@ package Controller.controllerComponent.controllerBaseImpl
 import com.google.inject.name.Names
 import com.google.inject.{Guice, Inject}
 import net.codingwell.scalaguice.InjectorExtensions._
-//import de.htwg.se.madn.madnModule
 import de.htwg.se.madn.FieldComponent.FieldInterface
 import de.htwg.se.madn.FieldComponent.fieldBaseImpl.Field
 import de.htwg.se.madn.Controller.controllerComponent._
-//import util.UndoManager
 import scala.util.{Try,Success,Failure}
 import scala.util.Random
 import scala.util.control.Breaks._
 import scala.collection.mutable.Map
-//import fileIoComponent.FileIOInterface
 import FigureComponent.FigureBaseImpl.Figure
 import FigureComponent.FigureInterface
 
@@ -83,7 +80,6 @@ case class Controller () extends ControllerInterface {
   def nochAlle(spieler:String) : Boolean = player.data.count(_.playerName==spieler) == 4
 
   // schickt Figur nach Hause, wenn vorhanden
-  //def checkField(index:Int):FieldInterface = if(field.data(index).playerName != "") backHome(player)(index) else player
   def checkField(index: Int): Try[FieldInterface] = Try {
     if (field.data(index).playerName != "") {
       backHome(player)(index)

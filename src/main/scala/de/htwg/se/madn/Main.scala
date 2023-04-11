@@ -5,8 +5,6 @@ import de.htwg.se.madn.Controller.controllerComponent.controllerBaseImpl.Control
 import de.htwg.se.madn.Controller.controllerComponent.ControllerInterface
 import de.htwg.se.madn.FieldComponent.FieldInterface
 import de.htwg.se.madn.FieldComponent.fieldBaseImpl.Field
-//import aview.{Tui, GUI}
-//import Tui
 import scala.io.StdIn.readLine
 import FigureComponent.FigureBaseImpl.Figure
 import scala.collection.immutable.LazyList.cons
@@ -28,45 +26,5 @@ object Madn {
       input = readLine()
       tui.processInputLine(input)
     }
-    
- /*
-    val controller = Controller()
-    controller.newGame(3)
-    val figur = controller.player.data(4)
-    val fig2 = controller.player.data(0)
-    //controller.debug()
-    //controller.raus(figur)
-    //controller.debug()
-    controller.field  = Field(controller.field.data.updated(18,figur))
-    //controller.domove(figur,3)
-    //controller.debug()
-    //controller.undo
-    //controller.debug()
-    //controller.redo
-    //controller.debug()
-    //controller.player = Field(controller.player.data.updated(0,Figure("",-1)))
-    //controller.debug()
-    //println(controller.nochAlle('B'))
-    //println(controller.throwDice)
-    //controller.debug()
-    //controller.debug()
-    //println(controller.Alleda('C'))
-    //controller.raus("B")
-    //controller.debug()
-    //controller.raus("B")
-    //controller.debug()
-    //controller.raus("B")
-    //controller.debug()
-    controller.raus(fig2.playerName)
-    controller.move(fig2,3)
-    controller.debug()
-    controller.move(figur,3)
-    controller.debug()
-    println(controller.field.data(3))
-    println(controller.field.data(3).state)
-    controller.move(controller.field.data(3),6)
-    controller.debug()*/
-
-
   }
 }

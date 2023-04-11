@@ -10,7 +10,6 @@ import FigureComponent.FigureBaseImpl.Figure
 import FieldComponent.FieldInterface
 import FigureComponent.FigureInterface
 
-//trait ControllerInterface(val Home:HomeInterface,val Field:FieldInterface,val Player:PlayerInterface) extends Observable{
 trait ControllerInterface() extends Observable{
   def newGame(nPlayer:Int) : Unit
   def domove(figur:FigureInterface ,anzahl:Int): FieldInterface 
