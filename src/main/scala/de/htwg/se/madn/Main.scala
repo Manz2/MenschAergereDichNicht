@@ -8,6 +8,8 @@ import de.htwg.se.madn.FieldComponent.fieldBaseImpl.Field
 import scala.io.StdIn.readLine
 import FigureComponent.FigureBaseImpl.Figure
 import scala.collection.immutable.LazyList.cons
+import de.htwg.se.madn.fileIoComponent.fileIoJsonImpl.fileIOAPI
+import scala.util.{Try,Success,Failure}
 
 
 object Madn {
@@ -19,6 +21,9 @@ object Madn {
     val tui = Tui(controller)
     val gui = new GUI(controller)//comment for docker use then "docker build -t madn" and after "docker run -ti madn"
     var input: String = ""
+    Try(FileIOAPI) match
+      case Success(v) => println("Persistance Rest Server is running!")
+      case Failure(v) => println("Persistance Server couldn't be started! " + v.getMessage + v.getCause)
     print("Game started\n")  
     input = readLine()
     tui.processInputLine(input)

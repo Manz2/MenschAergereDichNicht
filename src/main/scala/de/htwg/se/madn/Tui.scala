@@ -3,6 +3,7 @@ package de.htwg.se.madn
 import Controller.controllerComponent.ControllerInterface
 import scala.io.StdIn.readLine
 import scala.util.*
+import scala.collection.immutable.LazyList.cons
 
 
 class Tui(controller: ControllerInterface) extends Observer:
@@ -38,6 +39,8 @@ class Tui(controller: ControllerInterface) extends Observer:
       case "b"  => round("B")
       case "c"  => round("C")
       case "d"  => round("D")
+      case "u" => controller.undo
+      case "r" => controller.redo
       case "1"  => if(controller.getFigureFromField(turn,1).playerName != "X") controller.move(controller.getFigureFromField(turn,1),diceVal)
       case "2"  => if(controller.getFigureFromField(turn,2).playerName != "X") controller.move(controller.getFigureFromField(turn,2),diceVal)
       case "3"  => if(controller.getFigureFromField(turn,3).playerName != "X") controller.move(controller.getFigureFromField(turn,3),diceVal)

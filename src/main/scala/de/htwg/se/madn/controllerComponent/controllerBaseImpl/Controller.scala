@@ -15,6 +15,10 @@ import scala.util.control.Breaks._
 import scala.collection.mutable.Map
 import FigureComponent.FigureBaseImpl.Figure
 import FigureComponent.FigureInterface
+import de.htwg.se.madn.Command
+import play.api.libs.json._
+import java.io.{File,PrintWriter}
+import scala.io.Source
 
 case class Controller () extends ControllerInterface {
   val undoManager = new UndoManager 
@@ -50,6 +54,9 @@ case class Controller () extends ControllerInterface {
   def redo: FieldInterface = {
     field = undoManager.redoStep(field)
     notifyObservers
+    //val source: String = Source.fromFile("game.json").getLines.mkString
+    //val json: JsValue = Json.parse(source)
+    //loadJson(json)
     field
   }
 
@@ -173,6 +180,29 @@ case class Controller () extends ControllerInterface {
       }
     notifyObservers
     field
+  }
+
+  def loadJson(jsString: JsValue): Unit = {
+    val field_ = (jsString \ "Field").as[List[String]]
+    field = Field(Vector(field_.map(f => if (f == "-1") Figure("",-1) else Figure(f.charAt(0).toString,f.charAt(1).toString.toInt))).flatten)
+    val fieldPlayer_ = (jsString \ "Player").as[List[String]]
+    player = Field(Vector(fieldPlayer_.map(f => if (f == "-1") Figure("",-1) else Figure(f.charAt(0).toString,f.charAt(1).toString.toInt))).flatten)
+    val fieldHome_ = (jsString \ "Home").as[List[String]]
+    home = Field(Vector(fieldHome_.map(f => if (f == "-1") Figure("",-1) else Figure(f.charAt(0).toString,f.charAt(1).toString.toInt))).flatten)
+  }
+  def generateJson(): Unit={
+    val fieldField : Vector[String] = field.data.map(f => f.playerName + f.number)
+    val fieldPlayer : Vector[String] = player.data.map(f => f.playerName + f.number)
+    val fieldHome : Vector[String] = home.data.map(f => f.playerName + f.number)
+    val jsObj: JsValue = Json.obj(
+      "Field" -> Json.toJson(fieldField),
+      "Player" -> Json.toJson(fieldPlayer),
+      "Home" -> Json.toJson(fieldHome)
+    )
+    val pw = PrintWriter(File("game.json"))
+    pw.write(Json.prettyPrint(jsObj))
+    pw.close
+
   }
 }
 
