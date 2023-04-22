@@ -16,12 +16,15 @@ lazy val commonSettings = Seq(
   libraryDependencies += ("com.typesafe.play" %% "play-json" % "2.9.2").cross(CrossVersion.for3Use2_13),
   libraryDependencies += ("com.typesafe.akka" %% "akka-http" % "10.5.0"),
   //libraryDependencies += "com.typesafe.akka" % "akka-actor_2.10" % "2.3.9",
-  libraryDependencies +="com.typesafe.akka" %% "akka-actor"    % "2.0.5",
-  libraryDependencies +="com.typesafe.akka" %% "akka-slf4j"    % "2.0.5",
-  libraryDependencies +="com.typesafe.akka" %% "akka-remote"   % "2.0.5",
-  libraryDependencies +="com.typesafe.akka" %% "akka-agent"    % "2.0.5", 
-  libraryDependencies +="com.typesafe.akka" %% "akka-testkit"  % "2.0.5"% "test",
+  //libraryDependencies +="com.typesafe.akka" %% "akka-actor"    % "2.0.5",
+  //libraryDependencies +="com.typesafe.akka" %% "akka-slf4j"    % "2.0.5",
+  //libraryDependencies +="com.typesafe.akka" %% "akka-remote"   % "2.0.5",
+  //libraryDependencies +="com.typesafe.akka" %% "akka-agent"    % "2.0.5", 
+  //libraryDependencies +="com.typesafe.akka" %% "akka-testkit"  % "2.0.5"% "test",
   //https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.3.9/akka-actor_2.10-2.3.9.pom
+
+  libraryDependencies +=
+  "com.typesafe.akka" %% "akka-actor" % "2.8.0",
 
 
   jacocoReportSettings := JacocoReportSettings(
