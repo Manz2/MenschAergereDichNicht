@@ -112,11 +112,11 @@ case class Controller () extends ControllerInterface {
                 val json: JsValue = Json.parse(value)
                 val field_ = (json\ "Field").as[List[String]]
                 field = Field(Vector(field_.map(f => if (f == "-1") Figure("",-1) else Figure(f.charAt(0).toString,f.charAt(1).toString.toInt))).flatten)
+                notifyObservers
             }
           }
         }
       }
-      notifyObservers
       field
     //rest(generateDoMoveJson(figur,anzahl))
     //undoManager.doStep(new MoveCommand(figur,anzahl,this))
@@ -139,13 +139,60 @@ case class Controller () extends ControllerInterface {
 
   def undo: FieldInterface = {
     //field = undoManager.undoStep(field)//""
-    notifyObservers
+    implicit val system:ActorSystem[Any] = ActorSystem(Behaviors.empty, "my-system")
+
+    val executionContext: ExecutionContextExecutor = system.executionContext
+    given ExecutionContextExecutor = executionContext
+
+    val responseFuture: Future[HttpResponse] = Http().singleRequest(HttpRequest(
+      method = HttpMethods.GET,
+      uri = commandServer + "/undo",
+      ))
+
+    responseFuture
+      .onComplete{
+        case Failure(_) => sys.error("Failed getting Json")
+        case Success(value) => {
+          Unmarshal(value.entity).to[String].onComplete{
+            case Failure(_) => sys.error("Failed unmarshalling")
+            case Success(value) => {
+                val json: JsValue = Json.parse(value)
+                val field_ = (json\ "Field").as[List[String]]
+                field = Field(Vector(field_.map(f => if (f == "-1") Figure("",-1) else Figure(f.charAt(0).toString,f.charAt(1).toString.toInt))).flatten)
+                notifyObservers
+            }
+          }
+        }
+      }
     field
   }
 
   def redo: FieldInterface = {
-    //field = undoManager.redoStep(field)
-    notifyObservers
+    implicit val system:ActorSystem[Any] = ActorSystem(Behaviors.empty, "my-system")
+
+    val executionContext: ExecutionContextExecutor = system.executionContext
+    given ExecutionContextExecutor = executionContext
+
+    val responseFuture: Future[HttpResponse] = Http().singleRequest(HttpRequest(
+      method = HttpMethods.GET,
+      uri = commandServer + "/redo",
+      ))
+
+    responseFuture
+      .onComplete{
+        case Failure(_) => sys.error("Failed getting Json")
+        case Success(value) => {
+          Unmarshal(value.entity).to[String].onComplete{
+            case Failure(_) => sys.error("Failed unmarshalling")
+            case Success(value) => {
+                val json: JsValue = Json.parse(value)
+                val field_ = (json\ "Field").as[List[String]]
+                field = Field(Vector(field_.map(f => if (f == "-1") Figure("",-1) else Figure(f.charAt(0).toString,f.charAt(1).toString.toInt))).flatten)
+                notifyObservers
+            }
+          }
+        }
+      }
     field
   }
 

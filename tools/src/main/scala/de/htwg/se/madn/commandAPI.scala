@@ -32,10 +32,21 @@ object commandAPI {
             complete(HttpEntity(ContentTypes.`application/json`, UndoManager.doStep(move)))
           }
         }
+      },
+      path("command" / "undo") {
+        get {
+          complete(HttpEntity(ContentTypes.`application/json`, UndoManager.undoStep()))
+        }
+      },
+      path("command" / "redo") {
+        get {
+          complete(HttpEntity(ContentTypes.`application/json`, UndoManager.redoStep()))
+        }
       }
+
    )
 
-   val bindingFuture = Http().newServerAt("localhost", 8080).bind(route)
+   val bindingFuture = Http().newServerAt("localhost", 8081).bind(route)
 
     println(s"Server now online. Please navigate to http://localhost:8080/fileio\nPress RETURN to stop...")
 

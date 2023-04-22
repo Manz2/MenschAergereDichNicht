@@ -32,24 +32,40 @@ object UndoManager{
         jsonReturn.toString
 
         
-    def undoStep(field:FieldInterface) : FieldInterface =
+    def undoStep() : String ={ 
         undoStack match {
-            case Nil => field//""
+            case Nil => ""
             case head :: stack => {
                 val result = head.undoStep
                 undoStack = stack
                 redoStack = head :: redoStack
-                result
-            }
-        }
-    def redoStep(field:FieldInterface) : FieldInterface =
-        redoStack match {
-            case Nil => field
-            case head::stack => {
-                val result = head.redoStep
-                redoStack = stack
-                undoStack = head::undoStack
-                result
+                val fieldField : Vector[String] = result.data.map(f => f.playerName + f.number)
+                val jsonReturn : JsValue = Json.obj(
+                    "Field" -> Json.toJson(fieldField)
+                )
+                println(jsonReturn)
+                jsonReturn.toString
             }
         }
     }
+    def redoStep() : String ={ 
+        redoStack match {
+            case Nil => ""
+            case head :: stack => {
+                val result = head.redoStep
+                redoStack = stack
+                undoStack = head :: undoStack
+                val fieldField : Vector[String] = result.data.map(f => f.playerName + f.number)
+                val jsonReturn : JsValue = Json.obj(
+                    "Field" -> Json.toJson(fieldField)
+                )
+                println(jsonReturn)
+                jsonReturn.toString
+            }
+        }
+    }
+
+
+
+
+}
