@@ -43,7 +43,6 @@ object UndoManager{
                 val jsonReturn : JsValue = Json.obj(
                     "Field" -> Json.toJson(fieldField)
                 )
-                println(jsonReturn)
                 jsonReturn.toString
             }
         }
@@ -59,7 +58,6 @@ object UndoManager{
                 val jsonReturn : JsValue = Json.obj(
                     "Field" -> Json.toJson(fieldField)
                 )
-                println(jsonReturn)
                 jsonReturn.toString
             }
         }
