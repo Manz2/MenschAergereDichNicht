@@ -31,7 +31,6 @@ import scala.concurrent.Future
 import akka.http.scaladsl.unmarshalling.Unmarshal
 
 case class Controller () extends ControllerInterface {
-  val undoManager = new UndoManager 
 
   var field : FieldInterface = Field(Vector());
   var player: FieldInterface = Field(Vector());
@@ -99,32 +98,53 @@ case class Controller () extends ControllerInterface {
 
     val responseFuture: Future[HttpResponse] = Http().singleRequest(HttpRequest(
       method = HttpMethods.POST,
-      uri = commandServer + "/save",
-      entity = generateJson()
+      uri = commandServer + "/doMove",
+      entity = generateDoMoveJson(figur,anzahl)
       ))
+
+    responseFuture
+      .onComplete{
+        case Failure(_) => sys.error("Failed getting Json")
+        case Success(value) => {
+          Unmarshal(value.entity).to[String].onComplete{
+            case Failure(_) => sys.error("Failed unmarshalling")
+            case Success(value) => {
+                val json: JsValue = Json.parse(value)
+                val field_ = (json\ "Field").as[List[String]]
+                field = Field(Vector(field_.map(f => if (f == "-1") Figure("",-1) else Figure(f.charAt(0).toString,f.charAt(1).toString.toInt))).flatten)
+            }
+          }
+        }
+      }
+      notifyObservers
+      field
     //rest(generateDoMoveJson(figur,anzahl))
     //undoManager.doStep(new MoveCommand(figur,anzahl,this))
   }
+
+
+
+
   def generateDoMoveJson(figur:FigureInterface ,anzahl:Int): String={
     val fieldField : Vector[String] = field.data.map(f => f.playerName + f.number)
-    val anzahl : String = anzahl.toString
-    val figur : String = figur.toString
+    val anzahl_ : String = anzahl.toString
+    val figur_ : String = figur.toString
     val jsObj: JsValue = Json.obj(
       "Field" -> Json.toJson(fieldField),
-      "Anzahl" -> Json.toJson(anzahl),
-      "Figur" -> Json.toJson(figur)
+      "Anzahl" -> Json.toJson(anzahl_),
+      "Figur" -> Json.toJson(figur_)
     )
     jsObj.toString
   }
 
   def undo: FieldInterface = {
-    field = undoManager.undoStep(field)//""
+    //field = undoManager.undoStep(field)//""
     notifyObservers
     field
   }
 
   def redo: FieldInterface = {
-    field = undoManager.redoStep(field)
+    //field = undoManager.redoStep(field)
     notifyObservers
     field
   }

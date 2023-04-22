@@ -29,7 +29,7 @@ object commandAPI {
       path("command" / "doMove") {
         post {
           entity(as[String]) { move =>
-            complete(HttpEntity(ContentTypes.`application/json`, UndoManager.doMove(move)))
+            complete(HttpEntity(ContentTypes.`application/json`, UndoManager.doStep(move)))
           }
         }
       }

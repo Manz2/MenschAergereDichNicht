@@ -22,6 +22,10 @@ object Madn {
       case Success(v) => println("Persistance Rest Server is running!")
       case Failure(v) => println("Persistance Server couldn't be started! " + v.getMessage + v.getCause)
 
+    Try(commandAPI) match
+      case Success(v) => println("Command Rest Server is running!")
+      case Failure(v) => println("Command Server couldn't be started! " + v.getMessage + v.getCause)
+
     println("Mensch aergere dich nicht")
     val tui = Tui(controller)
     val gui = new GUI(controller)//comment for docker use then "docker build -t madn" and after "docker run -ti madn"

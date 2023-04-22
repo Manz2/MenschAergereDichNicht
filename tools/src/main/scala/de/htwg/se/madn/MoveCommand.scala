@@ -1,5 +1,4 @@
 package de.htwg.se.madn
-package Controller.controllerComponent.controllerBaseImpl 
 
 import FieldComponent.FieldInterface
 import FigureComponent.FigureInterface
