@@ -41,12 +41,12 @@ class Tui(controller: ControllerInterface) extends Observer:
       case "d"  => round("D")
       case "u" => controller.undo
       case "r" => controller.redo
+      case "l" => controller.load
+      case "s" => controller.save
       case "1"  => if(controller.getFigureFromField(turn,1).playerName != "X") controller.move(controller.getFigureFromField(turn,1),diceVal)
       case "2"  => if(controller.getFigureFromField(turn,2).playerName != "X") controller.move(controller.getFigureFromField(turn,2),diceVal)
       case "3"  => if(controller.getFigureFromField(turn,3).playerName != "X") controller.move(controller.getFigureFromField(turn,3),diceVal)
       case "4"  => if(controller.getFigureFromField(turn,4).playerName != "X") controller.move(controller.getFigureFromField(turn,4),diceVal)
-      //case "save"  => controller.save
-      //case "load"  => controller.load
       case _ => 
     }
   }

@@ -99,8 +99,8 @@ class GUI(controller: ControllerInterface) extends MainFrame with Observer {
    listenTo(loadButton)
    reactions += {
      case ButtonClicked(`start`) => startGame
-     //case ButtonClicked(`saveButton`) => controller.save
-     //case ButtonClicked(`loadButton`) => controller.load
+     case ButtonClicked(`saveButton`) => controller.save
+     case ButtonClicked(`loadButton`) => controller.load
      case ButtonClicked(`aButton`) => round("A")
      case ButtonClicked(`bButton`) => round("B")
      case ButtonClicked(`cButton`) => round("C")

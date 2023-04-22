@@ -4,7 +4,6 @@ package fileIoComponent.fileIoJsonImpl
 import com.google.inject.name.Names
 import com.google.inject.{Guice, Inject}
 import net.codingwell.scalaguice.InjectorExtensions._
-import de.htwg.se.madn.madnModule
 
 import FieldComponent.FieldInterface
 import FieldComponent.fieldBaseImpl.Field
@@ -16,14 +15,14 @@ import java.io.{File,PrintWriter}
 import scala.io.Source
 
 
-class fileIoJsonImpl extends FileIOInterface{
-    def save(json:JsValue): Unit= {
+object fileIoJsonImpl{
+    def save(json:String): Unit= {
         val pw = PrintWriter(File("game.json"))
-        pw.write(Json.prettyPrint(json))
+        pw.write(json)
         pw.close
     }
-    def load(): JsValue ={
+    def load(): String ={
         val source: String = Source.fromFile("game.json").getLines.mkString
-        Json.parse(source)
+        source
     }
 }

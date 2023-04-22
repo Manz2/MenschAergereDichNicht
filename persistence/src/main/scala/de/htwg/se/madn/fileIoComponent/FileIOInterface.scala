@@ -9,6 +9,5 @@ import FieldComponent.fieldBaseImpl.Field
 
 trait FileIOInterface {
   def save(json:JsValue): Unit
-  def load(): String
-
+  def load(): JsValue
 }

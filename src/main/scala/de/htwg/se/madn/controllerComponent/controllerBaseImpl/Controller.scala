@@ -19,6 +19,16 @@ import de.htwg.se.madn.Command
 import play.api.libs.json._
 import java.io.{File,PrintWriter}
 import scala.io.Source
+import akka.actor.typed.ActorSystem
+import akka.actor.typed.scaladsl.Behaviors
+import akka.http.scaladsl.Http
+import akka.http.scaladsl.model._
+import akka.http.scaladsl.server.Directives.*
+import scala.concurrent.ExecutionContextExecutor
+import scala.io.StdIn
+import play.api.libs.json._
+import scala.concurrent.Future
+import akka.http.scaladsl.unmarshalling.Unmarshal
 
 case class Controller () extends ControllerInterface {
   val undoManager = new UndoManager 
@@ -26,12 +36,51 @@ case class Controller () extends ControllerInterface {
   var field : FieldInterface = Field(Vector());
   var player: FieldInterface = Field(Vector());
   var home: FieldInterface = Field(Vector());
+  val fileIOServer = "http://localhost:8080/fileio"
 
   def newGame(nPlayer : Int): Unit = {
     def inner(spielername: String): List[Figure] = (1 until 5).map(idx => Figure(spielername,idx)).toList
     player = Field(Vector(List("A","B","C","D").take(nPlayer).map(inner(_)).flatten).flatten)
     field = Field(Vector.fill(20)(Figure("",-1)))
     home = Field(Vector.fill(nPlayer*4)(Figure("",-1)))
+    notifyObservers
+  }
+
+  def save:Unit = {
+    implicit val system:ActorSystem[Any] = ActorSystem(Behaviors.empty, "my-system")
+
+    val executionContext: ExecutionContextExecutor = system.executionContext
+    given ExecutionContextExecutor = executionContext
+
+    val responseFuture: Future[HttpResponse] = Http().singleRequest(HttpRequest(
+      method = HttpMethods.POST,
+      uri = fileIOServer + "/save",
+      entity = generateJson()
+      ))
+  }
+
+  def load:Unit = {
+    implicit val system:ActorSystem[Any] = ActorSystem(Behaviors.empty, "my-system")
+
+    val executionContext: ExecutionContextExecutor = system.executionContext
+    given ExecutionContextExecutor = executionContext
+
+    val responseFuture: Future[HttpResponse] = Http().singleRequest(HttpRequest(uri = fileIOServer + "/load"))
+
+    responseFuture
+      .onComplete {
+        case Failure(_) => sys.error("Failed getting Json")
+        case Success(value) => {
+          Unmarshal(value.entity).to[String].onComplete {
+            case Failure(_) => sys.error("Failed unmarshalling")
+            case Success(value) => {
+              val json: JsValue = Json.parse(value)
+              loadJson(json)
+              notifyObservers
+            }
+          }
+        }
+      }
     notifyObservers
   }
 
@@ -59,6 +108,8 @@ case class Controller () extends ControllerInterface {
     //loadJson(json)
     field
   }
+
+
 
   def raus(spieler:String): FieldInterface={
     def inner(index:Int):FieldInterface = {
@@ -190,7 +241,7 @@ case class Controller () extends ControllerInterface {
     val fieldHome_ = (jsString \ "Home").as[List[String]]
     home = Field(Vector(fieldHome_.map(f => if (f == "-1") Figure("",-1) else Figure(f.charAt(0).toString,f.charAt(1).toString.toInt))).flatten)
   }
-  def generateJson(): Unit={
+  def generateJson(): String={
     val fieldField : Vector[String] = field.data.map(f => f.playerName + f.number)
     val fieldPlayer : Vector[String] = player.data.map(f => f.playerName + f.number)
     val fieldHome : Vector[String] = home.data.map(f => f.playerName + f.number)
@@ -199,10 +250,7 @@ case class Controller () extends ControllerInterface {
       "Player" -> Json.toJson(fieldPlayer),
       "Home" -> Json.toJson(fieldHome)
     )
-    val pw = PrintWriter(File("game.json"))
-    pw.write(Json.prettyPrint(jsObj))
-    pw.close
-
+    jsObj.toString
   }
 }
 
