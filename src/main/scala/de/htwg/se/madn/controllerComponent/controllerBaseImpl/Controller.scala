@@ -37,6 +37,7 @@ case class Controller () extends ControllerInterface {
   var player: FieldInterface = Field(Vector());
   var home: FieldInterface = Field(Vector());
   val fileIOServer = "http://localhost:8080/fileio"
+  val commandServer = "http://localhost:8081/command"
 
   def newGame(nPlayer : Int): Unit = {
     def inner(spielername: String): List[Figure] = (1 until 5).map(idx => Figure(spielername,idx)).toList
@@ -91,11 +92,33 @@ case class Controller () extends ControllerInterface {
       case Success(res) => player = res
       case Failure(res) => player
     }
-    undoManager.doStep(new MoveCommand(figur,anzahl,this))
+    implicit val system:ActorSystem[Any] = ActorSystem(Behaviors.empty, "my-system")
+
+    val executionContext: ExecutionContextExecutor = system.executionContext
+    given ExecutionContextExecutor = executionContext
+
+    val responseFuture: Future[HttpResponse] = Http().singleRequest(HttpRequest(
+      method = HttpMethods.POST,
+      uri = commandServer + "/save",
+      entity = generateJson()
+      ))
+    //rest(generateDoMoveJson(figur,anzahl))
+    //undoManager.doStep(new MoveCommand(figur,anzahl,this))
+  }
+  def generateDoMoveJson(figur:FigureInterface ,anzahl:Int): String={
+    val fieldField : Vector[String] = field.data.map(f => f.playerName + f.number)
+    val anzahl : String = anzahl.toString
+    val figur : String = figur.toString
+    val jsObj: JsValue = Json.obj(
+      "Field" -> Json.toJson(fieldField),
+      "Anzahl" -> Json.toJson(anzahl),
+      "Figur" -> Json.toJson(figur)
+    )
+    jsObj.toString
   }
 
   def undo: FieldInterface = {
-    field = undoManager.undoStep(field)
+    field = undoManager.undoStep(field)//""
     notifyObservers
     field
   }
@@ -103,9 +126,6 @@ case class Controller () extends ControllerInterface {
   def redo: FieldInterface = {
     field = undoManager.redoStep(field)
     notifyObservers
-    //val source: String = Source.fromFile("game.json").getLines.mkString
-    //val json: JsValue = Json.parse(source)
-    //loadJson(json)
     field
   }
 
