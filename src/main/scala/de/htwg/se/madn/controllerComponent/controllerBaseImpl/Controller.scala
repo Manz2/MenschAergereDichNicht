@@ -15,7 +15,6 @@ import scala.util.control.Breaks._
 import scala.collection.mutable.Map
 import FigureComponent.FigureBaseImpl.Figure
 import FigureComponent.FigureInterface
-import de.htwg.se.madn.Command
 import play.api.libs.json._
 import java.io.{File,PrintWriter}
 import scala.io.Source

@@ -49,8 +49,6 @@ lazy val commonSettings = Seq(
 
 lazy val root = project
   .in(file("."))
-  .dependsOn(tools, model, ui, persistence)
-  .aggregate(tools, model, ui, persistence)
   .settings(
     name := "MenschAergereDichNicht",
     version := "0.1.0-SNAPSHOT",
@@ -66,19 +64,8 @@ lazy val root = project
     commonSettings
   )
 
-  lazy val ui = (project in file("ui"))
-  .dependsOn(tools)
-  .aggregate(tools)
-  .settings(
-    name := "Madn-UI",
-    version := "0.1.0-SNAPSHOT",
-    commonSettings
-  )
-
 
   lazy val tools = (project in file("tools"))
-  .dependsOn(model)
-  .aggregate(model)
   .settings(
     name := "Madn-TOOLS",
     version := "0.1.0-SNAPSHOT",
@@ -86,8 +73,6 @@ lazy val root = project
   )
 
   lazy val persistence = (project in file("persistence"))
-  .dependsOn(model)
-  .aggregate(model)
   .settings(
     name := "Madn-Persistence",
     version := "0.1.0-SNAPSHOT",
