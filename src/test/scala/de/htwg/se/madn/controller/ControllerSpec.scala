@@ -23,9 +23,6 @@ import org.scalatest.funspec.AnyFunSpec
 
 class ControllerSpec extends AnyWordSpec with Matchers with BeforeAndAfterAll:
   override def beforeAll() : Unit = {
-    Try(commandAPI) match
-      case Success(v) => println("Command Rest Server is running!")
-      case Failure(v) => println("Command Server couldn't be started! " + v.getMessage + v.getCause)
   }
   "A Controller" when {
     "observed by an Observer" should {

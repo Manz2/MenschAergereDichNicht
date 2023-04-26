@@ -25,6 +25,7 @@ lazy val commonSettings = Seq(
   assemblyMergeStrategy in assembly := {
     case PathList("META-INF", _*) => MergeStrategy.discard
     case _                        => MergeStrategy.first
+    case "reference.conf" => MergeStrategy.concat
   },
 
 
@@ -49,26 +50,3 @@ lazy val root = project
     commonSettings
   )
   .enablePlugins(JacocoCoverallsPlugin)
-
-
-  lazy val model = (project in file("model"))
-  .settings(
-    name := "Madn-Model",
-    version := "0.1.0-SNAPSHOT",
-    commonSettings
-  )
-
-
-  lazy val tools = (project in file("tools"))
-  .settings(
-    name := "Madn-TOOLS",
-    version := "0.1.0-SNAPSHOT",
-    commonSettings
-  )
-
-  lazy val persistence = (project in file("persistence"))
-  .settings(
-    name := "Madn-Persistence",
-    version := "0.1.0-SNAPSHOT",
-    commonSettings
-  )
