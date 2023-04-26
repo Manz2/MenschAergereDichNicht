@@ -5,8 +5,6 @@ import com.google.inject.name.Names
 import com.google.inject.{Guice, Inject}
 import net.codingwell.scalaguice.InjectorExtensions._
 
-import FieldComponent.FieldInterface
-import FieldComponent.fieldBaseImpl.Field
 import de.htwg.se.madn.model.fileIoComponent.FileIOInterface
 import play.api.libs.json._
 import scala.io.Source

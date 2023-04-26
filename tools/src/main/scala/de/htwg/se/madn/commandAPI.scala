@@ -8,9 +8,7 @@ import akka.http.scaladsl.server.Directives.*
 import scala.io.StdIn
 import play.api.libs.json._
 import FieldComponent.FieldInterface
-
-
-import scala.concurrent.ExecutionContextExecutor
+import scala.concurrent.{ExecutionContextExecutor, Future}
 import scala.util.{Failure, Success}
 
 object commandAPI {
@@ -48,7 +46,18 @@ object commandAPI {
 
    val bindingFuture = Http().newServerAt("localhost", 8081).bind(route)
 
-    println(s"Server now online. Please navigate to http://localhost:8080/fileio\nPress RETURN to stop...")
 
-  
+    bindingFuture.onComplete{
+      case Success(binding) => {
+        val address = binding.localAddress
+        println(s"File IO REST service online at http://localhost:8081/\nPress RETURN to stop...")
+        StdIn.readLine() // let it run until user presses return
+        bindingFuture
+          .flatMap(_.unbind()) // trigger unbinding from the port
+          .onComplete(_ => system.terminate()) // and shutdown when done
+      }
+      case Failure(exception) => {
+        println("File IO REST service couldn't be started! Error: " + exception + "\n")
+      }
+    }
 }
