@@ -10,6 +10,6 @@ object Madn {
     Try(commandAPI) match
       case Success(v) => println("Command Rest Server is running!")
       case Failure(v) => println("Command Server couldn't be started! " + v.getMessage + v.getCause)
-    while(true){}
+    readLine()
   }
 }
