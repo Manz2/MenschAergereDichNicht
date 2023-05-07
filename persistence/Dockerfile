@@ -1,11 +1,12 @@
-FROM hseeberger/scala-sbt:17.0.2_1.6.2_3.1.1
+FROM openjdk:latest
 
-RUN apt-get update
+
+WORKDIR /mydir
+ADD . /mydir
 
 EXPOSE 8080
 
-WORKDIR /persistence
 
-ADD . /persistence
+ENTRYPOINT ["./target/universal/stage/bin/menschaergeredichnicht"]
 
-CMD sbt run
+CMD []

@@ -42,6 +42,8 @@ lazy val commonSettings = Seq(
   jacocoCoverallsRepoToken := sys.env.get("COVERALLS_REPO_TOKEN"),
 )
 
+enablePlugins(JavaAppPackaging)
+
 lazy val root = project
   .in(file("."))
   .settings(
