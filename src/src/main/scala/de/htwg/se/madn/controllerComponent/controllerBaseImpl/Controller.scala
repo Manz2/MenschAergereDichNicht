@@ -34,8 +34,8 @@ case class Controller () extends ControllerInterface {
   var field : FieldInterface = Field(Vector());
   var player: FieldInterface = Field(Vector());
   var home: FieldInterface = Field(Vector());
-  val fileIOServer = "http://localhost:8080/fileio"
-  val commandServer = "http://localhost:8081/command"
+  val fileIOServer = "http://host.docker.internal:8080/fileio"
+  val commandServer = "http://host.docker.internal:8081/command"
 
   def newGame(nPlayer : Int): Unit = {
     def inner(spielername: String): List[Figure] = (1 until 5).map(idx => Figure(spielername,idx)).toList

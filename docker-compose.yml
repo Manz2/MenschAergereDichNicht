@@ -38,8 +38,8 @@ services:
     depends_on:
       - persistence
       - tools
-    #volumes:
-    #  - /tmp/.X11-unix:/tmp/.X11-unix
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
     environment:
       DISPLAY: $DISPLAY
       CONNECTFOUR_SERVICE_HOST: connectfour

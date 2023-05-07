@@ -39,7 +39,7 @@ object fileIOAPI {
     }
    )
 
-   val bindingFuture = Http().newServerAt("localhost", 8080).bind(route)
+   val bindingFuture = Http().newServerAt("0.0.0.0", 8080).bind(route)
 
     println(s"Server now online. Please navigate to http://localhost:8080/fileio\nPress RETURN to stop...")
     StdIn.readLine() // let it run until user presses return
