@@ -6,4 +6,4 @@ WORKDIR /src
 
 ADD . /src
 
-CMD sbt run
+CMD sbt compile && tail -f

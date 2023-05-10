@@ -2,6 +2,7 @@ val scala3Version = "3.2.2"
 
 
 lazy val commonSettings = Seq(
+  
   scalaVersion := scala3Version,
   organization := "de.htwg.se",
   name := "MenschAergereDichNicht",
@@ -14,6 +15,14 @@ lazy val commonSettings = Seq(
   libraryDependencies += ("net.codingwell" %% "scala-guice" % "5.0.2").cross(CrossVersion.for3Use2_13),
   libraryDependencies += "org.scala-lang.modules" %% "scala-xml" % "2.0.1",
   libraryDependencies += ("com.typesafe.play" %% "play-json" % "2.9.2").cross(CrossVersion.for3Use2_13),
+  libraryDependencies += ("com.typesafe.slick" %% "slick" % "3.3.3")
+  .cross(CrossVersion.for3Use2_13),
+  // https://mvnrepository.com/artifact/org.postgresql/postgresql
+  libraryDependencies += "org.postgresql" % "postgresql" % "42.6.0",
+  libraryDependencies += "org.slf4j" % "slf4j-nop" % "1.6.4",
+  libraryDependencies += "com.typesafe.slick" %% "slick-hikaricp" % "3.3.3"
+
+
 
 
   libraryDependencies +=

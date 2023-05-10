@@ -15,6 +15,7 @@ import scala.io.Source
 
 object fileIoJsonImpl{
     def save(json:String): Unit= {
+        dao = FieldDAO.create 
         val pw = PrintWriter(File("game.json"))
         pw.write(json)
         pw.close

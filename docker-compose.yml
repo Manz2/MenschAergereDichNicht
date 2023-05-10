@@ -1,11 +1,22 @@
 version: "4.19.0"
 
 services:
+  db:
+      image: postgres
+      restart: always
+      environment:
+        POSTGRES_PASSWORD: postgres
+        POSTGRES_USER: postgres
+        POSTGRES_DB: postgres
+        POSTGRES_IP: localhost
+        POSTGRES_PORT: 5432
+      ports:
+        - "5432:5432"
   persistence:
     image: madn-persistence-service
-    build:
-      context: ./persistence/
-      dockerfile: ./Dockerfile
+    #build:
+    #  context: ./persistence/
+    #  dockerfile: ./Dockerfile
     ports:
       - "8080:8080"
     stdin_open: true
@@ -16,9 +27,9 @@ services:
     tty: true
   tools:
     image: madn-tools-service
-    build:
-      context: ./tools/
-      dockerfile: ./Dockerfile
+    #build:
+    #  context: ./tools/
+    #  dockerfile: ./Dockerfile
     ports:
       - "8081:8081"
     stdin_open: true
@@ -30,9 +41,9 @@ services:
 
   main:
     image: madn-service
-    build:
-      context: ./src
-      dockerfile: ./Dockerfile
+    #build:
+    #  context: ./src
+    #  dockerfile: ./Dockerfile
     stdin_open: true
     container_name: madn_service
     depends_on:
