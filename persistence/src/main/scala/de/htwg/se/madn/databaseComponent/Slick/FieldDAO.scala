@@ -27,7 +27,7 @@ class FieldDAO extends DAOInterface{
       password = database_pw,
       driver = "org.postgresql.Driver")
 
-  val fieldTable = TableQuery[new FieldTable(_)]
+  val fieldTable = TableQuery(new FieldTable(_))
 
   override def create: Unit = {
     val running = Future(Await.result(database.run(DBIO.seq(
@@ -42,6 +42,7 @@ class FieldDAO extends DAOInterface{
   //  val player1Query = sql"""SELECT * FROM "FIELD" """.as[(String)]
   //  val result1 = Await.result(database.run(player1Query), atMost = 10.second)
   //  result1
+  ""
   }
   override def update(input:String):Unit
   override def delete: Unit

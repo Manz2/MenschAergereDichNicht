@@ -6,6 +6,7 @@ import com.google.inject.{Guice, Inject}
 import net.codingwell.scalaguice.InjectorExtensions._
 
 import de.htwg.se.madn.model.fileIoComponent.FileIOInterface
+import de.htwg.se.madn.databaseComponent.FieldDAO
 import play.api.libs.json._
 import scala.io.Source
 import play.api.libs.json._
@@ -15,7 +16,7 @@ import scala.io.Source
 
 object fileIoJsonImpl{
     def save(json:String): Unit= {
-        dao = FieldDAO.create 
+        var dao = FieldDAO.create() 
         val pw = PrintWriter(File("game.json"))
         pw.write(json)
         pw.close

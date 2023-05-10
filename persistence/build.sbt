@@ -19,8 +19,8 @@ lazy val commonSettings = Seq(
   .cross(CrossVersion.for3Use2_13),
   // https://mvnrepository.com/artifact/org.postgresql/postgresql
   libraryDependencies += "org.postgresql" % "postgresql" % "42.6.0",
-  libraryDependencies += "org.slf4j" % "slf4j-nop" % "1.6.4",
-  libraryDependencies += "com.typesafe.slick" %% "slick-hikaricp" % "3.3.3"
+  //libraryDependencies += "org.slf4j" % "slf4j-nop" % "1.6.4",
+  //libraryDependencies += "com.typesafe.slick" %% "slick-hikaricp" % "3.3.3",
 
 
 
