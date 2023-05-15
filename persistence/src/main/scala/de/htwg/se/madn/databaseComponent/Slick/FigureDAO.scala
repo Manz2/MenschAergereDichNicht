@@ -43,7 +43,7 @@ object FigureDAO{
   def update(number: Int, player:String):Unit = {
      val insertAction = figureTable returning figureTable.map(_.id) 
       += (0,number,player)
-    database.run(insertAction)
+     database.run(insertAction)
   }
   def read:String = {
   //  val player1Query = sql"""SELECT * FROM "FIELD" """.as[(String)]
@@ -52,5 +52,15 @@ object FigureDAO{
   ""
   }
   //def update(input:String):Unit
-  //def delete: Unit
+  def delete: Unit = {
+    
+    val deleteAction = figureTable.delete
+    
+    val resultFuture = database.run(deleteAction)
+
+    resultFuture.onComplete {
+     case Success(numRowsDeleted) => println(s"Deleted $numRowsDeleted rows from table.")
+     case Failure(ex) => println(s"Error deleting rows: ${ex.getMessage}")
+   }
+  }
 }

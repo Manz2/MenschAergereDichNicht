@@ -49,8 +49,17 @@ object FieldDAO{
   def update(input:String):Unit = {
      val insertAction = fieldTable returning fieldTable.map(_.name) 
       += (input)
-    database.run(insertAction)
+     database.run(insertAction)
   }
 
-  //def delete: Unit
+  def delete: Unit = {
+    val deleteAction = fieldTable.delete
+    
+    val resultFuture = database.run(deleteAction)
+
+    resultFuture.onComplete {
+     case Success(numRowsDeleted) => println(s"Deleted $numRowsDeleted rows from table.")
+     case Failure(ex) => println(s"Error deleting rows: ${ex.getMessage}")
+   }
+  }
 }

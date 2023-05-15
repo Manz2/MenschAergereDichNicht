@@ -42,7 +42,7 @@ object PlayerDAO{
   def update(name:String):Unit = {
      val insertAction = playerTable returning playerTable.map(_.name) 
       += (name)
-    database.run(insertAction)
+     database.run(insertAction)
   }
   def read:String = {
   //  val player1Query = sql"""SELECT * FROM "FIELD" """.as[(String)]
@@ -51,5 +51,14 @@ object PlayerDAO{
   ""
   }
   //def update(input:String):Unit
-  //def delete: Unit
+  def delete: Unit = {
+    val deleteAction = playerTable.delete
+    
+    val resultFuture = database.run(deleteAction)
+
+    resultFuture.onComplete {
+     case Success(numRowsDeleted) => println(s"Deleted $numRowsDeleted rows from table.")
+     case Failure(ex) => println(s"Error deleting rows: ${ex.getMessage}")
+   }
+  }
 }

@@ -23,17 +23,9 @@ object fileIoJsonImpl{
         pw.close
     }
     def load(): String ={
-      //FieldDAO.create
-      //PlayerDAO.create
-      //FigureDAO.create
-      //IndexDAO.create
-        FieldDAO.update("player")
-        PlayerDAO.update("A")
-        FigureDAO.update(1,"A")
-        IndexDAO.update(123,"player",456)
-
-
         val source: String = Source.fromFile("game.json").getLines.mkString
+        DBImpl.saveGame(source)
+        DBImpl.loadGame()
         source
     }
 }
