@@ -12,8 +12,9 @@ import scala.concurrent.duration.{Duration, DurationInt}
 import scala.concurrent.{Await, Future}
 import scala.io.StdIn
 import scala.util.{Failure, Success, Try}
+import slick.lifted.Tag
 
-object FieldDAO{
+object IndexDAO{
   val connectIP = sys.env.getOrElse("POSTGRES_IP", "localhost").toString
   val connectPort = sys.env.getOrElse("POSTGRES_PORT", 5432).toString.toInt
   val database_user = sys.env.getOrElse("POSTGRES_USER", "postgres").toString
@@ -27,30 +28,29 @@ object FieldDAO{
       password = database_pw,
       driver = "org.postgresql.Driver")
 
-  val fieldTable = TableQuery(new FieldTable(_))
+  val indexTable = TableQuery(new IndexTable(_))
 
   def create: Unit = {
     //database.run(fieldTable.schema.create)
     val running = Future(Await.result(database.run(DBIO.seq(
-      fieldTable.schema.createIfNotExists,
+      indexTable.schema.createIfNotExists,
     )), Duration.Inf))
     running.onComplete{
       case Success(_) => println("Connection to DB & Creation of Tables successful!")
       case Failure(e) => println("Error: " + e)
     }
   }
+  def update(figure: Int, field:String, index:Int):Unit = {
+     val insertAction = indexTable returning indexTable.map(_.id) 
+      += (0,figure,field,index)
+    database.run(insertAction)
+  }
   def read:String = {
   //  val player1Query = sql"""SELECT * FROM "FIELD" """.as[(String)]
   //  val result1 = Await.result(database.run(player1Query), atMost = 10.second)
   //  result1
   ""
-  
   }
-  def update(input:String):Unit = {
-     val insertAction = fieldTable returning fieldTable.map(_.name) 
-      += (input)
-    database.run(insertAction)
-  }
-
+  //def update(input:String):Unit
   //def delete: Unit
 }

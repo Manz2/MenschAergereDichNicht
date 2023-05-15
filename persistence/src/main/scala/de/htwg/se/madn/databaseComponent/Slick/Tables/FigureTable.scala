@@ -1,5 +1,6 @@
 package de.htwg.se.madn
 package databaseComponent
+import slick.lifted.Tag
 
 import slick.jdbc.PostgresProfile.api.*
 class FigureTable(tag:Tag) extends Table[(Int,Int,String)](tag,"Figure"){
