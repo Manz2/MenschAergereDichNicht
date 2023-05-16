@@ -5,6 +5,8 @@ import de.htwg.se.madn.databaseComponent._
 import play.api.libs.json._
 import scala.io.Source
 import play.api.libs.json._
+import scala.concurrent.Await
+import scala.concurrent.duration._
 
 object DBImpl {
     def saveGame(value:String):Unit = {
@@ -44,8 +46,8 @@ object DBImpl {
             counter+=1
         })
     }
-    def loadGame():String = {
-        IndexDAO.read
+    def loadGame():JsValue = {
+        Await.result(IndexDAO.read,10.seconds)
     }
   
 }

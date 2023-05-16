@@ -16,16 +16,14 @@ import scala.io.Source
 
 object fileIoJsonImpl{
     def save(json:String): Unit= {
-        FieldDAO.create
-
-        val pw = PrintWriter(File("game.json"))
-        pw.write(json)
-        pw.close
+        DBImpl.saveGame(json)
+        //val pw = PrintWriter(File("game.json"))
+        //pw.write(json)
+        //pw.close
     }
     def load(): String ={
-        val source: String = Source.fromFile("game.json").getLines.mkString
-        DBImpl.saveGame(source)
-        DBImpl.loadGame()
-        source
+        //val source: String = Source.fromFile("game.json").getLines.mkString
+        //source
+        DBImpl.loadGame().toString
     }
 }

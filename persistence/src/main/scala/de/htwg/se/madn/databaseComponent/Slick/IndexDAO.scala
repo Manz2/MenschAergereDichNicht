@@ -14,6 +14,8 @@ import scala.io.StdIn
 import scala.util.{Failure, Success, Try}
 import slick.lifted.Tag
 import play.api.libs.json._
+import scala.collection.mutable.ArrayBuffer
+
 
 object IndexDAO{
   val connectIP = sys.env.getOrElse("POSTGRES_IP", "localhost").toString
@@ -33,7 +35,6 @@ object IndexDAO{
   val indexTable = TableQuery(new IndexTable(_))
 
   def create: Unit = {
-    //database.run(fieldTable.schema.create)
     val running = Future(Await.result(database.run(DBIO.seq(
       indexTable.schema.createIfNotExists,
     )), Duration.Inf))
@@ -47,45 +48,49 @@ object IndexDAO{
       += (0,figure,field,index)
      database.run(insertAction)
   }
-  def read:String = {
+  def read: Future[JsValue] = {
+    val resultFuture = Future(Await.result(database.run(indexTable.result),Duration.Inf))
+    val arrayBuffer = ArrayBuffer.fill(20)("-1")
+    val arrayBufferPlayer = ArrayBuffer.fill(4)("-1")
+    val arrayBufferHome = ArrayBuffer.fill(4)("-1")
 
-    val resultFuture = database.run(indexTable.result)
-    var f = "abs"
-    val fieldField  = Vector.fill[String](20)("")
-    val playerField =  Vector.fill[String](4)("")
-    val homeField =  Vector.fill[String](4)("")
-    resultFuture.onComplete {
-    case Success(rows) => {
-      rows.map {
-        case Some((id, figure, field, index)) => {
-          if(field=="Field"){
-            fieldField(index) = figure
+    var jsObj: JsValue = Json.obj()
+
+    val futureResult: Future[JsValue] = resultFuture.map { rows =>
+      rows.foreach {
+        case (id, figure, field, index) =>
+          if (field.toString == "Field") {
+            arrayBuffer(index.asInstanceOf[Int]) = figure
           }
-    
-        }
-        case None => throw new Exception("DB Error")
+          if (field.toString == "Player") {
+            arrayBufferPlayer(index.asInstanceOf[Int]) = figure
+          }
+          if (field.toString == "Home") {
+            arrayBufferHome(index.asInstanceOf[Int]) = figure
+          }
       }
+
+      jsObj = Json.obj(
+        "Field" -> Json.toJson(arrayBuffer.toVector),
+        "Player" -> Json.toJson(arrayBufferPlayer.toVector),
+        "Home" -> Json.toJson(arrayBufferHome.toVector)
+      )
+      jsObj
     }
-    case Failure(ex) => println(s"Error reading rows: ${ex.getMessage}")}
-
-    val jsObj: JsValue = Json.obj(
-            "Field" -> Json.toJson(fieldField),
-            //"Anzahl" -> Json.toJson(anzahl_),
-            //"Figur" -> Json.toJson(figur_)
-    )
-    println(jsObj.toString)
-    jsObj.toString
-   
-   }
-  //def update(input:String):Unit
-  def delete: Unit = {
-    val deleteAction = indexTable.delete
-    
-    val resultFuture = database.run(deleteAction)
-
-    resultFuture.onComplete {
-     case Success(numRowsDeleted) => println(s"Deleted $numRowsDeleted rows from table.")
-     case Failure(ex) => println(s"Error deleting rows: ${ex.getMessage}")
-   }
+    Future(Await.result(futureResult,Duration.Inf))
   }
+
+
+
+   //def update(input:String):Unit
+   def delete: Unit = {
+     val deleteAction = indexTable.delete
+     
+     val resultFuture = database.run(deleteAction)
+ 
+     resultFuture.onComplete {
+      case Success(numRowsDeleted) => println(s"Deleted $numRowsDeleted rows from table.")
+      case Failure(ex) => println(s"Error deleting rows: ${ex.getMessage}")
+    }
+   }
 }
