@@ -13,7 +13,7 @@ import scala.concurrent.{Await, Future}
 import scala.io.StdIn
 import scala.util.{Failure, Success, Try}
 
-object FieldDAO{
+object FieldDAO {
   val connectIP = sys.env.getOrElse("POSTGRES_IP", "localhost").toString
   val connectPort = sys.env.getOrElse("POSTGRES_PORT", 5432).toString.toInt
   val database_user = sys.env.getOrElse("POSTGRES_USER", "postgres").toString
@@ -38,13 +38,6 @@ object FieldDAO{
       case Success(_) => println("Connection to DB & Creation of Tables successful!")
       case Failure(e) => println("Error: " + e)
     }
-  }
-  def read:String = {
-  //  val player1Query = sql"""SELECT * FROM "FIELD" """.as[(String)]
-  //  val result1 = Await.result(database.run(player1Query), atMost = 10.second)
-  //  result1
-  ""
-  
   }
   def update(input:String):Unit = {
      val insertAction = fieldTable returning fieldTable.map(_.name) 

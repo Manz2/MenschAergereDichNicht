@@ -16,14 +16,17 @@ import scala.io.Source
 
 object fileIoJsonImpl{
     def save(json:String): Unit= {
-        DBImpl.saveGame(json)
+        //DBImpl.saveGame(json)
+        MongodbImpl.saveAllFields(json)
+
         //val pw = PrintWriter(File("game.json"))
         //pw.write(json)
         //pw.close
     }
     def load(): String ={
-        //val source: String = Source.fromFile("game.json").getLines.mkString
+        val source: String = Source.fromFile("game.json").getLines.mkString
         //source
-        DBImpl.loadGame().toString
+        //DBImpl.loadGame().toString
+        MongodbImpl.loadAllFields.toString
     }
 }

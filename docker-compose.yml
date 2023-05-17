@@ -12,6 +12,15 @@ services:
         POSTGRES_PORT: 5432
       ports:
         - "5432:5432"
+  mongo:
+    image: mongo
+    restart: "no"
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: mongo
+      MONGI_INITDB_DATABASE: madn
  # persistence:
  #   image: madn-persistence-service
  #   #build:
