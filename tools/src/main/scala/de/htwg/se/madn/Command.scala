@@ -5,6 +5,7 @@ import FieldComponent.fieldBaseImpl.Field
 import FigureComponent.FigureBaseImpl.Figure
 import FigureComponent.FigureInterface
 import play.api.libs.json._
+import de.htwg.se.madn.databaseComponent._
 
 trait Command {
   def doStep: FieldInterface
@@ -29,6 +30,7 @@ object UndoManager{
         val jsonReturn : JsValue = Json.obj(
             "Field" -> Json.toJson(fieldField)
         )
+        MongodbImpl.saveAllFields(jsonReturn.toString)
         jsonReturn.toString
 
         
@@ -43,6 +45,7 @@ object UndoManager{
                 val jsonReturn : JsValue = Json.obj(
                     "Field" -> Json.toJson(fieldField)
                 )
+                MongodbImpl.saveAllFields(jsonReturn.toString)
                 jsonReturn.toString
             }
         }
@@ -58,6 +61,7 @@ object UndoManager{
                 val jsonReturn : JsValue = Json.obj(
                     "Field" -> Json.toJson(fieldField)
                 )
+                MongodbImpl.saveAllFields(jsonReturn.toString)
                 jsonReturn.toString
             }
         }

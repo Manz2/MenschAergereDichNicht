@@ -21,7 +21,7 @@ object Madn {
     val tui = Tui(controller)
     //val gui = new GUI(controller)//comment for docker use then "docker build -t madn" and after "docker run -ti madn"
     var input: String = ""
-    print("Game started123\n")  
+    print("Game started\n")  
     input = readLine()
     tui.processInputLine(input)
     while (input != "q"){
