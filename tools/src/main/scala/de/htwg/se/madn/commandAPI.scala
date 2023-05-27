@@ -27,18 +27,25 @@ object commandAPI {
       path("command" / "doMove") {
         post {
           entity(as[String]) { move =>
+            println("move in capi: " + move)
             complete(HttpEntity(ContentTypes.`application/json`, UndoManager.doStep(move)))
           }
         }
       },
       path("command" / "undo") {
         get {
-          complete(HttpEntity(ContentTypes.`application/json`, UndoManager.undoStep()))
+          println("undo in capi")
+          val retVal = UndoManager.undoStep()
+          println("retVal: " + retVal)
+          complete(HttpEntity(ContentTypes.`application/json`, retVal))
         }
       },
       path("command" / "redo") {
         get {
-          complete(HttpEntity(ContentTypes.`application/json`, UndoManager.redoStep()))
+          println("redo in capi")
+          val retVal = UndoManager.redoStep()
+          println("retVal: " + retVal)
+          complete(HttpEntity(ContentTypes.`application/json`, retVal))
         }
       }
 
@@ -50,7 +57,7 @@ object commandAPI {
     bindingFuture.onComplete{
       case Success(binding) => {
         val address = binding.localAddress
-        println(s"File IO REST service online at http://localhost:8081/\nPress RETURN to stop...")
+        println(s"File IO REST service online at http://localhost:8081/command/\nPress RETURN to stop...")
         StdIn.readLine() // let it run until user presses return
         bindingFuture
           .flatMap(_.unbind()) // trigger unbinding from the port

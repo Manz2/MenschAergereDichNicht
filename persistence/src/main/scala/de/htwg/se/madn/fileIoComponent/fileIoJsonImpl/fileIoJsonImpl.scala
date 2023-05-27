@@ -16,7 +16,9 @@ import scala.io.Source
 
 object fileIoJsonImpl{
     def save(json:String): Unit= {
+        println("[SAVE fileiojson]\t" + json)
         //DBImpl.saveGame(json)
+
         MongodbImpl.saveAllFields(json)
 
         //val pw = PrintWriter(File("game.json"))

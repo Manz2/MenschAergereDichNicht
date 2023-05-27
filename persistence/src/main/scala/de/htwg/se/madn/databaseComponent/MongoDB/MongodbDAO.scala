@@ -23,16 +23,19 @@ object MongodbDAO {
 
   def create:Unit ={
     val gameDocument: Document = Document("_id" -> "gameDocument", "game" -> "")
+    println("[CREATE mdbdao]")
     observerInsertion(gameCollection.insertOne(gameDocument))
+    
     }
 
    def update(input:String) =
-    println("update")
+    println("[UPDATE mdbdao] " + input)
     observerUpdate(gameCollection.updateOne(equal("_id","gameDocument"), set("game", input)))
 
   /** DELETE */
   def delete:Unit = {
     Await.result(deleteFuture, Duration.Inf)
+    println("[DELETE mdbdao]")
   }
 
   private def deleteFuture:Future[String] = {

@@ -11,7 +11,6 @@ import scala.util.{Failure, Success, Try}
 import scala.concurrent.{Await, Future}
 import scala.concurrent.duration.Duration
 
-
 object MongodbDAO {
   
   val database_pw = sys.env.getOrElse("MONGO_INITDB_ROOT_PASSWORD", "mongo").toString
@@ -22,41 +21,47 @@ object MongodbDAO {
   val db: MongoDatabase = client.getDatabase("madn")
   val gameCollection: MongoCollection[Document] = db.getCollection("game")
 
+  val docName = "stateDoc"
+
   def create:Unit ={
-    val autoSave: Document = Document("_id" -> "autoSave", "game" -> "")
-    observerInsertion(gameCollection.insertOne(autoSave))
+    val gameDocument: Document = Document("_id" -> docName, "game" -> "")
+    println("[CREATE mdbdao]")
+    observerInsertion(gameCollection.insertOne(gameDocument))
+    
     }
 
    def update(input:String) =
-    println("update")
-    observerUpdate(gameCollection.updateOne(equal("_id","autoSave"), set("game", input)))
+    println("[UPDATE mdbdao] " + input)
+    observerUpdate(gameCollection.updateOne(equal("_id",docName), set("game", input)))
 
-  
+  /** DELETE */
   def delete:Unit = {
     Await.result(deleteFuture, Duration.Inf)
+    println("[DELETE mdbdao]")
   }
 
   private def deleteFuture:Future[String] = {
-    gameCollection.deleteMany(equal("_id", "autoSave")).subscribe(
-      (dr: DeleteResult) => println(s"Deleted autoSave"),
+    gameCollection.deleteMany(equal("_id",docName)).subscribe(
+      (dr: DeleteResult) => println(s"Deleted stateDoc"),
+      (e: Throwable) => println(s"Error while trying to stateDoc  $e")
     )
     Future {
-      "deleted"
+      "Finished deleting!"
     }
   }
 
   def read:String =
-    val autoSave: Document = Await.result(gameCollection.find(equal("_id", "autoSave")).first().head(), Duration.Inf)
-    autoSave("game").asString().getValue.toString
+    val gameDocument: Document = Await.result(gameCollection.find(equal("_id",docName)).first().head(), Duration.Inf)
+    gameDocument("game").asString().getValue.toString
 
 
   private def observerInsertion(insertObservable: SingleObservable[InsertOneResult]): Unit = {
     insertObservable.subscribe(new Observer[InsertOneResult] {
       override def onNext(result: InsertOneResult): Unit = println(s"inserted: $result")
 
-      override def onError(e: Throwable): Unit = println(s"errorwhile inserting: $e")
+      override def onError(e: Throwable): Unit = println(s"insert onError: $e")
 
-      override def onComplete(): Unit = println("insert completed")
+      override def onComplete(): Unit = println("completed insert")
     })
   }
 
@@ -64,9 +69,9 @@ object MongodbDAO {
     insertObservable.subscribe(new Observer[UpdateResult] {
       override def onNext(result: UpdateResult): Unit = println(s"updated: $result")
 
-      override def onError(e: Throwable): Unit = println(s"Error while updating: $e")
+      override def onError(e: Throwable): Unit = println(s"update onError: $e")
 
-      override def onComplete(): Unit = println("updated")
+      override def onComplete(): Unit = println("completed update")
     })
   }
 

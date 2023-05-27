@@ -19,6 +19,7 @@ object UndoManager{
     private var undoStack: List[Command] = Nil
     private var redoStack: List[Command] = Nil
     def doStep(stringCommand:String) : String =
+        println("doStep")
         val json: JsValue = Json.parse(stringCommand)
         val fig = (json \ "Figur").as[String]
         val anzahl = (json \ "Anzahl").as[String].toInt
@@ -34,39 +35,17 @@ object UndoManager{
         jsonReturn.toString
 
         
-    def undoStep() : String ={ 
-        undoStack match {
-            case Nil => ""
-            case head :: stack => {
-                val result = head.undoStep
-                undoStack = stack
-                redoStack = head :: redoStack
-                val fieldField : Vector[String] = result.data.map(f => f.playerName + f.number)
-                val jsonReturn : JsValue = Json.obj(
-                    "Field" -> Json.toJson(fieldField)
-                )
-                MongodbImpl.saveAllFields(jsonReturn.toString)
-                jsonReturn.toString
-            }
-        }
-    }
-    def redoStep() : String ={ 
-        redoStack match {
-            case Nil => ""
-            case head :: stack => {
-                val result = head.redoStep
-                redoStack = stack
-                undoStack = head :: undoStack
-                val fieldField : Vector[String] = result.data.map(f => f.playerName + f.number)
-                val jsonReturn : JsValue = Json.obj(
-                    "Field" -> Json.toJson(fieldField)
-                )
-                MongodbImpl.saveAllFields(jsonReturn.toString)
-                jsonReturn.toString
-            }
-        }
-    }
+    def undoStep() : String = 
+        println("undoStep2")
+        val jsonReturn = MongodbImpl.loadAllFields
+        println("jsonReturn: " + jsonReturn)
+        jsonReturn.toString
 
+    def redoStep() : String =
+        println("undoStep2")
+        val jsonReturn = MongodbImpl.loadAllFields
+        println("jsonReturn: " + jsonReturn)
+        jsonReturn.toString
 
 
 

@@ -29,13 +29,17 @@ import play.api.libs.json._
 import scala.concurrent.Future
 import akka.http.scaladsl.unmarshalling.Unmarshal
 
+val DOCKER = sys.env.getOrElse("DOCKER", "false") == "true"
+
+
 case class Controller () extends ControllerInterface {
 
+  println("DOCKER: " + DOCKER)
   var field : FieldInterface = Field(Vector());
   var player: FieldInterface = Field(Vector());
   var home: FieldInterface = Field(Vector());
-  val fileIOServer = "http://host.docker.internal:8080/fileio"
-  val commandServer = "http://host.docker.internal:8081/command"
+  val fileIOServer = if(DOCKER) "http://host.docker.internal:8080/fileio" else "http://localhost:8080/fileio"
+  val commandServer = if(DOCKER) "http://host.docker.internal:8081/command" else "http://localhost:8081/command"
 
   def newGame(nPlayer : Int): Unit = {
     def inner(spielername: String): List[Figure] = (1 until 5).map(idx => Figure(spielername,idx)).toList
@@ -51,10 +55,12 @@ case class Controller () extends ControllerInterface {
     val executionContext: ExecutionContextExecutor = system.executionContext
     given ExecutionContextExecutor = executionContext
 
+    val entity = generateJson()
+
     val responseFuture: Future[HttpResponse] = Http().singleRequest(HttpRequest(
       method = HttpMethods.POST,
       uri = fileIOServer + "/save",
-      entity = generateJson()
+      entity = entity
       ))
   }
 
@@ -157,6 +163,7 @@ case class Controller () extends ControllerInterface {
             case Success(value) => {
                 val json: JsValue = Json.parse(value)
                 val field_ = (json\ "Field").as[List[String]]
+                // Error
                 field = Field(Vector(field_.map(f => if (f == "-1") Figure("",-1) else Figure(f.charAt(0).toString,f.charAt(1).toString.toInt))).flatten)
                 notifyObservers
             }
