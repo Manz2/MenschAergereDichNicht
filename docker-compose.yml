@@ -66,4 +66,6 @@ services:
       CONNECTFOUR_SERVICE_PORT: 8080
       FILEIO_SERVICE_HOST: persistence
       FILEIO_SERVICE_PORT: 8081
+      DOCKER : "true"
+
  
