@@ -48,37 +48,31 @@ object IndexDAO{
       += (0,figure,field,index)
      database.run(insertAction)
   }
+
   def read: Future[JsValue] = {
-    val resultFuture = Future(Await.result(database.run(indexTable.result),Duration.Inf))
-    val arrayBuffer = ArrayBuffer.fill(20)("-1")
-    val arrayBufferPlayer = ArrayBuffer.fill(4)("-1")
-    val arrayBufferHome = ArrayBuffer.fill(4)("-1")
-
-    var jsObj: JsValue = Json.obj()
-
-    val futureResult: Future[JsValue] = resultFuture.map { rows =>
-      rows.foreach {
+    database.run(indexTable.result).map { rows =>
+      val arrayField = Array.fill[String](20)("-1")
+      val arrayPlayer = Array.fill[String](4)("-1")
+      val arrayHome = Array.fill[String](4)("-1")
+  
+      rows.map {
         case (id, figure, field, index) =>
-          if (field.toString == "Field") {
-            arrayBuffer(index.asInstanceOf[Int]) = figure
-          }
-          if (field.toString == "Player") {
-            arrayBufferPlayer(index.asInstanceOf[Int]) = figure
-          }
-          if (field.toString == "Home") {
-            arrayBufferHome(index.asInstanceOf[Int]) = figure
+          field.toString match {
+            case "Field" => arrayField(index.asInstanceOf[Int]) = figure
+            case "Player" => arrayPlayer(index.asInstanceOf[Int]) = figure
+            case "Home" => arrayHome(index.asInstanceOf[Int]) = figure
           }
       }
-
-      jsObj = Json.obj(
-        "Field" -> Json.toJson(arrayBuffer.toVector),
-        "Player" -> Json.toJson(arrayBufferPlayer.toVector),
-        "Home" -> Json.toJson(arrayBufferHome.toVector)
+  
+      val jsObj = Json.obj(
+        "Field" -> Json.toJson(arrayField.toVector),
+        "Player" -> Json.toJson(arrayPlayer.toVector),
+        "Home" -> Json.toJson(arrayHome.toVector)
       )
       jsObj
     }
-    Future(Await.result(futureResult,Duration.Inf))
   }
+
 
 
 

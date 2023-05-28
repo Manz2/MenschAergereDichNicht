@@ -12,11 +12,13 @@ import scala.concurrent.{Await, Future}
 import scala.concurrent.duration.Duration
 
 object MongodbDAO {
-  
+  val DOCKER = sys.env.getOrElse("DOCKER", "false") == "true"
   val database_pw = sys.env.getOrElse("MONGO_INITDB_ROOT_PASSWORD", "mongo").toString
   val database_username = sys.env.getOrElse("MONGO_INITDB_ROOT_USERNAME", "root").toString
+ 
+  val host = if(DOCKER) "host.docker.internal" else "localhost"
 
-  val uri: String = s"mongodb://$database_username:$database_pw@localhost:27017/?authSource=admin"
+  val uri: String = s"mongodb://$database_username:$database_pw@$host:27017/?authSource=admin"
   val client: MongoClient = MongoClient(uri)
   val db: MongoDatabase = client.getDatabase("madn")
   val gameCollection: MongoCollection[Document] = db.getCollection("game")

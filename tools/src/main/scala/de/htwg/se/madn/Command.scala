@@ -36,17 +36,29 @@ object UndoManager{
 
         
     def undoStep() : String = 
-        println("undoStep2")
-        val jsonReturn = MongodbImpl.loadAllFields
-        println("jsonReturn: " + jsonReturn)
-        jsonReturn.toString
-
+        undoStack match {
+            case Nil => Field.toString
+            case head :: stack => {
+                println("undoStep")
+                val result = head.undoStep
+                undoStack = stack
+                redoStack = head :: redoStack
+                MongodbImpl.saveAllFields(result.toString)
+                println("Return: " + result)
+                result.toString
+            }
+        }
     def redoStep() : String =
-        println("undoStep2")
-        val jsonReturn = MongodbImpl.loadAllFields
-        println("jsonReturn: " + jsonReturn)
-        jsonReturn.toString
-
-
-
+        redoStack match {
+            case Nil => Field.toString
+            case head::stack => {
+                println("redoStep")
+                val result = head.redoStep
+                redoStack = stack
+                undoStack = head::undoStack
+                MongodbImpl.saveAllFields(result.toString)
+                println("jsonReturn: " + result)
+                result.toString
+            }
+        }
 }
