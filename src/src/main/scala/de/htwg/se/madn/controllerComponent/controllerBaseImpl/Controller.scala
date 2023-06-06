@@ -163,13 +163,13 @@ case class Controller () extends ControllerInterface {
             case Success(value) => {
                 val json: JsValue = Json.parse(value)
                 val field_ = (json\ "Field").as[List[String]]
-                // Error
                 field = Field(Vector(field_.map(f => if (f == "-1") Figure("",-1) else Figure(f.charAt(0).toString,f.charAt(1).toString.toInt))).flatten)
                 notifyObservers
             }
           }
         }
       }
+    print(field.toString)
     field
   }
 
