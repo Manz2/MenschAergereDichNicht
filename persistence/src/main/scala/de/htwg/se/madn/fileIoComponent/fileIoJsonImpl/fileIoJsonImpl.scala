@@ -28,7 +28,7 @@ object fileIoJsonImpl{
     def load(): String ={
         //val source: String = Source.fromFile("game.json").getLines.mkString
         //source
-        DBImpl.loadGame().toString
-        //MongodbImpl.loadAllFields.toString
+        //DBImpl.loadGame().toString
+        MongodbImpl.loadAllFields.toString
     }
 }
