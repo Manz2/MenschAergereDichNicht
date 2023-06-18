@@ -26,6 +26,6 @@ In the GUI first type in the upper text box the number of players then press `ST
 
 ## Authors
 Erik Manz <br>
-Muhammed Ergül
+Sebastian Kaeser
 
 
