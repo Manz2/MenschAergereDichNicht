@@ -24,7 +24,7 @@ services:
   persistence:
     image: madn-persistence-service
     build:
-      context: ./persistence/
+      context: ./services/persistence/
       dockerfile: ./Dockerfile
     ports:
       - "8080:8080"
@@ -35,38 +35,38 @@ services:
       FILEIO_SERVICE_PORT: 8080
       DOCKER : "true"
     tty: true
-  #tools:
-  #  image: madn-tools-service
-  #  build:
-  #    context: ./tools/
-  #    dockerfile: ./Dockerfile
-  #  ports:
-  #    - "8081:8081"
-  #  stdin_open: true
-  #  container_name: tools_service
-  #  environment:
-  #    FILEIO_SERVICE_HOST: tools
-  #    FILEIO_SERVICE_PORT: 8081
-  #  tty: true
-#
-  #main:
-  #  image: madn-service
-  #  build:
-  #    context: ./src
-  #    dockerfile: ./Dockerfile
-  #  stdin_open: true
-  #  container_name: madn_service
-  #  depends_on:
-  #    - persistence
-  #    - tools
-  #  volumes:
-  #    - /tmp/.X11-unix:/tmp/.X11-unix
-  #  environment:
-  #    DISPLAY: $DISPLAY
-  #    CONNECTFOUR_SERVICE_HOST: connectfour
-  #    CONNECTFOUR_SERVICE_PORT: 8080
-  #    FILEIO_SERVICE_HOST: persistence
-  #    FILEIO_SERVICE_PORT: 8081
-  #    DOCKER : "true"
+  tools:
+    image: madn-tools-service
+    build:
+      context: ./services/tools/
+      dockerfile: ./Dockerfile
+    ports:
+      - "8081:8081"
+    stdin_open: true
+    container_name: tools_service
+    environment:
+      FILEIO_SERVICE_HOST: tools
+      FILEIO_SERVICE_PORT: 8081
+    tty: true
+
+  main:
+    image: madn-service
+    build:
+      context: ./services/main
+      dockerfile: ./Dockerfile
+    stdin_open: true
+    container_name: madn_service
+    depends_on:
+      - persistence
+      - tools
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      DISPLAY: $DISPLAY
+      CONNECTFOUR_SERVICE_HOST: connectfour
+      CONNECTFOUR_SERVICE_PORT: 8080
+      FILEIO_SERVICE_HOST: persistence
+      FILEIO_SERVICE_PORT: 8081
+      DOCKER : "true"
 
  

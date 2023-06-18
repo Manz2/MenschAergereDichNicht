@@ -22,3 +22,5 @@ out
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+services/main/src/test/performanceTesting/
+src/src/test/performanceTesting/
