@@ -12,7 +12,6 @@ object MongodbImpl extends DBInterface{
     MongodbDAO.read
   }
   def saveAllFields(json:String):Unit = {
-    //MongodbDAO.delete
     val createFuture = Future {
       MongodbDAO.create
     }
