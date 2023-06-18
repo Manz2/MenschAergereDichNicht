@@ -3,11 +3,10 @@
 ## Review Software Architekturen
 Um das Spiel zu testen, kann man im Rootverzeichnis den Befehl "Docker-compose up -d" ausführen. Dadurch werden alle Services und die Mongo DB in Docker gestartet. Anschließend kann man im Terminal des madn-Service-Containers den Befehl "sbt run" ausführen, um das Spiel über die textbasierte Benutzeroberfläche (TUI) zu spielen. Alternativ kann man auch die einzelnen Services einzeln unter "/services/service" mit "sbt run" starten und dort das Spiel spielen. Wenn man Docker nicht verwendet, kann man in der Main auch die GUI einkommentieren und mit der GUI spielen.
 
-![APM](https://img.shields.io/apm/l/vim-mode)
 
 ## Status
 
-
+![APM](https://img.shields.io/apm/l/vim-mode)
 [![Build](https://github.com/Manz2/MenschAergereDichNicht/actions/workflows/scalaCI.yml/badge.svg)](https://github.com/Manz2/MenschAergereDichNicht/actions)   [![codecov](https://codecov.io/gh/Manz2/MenschAergereDichNicht/branch/main/graph/badge.svg?token=3GA31FYUYT)](https://codecov.io/gh/Manz2/MenschAergereDichNicht)
 
 
