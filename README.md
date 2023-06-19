@@ -1,7 +1,7 @@
 # MenschAergereDichNicht
 
 ## Review Software Architekturen
-Um das Spiel zu testen, kann man im Rootverzeichnis den Befehl "Docker-compose up -d" ausführen. Dadurch werden alle Services und die Mongo DB in Docker gestartet. Anschließend kann man im Terminal des madn-Service-Containers den Befehl "sbt run" ausführen, um das Spiel über die TUI zu spielen. Alternativ kann man auch die einzelnen Services einzeln unter "/services/service" mit "sbt run" starten und dort das Spiel spielen. Wenn man Docker nicht verwendet, kann man in der Main auch die GUI einkommentieren und mit der GUI spielen.
+Um das Spiel zu testen, kann man im Rootverzeichnis den Befehl "Docker-compose up -d" ausführen. Dadurch werden alle Services und die Mongo DB in Docker gestartet. Anschließend kann man im Terminal des madn-Service-Containers den Befehl "sbt run" ausführen, um das Spiel über die TUI zu spielen. Alternativ kann man auch die einzelnen Services einzeln unter "/services/[serviceName]" mit "sbt run" starten und dort das Spiel spielen. Wenn man Docker nicht verwendet, kann man in der Main auch die GUI einkommentieren und mit der GUI spielen.
 
 ## Architektur
 wir haben drei Services umgesetz:
