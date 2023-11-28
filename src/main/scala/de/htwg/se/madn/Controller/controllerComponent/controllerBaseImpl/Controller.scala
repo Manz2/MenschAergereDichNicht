@@ -16,8 +16,9 @@ import scala.collection.mutable.Map
 import model.fileIoComponent.FileIOInterface
 import model.FigureComponent.FigureBaseImpl.Figure
 import model.FigureComponent.FigureInterface
+import scala.swing.Publisher
 
-case class Controller () extends ControllerInterface {
+case class Controller () extends ControllerInterface with Publisher {
   val undoManager = new UndoManager 
 
   var field : FieldInterface = Field(Vector());
@@ -30,6 +31,7 @@ case class Controller () extends ControllerInterface {
     field = Field(Vector.fill(20)(Figure("",-1)))
     home = Field(Vector.fill(nPlayer*4)(Figure("",-1)))
     notifyObservers
+    publish(new Changed)
   }
 
   override def toString = field.toString + home.toString + player.toString
@@ -45,12 +47,14 @@ case class Controller () extends ControllerInterface {
   def undo: FieldInterface = {
     field = undoManager.undoStep(field)
     notifyObservers
+    publish(new Changed)
     field
   }
 
   def redo: FieldInterface = {
     field = undoManager.redoStep(field)
     notifyObservers
+    publish(new Changed)
     field
   }
 
@@ -106,6 +110,7 @@ case class Controller () extends ControllerInterface {
     val result = List.fill(3)(throwDice).contains(6)
     if (result) raus(spieler)
     notifyObservers
+    publish(new Changed)
     result  
   }
 
@@ -114,6 +119,7 @@ case class Controller () extends ControllerInterface {
     home = backHome(home)(field.data.indexOf(figur))
     field = Field(field.data.updated(field.data.indexOf(figur),Figure("",-1)))
     notifyObservers
+    publish(new Changed)
     field
   }
 
@@ -174,6 +180,7 @@ case class Controller () extends ControllerInterface {
       field = outer(InField)
       }
     notifyObservers
+    publish(new Changed)
     field
   }
 }

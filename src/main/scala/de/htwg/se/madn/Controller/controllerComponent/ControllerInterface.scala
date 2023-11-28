@@ -9,6 +9,8 @@ import scala.util.control.Breaks._
 import model.FigureComponent.FigureBaseImpl.Figure
 import model.FieldComponent.FieldInterface
 import model.FigureComponent.FigureInterface
+import scala.swing.Publisher
+
 
 //trait ControllerInterface(val Home:HomeInterface,val Field:FieldInterface,val Player:PlayerInterface) extends Observable{
 trait ControllerInterface() extends Observable{
@@ -30,3 +32,8 @@ trait ControllerInterface() extends Observable{
   def anybodyWone(thisHome:FieldInterface):Option[String]
   def getFigureFromField(player:String,nummer:Int): FigureInterface
 }
+
+/** Events, that get called by the Controller to notify listeners. */
+import scala.swing.event.Event
+
+class Changed extends Event
