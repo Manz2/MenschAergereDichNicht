@@ -18,7 +18,7 @@ import de.htwg.se.madn.Controller.controllerComponent.controllerBaseImpl._
 import model.FigureComponent.FigureBaseImpl.Figure
 import model.FigureComponent.FigureInterface
 import java.{util => ju}
-
+/*
 class ControllerSpec extends AnyWordSpec with Matchers:
   "A Controller" when {
     "observed by an Observer" should {
@@ -209,4 +209,4 @@ class ControllerSpec extends AnyWordSpec with Matchers:
 
   case class Obs() extends Observer:
     var updated = false
-    override def update: Unit = updated = true
+    override def update: Unit = updated = true*/

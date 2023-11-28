@@ -28,7 +28,7 @@ case class Controller () extends ControllerInterface with Publisher {
   def newGame(nPlayer : Int): Unit = {
     def inner(spielername: String): List[Figure] = (1 until 5).map(idx => Figure(spielername,idx)).toList
     player = Field(Vector(List("A","B","C","D").take(nPlayer).map(inner(_)).flatten).flatten)
-    field = Field(Vector.fill(20)(Figure("",-1)))
+    field = Field(Vector.fill(40)(Figure("",-1)))
     home = Field(Vector.fill(nPlayer*4)(Figure("",-1)))
     notifyObservers
     publish(new Changed)

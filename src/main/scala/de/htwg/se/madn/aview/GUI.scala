@@ -25,7 +25,7 @@ class GUI(controller: ControllerInterface) extends MainFrame with Observer {
     repaint
   }
 
-  val fieldpos: Array[Option[String]] = new Array[Option[String]](20)//40 
+  val fieldpos: Array[Option[String]] = new Array[Option[String]](40)//40 
   var diceVal = 0;
   var turn = "A"
     

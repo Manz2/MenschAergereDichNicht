@@ -14,8 +14,7 @@ lazy val root = project
     libraryDependencies += ("net.codingwell" %% "scala-guice" % "5.0.2").cross(CrossVersion.for3Use2_13),
     libraryDependencies += "org.scala-lang.modules" %% "scala-xml" % "2.0.1",
     libraryDependencies += ("com.typesafe.play" %% "play-json" % "2.9.2").cross(CrossVersion.for3Use2_13),
-    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
-    libraryDependencies += "com.fasterxml.jackson.core" % "jackson-core" % "2.12.7",
+    libraryDependencies += "com.fasterxml.jackson.core" % "jackson-databind" % "2.11.0",
     jacocoReportSettings := JacocoReportSettings(
       "Jacoco Coverage Report",
       None,

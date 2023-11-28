@@ -28,7 +28,7 @@ class TuiSpec extends AnyWordSpec with Matchers {
             tui.processInputLine("n1")
             co.player.toString.count(_ == '+') should equal(10)
             co.home.toString.count(_ == '+') should equal(10)
-            co.field.toString.count(_ == '+') should equal(42)
+            co.field.toString.count(_ == '+') should equal(82)
         }
         "create an new madn Game with s players on input 'n2'" in {
             var inserts: Array[Option[String]] = new Array[Option[String]](10)
@@ -37,7 +37,7 @@ class TuiSpec extends AnyWordSpec with Matchers {
             tui.processInputLine("n2")
             co.player.toString.count(_ == '+') should equal(18)
             co.home.toString.count(_ == '+') should equal(18)
-            co.field.toString.count(_ == '+') should equal(42)
+            co.field.toString.count(_ == '+') should equal(82)
         }
         "create an new madn Game with 3 players on input 'n3'" in {
             var inserts: Array[Option[String]] = new Array[Option[String]](10)
@@ -46,7 +46,7 @@ class TuiSpec extends AnyWordSpec with Matchers {
             tui.processInputLine("n3")
             co.player.toString.count(_ == '+') should equal(26)
             co.home.toString.count(_ == '+') should equal(26)
-            co.field.toString.count(_ == '+') should equal(42)
+            co.field.toString.count(_ == '+') should equal(82)
         }
         "create an new madn Game with 4 players on input 'n4'" in {
             var inserts: Array[Option[String]] = new Array[Option[String]](10)
@@ -55,7 +55,7 @@ class TuiSpec extends AnyWordSpec with Matchers {
             tui.processInputLine("n4")
             co.player.toString.count(_ == '+') should equal(34)
             co.home.toString.count(_ == '+') should equal(34)
-            co.field.toString.count(_ == '+') should equal(42)
+            co.field.toString.count(_ == '+') should equal(82)
         }
         "start a new round with player a's turn on input 'a'" in {
             val co = new Controller()
